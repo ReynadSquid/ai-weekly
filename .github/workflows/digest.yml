@@ -1,0 +1,57 @@
+# Вариант B (резервный): запуск по cron в GitHub Actions.
+# Основной вариант — облачная задача Claude Code (см. README). Не включайте оба сразу:
+# повторная публикация всё равно заблокирована state/published.json, но лимиты потратятся дважды.
+#
+# Секреты репозитория (Settings → Secrets and variables → Actions):
+#   CLAUDE_CODE_OAUTH_TOKEN  — из `claude setup-token` (подписка Claude, не API-ключ)
+#   TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, TELEGRAM_TEST_CHAT_ID, TELEGRAM_ADMIN_CHAT_ID
+# Cron в UTC. Строки берутся из `python scripts/pipeline.py cron` (поле cron_utc).
+name: AI Weekly digest
+
+on:
+  # schedule:                 # раскомментируйте, если выбран вариант B
+  #   - cron: "5 3 * * 0"     # вс 10:05 Красноярск — основной слот
+  #   - cron: "5 9 * * 0"     # +6 ч — повтор, если основной не завершился
+  #   - cron: "5 15 * * 0"    # +12 ч — второй повтор
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "Аргументы /run-digest, например --dry-run --kind weekly"
+        default: "--dry-run --kind weekly"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-weekly
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm install -g @anthropic-ai/claude-code
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q
+      - name: Run digest
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          TELEGRAM_TEST_CHAT_ID: ${{ secrets.TELEGRAM_TEST_CHAT_ID }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+          ARGS: ${{ github.event.inputs.args }}
+        run: claude -p "/run-digest ${ARGS}" --dangerously-skip-permissions --output-format text
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: runs
+          path: runs/

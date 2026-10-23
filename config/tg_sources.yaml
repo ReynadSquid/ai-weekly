@@ -1,0 +1,18 @@
+# Публичные Telegram-каналы для ОБНАРУЖЕНИЯ новостей.
+# Читается веб-превью https://t.me/s/<username>. В дайджест идёт ссылка
+# на первоисточник из поста, а не на сам пост. Замените на свои каналы.
+
+channels:
+  - username: seeallochnaya
+    note: "Сиолошная — разборы релизов"
+  - username: denissexy
+    note: "Denis Sexy IT"
+  - username: ai_newz
+    note: "эйай ньюз"
+  - username: gonzo_ML
+    note: "gonzo-обзоры ML статей"
+  - username: data_secrets
+    note: "Data Secrets"
+
+# Сколько последних постов смотреть в каждом канале (одна страница превью ≈ 20).
+max_posts_per_channel: 40

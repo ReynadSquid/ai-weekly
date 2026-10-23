@@ -1,0 +1,146 @@
+# Контрольный список компаний и продуктов. Промпты агентов компании не хардкодят —
+# всё берётся отсюда. Замените/дополните своим списком (например, 20 продуктов).
+#
+# Поля:
+#   name      — компания (как писать в дайджесте)
+#   products  — продукты (названия не переводим)
+#   group     — группа для ранжирования: leaders | second | infra | creative
+#   section   — раздел выпуска из config/format.md (A–G)
+#   hashtag   — хэштег для финала выпуска
+#   official  — официальные страницы, которые стоит проверить в первую очередь
+
+companies:
+  - name: OpenAI
+    products: [ChatGPT, Codex, Sora, GPT]
+    group: leaders
+    section: A
+    hashtag: "#OpenAI"
+    official: [https://openai.com/news/, https://help.openai.com/en/articles/6825453-chatgpt-release-notes, https://platform.openai.com/docs/changelog]
+  - name: Anthropic
+    products: [Claude, Claude Code]
+    group: leaders
+    section: A
+    hashtag: "#Anthropic"
+    official: [https://www.anthropic.com/news, https://docs.claude.com/en/release-notes/overview, https://code.claude.com/docs/en/changelog]
+  - name: Google
+    products: [Gemini, DeepMind, Gemma, NotebookLM, Veo]
+    group: leaders
+    section: A
+    hashtag: "#Google"
+    official: [https://blog.google/technology/ai/, https://deepmind.google/discover/blog/, https://ai.google.dev/gemini-api/docs/changelog]
+  - name: Meta
+    products: [Llama, Meta AI]
+    group: leaders
+    section: A
+    hashtag: "#Meta"
+    official: [https://ai.meta.com/blog/, https://about.fb.com/news/]
+  - name: Microsoft
+    products: [Copilot, Azure AI, Phi]
+    group: leaders
+    section: A
+    hashtag: "#Microsoft"
+    official: [https://blogs.microsoft.com/ai/, https://www.microsoft.com/en-us/microsoft-copilot/blog/]
+  - name: xAI
+    products: [Grok]
+    group: leaders
+    section: A
+    hashtag: "#xAI"
+    official: [https://x.ai/news]
+
+  - name: Mistral
+    products: [Mistral, Le Chat, Codestral]
+    group: second
+    section: B
+    hashtag: "#Mistral"
+    official: [https://mistral.ai/news/]
+  - name: DeepSeek
+    products: [DeepSeek]
+    group: second
+    section: B
+    hashtag: "#DeepSeek"
+    official: [https://api-docs.deepseek.com/news/news, https://huggingface.co/deepseek-ai]
+  - name: Alibaba
+    products: [Qwen]
+    group: second
+    section: B
+    hashtag: "#Qwen"
+    official: [https://qwenlm.github.io/blog/, https://huggingface.co/Qwen]
+  - name: Perplexity
+    products: [Perplexity, Comet]
+    group: second
+    section: B
+    hashtag: "#Perplexity"
+    official: [https://www.perplexity.ai/hub/blog]
+  - name: Apple
+    products: [Apple Intelligence]
+    group: second
+    section: B
+    hashtag: "#Apple"
+    official: [https://www.apple.com/newsroom/, https://machinelearning.apple.com/]
+  - name: Amazon
+    products: [Nova, Bedrock, Alexa+]
+    group: second
+    section: B
+    hashtag: "#Amazon"
+    official: [https://www.aboutamazon.com/news/innovation-at-amazon, https://aws.amazon.com/blogs/machine-learning/]
+
+  - name: NVIDIA
+    products: [GPU, CUDA, NIM]
+    group: infra
+    section: C
+    hashtag: "#NVIDIA"
+    official: [https://nvidianews.nvidia.com/, https://blogs.nvidia.com/]
+  - name: AMD
+    products: [Instinct, ROCm]
+    group: infra
+    section: C
+    hashtag: "#AMD"
+    official: [https://www.amd.com/en/newsroom.html]
+  - name: Облака и дата-центры
+    products: [AWS, Azure, Google Cloud, Oracle, CoreWeave]
+    group: infra
+    section: C
+    hashtag: "#инфраструктура"
+    official: []
+
+  - name: Midjourney
+    products: [Midjourney]
+    group: creative
+    section: D
+    hashtag: "#Midjourney"
+    official: [https://updates.midjourney.com/]
+  - name: Runway
+    products: [Runway, Gen]
+    group: creative
+    section: D
+    hashtag: "#Runway"
+    official: [https://runwayml.com/news]
+  - name: ElevenLabs
+    products: [ElevenLabs]
+    group: creative
+    section: D
+    hashtag: "#ElevenLabs"
+    official: [https://elevenlabs.io/blog]
+  - name: Cursor
+    products: [Cursor]
+    group: creative
+    section: D
+    hashtag: "#Cursor"
+    official: [https://cursor.com/changelog, https://cursor.com/blog]
+  - name: Suno
+    products: [Suno]
+    group: creative
+    section: D
+    hashtag: "#Suno"
+    official: [https://suno.com/blog]
+
+# Веса групп для ранжирования (масштаб компании).
+group_weight:
+  leaders: 3
+  second: 2
+  infra: 2
+  creative: 1
+  other: 1
+
+# Минимум новостей вне списка в выпуске (если такие нашлись).
+min_outside_watchlist: 3

@@ -1,0 +1,45 @@
+# Расписание выпусков. Код читает только этот файл.
+# После правки времени выполните `python scripts/pipeline.py cron` и обновите
+# триггер облачной задачи (см. README, раздел «Расписание»).
+
+timezone: Asia/Krasnoyarsk
+
+# dry-run — выпуск уходит в TELEGRAM_TEST_CHAT_ID (или админу);
+# live    — в основной канал TELEGRAM_CHANNEL_ID.
+# live включится только после min_dry_runs_before_live успешных dry-run выпусков.
+publish_mode: dry-run
+min_dry_runs_before_live: 2
+
+# Окно сбора: от прошлой успешной публикации, но не больше max_window_days.
+max_window_days: 8
+default_window_days: 7  # если прошлых выпусков ещё нет
+
+issues:
+  weekly:
+    enabled: true
+    title: "AI Weekly"
+    day: sunday          # monday..sunday
+    time: "10:00"        # локальное время timezone
+    target_items: [12, 20]
+    min_items: 8
+  midweek:
+    enabled: false       # короткий выпуск «Главное за середину недели»
+    title: "Главное за середину недели"
+    day: wednesday
+    time: "18:00"
+    target_items: [6, 10]
+    min_items: 4
+
+# Если запуск сорвался (например, закончились лимиты подписки),
+# повторные слоты через N часов продолжают выпуск (--resume). Не больше 2.
+retry_after_hours: [6, 12]
+
+# Сколько часов после слота запуск ещё считается «этим слотом».
+slot_grace_hours: 14
+
+# Максимальная доля отклонённых фактчекером новостей, после которой выпуск
+# останавливается (признак сломанного сбора).
+max_rejected_ratio: 0.4
+
+# Сколько недель хранить историю опубликованных новостей для дедупликации.
+history_weeks: 8

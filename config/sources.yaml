@@ -1,0 +1,60 @@
+# Источники для детерминированного сбора (scripts/fetch_feeds.py).
+# Типы: rss (RSS 2.0 и Atom), arxiv, hn, github, hf_papers, hf_models.
+# group: companies | research | media — какой сборщик использует источник.
+# source_type: official | media | research | aggregator
+# Источник, который не ответил после 3 попыток, пропускается и попадает в отчёт.
+
+defaults:
+  timeout_sec: 20
+  retries: 3
+  retry_pause_sec: 5
+  max_items_per_source: 40
+
+feeds:
+  # --- официальные блоги компаний ---
+  - {name: openai.com/news, type: rss, url: "https://openai.com/news/rss.xml", group: companies, source_type: official, company: OpenAI}
+  - {name: blog.google/ai, type: rss, url: "https://blog.google/technology/ai/rss/", group: companies, source_type: official, company: Google}
+  - {name: deepmind.google/blog, type: rss, url: "https://deepmind.google/blog/rss.xml", group: companies, source_type: official, company: Google}
+  - {name: research.google/blog, type: rss, url: "https://research.google/blog/rss/", group: research, source_type: research, company: Google}
+  - {name: blogs.microsoft.com/ai, type: rss, url: "https://news.microsoft.com/source/topics/ai/feed/", group: companies, source_type: official, company: Microsoft}
+  - {name: blogs.nvidia.com, type: rss, url: "https://blogs.nvidia.com/feed/", group: companies, source_type: official, company: NVIDIA}
+  - {name: aws.amazon.com/ml-blog, type: rss, url: "https://aws.amazon.com/blogs/machine-learning/feed/", group: companies, source_type: official, company: Amazon}
+  - {name: machinelearning.apple.com, type: rss, url: "https://machinelearning.apple.com/rss.xml", group: research, source_type: research, company: Apple}
+  - {name: huggingface.co/blog, type: rss, url: "https://huggingface.co/blog/feed.xml", group: research, source_type: official, company: Hugging Face}
+
+  # --- СМИ и агрегаторы (только для обнаружения; в дайджест — первоисточник) ---
+  - {name: theverge.com/ai, type: rss, url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", group: media, source_type: media}
+  - {name: techcrunch.com/ai, type: rss, url: "https://techcrunch.com/category/artificial-intelligence/feed/", group: media, source_type: media}
+  - {name: arstechnica.com/ai, type: rss, url: "https://arstechnica.com/ai/feed/", group: media, source_type: media}
+  # keywords — регулярное выражение по заголовку (без учёта регистра)
+  - {name: news.ycombinator.com, type: hn, url: "https://hn.algolia.com/api/v1/search_by_date", group: media, source_type: aggregator,
+     params: {keywords: "\\b(AI|LLMs?|GPT|OpenAI|Anthropic|Claude|Gemini|DeepMind|Llama|Mistral|DeepSeek|Qwen|Copilot|Grok|NVIDIA|agents?|models?|inference|transformer)\\b", min_points: 150}}
+
+  # --- исследования и open-source ---
+  - {name: arxiv.org, type: arxiv, url: "https://export.arxiv.org/api/query", group: research, source_type: research,
+     params: {categories: [cs.AI, cs.CL, cs.LG, cs.CV], max_results: 30}}
+  - {name: huggingface.co/papers, type: hf_papers, url: "https://huggingface.co/api/daily_papers", group: research, source_type: research,
+     params: {min_upvotes: 20}}
+  - {name: huggingface.co/models, type: hf_models, url: "https://huggingface.co/api/models", group: research, source_type: research,
+     params: {limit: 25}}
+  - {name: github.com/trending, type: github, url: "https://api.github.com/search/repositories", group: research, source_type: research,
+     params: {topics: [llm, ai-agents, generative-ai, machine-learning], min_stars: 300}}
+
+# Проверка ссылок (scripts/check_links.py).
+link_check:
+  # Сайты, которые часто отдают скриптам 403/429 из-за антибот-защиты.
+  # Для них ответ 401/403/429 считается «unverifiable», а не ошибкой:
+  # QA пропускает ссылку, только если фактчекер открыл её сам (status != rejected).
+  bot_protected_domains:
+    - openai.com
+    - x.com
+    - twitter.com
+    - reuters.com
+    - theinformation.com
+    - bloomberg.com
+    - wsj.com
+    - ft.com
+    - medium.com
+    - perplexity.ai
+    - x.ai
+    - cursor.com

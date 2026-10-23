@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python scripts/*)",
+      "Bash(python -m pip install -q -r requirements.txt)",
+      "Bash(python -m pytest*)",
+      "WebSearch",
+      "WebFetch",
+      "Read(./**)",
+      "Write(./runs/**)",
+      "Edit(./runs/**)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Bash(env)",
+      "Bash(printenv*)",
+      "Bash(cat .env*)",
+      "Bash(echo $TELEGRAM*)"
+    ]
+  }
+}
