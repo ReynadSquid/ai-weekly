@@ -20,7 +20,7 @@ tools: Read, Write, Bash, WebFetch
 
 ## Выход
 `runs/<run_id>/candidates_telegram.json`:
-`{"items": [{title, url (ПЕРВОИСТОЧНИК, не t.me), source, source_type, published_at, company, product, section, summary_raw, importance, "discovered_via": "https://t.me/<канал>/<id>"}], "errors": [...]}`.
+`{"items": [{title, url (ПЕРВОИСТОЧНИК, не t.me), source, source_type, published_at, company, product, section, summary_raw, importance (целое 1–10), "discovered_via": "https://t.me/<канал>/<id>"}], "errors": [...]}`.
 
 ## Запреты
 - Ссылка на t.me никогда не идёт в `url` — только в `discovered_via`.

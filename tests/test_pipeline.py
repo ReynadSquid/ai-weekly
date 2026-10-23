@@ -140,6 +140,11 @@ def test_dedup_url_title_history_window():
     assert "https://techcrunch.com/x?utm_source=tw" in out[0]["also_seen_at"]
 
 
+def test_coerce_importance():
+    assert [pipeline.coerce_importance(v) for v in (7, "8", "high", "Medium", "low", 12, "n/a", None)] == \
+        [7, 8, 8, 5, 3, 10, None, None]
+
+
 def test_title_similarity_versions_differ():
     assert pipeline.title_similarity("OpenAI releases GPT-5", "OpenAI releases GPT-6") == 0
     assert pipeline.title_similarity("Gemini 3 is here", "Gemini 3 is here!") > 0.9

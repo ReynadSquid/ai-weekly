@@ -22,7 +22,7 @@ tools: Read, Write, Bash, WebFetch
 
 ## Выход
 `runs/<run_id>/candidates_research.json`:
-`{"items": [{title, url, source, source_type: "research", published_at, company (лаборатория/автор), product, section: "F", summary_raw, importance}], "errors": [...]}`.
+`{"items": [{title, url, source, source_type: "research", published_at, company (лаборатория/автор), product, section: "F", summary_raw, importance (целое число 1–10)}], "errors": [...]}`.
 `url` — arXiv abs / страница модели / репозиторий, не агрегатор.
 
 ## Запреты

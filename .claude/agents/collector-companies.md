@@ -36,7 +36,7 @@ tools: Read, Write, Bash, WebSearch, WebFetch
   "published_at": "2026-10-21T14:00:00Z",
   "company": "OpenAI", "product": "Codex", "section": "A",
   "summary_raw": "2–3 предложения своими словами по-русски, только факты со страницы",
-  "importance": 1-10
+  "importance": 7  ← целое число 1–10, не слово
 }],
  "errors": [{"source": "x.ai/news", "error": "403 после 3 попыток"}]}
 ```

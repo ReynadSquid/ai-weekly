@@ -23,7 +23,7 @@ tools: Read, Write, Bash, WebSearch, WebFetch
 
 ## Выход
 `runs/<run_id>/candidates_discovery.json` — тот же формат, что у collector-companies:
-`{"items": [{title, url, source, source_type, published_at, company, product, section: "E", summary_raw, importance}], "errors": [...]}`.
+`{"items": [{title, url, source, source_type, published_at, company, product, section: "E", summary_raw, importance (целое число 1–10)}], "errors": [...]}`.
 Для исследований/open-source ставь `section: "F"`.
 
 ## Запреты

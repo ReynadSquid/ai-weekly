@@ -263,8 +263,27 @@ def load_candidate_files(rd: Path) -> tuple[list[dict], list[dict]]:
         for r in rows or []:
             if isinstance(r, dict) and r.get("url") and r.get("title"):
                 r.setdefault("found_by", f.stem.replace("candidates_", ""))
+                r["importance"] = coerce_importance(r.get("importance"))
                 items.append(r)
     return items, errors
+
+
+_IMPORTANCE_WORDS = {"critical": 9, "high": 8, "medium": 5, "mid": 5, "low": 3}
+
+
+def coerce_importance(value) -> int | None:
+    """Агенты иногда пишут importance словом или строкой — приводим к целому 1..10."""
+    if isinstance(value, bool) or value is None:
+        return None
+    if isinstance(value, (int, float)):
+        return max(1, min(10, round(value)))
+    text = str(value).strip().lower()
+    if text in _IMPORTANCE_WORDS:
+        return _IMPORTANCE_WORDS[text]
+    try:
+        return max(1, min(10, round(float(text))))
+    except ValueError:
+        return None
 
 
 def history_items() -> list[dict]:
