@@ -203,6 +203,9 @@ def next_step(progress: dict) -> str | None:
 
 def cmd_step(args) -> int:
     rd = run_dir(args.run_id)
+    if args.step == "report" and not args.error and not (rd / "report.txt").exists():
+        # Отчёт админу обязателен: если оркестратор пропустил `report --send`, делаем его здесь.
+        cmd_report(argparse.Namespace(run_id=args.run_id, send=True, event=None))
     progress = read_json(rd / "progress.json", {"done": [], "errors": []})
     if args.error:
         progress.setdefault("errors", []).append({"step": args.step, "error": mask(args.error),
@@ -259,7 +262,8 @@ def load_candidate_files(rd: Path) -> tuple[list[dict], list[dict]]:
             continue
         rows = data.get("items", data) if isinstance(data, dict) else data
         if isinstance(data, dict):
-            errors += data.get("errors", [])
+            errors += [e if isinstance(e, dict) else {"source": str(e)[:120], "error": str(e)}
+                       for e in data.get("errors", [])]
         for r in rows or []:
             if isinstance(r, dict) and r.get("url") and r.get("title"):
                 r.setdefault("found_by", f.stem.replace("candidates_", ""))
@@ -538,7 +542,8 @@ def build_report(run_id: str, event: str | None = None) -> str:
     src_err = cand.get("source_errors", [])
     if src_err:
         lines.append(f"Недоступные источники ({len(src_err)}): " +
-                     "; ".join(e.get("source", "?") for e in src_err[:12]))
+                     "; ".join(str(e.get("source", "?") if isinstance(e, dict) else e)[:80]
+                               for e in src_err[:12]))
     for e in progress.get("errors", [])[-8:]:
         lines.append(f"Ошибка шага {e['step']}: {e['error'][:200]}")
     lines.append(f"Попыток запуска: {progress.get('attempts', 1)}. Лог: runs/{run_id}/run.log")

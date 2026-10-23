@@ -16,6 +16,8 @@ tools: Read, Write, Bash
 3. Прочитай `runs/<run_id>/posts.json`, `runs/<run_id>/editor_input.json`, `runs/<run_id>/factcheck.json`.
    Для КАЖДОЙ новости сверь текст с `checked_claims`:
    - каждое имя, число, цена, дата, версия, регион в тексте есть в checked_claims → иначе blocker «факт без подтверждения»;
+   - любое утверждение, которое противоречит checked_claims или преувеличивает их (в том числе в «Почему важно»
+     и в заголовке выпуска), — blocker, а не minor. Пример: «модель с открытыми весами», когда веса только обещаны;
    - нет ничего из `removed_claims` → иначе blocker;
    - ссылка «Источник» = `primary_source_url` → иначе blocker;
    - слухи только в разделе «Слухи» и с «По данным …» → иначе blocker;

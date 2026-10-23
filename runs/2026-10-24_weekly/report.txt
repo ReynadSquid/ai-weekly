@@ -1,0 +1,11 @@
+✅ Выпуск опубликован — AI Weekly #1 (2026-10-24_weekly, режим dry-run)
+Событие: отчёт отправлен повторно: в облачном запуске шаг отчёта упал
+Окно: 17–24 октября 2026
+Собрано: 333 → после дедупа 280
+Фактчек: проверено 20, годных 18, слухов 2, отклонено 0 (0%)
+В выпуске: 18 новостей + 2 слухов
+QA: pass, замечаний 3
+Telegram: published, сообщений 4, ссылка https://t.me/jgrgihselrw/3
+Недоступные источники (16): openai.com (отдельные страницы); x.ai/news; amd.com/en/newsroom.html; ai.meta.com/blog; qwenlm.github.io/blog; apple.com/newsroom; runway.com/news; web search; Веб-поиск по раундам/регуляции/Product Hunt дал мало свежих подтверждённых резул; Не открылись: theverge.com, arstechnica.com (fetch), sverigesradio.se (403); Кандидатов <10; заметных (high) — 1; крупные новости недели (OpenAI $30B, DeepSe; github.com/trending
+Ошибка шага merge: merge TypeError: importance типа str в candidates_*.json (int vs str)
+Попыток запуска: 1. Лог: runs/2026-10-24_weekly/run.log

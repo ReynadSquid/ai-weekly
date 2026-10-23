@@ -200,6 +200,14 @@ def test_report_masks_token(repo, capsys, monkeypatch):
     assert token not in (repo / "runs" / "2026-10-25_weekly" / "run.log").read_text(encoding="utf-8")
 
 
+def test_step_report_builds_report_if_skipped(repo, capsys, monkeypatch):
+    monkeypatch.setenv("AIW_NOW", "2026-10-25T03:05:00Z")
+    monkeypatch.delenv("TELEGRAM_ADMIN_CHAT_ID", raising=False)
+    run_init(capsys)
+    pipeline.main(["step", "2026-10-25_weekly", "report"])
+    assert (repo / "runs" / "2026-10-25_weekly" / "report.txt").exists()
+
+
 def test_cron_converts_to_utc(capsys):
     pipeline.main(["cron"])
     rows = json.loads(capsys.readouterr().out)
