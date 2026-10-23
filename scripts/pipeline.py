@@ -565,7 +565,9 @@ def cmd_checkpoint(args) -> int:
     if not git("remote", check=False).stdout.strip():
         out({"committed": True, "pushed": False, "reason": "нет remote"})
         return 0
-    branch = git("rev-parse", "--abbrev-ref", "HEAD").stdout.strip()
+    # Состояние всегда пушится в ветку по умолчанию (main): облачный запуск может стоять
+    # на рабочей ветке claude/*, а следующий запуск клонирует именно main.
+    branch = os.environ.get("AIW_STATE_BRANCH", "main")
     for attempt in range(3):
         push = git("push", "origin", f"HEAD:{branch}", check=False)
         if push.returncode == 0:
