@@ -1,0 +1,314 @@
+{
+ "items": [
+  {
+   "title": "OpenAI models are coming to Google Cloud",
+   "url": "https://openai.com/index/openai-models-google-cloud",
+   "source": "openai.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-21T12:00:00Z",
+   "company": "OpenAI",
+   "product": "GPT",
+   "section": "A",
+   "summary_raw": "Судя по заголовку, модели OpenAI станут доступны в Google Cloud. Страница вернула 403, подробности не проверены.",
+   "importance": 7
+  },
+  {
+   "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+   "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+   "source": "openai.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-21T13:00:00Z",
+   "company": "OpenAI",
+   "product": "ChatGPT",
+   "section": "A",
+   "summary_raw": "По заголовку, реклама в ChatGPT расширяется на 26 новых стран; платформой уже воспользовались более 100 000 рекламодателей. Страница недоступна (403), детали не проверены.",
+   "importance": 7
+  },
+  {
+   "title": "OpenAI acquires Orchestra Bio",
+   "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+   "source": "openai.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "OpenAI",
+   "product": null,
+   "section": "A",
+   "summary_raw": "OpenAI объявила о покупке Orchestra Bio (по заголовку). Страница вернула 403, условия сделки не проверены.",
+   "importance": 6
+  },
+  {
+   "title": "Build more responsive apps with the Decisions API",
+   "url": "https://openai.com/index/decisions-api",
+   "source": "openai.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-22T19:00:00Z",
+   "company": "OpenAI",
+   "product": "GPT",
+   "section": "A",
+   "summary_raw": "Материал о Decisions API для более отзывчивых приложений (по заголовку). Страница недоступна (403), детали не проверены.",
+   "importance": 5
+  },
+  {
+   "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+   "source": "openai.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-21T07:00:00Z",
+   "company": "OpenAI",
+   "product": null,
+   "section": "A",
+   "summary_raw": "Заметка о координации глобального реагирования, когда ИИ-агенты находят критические уязвимости (по заголовку). Страница недоступна (403).",
+   "importance": 5
+  },
+  {
+   "title": "Securing our frontier model training environment",
+   "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+   "source": "openai.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-23T10:00:00Z",
+   "company": "OpenAI",
+   "product": null,
+   "section": "A",
+   "summary_raw": "Пост о защите среды обучения фронтирных моделей (по заголовку). Страница недоступна (403).",
+   "importance": 4
+  },
+  {
+   "title": "Donating Agent Skills to the Agentic AI Foundation",
+   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Anthropic",
+   "product": "Claude",
+   "section": "A",
+   "summary_raw": "Anthropic передаёт открытый стандарт Agent Skills фонду Agentic AI Foundation при Linux Foundation. Стандарт уже приняли более 70 агентных платформ, включая ChatGPT, Cursor и VS Code. Anthropic обещает вендор-нейтральное управление с мейнтейнерами из разных компаний.",
+   "importance": 7
+  },
+  {
+   "title": "Investing in the public benefit",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-18T00:00:00Z",
+   "company": "Anthropic",
+   "product": null,
+   "section": "A",
+   "summary_raw": "Anthropic выделяет 5% акций (с оговоркой об одобрении акционеров) новому Anthropic Public Benefit Fund. Доля вырастет ещё на 2% по решению совета за каждые 50% роста стоимости компании выше базового уровня. С учётом обязательств основателей и сотрудников около 20% акций пойдёт на общественные цели.",
+   "importance": 7
+  },
+  {
+   "title": "Open call for guest investigators in the life sciences",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Anthropic",
+   "product": "Claude",
+   "section": "A",
+   "summary_raw": "Anthropic открыла набор исследовательских групп из науки, некоммерческих организаций и гослабораторий в программу гостевых исследователей в life sciences. Команды проведут 8–12 недель с исследователями Anthropic, расходы на модели покрывает компания, результаты публикуются с открытыми данными и кодом. Приём заявок около 14 дней.",
+   "importance": 5
+  },
+  {
+   "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "Anthropic",
+   "product": null,
+   "section": "A",
+   "summary_raw": "Физик Кристофер Стаббс входит в Long-Term Benefit Trust Anthropic (по заголовку на странице новостей).",
+   "importance": 3
+  },
+  {
+   "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+   "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-21T10:45:17Z",
+   "company": "NVIDIA",
+   "product": "GPU",
+   "section": "C",
+   "summary_raw": "Инстансы A5X на системах NVIDIA Vera Rubin NVL72 в Google Cloud выйдут в общий доступ в следующем месяце, затем расширятся на Европу. Первым клиентом стала Ineffable Intelligence Дэвида Сильвера. Google Cloud планирует масштабироваться до 960 000 GPU Rubin на нескольких площадках.",
+   "importance": 8
+  },
+  {
+   "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+   "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-22T15:00:02Z",
+   "company": "NVIDIA",
+   "product": "GPU",
+   "section": "C",
+   "summary_raw": "NVIDIA представила Minerva, AIOps-платформу, объединяющую телеметрию инфраструктуры и ИИ-нагрузок для поиска первопричин сбоев. Внутри есть помощник на естественном языке. Уже используется в IREN; внедрить планируют Bitdeer AI, IBM, Lambda и Tesla, а Dell, Lenovo и Supermicro будут её поставлять.",
+   "importance": 6
+  },
+  {
+   "title": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
+   "url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-22T05:00:27Z",
+   "company": "NVIDIA",
+   "product": "NIM",
+   "section": "C",
+   "summary_raw": "На GTC Berlin NVIDIA расширила Cosmos: новые инструменты обучения, чекпойнты для симуляции и пять blueprints Cosmos Data Factory для данных физического ИИ. Добавлены варианты Cosmos 3 Nano и обновлённые NIM, до 2x быстрее инференс в проверенных конфигурациях.",
+   "importance": 6
+  },
+  {
+   "title": "NVIDIA Confidential Computing Expands, Enabling Frontier Model Builders to Securely Scale",
+   "url": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-21T10:30:02Z",
+   "company": "NVIDIA",
+   "product": "GPU",
+   "section": "C",
+   "summary_raw": "NVIDIA анонсировала Confidential Bare Metal для запуска чувствительных нагрузок на чужой инфраструктуре. Confidential Computing теперь поддерживает Grace Blackwell NVL72 и Rubin; среди партнёров Cohere и Google Cloud.",
+   "importance": 5
+  },
+  {
+   "title": "NVIDIA Agent Toolkit Expands, Grounding Enterprise Agents in Company Data",
+   "url": "https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-21T10:10:01Z",
+   "company": "NVIDIA",
+   "product": "NIM",
+   "section": "C",
+   "summary_raw": "Открытый Agent Toolkit пополнился Agent Knowledge Foundation, открытыми моделями Kumo, рантаймом OpenShell и blueprints NemoClaw. Над ним уже работают Databricks, Snowflake и SAP.",
+   "importance": 5
+  },
+  {
+   "title": "Mistral Advances AI for Engineering with NVIDIA",
+   "url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+   "source": "mistral.ai/news",
+   "source_type": "official",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "Mistral",
+   "product": "Mistral",
+   "section": "B",
+   "summary_raw": "Mistral и NVIDIA партнёрятся для ИИ-рабочих процессов в инженерии на ускорителях NVIDIA.",
+   "importance": 5
+  },
+  {
+   "title": "Voxtral 3",
+   "url": "https://mistral.ai/news/voxtral-3/",
+   "source": "mistral.ai/news",
+   "source_type": "official",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Mistral",
+   "product": "Mistral",
+   "section": "B",
+   "summary_raw": "Семейство Voxtral 3: распознавание речи (50+ языков), синтез (35+ языков) и SDK голосовых агентов. Цены от $0,0035 за минуту транскрипции; доступно через API в ЕС или для самостоятельного развёртывания. Дата на странице не указана, дата с новостной ленты.",
+   "importance": 7
+  },
+  {
+   "title": "DeepSeek-V4.1-Flash-1017: Wish-Driven Programming Made Real",
+   "url": "https://api-docs.deepseek.com/news/news261017",
+   "source": "api-docs.deepseek.com",
+   "source_type": "official",
+   "published_at": "2026-10-17T00:00:00Z",
+   "company": "DeepSeek",
+   "product": "DeepSeek",
+   "section": "B",
+   "summary_raw": "DeepSeek выпустила V4.1-Flash-1017, улучшение по качеству и стоимости относительно предыдущей версии: быстрее и с более короткими ответами. API Search & Fetch открыт всем по $0,75 за 1000 вызовов, веса на Hugging Face и ModelScope.",
+   "importance": 8
+  },
+  {
+   "title": "Perplexity Computer now runs fully local on Mac",
+   "url": "https://perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac",
+   "source": "perplexity.ai/hub/blog",
+   "source_type": "official",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Perplexity",
+   "product": "Perplexity",
+   "section": "B",
+   "summary_raw": "Агент Computer теперь работает полностью локально на Mac с Apple silicon: модель и выполнение задач на устройстве. Работает с локальными файлами и приложениями; доступно подписчикам Pro, Max и Enterprise, есть гибридный режим.",
+   "importance": 7
+  },
+  {
+   "title": "Perplexity brings Computer to enterprise infrastructure with Valarian",
+   "url": "https://perplexity.ai/hub/blog/perplexity-brings-computer-to-enterprise-infrastructure-with-valarian",
+   "source": "perplexity.ai/hub/blog",
+   "source_type": "official",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Perplexity",
+   "product": "Perplexity",
+   "section": "B",
+   "summary_raw": "Perplexity выводит Computer на корпоративную инфраструктуру вместе с Valarian, с контролем для чувствительных и регулируемых данных (по описанию в блоге).",
+   "importance": 5
+  },
+  {
+   "title": "Cloud Agent Canvases and Environment Improvements",
+   "url": "https://cursor.com/changelog/cloud-agent-canvases-and-environments",
+   "source": "cursor.com/changelog",
+   "source_type": "official",
+   "published_at": "2026-10-16T00:00:00Z",
+   "company": "Cursor",
+   "product": "Cursor",
+   "section": "D",
+   "summary_raw": "Облачные агенты Cursor научились строить интерактивные canvases, которыми можно делиться по ссылке. Environments API в бете, среды поддерживают до 300 репозиториев, большие среды грузятся в 5 раз быстрее. Дата 16 октября, граница окна 16.10 21:40 UTC, время неизвестно.",
+   "importance": 4
+  },
+  {
+   "title": "Amazon Polly delivers a major upgrade to its Generative engine",
+   "url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+   "source": "aws.amazon.com/blogs/machine-learning",
+   "source_type": "official",
+   "published_at": "2026-10-22T18:06:35Z",
+   "company": "Amazon",
+   "product": "Bedrock",
+   "section": "B",
+   "summary_raw": "Генеративный движок Amazon Polly обновлён: 14 новых голосов в 9 локалях, первые GA-голоса на хинди и финском. Обновление без смены кода и цены; всего 57 генеративных голосов.",
+   "importance": 4
+  },
+  {
+   "title": "Announcing new ways to customize models with SageMaker AI, without managing GPUs",
+   "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+   "source": "aws.amazon.com/blogs/machine-learning",
+   "source_type": "official",
+   "published_at": "2026-10-22T18:00:04Z",
+   "company": "Amazon",
+   "product": "Bedrock",
+   "section": "B",
+   "summary_raw": "SageMaker AI training sessions вышли в GA: свои циклы пост-обучения с кастомными функциями потерь и наградами без управления GPU. Поддерживаются gpt-oss-20b, gemma-4-31B-it, Qwen3.6-27B и Qwen3.8-27B; оплата за обработанные токены.",
+   "importance": 5
+  }
+ ],
+ "errors": [
+  {
+   "source": "openai.com (отдельные страницы)",
+   "error": "403 Forbidden, summary_raw по заголовкам из RSS"
+  },
+  {
+   "source": "x.ai/news",
+   "error": "403 Forbidden"
+  },
+  {
+   "source": "amd.com/en/newsroom.html",
+   "error": "503"
+  },
+  {
+   "source": "ai.meta.com/blog",
+   "error": "нет постов новее 27.07.2026"
+  },
+  {
+   "source": "qwenlm.github.io/blog",
+   "error": "кэш устарел, блог переехал на qwen.ai/research, не проверен"
+  },
+  {
+   "source": "apple.com/newsroom",
+   "error": "список статей не получен"
+  },
+  {
+   "source": "runway.com/news",
+   "error": "список постов не получен"
+  },
+  {
+   "source": "web search",
+   "error": "поиск по Anthropic/Google/Meta/xAI дал только низкокачественные вторичные источники; Gemini 4 Argon датирован 13.10, вне окна"
+  }
+ ]
+}

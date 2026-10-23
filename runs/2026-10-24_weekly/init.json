@@ -1,0 +1,20 @@
+{
+  "run_id": "2026-10-24_weekly",
+  "kind": "weekly",
+  "mode": "dry-run",
+  "title": "AI Weekly",
+  "issue_number": 1,
+  "slot_local": null,
+  "started_at": "2026-10-23T21:40:45Z",
+  "window": {
+    "since": "2026-10-16T21:40:45Z",
+    "until": "2026-10-23T21:40:45Z"
+  },
+  "date_range": "17–24 октября 2026",
+  "target_items": [
+    12,
+    20
+  ],
+  "min_items": 8,
+  "max_rejected_ratio": 0.4
+}

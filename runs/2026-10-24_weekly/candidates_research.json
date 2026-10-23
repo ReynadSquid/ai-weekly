@@ -1,0 +1,146 @@
+{
+ "items": [
+  {
+   "title": "DeepSeek-V4.1-Flash-1017",
+   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+   "source": "huggingface.co/models",
+   "source_type": "research",
+   "published_at": "2026-10-17T02:40:38Z",
+   "company": "DeepSeek",
+   "product": "DeepSeek-V4.1-Flash",
+   "section": "F",
+   "summary_raw": "Небольшое обновление открытой модели DeepSeek-V4.1-Flash: по карточке 763B параметров, контекст 1M токенов, мультимодальный вход (текст+изображение), лицензия MIT. По данным самой DeepSeek: HLE без инструментов 42.6, Terminal-Bench 4.0 — 42.3 (у прежней Flash 31.2), DeepSWE v1.1 — 77.0; в той же таблице Opus 5 по ряду тестов выше. Независимо цифры не проверены. Дата выхода на странице не указана, взята из метаданных HF.",
+   "importance": 5
+  },
+  {
+   "title": "Recursive Flint — открытая MoE-модель для кодинг-агентов",
+   "url": "https://huggingface.co/RecursiveSI/flint",
+   "source": "huggingface.co/models",
+   "source_type": "research",
+   "published_at": "2026-10-21T14:20:58Z",
+   "company": "Recursive Superintelligence",
+   "product": "Flint",
+   "section": "F",
+   "summary_raw": "MoE-модель для агентной разработки (разбор кодовой базы, багфиксы, тесты, многошаговые вызовы инструментов): 39.8B параметров всего, около 2.5B активных, лицензия Apache 2.0. По заявлению разработчиков: Terminal-Bench 2.1 — 54.9%, SWE-bench Pro v2 — 89.7%, SWE-bench Verified — 74.2%. Независимых проверок нет; рядом в тренде GGUF-сборка от unsloth.",
+   "importance": 4
+  },
+  {
+   "title": "IBM Granite Speech 5.0",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-21T14:58:15Z",
+   "company": "IBM",
+   "product": "Granite Speech 5.0",
+   "section": "F",
+   "summary_raw": "IBM выпустила новую речевую модель granite-speech-5.0-2b (2B, распознавание на 6 языках и перевод) и обновила 470M-модель Turbo CTC и 4.1-2b-plus. По данным IBM: средний WER на английском 5.06% (2-е место среди открытых ASR на Open ASR Leaderboard), Turbo CTC ускорена примерно в 1.6 раза. Лицензия Apache 2.0.",
+   "importance": 4
+  },
+  {
+   "title": "Matrix-Game 4.0: видеомодели для играбельных миров в реальном времени",
+   "url": "https://arxiv.org/abs/2610.27999",
+   "source": "huggingface.co/papers",
+   "source_type": "research",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "авторы: Jihai Zhang и др. (18 авторов)",
+   "product": "Matrix-Game 4.0",
+   "section": "F",
+   "summary_raw": "Авторы разделяют игровую логику и графику: лёгкий движок и кодящий агент задают состояние мира, а авторегрессионная видеомодель дорисовывает детальную картинку. Заявлено 480p при 60 FPS на одной RTX 5090, задержка 112 мс; 83 FPS в одношаговом режиме. Демо — шутер и вождение. Около 194 апвоутов на HF Papers.",
+   "importance": 4
+  },
+  {
+   "title": "MemT-1.0: память как часть вычислений модели",
+   "url": "https://arxiv.org/abs/2610.26825",
+   "source": "huggingface.co/papers",
+   "source_type": "research",
+   "published_at": "2026-10-19T00:00:00Z",
+   "company": "авторы: Zhiyu Li и др. (74 автора)",
+   "product": "MemT-1.0",
+   "section": "F",
+   "summary_raw": "Модель, которая встраивает память в сами вычисления (Gated DeltaNet-2 и Mixture-of-Storage), две версии: Nano и Flash. По заявлению авторов, на истории 128K токенов Nano даёт ускорение вывода около 1.86x и в 66 раз меньше постоянной памяти относительно полного KV-кэша.",
+   "importance": 3
+  },
+  {
+   "title": "NVIDIA Kumo Relational: фундаментальная модель для реляционных баз",
+   "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-21T18:26:30Z",
+   "company": "NVIDIA",
+   "product": "Kumo Relational",
+   "section": "F",
+   "summary_raw": "Предобученная на синтетических данных модель делает прогнозы по реляционным БД через in-context learning, без обучения под задачу. NVIDIA заявляет превосходство над supervised-моделями на 41 задаче из 15 баз и +8% MRR к AutoGluon на SAP SALT; масштаб до 500B+ строк через открытый kumo-engine.",
+   "importance": 3
+  },
+  {
+   "title": "Hugging Face + TorchTPU: нативный запуск на TPU",
+   "url": "https://huggingface.co/blog/hf-torchtpu",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Hugging Face / Google",
+   "product": "TorchTPU",
+   "section": "F",
+   "summary_raw": "Transformers, Diffusers и Kernels теперь работают на TPU как на обычном устройстве PyTorch (device_map=\"tpu\"), Optimum TPU не нужен. По данным HF: Qwen-Image-2.1 на TPU v6e-4 — 3.5 с в compiled против 8.0 с в eager; 96.5% тестов, применимых к TPU, проходят.",
+   "importance": 3
+  },
+  {
+   "title": "AnyLanguageModel 1.0 для Apple-платформ",
+   "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Hugging Face",
+   "product": "AnyLanguageModel",
+   "section": "F",
+   "summary_raw": "Swift-библиотека, заменяющая Apple Foundation Models сменой импорта: локальные модели через llama.cpp, MLX, Core ML и облачные провайдеры (OpenAI, Anthropic, Gemini, Ollama). Единые tool calling и guided generation. Вышли также swift-huggingface 1.0 и swift-xet 1.0 с ускоренной загрузкой моделей.",
+   "importance": 3
+  },
+  {
+   "title": "BrainLoRA: PEFT для моделирования активности мозга",
+   "url": "https://arxiv.org/abs/2610.26802",
+   "source": "huggingface.co/papers",
+   "source_type": "research",
+   "published_at": "2026-10-19T00:00:00Z",
+   "company": "авторы: Zhuofan Josh Ying и др.",
+   "product": "BrainLoRA",
+   "section": "F",
+   "summary_raw": "Метод LoRA-адаптации крупных мультимодальных моделей для предсказания нейроответов. Авторы заявляют адаптацию бэкбона до 104B параметров и лучший опубликованный результат на Algonauts 2025 с Qwen3-Omni. Самая популярная работа окна на HF Papers (около 245 апвоутов).",
+   "importance": 3
+  },
+  {
+   "title": "PAR: Progress-Aligned Recurrence для зацикленных LLM",
+   "url": "https://arxiv.org/abs/2610.27628",
+   "source": "huggingface.co/papers",
+   "source_type": "research",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "авторы: Pan Wang и др.",
+   "product": "PAR",
+   "section": "F",
+   "summary_raw": "Метод обучения зацикленных языковых моделей отслеживанию состояния. По заявлению авторов, на swap-S5 с Qwen2.5-0.5B модель, обученная на ≤32 ходах, достигает 95.5% точности на 512 ходах (у явного CoT 0.8%).",
+   "importance": 2
+  },
+  {
+   "title": "Google: базовые модели для скрининга туберкулёза",
+   "url": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
+   "source": "research.google/blog",
+   "source_type": "research",
+   "published_at": "2026-10-23T18:51:33Z",
+   "company": "Google Research",
+   "product": "MedGemma / MedSigLIP",
+   "section": "F",
+   "summary_raw": "Google рассказывает о ИИ-скрининге ТБ по рентгену грудной клетки: партнёр Nexus AI получил сертификацию CE MDR Class IIb, инструмент работает примерно в 40 учреждениях шести стран (данные Google). Открыты эмбеддинги рентгена и MedSigLIP, выпущена MedGemma (4B и 27B).",
+   "importance": 2
+  }
+ ],
+ "errors": [
+  {
+   "source": "github.com/trending",
+   "error": "HTTP 403"
+  },
+  {
+   "source": "MiniMaxAI/MiniMax-M3.1-Flash",
+   "error": "исключено: дата релиза на странице не подтверждена, карточка ссылается на работу от июня"
+  }
+ ]
+}
