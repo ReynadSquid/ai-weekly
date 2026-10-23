@@ -5,3 +5,12 @@
 2026-10-23T21:40:56Z | collect    | fetch_feeds[telegram]: 45 кандидатов, ошибок источников: 0
 2026-10-23T21:40:59Z | collect    | fetch_feeds[companies]: 61 кандидатов, ошибок источников: 0
 2026-10-23T21:42:38Z | collect    | шаг выполнен. 4 сборщика → companies 23, discovery 9, research 11, telegram 7
+2026-10-23T21:42:42Z | merge      | шаг выполнен. candidates_*.json → candidates.json
+2026-10-23T21:42:47Z | merge      | ОШИБКА: merge TypeError: importance типа str в candidates_*.json (int vs str)
+2026-10-23T21:43:08Z | merge      | вход 333 → выход 280 (дубли url 51, дубли заголовков 1, история 0, вне окна 1); ошибок источников 16
+2026-10-23T21:43:09Z | merge      | шаг выполнен. candidates_*.json → candidates.json (после исправления importance)
+2026-10-23T21:44:11Z | rank       | шаг выполнен. candidates.json → shortlist.json (20 + 10 резерв)
+2026-10-23T21:47:24Z | gate       | решение=pass годных=18 слухов=2 отклонено=0 (0%) 
+2026-10-23T21:47:26Z | gate       | решение=pass годных=18 слухов=2 отклонено=0 (0%) 
+2026-10-23T21:47:28Z | factcheck  | шаг выполнен. 20 новостей → verified 15, partially 3, rumor 2
+2026-10-23T21:47:28Z | gate       | шаг выполнен. decision=pass

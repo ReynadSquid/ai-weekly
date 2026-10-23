@@ -1,8 +1,18 @@
 {
   "done": [
     "init",
-    "collect"
+    "collect",
+    "merge",
+    "rank",
+    "factcheck",
+    "gate"
   ],
   "attempts": 1,
-  "errors": []
+  "errors": [
+    {
+      "step": "merge",
+      "error": "merge TypeError: importance типа str в candidates_*.json (int vs str)",
+      "at": "2026-10-23T21:42:47Z"
+    }
+  ]
 }

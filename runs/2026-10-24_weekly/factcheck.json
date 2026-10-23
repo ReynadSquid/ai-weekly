@@ -1,0 +1,663 @@
+{
+ "items": [
+  {
+   "id": "292e35e33e7becf5e0952acfd4b807aee40995a9",
+   "status": "verified",
+   "primary_source_url": "https://claude.com/resources/articles/claude-duet",
+   "confirming_urls": [
+    "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+   ],
+   "event_date": "2026-10-21",
+   "checked_claims": [
+    {
+     "claim": "Claude Duet - research preview проактивного агента, построен на Claude Opus 5.5",
+     "source": "https://claude.com/resources/articles/claude-duet",
+     "quote_hint": "Built on Claude Opus 5.5"
+    },
+    {
+     "claim": "Доступ по листу ожидания, сначала для подписчиков Pro и Max в США; iOS, Android и claude.ai",
+     "source": "https://claude.com/resources/articles/claude-duet",
+     "quote_hint": "waitlist, starting with US Pro and Max subscribers"
+    },
+    {
+     "claim": "Работает в фоне на собственной виртуальной машине; просит одобрение перед отправкой сообщений, платежами, подписью, удалением",
+     "source": "https://claude.com/resources/articles/claude-duet",
+     "quote_hint": "asks for your approval before sending messages, payments"
+    },
+    {
+     "claim": "Более 6000 коннекторов и плагинов",
+     "source": "https://claude.com/resources/articles/claude-duet",
+     "quote_hint": "over 6,000 connectors and plugins"
+    }
+   ],
+   "removed_claims": [
+    "Регион США указан только на странице Anthropic; TechCrunch регионы не называет",
+    "Слово «dots» из заголовка Telegram-поста не использовать - на странице продукт называется Claude Duet"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Официальная страница Anthropic + TechCrunch. Анонс 21 октября (Anthropic), TechCrunch 22 октября."
+  },
+  {
+   "id": "61f4d0141ff303c02405716db977e4c6353bca59",
+   "status": "partially",
+   "primary_source_url": "https://openai.com/index/openai-models-google-cloud",
+   "confirming_urls": [
+    "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/"
+   ],
+   "event_date": "2026-10-21",
+   "checked_claims": [
+    {
+     "claim": "OpenAI и Google договорились: модели OpenAI появятся в Google Cloud (Model Garden), покупка через Google Cloud Marketplace",
+     "source": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/",
+     "quote_hint": "OpenAI and Google have come to an arrangement"
+    },
+    {
+     "claim": "Ars: GPT 6 и 6.1 (Astra, Sol, Luna) - в приватном превью для отдельных корпоративных клиентов, широкий запуск через недели",
+     "source": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/",
+     "quote_hint": "rolling out now in private preview for select enterprise customers"
+    },
+    {
+     "claim": "GPT-модели появятся в Antigravity (какие именно - Google не уточнил)",
+     "source": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/",
+     "quote_hint": "Google has not specified"
+    }
+   ],
+   "removed_claims": [
+    "Цены, регионы, дата общего доступа - не подтверждены",
+    "Точный состав моделей в Antigravity - не подтверждён"
+   ],
+   "attribution": "по данным Ars Technica (страница OpenAI отдаёт 403)",
+   "notes": "Страница OpenAI недоступна (403, антибот); открыта только Ars Technica (через curl, WebFetch блокирует) и заголовок на HN. Второго авторитетного СМИ не открыл - поэтому partially. Формулировать осторожно."
+  },
+  {
+   "id": "78d78e2c249690d138bb99cc4e07e498864d6622",
+   "status": "verified",
+   "primary_source_url": "https://api-docs.deepseek.com/news/news261017",
+   "confirming_urls": [
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+   ],
+   "event_date": "2026-10-17",
+   "checked_claims": [
+    {
+     "claim": "DeepSeek-V4.1-Flash-1017: сильнее на бенчмарках, быстрее выполняет задачи, ответы короче предыдущей версии",
+     "source": "https://api-docs.deepseek.com/news/news261017",
+     "quote_hint": "Stronger benchmark performance, faster task completion, and shorter outputs"
+    },
+    {
+     "claim": "Search & Fetch API: $0.75 за 1000 вызовов на эндпоинт; вызовы через серверные инструменты бесплатны до 31 октября 2026 16:00 UTC",
+     "source": "https://api-docs.deepseek.com/news/news261017",
+     "quote_hint": "$0.75 per 1,000 calls"
+    },
+    {
+     "claim": "Веса на Hugging Face и ModelScope",
+     "source": "https://api-docs.deepseek.com/news/news261017",
+     "quote_hint": "Open weights locations"
+    }
+   ],
+   "removed_claims": [
+    "Формулировка «открыт всем» для Search & Fetch API не проверена по тексту страницы - не использовать"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Официальный changelog DeepSeek, ссылка на HF открыта через check_links (200). Содержимое HF-карточки сам не открывал."
+  },
+  {
+   "id": "3599c9715bbbe9051121fa1de35b5d0f615a6aac",
+   "status": "verified",
+   "primary_source_url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+   "confirming_urls": [],
+   "event_date": "2026-10-23",
+   "checked_claims": [
+    {
+     "claim": "Kimi K3.1 Pro: open-weight модель класса 3T, контекст 1M токенов",
+     "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+     "quote_hint": "3T-class; 1 million tokens"
+    },
+    {
+     "claim": "Доступна на Kimi.ai, в приложениях, Kimi Work, Kimi Code и API; вариант Highspeed в 2-3 раза быстрее",
+     "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+     "quote_hint": "Highspeed runs at 2-3x the speed"
+    },
+    {
+     "claim": "Полные веса обещаны до 4 ноября",
+     "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+     "quote_hint": "will be released by Nov 4"
+    },
+    {
+     "claim": "Terminal-Bench 4.0: 65.7% (по данным Kimi; harness Claude Code); Claude Opus 5.5 - 66.4%, GPT-6 Astra - 58.2%",
+     "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+     "quote_hint": "65.7%, just behind Claude Opus 5.5 (66.4%)"
+    },
+    {
+     "claim": "Доля галлюцинаций на claim-level на Kimi Hallu Bench Hard упала с 23.4% (K3) до 8.3% - стресс-тест, не типичная ошибка",
+     "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+     "quote_hint": "23.4% (K3) to 8.3%"
+    }
+   ],
+   "removed_claims": [
+    "Не писать «3T параметров» как точное число - страница говорит «3T-class»",
+    "Дата на странице не указана (по путям картинок 23 октября; пост в Telegram 23.10 17:48Z)",
+    "Включение в Kimi Enterprise по умолчанию выключено - если упоминать, так"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Официальный блог Moonshot. Независимых подтверждений бенчмарков нет - только с атрибуцией. Дата по косвенным признакам, но в окне."
+  },
+  {
+   "id": "db73069fa994e2557975af177d40aafb5c416c37",
+   "status": "verified",
+   "primary_source_url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+   "confirming_urls": [],
+   "event_date": "2026-10-21",
+   "checked_claims": [
+    {
+     "claim": "Инстансы A5X на NVIDIA Vera Rubin NVL72 в Google Cloud - общий доступ «в следующем месяце»",
+     "source": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+     "quote_hint": "coming next month"
+    },
+    {
+     "claim": "Затем расширение на Европу; первый клиент - Ineffable Intelligence Дэвида Сильвера",
+     "source": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+     "quote_hint": "Ineffable Intelligence first to access A5X"
+    },
+    {
+     "claim": "Google Cloud планирует масштабироваться до 960 000 GPU Rubin на нескольких площадках (план, не текущая мощность)",
+     "source": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+     "quote_hint": "as many as 960,000 Rubin GPUs"
+    }
+   ],
+   "removed_claims": [
+    "«Выйдут в общий доступ» - писать как «заявлено, что выйдут в следующем месяце» (т.е. в ноябре)"
+   ],
+   "attribution": "по данным NVIDIA",
+   "notes": "Первоисточник - блог NVIDIA (вендор-анонс совместно с Google Cloud). Второго источника не искал; для анонса вендора достаточно."
+  },
+  {
+   "id": "5be2e5c4a1978a809a5407b8e4474a6f4719c893",
+   "status": "verified",
+   "primary_source_url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+   "confirming_urls": [
+    "https://www.wiz.io/blog/php2shell-php-rce",
+    "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/"
+   ],
+   "event_date": "2026-10-21",
+   "checked_claims": [
+    {
+     "claim": "21 октября вышли PHP 8.5.12, 8.4.27, 8.3.36, 8.2.35",
+     "source": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+     "quote_hint": "PHP 8.5.12, 8.4.27, 8.3.36, and 8.2.35"
+    },
+    {
+     "claim": "CVE-2026-109618 (RCE через OOM-повреждение памяти) и CVE-2026-109619 (RCE через устаревшее глобальное состояние); CVSS 9.2",
+     "source": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+     "quote_hint": "actual score 9.2; earlier reports of 10.0 wrong"
+    },
+    {
+     "claim": "Calif сообщила RCE 11 августа; OpenAI независимо нашла тот же корень и позже, 18 сентября, дополнительные векторы; Wiz сообщил векторы 24 августа",
+     "source": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+     "quote_hint": "Calif ... August 11; OpenAI ... September 18; Wiz ... August 24"
+    },
+    {
+     "claim": "ИИ помогает валидировать отчёты, решения и патчи остаются за людьми",
+     "source": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+     "quote_hint": "people make every decision and work on every patch"
+    },
+    {
+     "claim": "NSA призвала срочно обновиться или отключить системы; Ars: уязвимости эксплуатировались в дикой природе",
+     "source": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/",
+     "quote_hint": "NSA on Wednesday warned all organizations using PHP"
+    }
+   ],
+   "removed_claims": [
+    "«CVSS 4.0» - версия шкалы не подтверждена, писать просто «9.2 по CVSS»",
+    "Оценка Wiz «70% сайтов» - заявление Wiz, атрибутировать",
+    "Страница OpenAI (403) не открыта - не ссылаться на её содержимое; роль OpenAI подтверждена PHP Foundation и Ars"
+   ],
+   "attribution": "по данным PHP Foundation",
+   "notes": "Официальный пост PHP Foundation + Wiz + Ars Technica. Reuters отдаёт 401, не использован."
+  },
+  {
+   "id": "cc012b1e3b750154d264a457e79317094fb5a0a7",
+   "status": "verified",
+   "primary_source_url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+   "confirming_urls": [],
+   "event_date": "2026-10-22",
+   "checked_claims": [
+    {
+     "claim": "Anthropic передаёт открытый стандарт Agent Skills (а также имя, логотип, GitHub-организацию и домен agentskills.io) фонду Agentic AI Foundation при Linux Foundation",
+     "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+     "quote_hint": "Agent Skills open standard ... AAIF"
+    },
+    {
+     "claim": "Более 70 агентных платформ интегрировали стандарт с публикации в декабре 2025; среди них ChatGPT, Cursor, GitHub Copilot, VS Code",
+     "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+     "quote_hint": "more than 70 agent platforms"
+    },
+    {
+     "claim": "Мейнтейнеры из Anthropic, Google, OpenAI и др.; ведущие - David Soria Parra и Mahesh Murag",
+     "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+     "quote_hint": "Lead Maintainers"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании (число платформ - заявление Anthropic)",
+   "notes": "Только официальный пост Anthropic, независимого подтверждения нет; цифра 70+ - со слов компании."
+  },
+  {
+   "id": "74fcf21eca7add4a8265b1181e42f31fbfb429bc",
+   "status": "verified",
+   "primary_source_url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+   "confirming_urls": [
+    "https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue",
+    "https://thenextweb.com/news/chatgpt-ads-89-countries-100000-advertisers"
+   ],
+   "event_date": "2026-10-21",
+   "checked_claims": [
+    {
+     "claim": "OpenAI расширяет рекламу в ChatGPT на 26 стран, всего 89",
+     "source": "https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue",
+     "quote_hint": "bringing the total to 89"
+    },
+    {
+     "claim": "Более 100 000 рекламодателей запускали кампании (по данным компании)",
+     "source": "https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue",
+     "quote_hint": "more than 100,000 advertisers"
+    },
+    {
+     "claim": "Реклама только на тарифах Free и Go; Plus, Pro, Enterprise без рекламы",
+     "source": "https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue",
+     "quote_hint": "Free and Go plans"
+    },
+    {
+     "claim": "Новые рынки: 14 стран Латинской Америки, Нигерия, ЮАР, Сербия, Украина, Камбоджа, Бангладеш, Пакистан",
+     "source": "https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue",
+     "quote_hint": "Argentina, Chile, Colombia and Peru"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным OpenAI",
+   "notes": "Страница OpenAI 403; подтверждено Reuters (через The Star) и The Next Web, оба ссылаются на заявление компании."
+  },
+  {
+   "id": "afe5d96a9d4684fb96de500346e2384550461c1d",
+   "status": "verified",
+   "primary_source_url": "https://mistral.ai/news/voxtral-3/",
+   "confirming_urls": [
+    "https://testingcatalog.com/mistral-launches-voxtral-3-with-a-voice-agent-sdk"
+   ],
+   "event_date": "2026-10-20",
+   "checked_claims": [
+    {
+     "claim": "Voxtral 3: Small Transcribe 3, Mini Transcribe 3, Mini Transcribe Realtime 3, Mini TTS 3 и SDK голосовых агентов на LiveKit",
+     "source": "https://mistral.ai/news/voxtral-3/",
+     "quote_hint": "Voice agent SDK built on LiveKit"
+    },
+    {
+     "claim": "Транскрибация 50+ языков; TTS 35+ языков",
+     "source": "https://mistral.ai/news/voxtral-3/",
+     "quote_hint": "50+ languages; 35+ languages"
+    },
+    {
+     "claim": "Цены: Mini Transcribe 3 - $0.0035/мин, Small - $0.0040/мин, Realtime - $0.008/мин; TTS - $13 за 1M символов",
+     "source": "https://mistral.ai/news/voxtral-3/",
+     "quote_hint": "$0.0035/min"
+    },
+    {
+     "claim": "API в ЕС (также US и глобальные эндпоинты) либо самостоятельное развёртывание",
+     "source": "https://mistral.ai/news/voxtral-3/",
+     "quote_hint": "EU-hosted API"
+    }
+   ],
+   "removed_claims": [
+    "Языки Realtime-модели: на странице 35+ и 40+ - не указывать",
+    "«Open-weight» (Cryptobriefing) не подтверждено - не писать",
+    "Дата 20 октября - со слов testingcatalog и по метке бенчмарков, на странице даты нет"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Официальная страница без даты; дата 20.10 из сторонних материалов, в окне в любом случае."
+  },
+  {
+   "id": "7336336e41a4b71d6e1d91e1099027c0a2e14077",
+   "status": "verified",
+   "primary_source_url": "https://perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac",
+   "confirming_urls": [],
+   "event_date": "2026-10-20",
+   "checked_claims": [
+    {
+     "claim": "Perplexity Computer может работать полностью локально на Mac с Apple silicon (модель, агентская обвязка и выполнение задач на устройстве)",
+     "source": "https://perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac",
+     "quote_hint": "fully local mode"
+    },
+    {
+     "claim": "Доступно подписчикам Pro, Max и Enterprise; рекомендуется 36 ГБ+ памяти",
+     "source": "https://perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac",
+     "quote_hint": "Pro, Max, and Enterprise"
+    },
+    {
+     "claim": "Есть гибридный режим (Hybrid Compute): облако + локальная работа с приватными файлами",
+     "source": "https://perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac",
+     "quote_hint": "Hybrid Compute"
+    },
+    {
+     "claim": "Локальные модели: Qwen 3.6 или PPLX Pro (дообученный Qwen)",
+     "source": "https://perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac",
+     "quote_hint": "Qwen 3.6 or PPLX Pro"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Только официальный блог Perplexity, без независимых подтверждений."
+  },
+  {
+   "id": "802ca1393823996c8361aad3a2a8861602ef6253",
+   "status": "verified",
+   "primary_source_url": "https://recursive.com/updates/introducing-recursive-flint",
+   "confirming_urls": [
+    "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+    "https://huggingface.co/RecursiveSI/flint"
+   ],
+   "event_date": "2026-10-21",
+   "checked_claims": [
+    {
+     "claim": "Flint - открытая (Apache 2.0) кодинг-модель, MoE ~40B всего, ~2.5B активных",
+     "source": "https://recursive.com/updates/introducing-recursive-flint",
+     "quote_hint": "40 billion total; 2.5 billion active"
+    },
+    {
+     "claim": "Скорость на MacBook Pro M4 Pro: свыше 125 токенов/с (по данным компании); TechCrunch называет ~131",
+     "source": "https://recursive.com/updates/introducing-recursive-flint",
+     "quote_hint": "more than 125 tokens per second"
+    },
+    {
+     "claim": "Создана небольшой командой за менее чем 4 месяца с помощью системы Eureka Machine",
+     "source": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+     "quote_hint": "under four months"
+    },
+    {
+     "claim": "Веса бесплатно на Hugging Face",
+     "source": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+     "quote_hint": "free to download on Hugging Face"
+    }
+   ],
+   "removed_claims": [
+    "Контекст: на странице Recursive до 512k, в карточке HF 262 144 токена - противоречие, не указывать",
+    "Бенчмарки: баллы в карточке HF (SWE-bench Verified 74.2%, Terminal-Bench 2.1 54.9%, SWE-bench Pro v2 89.7%) - собственные данные, значение Pro v2 выглядит странно, не использовать",
+    "Утверждения «лучшая среди MoE до 50B» - только как заявление компании"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Дата 21 октября (среда) по TechCrunch; на странице Recursive отметка 23 октября - расхождение, в окне в любом случае."
+  },
+  {
+   "id": "48e2274fdf2ba9fe48db533ddecc410e5cc41b05",
+   "status": "partially",
+   "primary_source_url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+   "confirming_urls": [
+    "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+   ],
+   "event_date": "2026-10-23",
+   "checked_claims": [
+    {
+     "claim": "OpenAI обучает фронтирные модели без доступа в интернет; построена офлайн-среда с индексированным и кэшированным веб-контентом",
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+     "quote_hint": "offline testing environment"
+    },
+    {
+     "claim": "1 октября OpenAI возобновила RL-обучение и внутренний инференс с усиленной защитой после паузы в сентябре",
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+     "quote_hint": "On October 1st, OpenAI resumed"
+    },
+    {
+     "claim": "В тесте агенты на разных ВМ обменялись «секретами» через тайминг кэша процессора; OpenAI добавила проверки в мониторинг",
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+     "quote_hint": "processor's cache"
+    }
+   ],
+   "removed_claims": [
+    "Причины паузы («взломы сторонних компаний и госструктур») - только пересказ The Verge, не проверено",
+    "Страница OpenAI 403"
+   ],
+   "attribution": "по данным The Verge, со ссылкой на блог OpenAI",
+   "notes": "Один авторитетный источник (The Verge, через curl), первоисточник недоступен."
+  },
+  {
+   "id": "66d5720ec836838d2d67b7f24d4c6f30004e00be",
+   "status": "verified",
+   "primary_source_url": "https://www.anthropic.com/news/public-benefit-fund",
+   "confirming_urls": [],
+   "event_date": "2026-10-18",
+   "checked_claims": [
+    {
+     "claim": "5% акций Anthropic выделяются Anthropic Public Benefit Fund при условии одобрения акционеров",
+     "source": "https://www.anthropic.com/news/public-benefit-fund",
+     "quote_hint": "Subject to stockholder approval, 5%"
+    },
+    {
+     "claim": "Ещё +2% по решению совета за каждые 50% роста стоимости компании выше базового уровня",
+     "source": "https://www.anthropic.com/news/public-benefit-fund",
+     "quote_hint": "additional 2% at the board's discretion"
+    },
+    {
+     "claim": "С учётом обещаний сооснователей (80% их капитала) и программы матчинга сотрудников около 20% акций пойдёт на общественные цели",
+     "source": "https://www.anthropic.com/news/public-benefit-fund",
+     "quote_hint": "roughly 20% of shares"
+    }
+   ],
+   "removed_claims": [
+    "Размер базового уровня стоимости не раскрыт"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Только официальный пост Anthropic."
+  },
+  {
+   "id": "2bef5e15539918e46a8023c91e28fa38331431f0",
+   "status": "rumor",
+   "primary_source_url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+   "confirming_urls": [],
+   "event_date": "2026-10-22",
+   "checked_claims": [
+    {
+     "claim": "Bloomberg сообщает о привлечении DeepSeek ~$15 млрд (около 100 млрд юаней); среди инвесторов называют CATL и Tencent",
+     "source": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+     "quote_hint": "Bloomberg reported the roughly $15 billion"
+    },
+    {
+     "claim": "Двумя днями ранее США обязали федеральные гражданские агентства убрать технологии DeepSeek",
+     "source": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+     "quote_hint": "two days before the raise"
+    }
+   ],
+   "removed_claims": [
+    "Оценка раунда не названа",
+    "Подтверждения от DeepSeek нет (компания не ответила)",
+    "Bloomberg-оригинал не открывал"
+   ],
+   "attribution": "по данным Bloomberg (со ссылкой на TechCrunch)",
+   "notes": "Слух: первоисточник - Bloomberg, мы видели только пересказ TechCrunch. Только в раздел «Слухи»."
+  },
+  {
+   "id": "6372ebaa66c806f54d26e33177513ab47bc13129",
+   "status": "rumor",
+   "primary_source_url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+   "confirming_urls": [],
+   "event_date": "2026-10-22",
+   "checked_claims": [
+    {
+     "claim": "CNBC со ссылкой на анонимные источники: OpenAI готовит раунд до $30 млрд при оценке $1,25 трлн pre-money; лид - Coatue и инвесторы из ОАЭ",
+     "source": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+     "quote_hint": "per the CNBC report"
+    },
+    {
+     "claim": "OpenAI отказалась от комментариев; условия могут измениться",
+     "source": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+     "quote_hint": "declined to comment"
+    }
+   ],
+   "removed_claims": [
+    "Ранний отчёт Bloomberg называл $1,4 трлн - цифры расходятся, не смешивать",
+    "Заявление об IPO: конфиденциальная заявка в июне - только пересказ TechCrunch"
+   ],
+   "attribution": "по данным CNBC (со ссылкой на TechCrunch)",
+   "notes": "Слух на анонимных источниках, подтверждения компании нет."
+  },
+  {
+   "id": "865ffb65f1d593f079bea5171bf4619d03fdfa05",
+   "status": "verified",
+   "primary_source_url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+   "confirming_urls": [
+    "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
+   ],
+   "event_date": "2026-10-22",
+   "checked_claims": [
+    {
+     "claim": "Canva Craft - первая собственная модель генерации изображений Canva; двухэтапная: сначала план композиции и текста, затем изображение",
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+     "quote_hint": "plan a design before generating"
+    },
+    {
+     "claim": "До 2K; TechCrunch: до 30 соотношений сторон, The Verge: более 30 - писать «около 30»",
+     "source": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+     "quote_hint": "Up to 2K"
+    },
+    {
+     "claim": "Обучена на шаблонах из библиотеки Canva",
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+     "quote_hint": "millions of human-made templates"
+    },
+    {
+     "claim": "Доступна всем во вкладке Dream Lab и через API; Craftfast и Craft-ultrafast «скоро» (TechCrunch)",
+     "source": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+     "quote_hint": "Dream Lab tab"
+    },
+    {
+     "claim": "Verge: 4-е место в Design Arena после GPT-Image-2.5 Sunburst, Flare и GPT-Image-2",
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+     "quote_hint": "ranked fourth on Design Arena"
+    }
+   ],
+   "removed_claims": [
+    "Официальная страница Canva не открыта; расхождение 30 vs «более 30» соотношений"
+   ],
+   "attribution": "по данным TechCrunch и The Verge",
+   "notes": "Два независимых авторитетных СМИ."
+  },
+  {
+   "id": "0bb5b0dd2b519ac6045629e1f5580abc97197108",
+   "status": "verified",
+   "primary_source_url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+   "confirming_urls": [
+    "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+   ],
+   "event_date": "2026-10-22",
+   "checked_claims": [
+    {
+     "claim": "Агент подтверждает личность ключом; пользователь одобряет вход на своём устройстве; 1Password сам подставляет данные, агент их не получает",
+     "source": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+     "quote_hint": "agent never receives it"
+    },
+    {
+     "claim": "Партнёры: Meta Muse, Claude Duet, ChatGPT Work, Grok Bot, Town, Browserbase, Browser Use, Perplexity, Ramp и др.",
+     "source": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+     "quote_hint": "Partners named"
+    }
+   ],
+   "removed_claims": [
+    "Сроки/цены/общий доступ не названы",
+    "Для Claude вход «скоро» - не писать, что работает уже сейчас"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Официальный пресс-релиз; TechCrunch в WebFetch не открывал (check_links - 200)."
+  },
+  {
+   "id": "d26ae9b2d9ce501ca5e5f8678040fb18be02e6db",
+   "status": "partially",
+   "primary_source_url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+   "confirming_urls": [],
+   "event_date": "2026-10-22",
+   "checked_claims": [
+    {
+     "claim": "Исследование про MAI-DxO (Microsoft AI) опубликовано в Science 22 октября; система из нескольких агентов имитирует консилиум",
+     "source": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+     "quote_hint": "published Thursday in Science"
+    },
+    {
+     "claim": "По данным TechCrunch: 83% верных диагнозов на сложных случаях NEJM против 36% у врачей общей практики; в симуляции, не в клинике",
+     "source": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+     "quote_hint": "83% ... 36%"
+    },
+    {
+     "claim": "Оговорка: заметная часть прироста - от базовых моделей, не от оркестрации",
+     "source": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+     "quote_hint": "Much of the improvement"
+    }
+   ],
+   "removed_claims": [
+    "Саму статью в Science не открывал, точные цифры - только через TechCrunch",
+    "MAI-DxO впервые анонсирован в 2025 - не подавать как новую систему",
+    "Должность «CEO Microsoft» у Сулеймана в пересказе TC выглядит ошибкой - не использовать"
+   ],
+   "attribution": "по данным TechCrunch",
+   "notes": "Один вторичный источник; первоисточник (Science, Microsoft AI) не проверен. Публиковать только с атрибуцией или не включать."
+  },
+  {
+   "id": "9b35c0bfb2f0e3cd6f0b40f1544c7158083b755d",
+   "status": "verified",
+   "primary_source_url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+   "confirming_urls": [],
+   "event_date": "2026-10-21",
+   "checked_claims": [
+    {
+     "claim": "granite-speech-5.0-2b (2B): распознавание на 6 языках (en, fr, de, es, pt, ja) и перевод",
+     "source": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+     "quote_hint": "granite-speech-5.0-2b"
+    },
+    {
+     "claim": "По данным IBM: средний WER на английском 5.06%, 2-е место среди открытых ASR на Open ASR Leaderboard (short-form)",
+     "source": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+     "quote_hint": "5.06%"
+    },
+    {
+     "claim": "Turbo CTC (470M): пропускная способность с ~12 600 до 19 870 RTFx, ~1.6x",
+     "source": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+     "quote_hint": "12,600 to 19,870 RTFx"
+    },
+    {
+     "claim": "Лицензия Apache 2.0",
+     "source": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+     "quote_hint": "Apache 2.0"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным IBM",
+   "notes": "Официальный блог IBM на HF; лидерборд сам не открывал."
+  },
+  {
+   "id": "566564edc50afe349bc8fdef71be09825228fc06",
+   "status": "verified",
+   "primary_source_url": "https://arxiv.org/abs/2610.27999",
+   "confirming_urls": [],
+   "event_date": "2026-10-20",
+   "checked_claims": [
+    {
+     "claim": "Matrix-Game 4.0: 480p при 60 FPS на одной RTX 5090, задержка нажатие-экран 112 мс (по данным авторов)",
+     "source": "https://arxiv.org/abs/2610.27999",
+     "quote_hint": "480p, 60 FPS on a single NVIDIA RTX5090"
+    },
+    {
+     "claim": "Одношаговый режим: 83 FPS, 18.2 GiB пика памяти; 67 FPS на RTX 5080, 58 FPS на RTX 5070 Ti",
+     "source": "https://arxiv.org/abs/2610.27999",
+     "quote_hint": "83 FPS steady-state"
+    },
+    {
+     "claim": "18 авторов (Jihai Zhang и др.)",
+     "source": "https://arxiv.org/abs/2610.27999",
+     "quote_hint": "Jihai Zhang and 17 other authors"
+    }
+   ],
+   "removed_claims": [
+    "«194 апвоута на HF Papers» - не проверено, не использовать",
+    "Демо (шутер, вождение) и схема «движок + видеомодель» - из аннотации не проверял полностью",
+    "Дата подачи на arXiv 20 октября (в шортлисте 19 октября)"
+   ],
+   "attribution": "по данным авторов (препринт, не рецензировано)",
+   "notes": "Препринт; независимой репликации нет."
+  }
+ ]
+}

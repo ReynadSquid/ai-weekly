@@ -1,138 +1,138 @@
 {
- "items": [
-  {
-   "title": "Recursive выпустила Flint — открытую кодинг-модель для ноутбуков",
-   "url": "https://recursive.com/updates/introducing-recursive-flint",
-   "source": "recursive.com",
-   "source_type": "official",
-   "published_at": "2026-10-21T00:00:00Z",
-   "company": "Recursive",
-   "product": "Flint",
-   "section": "F",
-   "summary_raw": "MoE 40B (около 2.5B активных), Apache 2.0, веса на Hugging Face, контекст до 512k; заявлено ~125+ ток/с на MacBook M4 Pro; создана небольшой командой с помощью собственной системы Eureka Machine менее чем за 4 месяца. Бенчмарки — данные компании.",
-   "importance": "high",
-   "also_seen_at": [
-    "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
-   ],
-   "note": "дата на странице 23.10, TechCrunch 21.10"
-  },
-  {
-   "title": "1Password for Agents: вход ИИ-агентов в аккаунты без доступа к паролям",
-   "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
-   "source": "1password.com",
-   "source_type": "official",
-   "published_at": "2026-10-22T00:00:00Z",
-   "company": "1Password",
-   "product": "1Password for Agents",
-   "section": "E",
-   "summary_raw": "Пользователь подтверждает запрос агента на своём устройстве, 1Password сам подставляет данные; партнёры — Claude Duet, ChatGPT Work, Meta Muse, Grok Bot, Town и др.",
-   "importance": "medium",
-   "also_seen_at": [
-    "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
-   ]
-  },
-  {
-   "title": "Canva представила первую собственную модель генерации изображений Canva Craft",
-   "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-   "source": "techcrunch.com",
-   "source_type": "media",
-   "published_at": "2026-10-22T00:00:00Z",
-   "company": "Canva",
-   "product": "Canva Craft",
-   "section": "E",
-   "summary_raw": "Двухэтапная модель: сначала планирует композицию и текст, затем рисует до 2K, 30 соотношений сторон; обучена на шаблонах Canva; доступна во вкладке Dream Lab и через API; версии Craftfast/ultrafast позже. Официальная страница Canva не найдена — первоисточник не подтверждён.",
-   "importance": "medium",
-   "also_seen_at": [
-    "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
-   ],
-   "primary_source_found": false
-  },
-  {
-   "title": "Nirva привлекла $33M на кулон, слушающий только владельца",
-   "url": "https://techcrunch.com/2026/10/22/nirva-raises-33m-for-a-pendant-that-only-listens-to-you/",
-   "source": "techcrunch.com",
-   "source_type": "media",
-   "published_at": "2026-10-22T00:00:00Z",
-   "company": "Nirva",
-   "product": "Nirva pendant",
-   "section": "E",
-   "summary_raw": "Раунд pre-Series A $25M плюс ранние $8M; Lightspeed и South Park Commons; кулон $249, заказы с ноября. Сайт компании: https://www.nirva.life/ (карточку раунда на нём не проверяли).",
-   "importance": "low",
-   "primary_source_found": false
-  },
-  {
-   "title": "Disney — первый претендент на активы обанкротившейся Character.AI",
-   "url": "https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/",
-   "source": "arstechnica.com",
-   "source_type": "media",
-   "published_at": "2026-10-19T00:00:00Z",
-   "company": "Disney / Character.AI",
-   "product": "Character.AI",
-   "section": "E",
-   "summary_raw": "По данным поиска: Disney — stalking-horse с офертой $20M на неисключительную лицензию на код и патенты, берёт на работу большинство сотрудников; сделка зависит от аукциона. Подробности не проверены на первоисточнике (суд/Variety).",
-   "importance": "medium",
-   "primary_source_found": false
-  },
-  {
-   "title": "Швеция: правительственные офисы запрещают ChatGPT и Claude",
-   "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
-   "source": "sverigesradio.se",
-   "source_type": "media",
-   "published_at": "2026-10-23T00:00:00Z",
-   "company": "Regeringskansliet (Швеция)",
-   "product": "ChatGPT, Claude",
-   "section": "E",
-   "summary_raw": "Заголовок Sveriges Radio сообщает о запрете; страница не открылась (403), поиском подтверждения не найдено. Не публиковать без проверки.",
-   "importance": "low",
-   "also_seen_at": [
-    "https://news.ycombinator.com/"
-   ],
-   "unverified": true
-  },
-  {
-   "title": "Block показала речевую ИИ-модель Dessa",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-   "source": "theverge.com",
-   "source_type": "media",
-   "published_at": "2026-10-23T00:00:00Z",
-   "company": "Block",
-   "product": "Dessa",
-   "section": "E",
-   "summary_raw": "Только заголовок The Verge; ни страница, ни первоисточник Block не открылись. Требует проверки.",
-   "importance": "low",
-   "unverified": true,
-   "primary_source_found": false
-  },
-  {
-   "title": "Spotify делает ставку на то, чтобы быть музыкальным сервисом, который выбирают агенты",
-   "url": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
-   "source": "techcrunch.com",
-   "source_type": "media",
-   "published_at": "2026-10-22T00:00:00Z",
-   "company": "Spotify",
-   "product": "Spotify AI",
-   "section": "E",
-   "summary_raw": "Только заголовок; статья не открывалась.",
-   "importance": "low",
-   "unverified": true
-  },
-  {
-   "title": "Walmart приветствует ИИ-агентов, а Amazon их блокирует",
-   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-   "source": "techcrunch.com",
-   "source_type": "media",
-   "published_at": "2026-10-21T00:00:00Z",
-   "company": "Walmart",
-   "product": "agentic commerce",
-   "section": "E",
-   "summary_raw": "Только заголовок; статья не открывалась.",
-   "importance": "low",
-   "unverified": true
-  }
- ],
- "errors": [
-  "Веб-поиск по раундам/регуляции/Product Hunt дал мало свежих подтверждённых результатов за окно",
-  "Не открылись: theverge.com, arstechnica.com (fetch), sverigesradio.se (403)",
-  "Кандидатов <10; заметных (high) — 1; крупные новости недели (OpenAI $30B, DeepSeek $15B, Claude Duet) относятся к watchlist"
- ]
+  "items": [
+    {
+      "title": "Recursive выпустила Flint — открытую кодинг-модель для ноутбуков",
+      "url": "https://recursive.com/updates/introducing-recursive-flint",
+      "source": "recursive.com",
+      "source_type": "official",
+      "published_at": "2026-10-21T00:00:00Z",
+      "company": "Recursive",
+      "product": "Flint",
+      "section": "F",
+      "summary_raw": "MoE 40B (около 2.5B активных), Apache 2.0, веса на Hugging Face, контекст до 512k; заявлено ~125+ ток/с на MacBook M4 Pro; создана небольшой командой с помощью собственной системы Eureka Machine менее чем за 4 месяца. Бенчмарки — данные компании.",
+      "importance": 8,
+      "also_seen_at": [
+        "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
+      ],
+      "note": "дата на странице 23.10, TechCrunch 21.10"
+    },
+    {
+      "title": "1Password for Agents: вход ИИ-агентов в аккаунты без доступа к паролям",
+      "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+      "source": "1password.com",
+      "source_type": "official",
+      "published_at": "2026-10-22T00:00:00Z",
+      "company": "1Password",
+      "product": "1Password for Agents",
+      "section": "E",
+      "summary_raw": "Пользователь подтверждает запрос агента на своём устройстве, 1Password сам подставляет данные; партнёры — Claude Duet, ChatGPT Work, Meta Muse, Grok Bot, Town и др.",
+      "importance": 5,
+      "also_seen_at": [
+        "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+      ]
+    },
+    {
+      "title": "Canva представила первую собственную модель генерации изображений Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "source": "techcrunch.com",
+      "source_type": "media",
+      "published_at": "2026-10-22T00:00:00Z",
+      "company": "Canva",
+      "product": "Canva Craft",
+      "section": "E",
+      "summary_raw": "Двухэтапная модель: сначала планирует композицию и текст, затем рисует до 2K, 30 соотношений сторон; обучена на шаблонах Canva; доступна во вкладке Dream Lab и через API; версии Craftfast/ultrafast позже. Официальная страница Canva не найдена — первоисточник не подтверждён.",
+      "importance": 5,
+      "also_seen_at": [
+        "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
+      ],
+      "primary_source_found": false
+    },
+    {
+      "title": "Nirva привлекла $33M на кулон, слушающий только владельца",
+      "url": "https://techcrunch.com/2026/10/22/nirva-raises-33m-for-a-pendant-that-only-listens-to-you/",
+      "source": "techcrunch.com",
+      "source_type": "media",
+      "published_at": "2026-10-22T00:00:00Z",
+      "company": "Nirva",
+      "product": "Nirva pendant",
+      "section": "E",
+      "summary_raw": "Раунд pre-Series A $25M плюс ранние $8M; Lightspeed и South Park Commons; кулон $249, заказы с ноября. Сайт компании: https://www.nirva.life/ (карточку раунда на нём не проверяли).",
+      "importance": 3,
+      "primary_source_found": false
+    },
+    {
+      "title": "Disney — первый претендент на активы обанкротившейся Character.AI",
+      "url": "https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/",
+      "source": "arstechnica.com",
+      "source_type": "media",
+      "published_at": "2026-10-19T00:00:00Z",
+      "company": "Disney / Character.AI",
+      "product": "Character.AI",
+      "section": "E",
+      "summary_raw": "По данным поиска: Disney — stalking-horse с офертой $20M на неисключительную лицензию на код и патенты, берёт на работу большинство сотрудников; сделка зависит от аукциона. Подробности не проверены на первоисточнике (суд/Variety).",
+      "importance": 5,
+      "primary_source_found": false
+    },
+    {
+      "title": "Швеция: правительственные офисы запрещают ChatGPT и Claude",
+      "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+      "source": "sverigesradio.se",
+      "source_type": "media",
+      "published_at": "2026-10-23T00:00:00Z",
+      "company": "Regeringskansliet (Швеция)",
+      "product": "ChatGPT, Claude",
+      "section": "E",
+      "summary_raw": "Заголовок Sveriges Radio сообщает о запрете; страница не открылась (403), поиском подтверждения не найдено. Не публиковать без проверки.",
+      "importance": 3,
+      "also_seen_at": [
+        "https://news.ycombinator.com/"
+      ],
+      "unverified": true
+    },
+    {
+      "title": "Block показала речевую ИИ-модель Dessa",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+      "source": "theverge.com",
+      "source_type": "media",
+      "published_at": "2026-10-23T00:00:00Z",
+      "company": "Block",
+      "product": "Dessa",
+      "section": "E",
+      "summary_raw": "Только заголовок The Verge; ни страница, ни первоисточник Block не открылись. Требует проверки.",
+      "importance": 3,
+      "unverified": true,
+      "primary_source_found": false
+    },
+    {
+      "title": "Spotify делает ставку на то, чтобы быть музыкальным сервисом, который выбирают агенты",
+      "url": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
+      "source": "techcrunch.com",
+      "source_type": "media",
+      "published_at": "2026-10-22T00:00:00Z",
+      "company": "Spotify",
+      "product": "Spotify AI",
+      "section": "E",
+      "summary_raw": "Только заголовок; статья не открывалась.",
+      "importance": 3,
+      "unverified": true
+    },
+    {
+      "title": "Walmart приветствует ИИ-агентов, а Amazon их блокирует",
+      "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+      "source": "techcrunch.com",
+      "source_type": "media",
+      "published_at": "2026-10-21T00:00:00Z",
+      "company": "Walmart",
+      "product": "agentic commerce",
+      "section": "E",
+      "summary_raw": "Только заголовок; статья не открывалась.",
+      "importance": 3,
+      "unverified": true
+    }
+  ],
+  "errors": [
+    "Веб-поиск по раундам/регуляции/Product Hunt дал мало свежих подтверждённых результатов за окно",
+    "Не открылись: theverge.com, arstechnica.com (fetch), sverigesradio.se (403)",
+    "Кандидатов <10; заметных (high) — 1; крупные новости недели (OpenAI $30B, DeepSeek $15B, Claude Duet) относятся к watchlist"
+  ]
 }

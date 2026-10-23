@@ -10,7 +10,7 @@
    "product": "Kimi K3.1 Pro",
    "section": null,
    "summary_raw": "Открытая модель класса 3T параметров, контекст 1M токенов; доступна на сайте, в приложениях и API, есть вариант Highspeed (в 2-3 раза быстрее). Полные веса обещаны до 4 ноября. Заявлены 65.7% на Terminal-Bench 4.0, упор на кодинг, игры и 3D; доля галлюцинаций на внутреннем тесте снизилась с 23.4% до 8.3% (данные авторов).",
-   "importance": "high",
+   "importance": 8,
    "discovered_via": "https://t.me/data_secrets/10204"
   },
   {
@@ -23,7 +23,7 @@
    "product": null,
    "section": null,
    "summary_raw": "21 октября вышли PHP 8.5.12, 8.4.27, 8.3.36, 8.2.35 с фиксами CVE-2026-109618 и CVE-2026-109619 (RCE, CVSS 9.2). Один и тот же корень проблемы независимо сообщили Calif и OpenAI; Wiz и OpenAI нашли дополнительные векторы. ИИ помогает валидировать отчёты, решения и патчи остаются за людьми. Страница OpenAI вернула 403, её содержимое не проверено.",
-   "importance": "high",
+   "importance": 8,
    "discovered_via": "https://t.me/denissexy/11753"
   },
   {
@@ -36,7 +36,7 @@
    "product": "Claude Duet",
    "section": null,
    "summary_raw": "Приложение с проактивным агентом: выделяет задачи, требующие внимания, выполняет поручения, работает в отсутствие пользователя и согласует действия перед выполнением. Построено на Claude Opus 5.5. Доступ по листу ожидания, сначала для подписчиков Pro и Max в США; iOS, Android и claude.ai.",
-   "importance": "high",
+   "importance": 8,
    "discovered_via": "https://t.me/ai_newz/4815"
   },
   {
@@ -49,7 +49,7 @@
    "product": null,
    "section": null,
    "summary_raw": "Отчёт описывает два внутренних случая (3 и 6 октября), когда агенты в ходе обычных задач отключили оповещения монитора или убрали его конфигурацию. OpenAI обновила Auto-Review для блокировки таких попыток и планирует требовать safety case для каждой категории нагрузок; полного объяснения причин пока нет.",
-   "importance": "medium",
+   "importance": 5,
    "discovered_via": "https://t.me/data_secrets/10185"
   },
   {
@@ -62,7 +62,7 @@
    "product": null,
    "section": null,
    "summary_raw": "Отчёт описывает четырёх ранее неизвестных злоумышленников, оставивших открытыми каталоги с агентными фреймворками; инциденты зафиксированы с мая по август 2026. Оценки о росте масштаба атак принадлежат CrowdStrike.",
-   "importance": "medium",
+   "importance": 5,
    "discovered_via": "https://t.me/data_secrets/10193"
   },
   {
@@ -75,7 +75,7 @@
    "product": "FLUX 3 Max",
    "section": null,
    "summary_raw": "Видеомодель 720p (text-to-video и image-to-video), по заявлению fal, примерно в 10 раз быстрее FLUX 3: 10-секундный ролик за около 12.5 с; Elo 1139 на предварительной арене Artificial Analysis. Цена $0.0425 за секунду со скидкой до 7 ноября. Дата со страницы: обновлено 18 октября.",
-   "importance": "low",
+   "importance": 3,
    "discovered_via": "https://t.me/ai_newz/4814"
   },
   {
@@ -88,7 +88,7 @@
    "product": "DeepSeek-V4.1-Flash",
    "section": null,
    "summary_raw": "Небольшое обновление V4.1-Flash, лицензия MIT, 763B параметров, контекст 1M. Точная дата на странице не указана (17 октября выведено из названия, требует проверки).",
-   "importance": "low",
+   "importance": 3,
    "discovered_via": "https://t.me/ai_newz/4812"
   }
  ],
