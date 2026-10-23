@@ -1,3 +1,39 @@
 {
-  "issues": {}
+  "issues": {
+    "2026-10-24_weekly:dry-run": {
+      "issue_id": "2026-10-24_weekly",
+      "mode": "dry-run",
+      "issue_number": 1,
+      "status": "published",
+      "started_at": "2026-10-23T21:50:15Z",
+      "messages": [
+        {
+          "index": 0,
+          "message_id": 3,
+          "hash": "ab6a87a78fe87b6d",
+          "sent_at": "2026-10-23T21:50:17Z"
+        },
+        {
+          "index": 1,
+          "message_id": 4,
+          "hash": "eca2dc1926051f69",
+          "sent_at": "2026-10-23T21:50:20Z"
+        },
+        {
+          "index": 2,
+          "message_id": 5,
+          "hash": "8bf1aac37813abc8",
+          "sent_at": "2026-10-23T21:50:24Z"
+        },
+        {
+          "index": 3,
+          "message_id": 6,
+          "hash": "055f6a6113fddc45",
+          "sent_at": "2026-10-23T21:50:28Z"
+        }
+      ],
+      "link": "https://t.me/jgrgihselrw/3",
+      "finished_at": "2026-10-23T21:50:28Z"
+    }
+  }
 }

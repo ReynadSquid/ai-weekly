@@ -14,3 +14,7 @@
 2026-10-23T21:47:26Z | gate       | решение=pass годных=18 слухов=2 отклонено=0 (0%) 
 2026-10-23T21:47:28Z | factcheck  | шаг выполнен. 20 новостей → verified 15, partially 3, rumor 2
 2026-10-23T21:47:28Z | gate       | шаг выполнен. decision=pass
+2026-10-23T21:47:32Z | write      | editor_input: 20 новостей
+2026-10-23T21:49:39Z | write      | шаг выполнен. editor_input → posts.json, draft.md
+2026-10-23T21:50:15Z | qa         | шаг выполнен. pass, 0 blocker / 3 minor
+2026-10-23T21:50:31Z | publish    | шаг выполнен. dry-run: 4 сообщения

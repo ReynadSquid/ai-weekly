@@ -1,0 +1,142 @@
+{
+  "https://claude.com/resources/articles/claude-duet": {
+    "url": "https://claude.com/resources/articles/claude-duet",
+    "status": 200,
+    "final_url": "https://claude.com/resources/articles/claude-duet",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://openai.com/index/openai-models-google-cloud": {
+    "url": "https://openai.com/index/openai-models-google-cloud",
+    "status": 403,
+    "final_url": "https://openai.com/index/openai-models-google-cloud",
+    "error": null,
+    "verdict": "unverifiable"
+  },
+  "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation": {
+    "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://openai.com/index/chatgpt-ads-expands-26-new-countries": {
+    "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+    "status": 403,
+    "final_url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+    "error": null,
+    "verdict": "unverifiable"
+  },
+  "https://openai.com/index/securing-our-frontier-model-training-environment": {
+    "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "status": 403,
+    "final_url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "error": null,
+    "verdict": "unverifiable"
+  },
+  "https://www.anthropic.com/news/public-benefit-fund": {
+    "url": "https://www.anthropic.com/news/public-benefit-fund",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/news/public-benefit-fund",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/": {
+    "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://api-docs.deepseek.com/news/news261017": {
+    "url": "https://api-docs.deepseek.com/news/news261017",
+    "status": 200,
+    "final_url": "https://api-docs.deepseek.com/news/news261017/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://mistral.ai/news/voxtral-3/": {
+    "url": "https://mistral.ai/news/voxtral-3/",
+    "status": 200,
+    "final_url": "https://mistral.ai/news/voxtral-3/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac": {
+    "url": "https://perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac",
+    "status": 403,
+    "final_url": "https://www.perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac",
+    "error": null,
+    "verdict": "unverifiable"
+  },
+  "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/": {
+    "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+    "status": 200,
+    "final_url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.kimi.ai/blog/kimi-k3-1-pro": {
+    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "status": 200,
+    "final_url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/": {
+    "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+    "status": 200,
+    "final_url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents": {
+    "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+    "status": 200,
+    "final_url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/": {
+    "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://recursive.com/updates/introducing-recursive-flint": {
+    "url": "https://recursive.com/updates/introducing-recursive-flint",
+    "status": 200,
+    "final_url": "https://recursive.com/updates/introducing-recursive-flint",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/blog/ibm-granite/granite-speech-5": {
+    "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://arxiv.org/abs/2610.27999": {
+    "url": "https://arxiv.org/abs/2610.27999",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2610.27999",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/": {
+    "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/": {
+    "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+    "error": null,
+    "verdict": "ok"
+  }
+}
