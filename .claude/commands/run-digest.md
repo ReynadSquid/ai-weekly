@@ -79,6 +79,8 @@ python scripts/pipeline.py editor-input RUN
 ```bash
 python scripts/tg_publish.py --run RUN
 ```
+Скрипт сам собирает и отправляет обложку (если `cover` в init.json), а при сбое обложки публикует выпуск
+без неё — это не ошибка, просто упомяни `cover_error` в note шага.
 - код 0 (`published` / `already_published`) → `step RUN publish`, `checkpoint`.
 - код 3 (ошибка Telegram 400/403) → `step RUN publish --error "<описание>"` и `--abort`, шаг 10.
 - код 2 (нет секретов) → `--abort "нет TELEGRAM_* переменных"`, шаг 10.

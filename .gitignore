@@ -6,3 +6,6 @@ __pycache__/
 runs/*/.lock
 *.tmp
 .venv/
+branding/cover_mock*.png
+branding/preview_circle.png
+runs/*/cover.jpg

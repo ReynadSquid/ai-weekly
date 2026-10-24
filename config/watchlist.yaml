@@ -8,6 +8,7 @@
 #   section   — раздел выпуска из config/format.md (A–G)
 #   hashtag   — хэштег для финала выпуска
 #   official  — официальные страницы, которые стоит проверить в первую очередь
+#   logo      — файл branding/logos/<logo>.svg для обложки выпуска (необязательно)
 
 companies:
   - name: OpenAI
@@ -15,36 +16,42 @@ companies:
     group: leaders
     section: A
     hashtag: "#OpenAI"
+    logo: openai
     official: [https://openai.com/news/, https://help.openai.com/en/articles/6825453-chatgpt-release-notes, https://platform.openai.com/docs/changelog]
   - name: Anthropic
     products: [Claude, Claude Code]
     group: leaders
     section: A
     hashtag: "#Anthropic"
+    logo: anthropic
     official: [https://www.anthropic.com/news, https://docs.claude.com/en/release-notes/overview, https://code.claude.com/docs/en/changelog]
   - name: Google
     products: [Gemini, DeepMind, Gemma, NotebookLM, Veo]
     group: leaders
     section: A
     hashtag: "#Google"
+    logo: google
     official: [https://blog.google/technology/ai/, https://deepmind.google/discover/blog/, https://ai.google.dev/gemini-api/docs/changelog]
   - name: Meta
     products: [Llama, Meta AI]
     group: leaders
     section: A
     hashtag: "#Meta"
+    logo: meta
     official: [https://ai.meta.com/blog/, https://about.fb.com/news/]
   - name: Microsoft
     products: [Copilot, Azure AI, Phi]
     group: leaders
     section: A
     hashtag: "#Microsoft"
+    logo: microsoft
     official: [https://blogs.microsoft.com/ai/, https://www.microsoft.com/en-us/microsoft-copilot/blog/]
   - name: xAI
     products: [Grok]
     group: leaders
     section: A
     hashtag: "#xAI"
+    logo: xai
     official: [https://x.ai/news]
 
   - name: Mistral
@@ -52,36 +59,42 @@ companies:
     group: second
     section: B
     hashtag: "#Mistral"
+    logo: mistral
     official: [https://mistral.ai/news/]
   - name: DeepSeek
     products: [DeepSeek]
     group: second
     section: B
     hashtag: "#DeepSeek"
+    logo: deepseek
     official: [https://api-docs.deepseek.com/news/news, https://huggingface.co/deepseek-ai]
   - name: Alibaba
     products: [Qwen]
     group: second
     section: B
     hashtag: "#Qwen"
+    logo: qwen
     official: [https://qwenlm.github.io/blog/, https://huggingface.co/Qwen]
   - name: Perplexity
     products: [Perplexity, Comet]
     group: second
     section: B
     hashtag: "#Perplexity"
+    logo: perplexity
     official: [https://www.perplexity.ai/hub/blog]
   - name: Apple
     products: [Apple Intelligence]
     group: second
     section: B
     hashtag: "#Apple"
+    logo: apple
     official: [https://www.apple.com/newsroom/, https://machinelearning.apple.com/]
   - name: Amazon
     products: [Nova, Bedrock, Alexa+]
     group: second
     section: B
     hashtag: "#Amazon"
+    logo: aws
     official: [https://www.aboutamazon.com/news/innovation-at-amazon, https://aws.amazon.com/blogs/machine-learning/]
 
   - name: NVIDIA
@@ -89,6 +102,7 @@ companies:
     group: infra
     section: C
     hashtag: "#NVIDIA"
+    logo: nvidia
     official: [https://nvidianews.nvidia.com/, https://blogs.nvidia.com/]
   - name: AMD
     products: [Instinct, ROCm]
@@ -108,30 +122,35 @@ companies:
     group: creative
     section: D
     hashtag: "#Midjourney"
+    logo: midjourney
     official: [https://updates.midjourney.com/]
   - name: Runway
     products: [Runway, Gen]
     group: creative
     section: D
     hashtag: "#Runway"
+    logo: runway
     official: [https://runwayml.com/news]
   - name: ElevenLabs
     products: [ElevenLabs]
     group: creative
     section: D
     hashtag: "#ElevenLabs"
+    logo: elevenlabs
     official: [https://elevenlabs.io/blog]
   - name: Cursor
     products: [Cursor]
     group: creative
     section: D
     hashtag: "#Cursor"
+    logo: cursor
     official: [https://cursor.com/changelog, https://cursor.com/blog]
   - name: Suno
     products: [Suno]
     group: creative
     section: D
     hashtag: "#Suno"
+    logo: suno
     official: [https://suno.com/blog]
 
 # Веса групп для ранжирования (масштаб компании).
@@ -144,3 +163,21 @@ group_weight:
 
 # Минимум новостей вне списка в выпуске (если такие нашлись).
 min_outside_watchlist: 3
+
+# Логотипы для компаний ВНЕ списка (обложка выпуска). Имя — как его пишут сборщики в поле company.
+# Файлы — branding/logos/<slug>.svg. Компании без логотипа на обложке сворачиваются в «+N».
+logo_aliases:
+  Moonshot AI: kimi
+  Kimi: kimi
+  MiniMax: minimax
+  IBM: ibm
+  Hugging Face: huggingface
+  GitHub: github
+  Cohere: cohere
+  Stability AI: stability
+  Zhipu AI: zhipu
+  Baidu: baidu
+  ByteDance: bytedance
+  Tencent: tencent
+  Alibaba Cloud: alibabacloud
+  Google Cloud: googlecloud

@@ -21,7 +21,12 @@ def fake_tg():
 
     class H(BaseHTTPRequestHandler):
         def do_POST(self):
-            body = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
+            raw = self.rfile.read(int(self.headers["Content-Length"]))
+            if self.headers["Content-Type"].startswith("multipart/form-data"):
+                body = {"_photo": b'name="photo"' in raw and b"\xff\xd8\xff" in raw,
+                        "_caption": b'name="caption"' in raw and "AI Weekly #1".encode() in raw}
+            else:
+                body = json.loads(raw)
             received.append((self.path, body))
             resp = {"ok": True, "result": {"message_id": 500 + len(received)}}
             data = json.dumps(resp).encode()
@@ -99,19 +104,23 @@ def test_full_dry_run(repo, fake_tg, monkeypatch, capsys):
     common.write_json(rd / "posts.json", posts)
     (rd / "draft.md").write_text("# draft", encoding="utf-8")
     assert split_messages.main(["--run", RUN]) == 0
-    msgs = common.read_json(rd / "messages.json")["messages"]
-    assert len(msgs) >= 2
+    mj = common.read_json(rd / "messages.json")
+    assert len(mj["messages"]) >= 2 and mj["cover"]["caption"] == posts["header"]
+    msgs = mj["cover"]["messages"]
+    assert "AI Weekly #1" not in msgs[0]["text"]  # шапка ушла в подпись к обложке
 
-    # публикация через настоящий HTTP
+    # публикация через настоящий HTTP: обложка (multipart) первой, затем текст без превью ссылок
     assert tg_publish.main(["--run", RUN]) == 0
-    assert len(received) == len(msgs)
+    assert (rd / "cover.jpg").exists()
+    assert received[0][0].endswith("/sendPhoto") and received[0][1] == {"_photo": True, "_caption": True}
+    assert len(received) == 1 + len(msgs)
+    assert all(p.endswith("/sendMessage") for p, _ in received[1:])
     assert all(TOKEN in path for path, _ in received)  # токен только в URL запроса к API
-    assert received[0][1]["link_preview_options"]["is_disabled"] is False
-    assert received[1][1]["link_preview_options"]["is_disabled"] is True
+    assert all(b["link_preview_options"]["is_disabled"] is True for _, b in received[1:])
 
     # повторный запуск того же слота ничего не шлёт
     assert tg_publish.main(["--run", RUN]) == 0
-    assert len(received) == len(msgs)
+    assert len(received) == 1 + len(msgs)
     capsys.readouterr()
     pipeline.main(["init", "--dry-run"])
     assert json.loads(capsys.readouterr().out)["status"] == "already_published"
@@ -122,7 +131,7 @@ def test_full_dry_run(repo, fake_tg, monkeypatch, capsys):
 
     pipeline.main(["report", RUN])
     report = (rd / "report.txt").read_text(encoding="utf-8")
-    assert "опубликован" in report and "x.ai" in report
+    assert "опубликован" in report and "x.ai" in report and "Обложка: отправлена" in report
     for f in rd.iterdir():
         assert TOKEN not in f.read_text(encoding="utf-8", errors="ignore")
     assert TOKEN not in (repo / "state" / "published.json").read_text(encoding="utf-8")

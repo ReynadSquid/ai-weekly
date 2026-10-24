@@ -21,6 +21,7 @@ issues:
     day: sunday          # monday..sunday
     time: "10:00"        # локальное время timezone
     target_items: [12, 20]
+    cover: true          # обложка с логотипами компаний первым сообщением
     min_items: 8
   midweek:
     enabled: false       # короткий выпуск «Главное за середину недели»
@@ -28,6 +29,7 @@ issues:
     day: wednesday
     time: "18:00"
     target_items: [6, 10]
+    cover: false
     min_items: 4
 
 # Если запуск сорвался (например, закончились лимиты подписки),

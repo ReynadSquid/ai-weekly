@@ -175,6 +175,27 @@ def build_messages(posts: dict, limit: int = DEFAULT_LIMIT) -> tuple[list[dict],
     return messages, errors
 
 
+CAPTION_LIMIT = 1024
+
+
+def build_cover_variant(posts: dict, limit: int = DEFAULT_LIMIT) -> tuple[dict | None, str | None]:
+    """Вариант с обложкой: шапка — подпись к фото, дальше разделы без шапки и без превью ссылок.
+    Возвращает (variant, причина_почему_нет). Отсутствие варианта — не ошибка: выпуск уйдёт без обложки."""
+    header = (posts.get("header") or "").strip()
+    if not header:
+        return None, "нет шапки для подписи"
+    if visible_len(header) > CAPTION_LIMIT:
+        return None, f"шапка {visible_len(header)} > {CAPTION_LIMIT} символов подписи"
+    if validate_html(header):
+        return None, "шапка не проходит валидацию HTML"
+    messages, errors = build_messages(dict(posts, header=""), limit)
+    if errors or not messages:
+        return None, "; ".join(errors) or "нет сообщений"
+    for m in messages:
+        m["disable_preview"] = True
+    return {"caption": header, "messages": messages}, None
+
+
 def main(argv=None) -> int:
     setup_stdio()
     ap = argparse.ArgumentParser(description=__doc__)
@@ -186,11 +207,16 @@ def main(argv=None) -> int:
     if not posts:
         print(json.dumps({"ok": False, "errors": ["нет posts.json"]}, ensure_ascii=False))
         return 1
-    messages, errors = build_messages(posts, min(args.limit, TG_LIMIT))
-    write_json(rd / "messages.json", {"issue_id": posts.get("issue_id", args.run), "messages": messages,
-                                      "errors": errors})
+    limit = min(args.limit, TG_LIMIT)
+    messages, errors = build_messages(posts, limit)
+    out = {"issue_id": posts.get("issue_id", args.run), "messages": messages, "errors": errors}
+    cover_note = None
+    if (read_json(rd / "init.json") or {}).get("cover") and not errors:
+        out["cover"], cover_note = build_cover_variant(posts, limit)
+    write_json(rd / "messages.json", out)
     print(json.dumps({"ok": not errors, "messages": len(messages),
-                      "lengths": [m["length"] for m in messages], "errors": errors},
+                      "lengths": [m["length"] for m in messages], "errors": errors,
+                      "cover_variant": bool(out.get("cover")), "cover_note": cover_note},
                      ensure_ascii=False, indent=2))
     return 0 if not errors else 1
 

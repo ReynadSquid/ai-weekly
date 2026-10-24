@@ -177,6 +177,7 @@ def cmd_init(args) -> int:
         "window": {"since": iso(since), "until": iso(now)},
         "date_range": date_range_label(since, now, tzinfo),
         "target_items": cfg.get("target_items", [12, 20]), "min_items": cfg.get("min_items", 8),
+        "cover": bool(cfg.get("cover", False)),
         "max_rejected_ratio": sched.get("max_rejected_ratio", 0.4),
     }
     write_json(rd / "init.json", init)
@@ -545,6 +546,10 @@ def build_report(run_id: str, event: str | None = None) -> str:
                      + (f", ссылка {rec['link']}" if rec.get("link") else ""))
         if rec.get("error"):
             lines.append(f"Ошибка Telegram: {rec['error']}")
+        if rec.get("cover"):
+            lines.append("Обложка: отправлена")
+        elif rec.get("cover_error"):
+            lines.append(f"Обложка НЕ отправлена, выпуск ушёл без неё: {rec['cover_error']}")
     if progress.get("aborted"):
         lines.append(f"Причина остановки: {progress['aborted']}")
     src_err = cand.get("source_errors", [])

@@ -66,7 +66,7 @@ init → collect (4 сборщика параллельно + RSS/API-скрип
      Network secrets для Telegram не подходят: токен Telegram передаётся в адресе запроса, а не в заголовке.
    - **Setup script:**
      ```bash
-     pip install pyyaml tzdata pytest
+     pip install pyyaml tzdata pytest pillow resvg-py
      ```
 4. **Задача.** [claude.ai/code/routines](https://claude.ai/code/routines) → New task → Set up manually:
    - **Name:** `AI Weekly`
@@ -131,6 +131,20 @@ python scripts/pipeline.py cron                       # cron-строки из s
 | Включить средний выпуск | `config/schedule.yaml` → `issues.midweek.enabled: true` + триггер в среду 18:05 |
 | Перейти на основной канал | `config/schedule.yaml` → `publish_mode: live` (сработает только после 2 успешных dry-run) |
 | Пороги качества | `config/schedule.yaml` → `min_items`, `max_rejected_ratio` |
+| Включить/выключить обложку | `config/schedule.yaml` → `issues.weekly.cover: true/false` |
+| Логотип компании на обложке | `config/watchlist.yaml` → поле `logo:` у компании или `logo_aliases`; файл `branding/logos/<logo>.svg` |
+
+### Обложка выпуска
+Недельный выпуск начинается с фото: фирменный фон с роботом, «AI WEEKLY», «#N · даты» и до 8 логотипов
+компаний, о которых есть новости (по числу новостей; у кого 2+ — подсветка и бейдж; остальные — «+N»).
+Подпись к фото — шапка выпуска с тремя главными событиями, дальше посты как раньше, без превью ссылок.
+
+- Собирает `scripts/make_cover.py` из проверенных данных (`init.json`, `editor_input.json`); слухи на обложку не попадают.
+- Если обложка не собралась или Telegram её не принял, выпуск уходит без неё (шапка — в первом посте),
+  а в отчёте админу пишется причина. Повторный запуск не шлёт обложку после уже отправленного текста.
+- Фон и робот — `branding/cover_base.png` (пересобрать: `python branding/build_cover_base.py`, нужны шрифты Windows).
+- Логотипы — набор lobe-icons (MIT), шрифты Russo One и Exo 2 (OFL), см. `branding/logos/NOTICE.txt`.
+- Новый логотип: положите SVG (одноцветный, `fill="currentColor"`) в `branding/logos/` и укажите его в watchlist.
 
 ---
 

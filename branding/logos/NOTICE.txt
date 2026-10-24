@@ -1,0 +1,4 @@
+Логотипы: набор @lobehub/icons-static-svg v1.98.0 (https://github.com/lobehub/lobe-icons), лицензия MIT.
+Товарные знаки принадлежат их владельцам; используются в обложке выпуска только для указания,
+о какой компании идёт речь в новостях (редакционное использование).
+Шрифты: Russo One и Exo 2 — SIL Open Font License 1.1 (см. branding/fonts/OFL-*.txt).

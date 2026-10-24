@@ -28,6 +28,8 @@ import sys
 import time
 import urllib.error
 import urllib.request
+import uuid
+from pathlib import Path
 
 from common import STATE, iso, load_dotenv, mask, now_utc, read_json, run_dir, setup_stdio, write_json
 
@@ -42,12 +44,34 @@ class TelegramError(Exception):
         self.description = description
 
 
-def api_call(method: str, payload: dict, *, token: str, timeout: float = 30) -> dict:
+def _multipart(payload: dict) -> tuple[bytes, str]:
+    """payload["_file"] = (поле, путь) → multipart/form-data; остальные поля — текстом/JSON."""
+    boundary = uuid.uuid4().hex
+    parts = []
+    for k, v in payload.items():
+        if k == "_file":
+            continue
+        val = v if isinstance(v, str) else json.dumps(v, ensure_ascii=False)
+        parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{val}\r\n'.encode("utf-8"))
+    field, path = payload["_file"]
+    path = Path(path)
+    mime = "image/jpeg" if path.suffix.lower() in (".jpg", ".jpeg") else "image/png"
+    parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="{field}"; filename="{path.name}"\r\n'
+                 f"Content-Type: {mime}\r\n\r\n".encode("utf-8") + path.read_bytes() + b"\r\n")
+    parts.append(f"--{boundary}--\r\n".encode("utf-8"))
+    return b"".join(parts), f"multipart/form-data; boundary={boundary}"
+
+
+def api_call(method: str, payload: dict, *, token: str, timeout: float = 60) -> dict:
     base = os.environ.get("TELEGRAM_API_BASE", "https://api.telegram.org")
+    if "_file" in payload:
+        data, ctype = _multipart(payload)
+    else:
+        data, ctype = json.dumps(payload).encode("utf-8"), "application/json"
     req = urllib.request.Request(
         f"{base}/bot{token}/{method}",
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
+        data=data,
+        headers={"Content-Type": ctype},
         method="POST",
     )
     try:
@@ -97,6 +121,23 @@ def send_message(text: str, chat_id: str, *, token: str, disable_preview: bool, 
     return int(result["message_id"])
 
 
+def send_photo(path: Path, caption: str, chat_id: str, *, token: str, call=api_call,
+               sleep=time.sleep) -> int:
+    payload = {"chat_id": chat_id, "caption": caption, "parse_mode": "HTML", "_file": ("photo", str(path))}
+    result = call_with_retries("sendPhoto", payload, token=token, call=call, sleep=sleep)
+    return int(result["message_id"])
+
+
+def ensure_cover(run_id: str) -> Path:
+    """Готовая обложка runs/<id>/cover.jpg или собрать её сейчас (scripts/make_cover.py)."""
+    path = run_dir(run_id) / "cover.jpg"
+    if not path.exists():
+        import make_cover
+
+        make_cover.make_for_run(run_id)
+    return path
+
+
 def text_hash(text: str) -> str:
     return hashlib.sha1(text.encode("utf-8")).hexdigest()[:16]
 
@@ -114,11 +155,13 @@ def public_link(chat_id: str, message_id: int) -> str | None:
     return None
 
 
-def publish(run_id: str, *, token: str, call=api_call, sleep=time.sleep) -> dict:
+def publish(run_id: str, *, token: str, call=api_call, sleep=time.sleep, cover_maker=ensure_cover) -> dict:
     rd = run_dir(run_id)
     init = read_json(rd / "init.json") or {}
     mode = init.get("mode", "dry-run")
-    msgs = (read_json(rd / "messages.json") or {}).get("messages") or []
+    data = read_json(rd / "messages.json") or {}
+    msgs = data.get("messages") or []
+    cover = data.get("cover")
     if not msgs:
         raise SystemExit("нет runs/<id>/messages.json — сначала split_messages.py")
     chat = target_chat(mode)
@@ -134,6 +177,26 @@ def publish(run_id: str, *, token: str, call=api_call, sleep=time.sleep) -> dict
         rec = {"issue_id": run_id, "mode": mode, "issue_number": init.get("issue_number"),
                "status": "in_progress", "started_at": iso(now_utc()), "messages": []}
         db["issues"][key] = rec
+
+    # Обложка: только первым сообщением. Если текст уже начал уходить — обложку больше не шлём.
+    # Не собралась или Telegram её не принял — выпуск уходит без неё, шапка остаётся в первом посте.
+    variant = rec.get("variant")
+    if variant is None:
+        variant = "plain"
+        if cover and not rec["messages"]:
+            try:
+                path = cover_maker(run_id)
+                mid = send_photo(path, cover["caption"], chat, token=token, call=call, sleep=sleep)
+                rec["cover"] = {"message_id": mid, "sent_at": iso(now_utc())}
+                rec["link"] = public_link(chat, mid)
+                variant = "cover"
+            except Exception as e:
+                rec["cover_error"] = mask(f"{type(e).__name__}: {e}")[:300]
+        rec["variant"] = variant
+        write_json(PUBLISHED, db)
+    if variant == "cover":
+        msgs = cover["messages"]
+
     sent = {m["index"]: m for m in rec["messages"]}
     for i, m in sent.items():  # выпуск не должен поменяться между частями
         if i < len(msgs) and m.get("hash") != text_hash(msgs[i]["text"]):
@@ -143,7 +206,7 @@ def publish(run_id: str, *, token: str, call=api_call, sleep=time.sleep) -> dict
     for m in msgs:
         if m["index"] in sent:
             continue
-        if not first_send or sent:
+        if not first_send or sent or rec.get("cover"):
             sleep(PAUSE_SEC)
         first_send = False
         try:
@@ -157,7 +220,7 @@ def publish(run_id: str, *, token: str, call=api_call, sleep=time.sleep) -> dict
                     "sent": len(rec["messages"]), "total": len(msgs)}
         rec["messages"].append({"index": m["index"], "message_id": mid, "hash": text_hash(m["text"]),
                                 "sent_at": iso(now_utc())})
-        if m["index"] == 0:
+        if m["index"] == 0 and variant != "cover":
             rec["link"] = public_link(chat, mid)
         rec.pop("error", None)
         write_json(PUBLISHED, db)  # сразу, чтобы прерванный запуск не задублировал
@@ -165,7 +228,8 @@ def publish(run_id: str, *, token: str, call=api_call, sleep=time.sleep) -> dict
     rec["status"] = "published"
     rec["finished_at"] = iso(now_utc())
     write_json(PUBLISHED, db)
-    return {"status": "published", "key": key, "messages": len(rec["messages"]), "link": rec.get("link")}
+    return {"status": "published", "key": key, "messages": len(rec["messages"]), "link": rec.get("link"),
+            "cover": bool(rec.get("cover")), "cover_error": rec.get("cover_error")}
 
 
 def send_report(text: str, *, token: str | None, call=api_call) -> bool:

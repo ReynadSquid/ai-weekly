@@ -1,3 +1,5 @@
 pyyaml>=6.0
 tzdata>=2024.1
 pytest>=8.0
+pillow>=10.0
+resvg-py>=0.2
