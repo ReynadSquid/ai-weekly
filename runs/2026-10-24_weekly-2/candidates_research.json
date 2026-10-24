@@ -1,0 +1,142 @@
+{
+ "items": [
+  {
+   "title": "MiniMax-M3.1-Flash",
+   "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+   "source": "huggingface.co/models",
+   "source_type": "research",
+   "published_at": "2026-10-17T06:37:50Z",
+   "company": "MiniMax",
+   "product": "MiniMax-M3.1-Flash",
+   "section": "F",
+   "summary_raw": "Открытые веса мультимодальной MoE-модели для кодинга, агентов и computer use: по данным карточки, около 428B параметров всего и 23B активных, контекст до 1M токенов, лицензия minimax-community. Авторы приводят результаты на агентских бенчмарках (например, DeepSWE v1.1 — 73.7, OSWorld 2.0 — 61.7), но сами же отмечают, что в их таблице ряд конкурентов выше по многим тестам. Цифры заявлены MiniMax; в метаданных HF размер указан как 220B, что расходится с карточкой. Дата релиза на странице не указана (дата — по ленте HF).",
+   "importance": 8
+  },
+  {
+   "title": "Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds",
+   "url": "https://arxiv.org/abs/2610.27999",
+   "source": "arxiv.org",
+   "source_type": "research",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "авторы: Jihai Zhang, Yahui Zhou и др. (аффилиация на странице не указана)",
+   "product": "Matrix-Game 4.0",
+   "section": "F",
+   "summary_raw": "Система для интерактивных игровых миров, где логику игры исполняет лёгкий движок, кодовый агент превращает идеи игрока в код, а авторегрессионная видеомодель дорисовывает детальную картинку по low-poly-прокси. Авторы заявляют 480p при 60 FPS на одной RTX 5090 с задержкой 112 мс и обещают выложить код, веса и ассеты; конкретные ссылки на репозиторий на странице не подтверждены.",
+   "importance": 7
+  },
+  {
+   "title": "Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience",
+   "url": "https://arxiv.org/abs/2610.26855",
+   "source": "arxiv.org",
+   "source_type": "research",
+   "published_at": "2026-10-19T00:00:00Z",
+   "company": "авторы: Tianqi Liu, Ziwei Liu и др.",
+   "product": "Ropedia W0",
+   "section": "F",
+   "summary_raw": "Мировая модель для совместного моделирования ходьбы и манипуляций у людей и роботов, обученная на собственном датасете Xp-Data (около 10 тыс. часов видео от первого лица и 3 тыс. часов данных роботов). Авторы заявляют SOTA на пяти кросс-эмбодимент-бенчмарках и возможность минутных rollout в реальном времени после дистилляции; также представлен бенчмарк Xp-Teleop.",
+   "importance": 6
+  },
+  {
+   "title": "MemT-1.0: Towards Memory-Native Evolution",
+   "url": "https://arxiv.org/abs/2610.26825",
+   "source": "arxiv.org",
+   "source_type": "research",
+   "published_at": "2026-10-19T00:00:00Z",
+   "company": "авторы: Zhiyu Li, Feiyu Xiong и др. (74 автора)",
+   "product": "MemT-1.0",
+   "section": "F",
+   "summary_raw": "Идея встроить память в саму модель: архитектура на Gated DeltaNet-2 с обновлением памяти на уровне токенов и Mixture-of-Storage. Выпущены MemT-1.0-Nano и -Flash. Авторы заявляют ускорение вывода примерно в 1.86 раза и сокращение хранилища примерно в 66 раз относительно полного KV-кэша при истории 128K токенов.",
+   "importance": 6
+  },
+  {
+   "title": "Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition",
+   "url": "https://arxiv.org/abs/2610.28578",
+   "source": "arxiv.org",
+   "source_type": "research",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "авторы: Wenjie Lou и др. (InternScience)",
+   "product": "Sage-A1.5",
+   "section": "F",
+   "summary_raw": "Технический отчёт об агентной MoE-модели на 35B параметров: делегирование подзадач субагентам с изолированным контекстом, проверка прогресса и выводов, режим научных исследований. Количественных результатов в аннотации нет; чекпойнты размещены на HF (InternScience/Sage-A1.5).",
+   "importance": 5
+  },
+  {
+   "title": "BrainLoRA: Scaling Parameter-Efficient Fine-Tuning for Brain Encoding",
+   "url": "https://arxiv.org/abs/2610.26802",
+   "source": "arxiv.org",
+   "source_type": "research",
+   "published_at": "2026-10-19T00:00:00Z",
+   "company": "авторы: Zhuofan Josh Ying, Hossein Adeli и др.",
+   "product": "BrainLoRA",
+   "section": "F",
+   "summary_raw": "Метод дообучения LoRA-адаптерами крупных мультимодальных моделей для предсказания нейронных ответов мозга. Авторы заявляют адаптацию бэкбонов до 104B параметров и лучший опубликованный результат на Algonauts 2025 с Qwen3-Omni. Код: github.com/zfying/brain-lora.",
+   "importance": 5
+  },
+  {
+   "title": "PAR: Progress-Aligned Recurrence for Length Generalization in State Tracking",
+   "url": "https://arxiv.org/abs/2610.27628",
+   "source": "arxiv.org",
+   "source_type": "research",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "авторы: Pan Wang, Wei Wu и др.",
+   "product": "PAR",
+   "section": "F",
+   "summary_raw": "Метод обучения зацикленных языковых моделей, чтобы дополнительные итерации реально помогали на более длинных задачах. По заявлению авторов, Qwen2.5-0.5B, обученная на задачах до 32 ходов, достигает 95.5% точности на 512 ходах.",
+   "importance": 4
+  },
+  {
+   "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "IBM",
+   "product": "Granite Speech 5.0",
+   "section": "F",
+   "summary_raw": "IBM обновила семейство речевых моделей: новая granite-speech-5.0-2b (6 языков, перевод), расширенная 470m-turboctc на 7 языков и улучшенная 4.1-2b-plus для многоголосых записей. IBM заявляет второе место среди открытых ASR-моделей на Open ASR Leaderboard (средний WER 5.06% по английскому на 21.10.2026). Лицензия Apache 2.0.",
+   "importance": 7
+  },
+  {
+   "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+   "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "NVIDIA",
+   "product": "Kumo Relational",
+   "section": "F",
+   "summary_raw": "Предобученная модель, делающая прогнозы прямо по реляционным базам данных без отдельного обучения и фиче-инжиниринга. NVIDIA заявляет превосходство над контролируемыми подходами на 41 задаче из 15 баз и прирост около 4 пунктов AUROC на RelBench относительно градиентного бустинга. Код под Apache 2.0, веса под OpenMDW 1.1.",
+   "importance": 6
+  },
+  {
+   "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
+   "url": "https://huggingface.co/blog/hf-torchtpu",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Hugging Face",
+   "product": "TorchTPU",
+   "section": "F",
+   "summary_raw": "Hugging Face добавила нативную поддержку TPU в Transformers и Diffusers через новый бэкенд PyTorch TorchTPU (device_map=\"tpu\", pipe.to(\"tpu\")). Заявлены TPU-ядра в Kernels Hub и ускорение декодинга MoE-моделей до 21.5x на отдельных примерах; 96.5% запускаемых на TPU тестов проходят.",
+   "importance": 6
+  },
+  {
+   "title": "flint (RecursiveSI)",
+   "url": "https://huggingface.co/RecursiveSI/flint",
+   "source": "huggingface.co/models",
+   "source_type": "research",
+   "published_at": "2026-10-21T14:20:58Z",
+   "company": "Recursive",
+   "product": "flint",
+   "section": "F",
+   "summary_raw": "MoE-модель для кодовых агентов: 39.8B параметров, около 2.5B активных, контекст 262K, лицензия Apache 2.0. Разработчик заявляет 74.2% на SWE-bench Verified и 54.9% на Terminal-Bench 2.1 (собственные замеры, условия оценки различаются). Лидер тренда HF по лайкам в выборке (703). Дата релиза на странице не указана.",
+   "importance": 6
+  }
+ ],
+ "errors": [
+  {
+   "source": "github.com/trending",
+   "error": "HTTP 403 от GitHub API; GitHub-репозитории не собраны"
+  }
+ ]
+}

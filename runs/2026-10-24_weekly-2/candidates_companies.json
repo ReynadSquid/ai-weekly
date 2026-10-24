@@ -1,0 +1,298 @@
+{
+ "items": [
+  {
+   "title": "OpenAI models are coming to Google Cloud",
+   "url": "https://openai.com/index/openai-models-google-cloud",
+   "source": "openai.com/index",
+   "source_type": "official",
+   "published_at": "2026-10-21T12:00:00Z",
+   "company": "OpenAI",
+   "product": "GPT / Codex",
+   "section": "A",
+   "summary_raw": "OpenAI объявила, что её передовые модели и Codex-сценарии появятся в Model Garden на Google Cloud. По сообщениям СМИ, закупка пойдёт через Google Cloud Marketplace с зачётом существующих обязательств по расходам; детали по моделям и срокам доступа в источниках расходятся (страница OpenAI при проверке отдала 403, детали — из заголовка и СМИ).",
+   "importance": 9
+  },
+  {
+   "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+   "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+   "source": "openai.com/index",
+   "source_type": "official",
+   "published_at": "2026-10-21T13:00:00Z",
+   "company": "OpenAI",
+   "product": "ChatGPT",
+   "section": "A",
+   "summary_raw": "Согласно заголовку, реклама в ChatGPT расширяется ещё на 26 стран, а платформой уже воспользовались более 100 000 рекламодателей. Текст страницы недоступен (403), подробности не проверены.",
+   "importance": 7
+  },
+  {
+   "title": "Build more responsive apps with the Decisions API",
+   "url": "https://openai.com/index/decisions-api",
+   "source": "openai.com/index",
+   "source_type": "official",
+   "published_at": "2026-10-22T19:00:00Z",
+   "company": "OpenAI",
+   "product": "API",
+   "section": "A",
+   "summary_raw": "OpenAI представила Decisions API для создания более отзывчивых приложений. Текст страницы недоступен (403), поэтому подробности требуют проверки.",
+   "importance": 6
+  },
+  {
+   "title": "OpenAI acquires Orchestra Bio",
+   "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+   "source": "openai.com/index",
+   "source_type": "official",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "OpenAI",
+   "product": "",
+   "section": "A",
+   "summary_raw": "OpenAI объявила о приобретении Orchestra Bio. Условия сделки по доступным данным (только заголовок) неизвестны.",
+   "importance": 6
+  },
+  {
+   "title": "Securing our frontier model training environment",
+   "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+   "source": "openai.com/index",
+   "source_type": "official",
+   "published_at": "2026-10-23T10:00:00Z",
+   "company": "OpenAI",
+   "product": "",
+   "section": "A",
+   "summary_raw": "OpenAI опубликовала материал о защите среды обучения своих передовых моделей. Подробности страницы не проверены (403).",
+   "importance": 5
+  },
+  {
+   "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+   "source": "openai.com/index",
+   "source_type": "official",
+   "published_at": "2026-10-21T07:00:00Z",
+   "company": "OpenAI",
+   "product": "",
+   "section": "A",
+   "summary_raw": "OpenAI описывает инициативу по глобальной координации реагирования на критические уязвимости, которые находят ИИ-агенты. Детали не проверены (403).",
+   "importance": 6
+  },
+  {
+   "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+   "url": "https://openai.com/index/uber-chatgpt-work-rollout",
+   "source": "openai.com/index",
+   "source_type": "official",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "OpenAI",
+   "product": "ChatGPT Work",
+   "section": "A",
+   "summary_raw": "Uber внедряет ChatGPT Work для всех сотрудников. Подробности не проверены (403).",
+   "importance": 4
+  },
+  {
+   "title": "OpenAI and Poland's NASK partner to advance AI safety and security",
+   "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+   "source": "openai.com/index",
+   "source_type": "official",
+   "published_at": "2026-10-23T00:00:00Z",
+   "company": "OpenAI",
+   "product": "",
+   "section": "A",
+   "summary_raw": "OpenAI и польский институт NASK объявили о партнёрстве по безопасности ИИ. Детали не проверены (403).",
+   "importance": 4
+  },
+  {
+   "title": "Donating Agent Skills to the Agentic AI Foundation",
+   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Anthropic",
+   "product": "Claude Code / Agent Skills",
+   "section": "A",
+   "summary_raw": "Anthropic передаёт открытый стандарт Agent Skills фонду Agentic AI Foundation при Linux Foundation, как ранее MCP. По данным компании, стандарт интегрировали более 70 агентных платформ, опубликовано около миллиона навыков и почти 280 млн установок. Дальше планируются версионные релизы, процесс предложений и рекомендации по безопасности.",
+   "importance": 8
+  },
+  {
+   "title": "Investing in the public benefit",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-18T00:00:00Z",
+   "company": "Anthropic",
+   "product": "",
+   "section": "A",
+   "summary_raw": "Anthropic намерена направить 5% своих акций в новый Anthropic Public Benefit Fund (LLC; решение зависит от одобрения акционеров). Совет может добавлять по 2% за каждые 50% роста стоимости; вместе с прежними обязательствами на общественные цели пойдёт около 20% акций. Акции фонда не будут использоваться для лоббизма.",
+   "importance": 7
+  },
+  {
+   "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "Anthropic",
+   "product": "",
+   "section": "A",
+   "summary_raw": "Физик Кристофер Стаббс вошёл в Long-Term Benefit Trust Anthropic.",
+   "importance": 3
+  },
+  {
+   "title": "Open call for guest investigators in the life sciences",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Anthropic",
+   "product": "Claude",
+   "section": "A",
+   "summary_raw": "Anthropic объявила открытый набор приглашённых исследователей в области наук о жизни. Подробности страницы не проверялись.",
+   "importance": 3
+  },
+  {
+   "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+   "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-21T10:45:17Z",
+   "company": "Облака и дата-центры",
+   "product": "Google Cloud / Vera Rubin",
+   "section": "C",
+   "summary_raw": "Google Cloud запускает инстансы A5X на NVIDIA Vera Rubin NVL72; по тексту, общая доступность наступит в следующем месяце, затем расширение в Европу. Google планирует масштабировать инфраструктуру до 960 000 GPU Rubin; первым клиентом стала Ineffable Intelligence Дэвида Сильвера.",
+   "importance": 8
+  },
+  {
+   "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+   "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-22T15:00:02Z",
+   "company": "NVIDIA",
+   "product": "Minerva",
+   "section": "C",
+   "summary_raw": "NVIDIA представила Minerva, платформу сквозного мониторинга для «фабрик ИИ». Подробности страницы не проверялись.",
+   "importance": 5
+  },
+  {
+   "title": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
+   "url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-22T05:00:27Z",
+   "company": "NVIDIA",
+   "product": "Cosmos",
+   "section": "C",
+   "summary_raw": "NVIDIA открыла новые инструменты Cosmos для обучения, оценки и развёртывания мировых моделей.",
+   "importance": 5
+  },
+  {
+   "title": "NVIDIA Agent Toolkit Expands, Grounding Enterprise Agents in Company Data",
+   "url": "https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-21T10:10:01Z",
+   "company": "NVIDIA",
+   "product": "Agent Toolkit",
+   "section": "C",
+   "summary_raw": "На GTC Berlin NVIDIA расширила Agent Toolkit для привязки корпоративных агентов к данным компании.",
+   "importance": 5
+  },
+  {
+   "title": "NVIDIA Confidential Computing Expands, Enabling Frontier Model Builders to Secure Infrastructure",
+   "url": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-21T10:30:02Z",
+   "company": "NVIDIA",
+   "product": "Confidential Computing",
+   "section": "C",
+   "summary_raw": "NVIDIA расширяет конфиденциальные вычисления для разработчиков передовых моделей.",
+   "importance": 4
+  },
+  {
+   "title": "GTC Berlin 2026: Live Updates From NVIDIA CEO Jensen Huang's Keynote",
+   "url": "https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-21T09:30:16Z",
+   "company": "NVIDIA",
+   "product": "GTC",
+   "section": "C",
+   "summary_raw": "Живой репортаж с keynote Дженсена Хуанга на GTC Berlin 2026, где анонсированы европейские инициативы по открытым моделям и суверенному ИИ.",
+   "importance": 6
+  },
+  {
+   "title": "Voxtral 3",
+   "url": "https://mistral.ai/news/voxtral-3/",
+   "source": "mistral.ai/news",
+   "source_type": "official",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Mistral",
+   "product": "Voxtral",
+   "section": "B",
+   "summary_raw": "Mistral выпустила семейство речевых моделей Voxtral 3: транскрипция (50+ языков), realtime-модель с задержкой менее 500 мс, TTS и SDK для голосовых агентов на LiveKit. Цены по странице: от $0,0035/мин за пакетную транскрипцию, $13 за 1 млн символов TTS, голосовой агент $0,04/мин. Дата берётся из метки на странице и по списку новостей.",
+   "importance": 7
+  },
+  {
+   "title": "Mistral Advances AI for Engineering with NVIDIA",
+   "url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+   "source": "mistral.ai/news",
+   "source_type": "official",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "Mistral",
+   "product": "Mistral",
+   "section": "B",
+   "summary_raw": "Mistral и NVIDIA работают над ИИ-ориентированными инженерными процессами на ускоренных вычислениях NVIDIA.",
+   "importance": 4
+  },
+  {
+   "title": "DeepSeek выпустила V4.1-Flash-1017 с обновлённым API поиска",
+   "url": "https://af.net/realtime/deepseek-launches-v4-1-flash-1017-model-with-improved-benchmarks/",
+   "source": "af.net",
+   "source_type": "aggregator",
+   "published_at": null,
+   "company": "DeepSeek",
+   "product": "V4.1-Flash",
+   "section": "B",
+   "summary_raw": "По агрегатору, 17 октября вышло минорное обновление V4.1-Flash-1017 с улучшениями в кодинге и агентных задачах; заявлен результат 77,0 на DeepSWE и новые Search/Fetch API. Первоисточник (changelog DeepSeek) подтвердить не удалось, дата только по вторичным источникам.",
+   "importance": 6
+  },
+  {
+   "title": "Amazon Polly delivers a major upgrade to its Generative engine",
+   "url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+   "source": "aws.amazon.com/blogs/machine-learning",
+   "source_type": "official",
+   "published_at": "2026-10-22T18:06:35Z",
+   "company": "Amazon",
+   "product": "Polly",
+   "section": "B",
+   "summary_raw": "AWS объявила о крупном обновлении генеративного движка Amazon Polly.",
+   "importance": 4
+  },
+  {
+   "title": "Announcing new ways to customize models with SageMaker AI, without managing GPUs",
+   "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+   "source": "aws.amazon.com/blogs/machine-learning",
+   "source_type": "official",
+   "published_at": "2026-10-22T18:00:04Z",
+   "company": "Amazon",
+   "product": "SageMaker AI",
+   "section": "B",
+   "summary_raw": "AWS представила новые способы кастомизации моделей в SageMaker AI без управления GPU.",
+   "importance": 5
+  }
+ ],
+ "errors": [
+  {
+   "source": "x.ai/news",
+   "error": "403 Forbidden"
+  },
+  {
+   "source": "openai.com/index/* (страницы)",
+   "error": "403 при WebFetch; тексты не проверены, summary по заголовкам и СМИ"
+  },
+  {
+   "source": "qwenlm.github.io/blog",
+   "error": "нет записей в окне; блог переехал на qwen.ai/research"
+  },
+  {
+   "source": "Meta, Perplexity, Apple, Google/Gemini, AMD, xAI",
+   "error": "поиск не нашёл подтверждённых новостей в окне"
+  }
+ ]
+}

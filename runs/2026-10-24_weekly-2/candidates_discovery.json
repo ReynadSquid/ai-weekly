@@ -1,0 +1,118 @@
+{
+ "items": [
+  {
+   "title": "Block представила Dessa — речевую модель, обученную только на разговорах",
+   "url": "https://block.xyz/dessa",
+   "source": "block.xyz",
+   "source_type": "official",
+   "published_at": "2026-10-23T00:00:00Z",
+   "company": "Block",
+   "product": "Dessa",
+   "section": "E",
+   "summary_raw": "Небольшая лаборатория Block (бывшая команда Dessa) показала full-duplex speech-to-speech модель, обученную с нуля только на человеческой речи, без текста и предобученных моделей. Слушает и говорит одновременно, работает быстрее реального времени и локально на MacBook Pro M4 Max. Открыт waitlist, ранний доступ у исследователей безопасности ИИ.",
+   "importance": 6
+  },
+  {
+   "title": "Canva выпустила первую собственную модель генерации изображений Canva Craft",
+   "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+   "source": "techcrunch.com",
+   "source_type": "media",
+   "published_at": "2026-10-22T19:00:00Z",
+   "company": "Canva",
+   "product": "Canva Craft",
+   "section": "E",
+   "summary_raw": "Двухэтапная модель: сначала планирует раскладку и текст, затем генерирует картинку до 2K в 30 соотношениях сторон. Обучена на шаблонах Canva. Доступна всем в Dream Lab и через API; облегчённые Craftfast и Craft-ultrafast обещаны позже. Первоисточник на сайте Canva не найден (also_seen_at: theverge.com/ai-artificial-intelligence/1017151).",
+   "importance": 6
+  },
+  {
+   "title": "1Password for Agents: ИИ-агенты входят в аккаунты без доступа к паролю",
+   "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+   "source": "1password.com",
+   "source_type": "official",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "1Password",
+   "product": "1Password for Agents",
+   "section": "E",
+   "summary_raw": "Агент подтверждает личность цифровым ключом, пользователь одобряет вход, а 1Password сам подставляет учётные данные, агент пароля не видит. Заявлена совместимость с рядом популярных агентов. Цены и регионы не указаны. Данные из пересказа TechCrunch (also_seen_at: techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/); сам пресс-релиз мной не открывался.",
+   "importance": 5
+  },
+  {
+   "title": "Nirva привлекла $25M на кулон, слушающий только владельца",
+   "url": "https://www.nirva.life/",
+   "source": "nirva.life",
+   "source_type": "official",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Nirva",
+   "product": "Nirva pendant",
+   "section": "E",
+   "summary_raw": "Раунд pre-Series A на $25M, всего привлечено $33M. Носимый кулон/браслет за $249 записывает только речь владельца, по умолчанию не хранит аудио и транскрипты. Заказы с ноября. Основатели — выходцы из Meta Reality Labs. Источник цифр — TechCrunch (also_seen_at: techcrunch.com/2026/10/22/nirva-raises-33m-for-a-pendant-that-only-listens-to-you/); страница компании как главная ссылка, анонс раунда на ней не проверялся.",
+   "importance": 3
+  },
+  {
+   "title": "Microsoft: связанная с Китаем группа атаковала клиентов ConnectWise с помощью ИИ-агентов ARTEX",
+   "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
+   "source": "microsoft.com",
+   "source_type": "official",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "ConnectWise",
+   "product": "ConnectWise Cloud Backup",
+   "section": "E",
+   "summary_raw": "По оценке Microsoft, группа Storm-0940 украла учётные данные облачного бэкапа ConnectWise и получила доступ к почте и файлам примерно 2250 организаций, используя агентов на open-source фреймворке ARTEX (около 3000 попыток входа в минуту). ConnectWise приостановила сервис. Страница Microsoft мной не открывалась, цифры из TechCrunch (also_seen_at: techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/).",
+   "importance": 7
+  },
+  {
+   "title": "Wiz: PHP2Shell — критические RCE-уязвимости в ядре PHP, найденные с помощью ИИ",
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
+   "source": "wiz.io",
+   "source_type": "official",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "Wiz",
+   "product": "PHP2Shell",
+   "section": "E",
+   "summary_raw": "Четыре бага памяти в ядре PHP (CVE-2026-109618 и CVE-2026-109619, CVSS 9.2) дают удалённое исполнение кода без аутентификации, затронуты версии с PHP 5.4. ИИ-модели участвовали в поиске, разработке эксплойта и проверке патча. Патчи и раскрытие 21 октября. Ars Technica пишет, что у атакующих была фора в 4 дня (also_seen_at: arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/).",
+   "importance": 8
+  },
+  {
+   "title": "Disney покупает активы и команду Character.AI через банкротство, без её исков",
+   "url": "https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/",
+   "source": "arstechnica.com",
+   "source_type": "media",
+   "published_at": "2026-10-19T00:00:00Z",
+   "company": "Disney / Character.AI",
+   "product": "Character.AI",
+   "section": "E",
+   "summary_raw": "Disney выступает stalking-horse участником аукциона при банкротстве Character.AI: $20M за лицензию на часть IP и более 60 сотрудников. Иски и расследования остаются у Character.AI. Аукцион ожидается в конце ноября-начале декабря, сделка не закрыта. Детали взяты из поисковой выдачи (Variety/WIRED в пересказе); статью Ars открыть не удалось, первоисточник (судебные документы) не найден.",
+   "importance": 7
+  },
+  {
+   "title": "WorldTUI: модель на 360M параметров, имитирующая терминал",
+   "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+   "source": "simedw.com",
+   "source_type": "blog",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "Независимый автор (simedw)",
+   "product": "WorldTUI",
+   "section": "F",
+   "summary_raw": "Автор обучил маленькую модель на 360M параметров изображать терминал (world model). Страница мной не открывалась, описание по заголовку HN (also_seen_at: news.ycombinator.com).",
+   "importance": 2
+  },
+  {
+   "title": "Hybrid Reasoning Agents: агенты, рассуждающие в латентном пространстве и действующие текстом",
+   "url": "https://arxiv.org/abs/2610.18861",
+   "source": "arxiv.org",
+   "source_type": "research",
+   "published_at": "2026-10-18T00:00:00Z",
+   "company": "",
+   "product": "Hybrid Reasoning Agents",
+   "section": "F",
+   "summary_raw": "Препринт об LLM-агентах, которые думают в латентном пространстве, а действуют через текст. Содержимое не проверялось, только заголовок (also_seen_at: news.ycombinator.com).",
+   "importance": 2
+  }
+ ],
+ "errors": [
+  "Веб-поиски (Series A, open-source, регулирование, RU) вернули в основном агрегаторы и устаревшие даты, новых подтверждённых кандидатов не дали.",
+  "Шведский запрет ChatGPT/Claude (sverigesradio.se) не подтверждён: сайт 403, поиск без подтверждения, исключён.",
+  "arstechnica.com недоступен для WebFetch; Disney/Character.AI и $15B ad-powered AI startup не проверены по тексту.",
+  "Кандидатов меньше цели 10-30: крупные события недели (OpenAI, Anthropic, Google, Meta, DeepSeek, Mistral) относятся к watchlist."
+ ]
+}

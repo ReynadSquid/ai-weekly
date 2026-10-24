@@ -1,0 +1,9 @@
+{
+  "done": [
+    "init",
+    "collect",
+    "merge"
+  ],
+  "attempts": 1,
+  "errors": []
+}

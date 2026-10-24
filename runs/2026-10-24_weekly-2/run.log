@@ -1,0 +1,9 @@
+2026-10-24T06:35:38Z | init       | run=2026-10-24_weekly-2 mode=dry-run окно 2026-10-17T06:35:38Z → 2026-10-24T06:35:38Z
+2026-10-24T06:35:49Z | collect    | fetch_feeds[media]: 86 кандидатов, ошибок источников: 0
+2026-10-24T06:35:49Z | collect    | fetch_feeds[telegram]: 45 кандидатов, ошибок источников: 0
+2026-10-24T06:35:49Z | collect    | fetch_feeds[research]: 90 кандидатов, ошибок источников: 1
+2026-10-24T06:35:49Z | collect    | источник недоступен: github.com/trending — https://api.github.com/search/repositories?q=topic%3Allm+created%3A%3E%3D2026-10-17+stars%3A%3E%3D300&sort=stars&order=desc&per_page=15: HTTP 403
+2026-10-24T06:35:50Z | collect    | fetch_feeds[companies]: 61 кандидатов, ошибок источников: 0
+2026-10-24T06:37:04Z | collect    | шаг выполнен. 4 collectors → candidates_*.json (23+9+11+7), есть ошибки/оговорки
+2026-10-24T06:37:07Z | merge      | вход 332 → выход 279 (дубли url 52, дубли заголовков 1, история 0, вне окна 0); ошибок источников 14
+2026-10-24T06:37:07Z | merge      | шаг выполнен. candidates_* → candidates.json
