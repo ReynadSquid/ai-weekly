@@ -94,6 +94,15 @@ def test_already_published_slot_is_skipped(repo, capsys, monkeypatch):
     assert run_init(capsys)["status"] == "already_published"
 
 
+def test_forced_rerun_of_published_day_gets_new_run_id(repo, capsys, monkeypatch):
+    common.write_json(pipeline.PUBLISHED, {"issues": {
+        "2026-10-24_weekly:dry-run": {"issue_id": "2026-10-24_weekly", "mode": "dry-run", "status": "published"}}})
+    monkeypatch.setenv("AIW_NOW", "2026-10-24T06:36:00Z")  # суббота, вне слота
+    assert run_init(capsys, "--dry-run", "--kind", "weekly")["status"] == "already_published"
+    res = run_init(capsys, "--dry-run", "--kind", "weekly", "--force")
+    assert res["status"] == "proceed" and res["run_id"] == "2026-10-24_weekly-2"
+
+
 def test_second_init_resumes_and_respects_lock(repo, capsys, monkeypatch):
     monkeypatch.setenv("AIW_NOW", "2026-10-25T03:05:00Z")
     run_init(capsys)

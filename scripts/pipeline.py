@@ -118,6 +118,14 @@ def cmd_init(args) -> int:
     if rec and rec.get("status") == "published" and not args.force:
         out({"status": "already_published", "run_id": run_id, "mode": mode})
         return 0
+    if rec and rec.get("status") == "published":
+        # Ручной повтор (--force) в уже опубликованный день — отдельный выпуск <дата>_<тип>-N.
+        n = 2
+        while f"{run_id}-{n}:{mode}" in db["issues"] or run_dir(f"{run_id}-{n}").exists():
+            n += 1
+        run_id = f"{run_id}-{n}"
+        rd = run_dir(run_id)
+        key = f"{run_id}:{mode}"
 
     existing = read_json(rd / "init.json")
     progress = read_json(rd / "progress.json", {"done": []})

@@ -174,6 +174,6 @@ class RunLog:
 
 
 def run_dir(run_id: str) -> Path:
-    if not re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}_[a-z]+", run_id):
+    if not re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}_[a-z]+(-[0-9]+)?", run_id):
         raise SystemExit(f"Некорректный run id: {run_id!r}")
     return RUNS / run_id
