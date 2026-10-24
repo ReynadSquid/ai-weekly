@@ -34,6 +34,35 @@
       ],
       "link": "https://t.me/jgrgihselrw/3",
       "finished_at": "2026-10-23T21:50:28Z"
+    },
+    "2026-10-24_weekly-2:dry-run": {
+      "issue_id": "2026-10-24_weekly-2",
+      "mode": "dry-run",
+      "issue_number": 1,
+      "status": "published",
+      "started_at": "2026-10-24T06:44:12Z",
+      "messages": [
+        {
+          "index": 0,
+          "message_id": 7,
+          "hash": "aa801e79da59ebe7",
+          "sent_at": "2026-10-24T06:44:13Z"
+        },
+        {
+          "index": 1,
+          "message_id": 8,
+          "hash": "b4764251d3f7a755",
+          "sent_at": "2026-10-24T06:44:17Z"
+        },
+        {
+          "index": 2,
+          "message_id": 9,
+          "hash": "0769f0254f160619",
+          "sent_at": "2026-10-24T06:44:20Z"
+        }
+      ],
+      "link": "https://t.me/jgrgihselrw/7",
+      "finished_at": "2026-10-24T06:44:20Z"
     }
   }
 }

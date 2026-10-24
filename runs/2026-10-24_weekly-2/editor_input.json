@@ -1,0 +1,605 @@
+{
+  "issue": {
+    "run_id": "2026-10-24_weekly-2",
+    "kind": "weekly",
+    "title": "AI Weekly",
+    "issue_number": 1,
+    "date_range": "17–24 октября 2026",
+    "mode": "dry-run"
+  },
+  "items": [
+    {
+      "id": "61f4d0141ff303c02405716db977e4c6353bca59",
+      "kind": "news",
+      "status": "partially",
+      "title": "OpenAI models are coming to Google Cloud",
+      "company": "OpenAI",
+      "product": "GPT / Codex",
+      "section": "A",
+      "importance": 9,
+      "published_at": "2026-10-21T12:00:00Z",
+      "summary_raw": "OpenAI объявила, что её передовые модели и Codex-сценарии появятся в Model Garden на Google Cloud. По сообщениям СМИ, закупка пойдёт через Google Cloud Marketplace с зачётом существующих обязательств по расходам; детали по моделям и срокам доступа в источниках расходятся (страница OpenAI при проверке отдала 403, детали — из заголовка и СМИ).",
+      "primary_source_url": "https://openai.com/index/openai-models-google-cloud",
+      "attribution": "по сообщениям СМИ (страница OpenAI отдаёт 403, Ars Technica не открылась)",
+      "checked_claims": [
+        {
+          "claim": "21 октября объявлено, что модели OpenAI GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna и Codex приходят в Model Garden на Google Cloud",
+          "source": "https://thenextweb.com/news/openai-models-codex-google-cloud",
+          "quote_hint": "Announced Wednesday Oct 21; three models listed"
+        },
+        {
+          "claim": "Доступ сейчас — закрытое превью для отдельных корпоративных клиентов; общий доступ OpenAI планирует в ближайшие недели",
+          "source": "https://runtimewire.com/article/google-cloud-adds-openai-models-model-garden",
+          "quote_hint": "private preview for selected customers; GA in coming weeks"
+        },
+        {
+          "claim": "Покупка через Google Cloud Marketplace с зачётом существующих обязательств по расходам Google Cloud",
+          "source": "https://thenextweb.com/news/openai-models-codex-google-cloud",
+          "quote_hint": "Billing paragraph: Marketplace, spending commitments, single invoice"
+        }
+      ],
+      "removed_claims": [
+        "точная дата общего доступа — нигде не названа",
+        "доступность в Antigravity/Gemini Agent — только 'скоро' по словам Google, не проверено первоисточником",
+        "написание названия (GPT-6 Astra vs GPT-Astra) — источники расходятся, использовать GPT-6 Astra только с оговоркой",
+        "цифры про AWS/Microsoft — не проверялись"
+      ],
+      "hashtag": "#OpenAI"
+    },
+    {
+      "id": "cc012b1e3b750154d264a457e79317094fb5a0a7",
+      "kind": "news",
+      "status": "verified",
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "company": "Anthropic",
+      "product": "Agent Skills",
+      "section": "A",
+      "importance": 8,
+      "published_at": "2026-10-22T00:00:00Z",
+      "summary_raw": "Anthropic передаёт открытый стандарт Agent Skills фонду Agentic AI Foundation при Linux Foundation, как ранее MCP. По данным компании, стандарт интегрировали более 70 агентных платформ, опубликовано около миллиона навыков и почти 280 млн установок. Дальше планируются версионные релизы, процесс предложений и рекомендации по безопасности.",
+      "primary_source_url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Anthropic передаёт стандарт Agent Skills фонду Agentic AI Foundation (AAIF) при Linux Foundation",
+          "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+          "quote_hint": "Standard donated to AAIF, hosted under Linux Foundation"
+        },
+        {
+          "claim": "По данным Anthropic: более 70 агентных платформ, около 1 млн опубликованных навыков, почти 280 млн установок",
+          "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+          "quote_hint": "Numbers section: 70+ platforms, 1 million skills, ~280 million installs"
+        },
+        {
+          "claim": "Также передаются название, логотип, GitHub-организация и домен agentskills.io; ведущие мейнтейнеры — David Soria Parra и Mahesh Murag",
+          "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+          "quote_hint": "What was donated; Lead Maintainers"
+        },
+        {
+          "claim": "Планы: версионные релизы, формальный процесс предложений, рекомендации по безопасности",
+          "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+          "quote_hint": "Plans section"
+        }
+      ],
+      "removed_claims": [
+        "'как ранее MCP' — в проверенном тексте не подтверждено, не использовать без отдельной проверки"
+      ],
+      "hashtag": "#Anthropic"
+    },
+    {
+      "id": "292e35e33e7becf5e0952acfd4b807aee40995a9",
+      "kind": "news",
+      "status": "verified",
+      "title": "Anthropic релизнули превью своих dots – Claude Duet",
+      "company": "Anthropic",
+      "product": "Claude Duet",
+      "section": "A",
+      "importance": 8,
+      "published_at": "2026-10-22T06:36:36Z",
+      "summary_raw": "Research preview отдельного приложения (iOS, Android, claude.ai): следит за подключёнными приложениями, работает в фоне на виртуальной машине, перед отправкой сообщений, платежами и удалением просит подтверждение. Доступ по листу ожидания, сначала для US Pro и Max.",
+      "primary_source_url": "https://claude.com/resources/articles/claude-duet",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Claude Duet — research preview: проактивный агент для профессионалов и малого бизнеса, работает в фоне, когда пользователя нет",
+          "source": "https://claude.com/resources/articles/claude-duet",
+          "quote_hint": "Research preview app; proactive agent; keeps working when away"
+        },
+        {
+          "claim": "Платформы: отдельное приложение iOS и Android, а также claude.ai",
+          "source": "https://claude.com/resources/articles/claude-duet",
+          "quote_hint": "Platforms paragraph"
+        },
+        {
+          "claim": "Доступ по листу ожидания, сначала для подписчиков Pro и Max в США; входит в план и делит лимиты",
+          "source": "https://claude.com/resources/articles/claude-duet",
+          "quote_hint": "Availability and Waitlist bullets"
+        },
+        {
+          "claim": "Перед отправкой сообщения, платежом, подписанием документа или удалением просит подтверждение; торговля ценными бумагами и переводы между счетами запрещены",
+          "source": "https://claude.com/resources/articles/claude-duet",
+          "quote_hint": "Approvals section"
+        },
+        {
+          "claim": "Работает в собственной виртуальной машине (по TechCrunch)",
+          "source": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+          "quote_hint": "runs tasks in its own virtual machine"
+        }
+      ],
+      "removed_claims": [
+        "'dots' в заголовке — неточно (так назван жанр в TG); не использовать",
+        "модель Claude Opus 5.5, 6000+ коннекторов, оплата через Link/Shop Pay — только TechCrunch, не подтверждено первоисточником"
+      ],
+      "hashtag": "#Anthropic"
+    },
+    {
+      "id": "3599c9715bbbe9051121fa1de35b5d0f615a6aac",
+      "kind": "news",
+      "status": "verified",
+      "title": "Вышла Kimi K3.1 Pro.",
+      "company": "Moonshot AI",
+      "product": "Kimi K3.1 Pro",
+      "section": "E",
+      "importance": 8,
+      "published_at": "2026-10-23T17:48:17Z",
+      "summary_raw": "Открытая модель класса ~3T параметров, контекст 1M токенов, вариант Highspeed в 2-3 раза быстрее. Доступна в Kimi.ai, Kimi Code и API; веса обещаны до 4 ноября 2026. Бенчмарки заявлены самой Moonshot (Terminal-Bench 4.0: 65.7%).",
+      "primary_source_url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Kimi K3.1 Pro — открытая модель класса 3T параметров (точное число не указано), контекст 1 млн токенов",
+          "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+          "quote_hint": "3T-class open-weight model; 1 million tokens"
+        },
+        {
+          "claim": "Kimi K3.1 Pro Highspeed работает в 2–3 раза быстрее K3.1 Pro",
+          "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+          "quote_hint": "Highspeed runs at 2-3x speed"
+        },
+        {
+          "claim": "Доступна в Kimi.ai, Kimi Work, Kimi Code и API; для Kimi Enterprise по умолчанию выключена",
+          "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+          "quote_hint": "Availability paragraph"
+        },
+        {
+          "claim": "Полные веса обещаны до 4 ноября 2026",
+          "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+          "quote_hint": "weights due by November 4, 2026"
+        },
+        {
+          "claim": "По данным Moonshot: Terminal-Bench 4.0 — 65.7% (GPT-6 Astra 58.2%, Claude Opus 5.5 66.4%)",
+          "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+          "quote_hint": "Terminal-Bench 4.0 comparison"
+        }
+      ],
+      "removed_claims": [
+        "точная дата публикации на странице не указана; 23 октября выведено из путей изображений и TG-постов — писать 'на этой неделе'",
+        "веса пока не опубликованы — не писать как 'open-source вышла'"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "db73069fa994e2557975af177d40aafb5c416c37",
+      "kind": "news",
+      "status": "verified",
+      "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+      "company": "Облака и дата-центры",
+      "product": "NVIDIA Vera Rubin / Google Cloud A5X",
+      "section": "C",
+      "importance": 8,
+      "published_at": "2026-10-21T10:45:17Z",
+      "summary_raw": "Google Cloud запускает инстансы A5X на NVIDIA Vera Rubin NVL72; по тексту, общая доступность наступит в следующем месяце, затем расширение в Европу. Google планирует масштабировать инфраструктуру до 960 000 GPU Rubin; первым клиентом стала Ineffable Intelligence Дэвида Сильвера.",
+      "primary_source_url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+      "attribution": "по данным NVIDIA",
+      "checked_claims": [
+        {
+          "claim": "Google Cloud A5X — инстансы на NVIDIA Vera Rubin NVL72 (ConnectX-9 SuperNIC, Virgo Network, жидкостное охлаждение 4-го поколения)",
+          "source": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+          "quote_hint": "Product paragraph"
+        },
+        {
+          "claim": "Общая доступность инстансов — 'в следующем месяце' (от 21.10), затем расширение в Европу",
+          "source": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+          "quote_hint": "General availability is coming next month"
+        },
+        {
+          "claim": "Google Cloud планирует масштабировать инфраструктуру Vera Rubin до 960 000 GPU Rubin на нескольких площадках",
+          "source": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+          "quote_hint": "Scale: as many as 960,000 Rubin GPUs"
+        },
+        {
+          "claim": "Первый клиент — Ineffable Intelligence (Лондон, основатель David Silver), для обучения с подкреплением",
+          "source": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+          "quote_hint": "Early customer paragraph"
+        }
+      ],
+      "removed_claims": [],
+      "hashtag": "#инфраструктура"
+    },
+    {
+      "id": "48e2274fdf2ba9fe48db533ddecc410e5cc41b05",
+      "kind": "news",
+      "status": "partially",
+      "title": "Securing our frontier model training environment",
+      "company": "OpenAI",
+      "product": "Frontier model training",
+      "section": "A",
+      "importance": 7,
+      "published_at": "2026-10-23T10:00:00Z",
+      "summary_raw": "OpenAI сообщила о защите среды обучения передовых моделей; по сообщениям СМИ, модели обучаются в офлайн-окружении с кэшированным вебом, без доступа к живому интернету.",
+      "primary_source_url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "attribution": "по данным OpenAI в пересказе TechCrunch",
+      "checked_claims": [
+        {
+          "claim": "23 октября OpenAI заявила, что больше не будет обучать передовые модели на живом интернете: вместо этого используются кэшированные и симулированные копии веба",
+          "source": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+          "quote_hint": "will no longer train on live internet; cached and simulated web"
+        },
+        {
+          "claim": "По словам OpenAI, 20 сентября одна из передовых моделей из-за ошибки конфигурации получила доступ в интернет; обучение приостановили до конца месяца (пересказ TechCrunch блога OpenAI)",
+          "source": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+          "quote_hint": "September 20 misconfiguration incident paragraph"
+        }
+      ],
+      "removed_claims": [
+        "прямые цитаты поста OpenAI — страница отдала 403, цитаты только через TechCrunch",
+        "связь с Anthropic ('две недели назад ограничила модели') — один источник, не проверено",
+        "подробности red-team — не подтверждены первоисточником"
+      ],
+      "hashtag": "#OpenAI"
+    },
+    {
+      "id": "74fcf21eca7add4a8265b1181e42f31fbfb429bc",
+      "kind": "news",
+      "status": "partially",
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "company": "OpenAI",
+      "product": "ChatGPT Ads",
+      "section": "A",
+      "importance": 6,
+      "published_at": "2026-10-21T13:00:00Z",
+      "summary_raw": "Согласно заголовку, реклама в ChatGPT расширяется ещё на 26 стран, а платформой уже воспользовались более 100 000 рекламодателей. Текст страницы недоступен (403), подробности не проверены.",
+      "primary_source_url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "attribution": "по данным OpenAI (в пересказе Reuters/The Star)",
+      "checked_claims": [
+        {
+          "claim": "21 октября OpenAI расширила рекламу в ChatGPT ещё на 26 стран; всего теперь 89 стран",
+          "source": "https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue",
+          "quote_hint": "26 countries, bringing total to 89"
+        },
+        {
+          "claim": "По словам OpenAI, более 100 000 рекламодателей запускали кампании на платформе",
+          "source": "https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue",
+          "quote_hint": "more than 100,000 advertisers have since run campaigns"
+        }
+      ],
+      "removed_claims": [
+        "перечень стран, планы Free/Go без рекламы в Plus/Pro/Enterprise, выручка $1 млрд — только поисковые сниппеты, страницы не открыты",
+        "итог 80 стран у PYMNTS противоречит — не использовать"
+      ],
+      "hashtag": "#OpenAI"
+    },
+    {
+      "id": "afe5d96a9d4684fb96de500346e2384550461c1d",
+      "kind": "news",
+      "status": "verified",
+      "title": "Voxtral 3",
+      "company": "Mistral",
+      "product": "Voxtral 3",
+      "section": "B",
+      "importance": 6,
+      "published_at": "2026-10-20T00:00:00Z",
+      "summary_raw": "Mistral выпустила семейство речевых моделей Voxtral 3: транскрипция (50+ языков), realtime-модель с задержкой менее 500 мс, TTS и SDK для голосовых агентов на LiveKit. Цены по странице: от $0,0035/мин за пакетную транскрипцию, $13 за 1 млн символов TTS, голосовой агент $0,04/мин. Дата берётся из метки на странице и по списку новостей.",
+      "primary_source_url": "https://mistral.ai/news/voxtral-3/",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Mistral выпустила семейство Voxtral 3: Small Transcribe 3, Mini Transcribe 3 (4B, пакетная), Mini Transcribe Realtime 3, Mini TTS 3 и SDK для голосовых агентов на LiveKit",
+          "source": "https://mistral.ai/news/voxtral-3/",
+          "quote_hint": "Models list"
+        },
+        {
+          "claim": "Транскрипция — 50+ языков; realtime — задержка менее 500 мс; TTS — 35+ языков и 50+ диалектов",
+          "source": "https://mistral.ai/news/voxtral-3/",
+          "quote_hint": "Languages and latency sections"
+        },
+        {
+          "claim": "Цены: Mini Transcribe 3 (пакет) $0,0035/мин; Small Transcribe 3 $0,0040/мин; Realtime $0,008/мин; TTS $13 за 1 млн символов; голосовой агент $0,04/мин (с Mistral Small 4)",
+          "source": "https://mistral.ai/news/voxtral-3/",
+          "quote_hint": "Prices list"
+        }
+      ],
+      "removed_claims": [
+        "число языков realtime — на странице 35+ и 40+, не указывать",
+        "дата на странице не указана; 20 октября — по URL Marktechpost и поиску, в окне"
+      ],
+      "hashtag": "#Mistral"
+    },
+    {
+      "id": "d2321eb5a0cf03d8bf36a85f52ab55d767dca4f2",
+      "kind": "news",
+      "status": "partially",
+      "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
+      "company": "DeepSeek",
+      "product": "DeepSeek",
+      "section": "B",
+      "importance": 7,
+      "published_at": "2026-10-19T16:16:46Z",
+      "summary_raw": "Министерство внутренней безопасности США, по данным Reuters, запретило использование DeepSeek в федеральных гражданских агентствах.",
+      "primary_source_url": "https://bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies",
+      "attribution": "по данным BleepingComputer; Reuters не проверен",
+      "checked_claims": [
+        {
+          "claim": "DHS обязало федеральные гражданские ведомства прекратить использование продуктов DeepSeek и убрать их из систем, включая продукты на базе технологий DeepSeek",
+          "source": "https://bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies",
+          "quote_hint": "Scope paragraph"
+        },
+        {
+          "claim": "Исключения можно запросить в течение 60 дней, решения принимает CISA; приказ не ограничивает частное и потребительское использование",
+          "source": "https://bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies",
+          "quote_hint": "Exceptions and Limits bullets"
+        },
+        {
+          "claim": "Приказ опубликован в Federal Register 20 октября 2026 (Public Inspection — 19 октября)",
+          "source": "https://bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies",
+          "quote_hint": "Publication bullet"
+        }
+      ],
+      "removed_claims": [
+        "дата подписания приказа — источники противоречат (июнь/июль/октябрь), не указывать",
+        "ссылка на Reuters — статья не открылась (WebFetch не поддерживает), не атрибутировать Reuters напрямую",
+        "реакция МИД КНР — только сниппеты"
+      ],
+      "hashtag": "#DeepSeek"
+    },
+    {
+      "id": "bf04d12d42270af3bfdd0fc2193cb02f99844609",
+      "kind": "news",
+      "status": "partially",
+      "title": "MiniMaxAI/MiniMax-M3.1-Flash (Hugging Face trending)",
+      "company": "MiniMax",
+      "product": "MiniMax-M3.1-Flash",
+      "section": "F",
+      "importance": 7,
+      "published_at": "2026-10-17T06:37:50Z",
+      "summary_raw": "Открытые веса мультимодальной MoE-модели для кодинга, агентов и computer use: по данным карточки, около 428B параметров всего и 23B активных, контекст до 1M токенов, лицензия minimax-community. Авторы приводят результаты на агентских бенчмарках (например, DeepSWE v1.1 — 73.7, OSWorld 2.0 — 61.7), но сами же отмечают, что в их таблице ряд конкурентов выше по многим тестам. Цифры заявлены MiniMax; в метаданных HF размер указан как 220B, что расходится с карточкой. Дата релиза на странице не указана (дата — по ленте HF).",
+      "primary_source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+      "attribution": "по данным MiniMax (карточка на Hugging Face)",
+      "checked_claims": [
+        {
+          "claim": "По карточке модели: MiniMax-M3.1-Flash — около 428B параметров всего, 23B активных на токен, контекст до 1 млн токенов, лицензия minimax-community",
+          "source": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+          "quote_hint": "Model details block"
+        },
+        {
+          "claim": "По данным MiniMax: DeepSWE v1.1 — 73.7, OSWorld 2.0 — 61.7; в её же таблице есть модели с более высокими результатами",
+          "source": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+          "quote_hint": "Benchmark table"
+        }
+      ],
+      "removed_claims": [
+        "дата релиза — на странице нет; 19 октября (анонс) / 23 октября (веса) — только агрегаторы, не использовать конкретную дату",
+        "размер 220B из метаданных safetensors расходится с 428B — не указывать как факт, только 'около 428B по карточке'",
+        "цены API и 'в 3 раза быстрее' — только агрегаторы"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "97597de85741a1d47bc1db44161b47bab7e73dd6",
+      "kind": "news",
+      "status": "partially",
+      "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
+      "company": "Google",
+      "product": "Gemini / Personal Intelligence",
+      "section": "A",
+      "importance": 7,
+      "published_at": "2026-10-23T16:52:55Z",
+      "summary_raw": "Google обновила политику конфиденциальности: при включённых персонализированных ИИ-функциях данные из Gmail, Drive и Photos могут использоваться для таргетинга рекламы (по сообщениям The Verge и Ars Technica).",
+      "primary_source_url": "https://policies.google.com/privacy",
+      "attribution": "по тексту политики Google; формулировка СМИ не проверена",
+      "checked_claims": [
+        {
+          "claim": "Политика конфиденциальности Google действует с 16 октября 2026",
+          "source": "https://policies.google.com/privacy",
+          "quote_hint": "Effective date at top"
+        },
+        {
+          "claim": "Google по-прежнему заявляет, что не показывает персонализированную рекламу на основе контента Drive, Gmail, Photos, но с исключением: если пользователь сам делает эти данные доступными другим сервисам Google с персонализированной рекламой, они могут использоваться",
+          "source": "https://policies.google.com/privacy",
+          "quote_hint": "Personalized ads paragraph with exception"
+        }
+      ],
+      "removed_claims": [
+        "'Google начала использовать Gmail для рекламы' — не подтверждено: представитель Google говорит, что сейчас этого нет (Fast Company ME, статья от 28.07.26)",
+        "заголовок Verge — Verge и Ars не открылись, формулировки не проверены",
+        "изменение вступило в силу 16.10, до окна (17.10); публикации СМИ — 23.10"
+      ],
+      "hashtag": "#Google"
+    },
+    {
+      "id": "e9fc4036438cc691fe0ef5829293975a02789b21",
+      "kind": "news",
+      "status": "partially",
+      "title": "Meta says Muse has over 10M users, with shopping a top activity",
+      "company": "Meta",
+      "product": "Muse",
+      "section": "A",
+      "importance": 6,
+      "published_at": "2026-10-21T21:14:19Z",
+      "summary_raw": "Meta заявила на звонке по итогам Q3, что у приложения Muse более 10 млн пользователей, популярны покупки и личная продуктивность.",
+      "primary_source_url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+      "attribution": "по заявлению Meta на звонке (TechCrunch)",
+      "checked_claims": [
+        {
+          "claim": "На звонке по итогам Q3 21 октября Meta заявила, что у Muse более 10 млн пользователей",
+          "source": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+          "quote_hint": "more than 10 million users have adopted Muse"
+        },
+        {
+          "claim": "Покупки — одно из главных применений, также личная продуктивность (почта, календарь)",
+          "source": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+          "quote_hint": "Usage and spending section"
+        }
+      ],
+      "removed_claims": [
+        "25% ежедневных пользователей, средний чек >$200, цитата про Plaid — слова Цукерберга в пересказе одного СМИ, не использовать без атрибуции",
+        "планы монетизации — прогнозы Цукерберга, не факт"
+      ],
+      "hashtag": "#Meta"
+    },
+    {
+      "id": "865ffb65f1d593f079bea5171bf4619d03fdfa05",
+      "kind": "news",
+      "status": "partially",
+      "title": "Canva выпустила первую собственную модель генерации изображений Canva Craft",
+      "company": "Canva",
+      "product": "Canva Craft",
+      "section": "E",
+      "importance": 6,
+      "published_at": "2026-10-22T19:00:00Z",
+      "summary_raw": "Двухэтапная модель: сначала планирует раскладку и текст, затем генерирует картинку до 2K в 30 соотношениях сторон. Обучена на шаблонах Canva. Доступна всем в Dream Lab и через API; облегчённые Craftfast и Craft-ultrafast обещаны позже. Первоисточник на сайте Canva не найден (also_seen_at: theverge.com/ai-artificial-intelligence/1017151).",
+      "primary_source_url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "attribution": "по сообщению TechCrunch",
+      "checked_claims": [
+        {
+          "claim": "Canva Craft — первая собственная модель генерации изображений Canva; двухэтапная: сначала план (раскладка, масштаб, иерархия, текст), затем изображение",
+          "source": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+          "quote_hint": "Two-stage process paragraph"
+        },
+        {
+          "claim": "До 2K, около 30 соотношений сторон; обучена на шаблонах из библиотеки Canva, не на фотографиях",
+          "source": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+          "quote_hint": "Resolution and Training data bullets"
+        },
+        {
+          "claim": "Доступна всем пользователям Canva во вкладке Dream Lab и через Canva API; облегчённые Craftfast и Craft-ultrafast готовятся",
+          "source": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+          "quote_hint": "Availability; cost-efficient versions"
+        }
+      ],
+      "removed_claims": [
+        "интеграция в ChatGPT/Gemini через MCP — планы, не релиз",
+        "первоисточник Canva не найден; Verge не открылся"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "2ca67924f9fca88f90b4b29f6c6565e8ee2418b1",
+      "kind": "news",
+      "status": "partially",
+      "title": "Block представила Dessa — речевую модель, обученную только на разговорах",
+      "company": "Block",
+      "product": "Dessa",
+      "section": "E",
+      "importance": 6,
+      "published_at": "2026-10-23T00:00:00Z",
+      "summary_raw": "Небольшая лаборатория Block (бывшая команда Dessa) показала full-duplex speech-to-speech модель, обученную с нуля только на человеческой речи, без текста и предобученных моделей. Слушает и говорит одновременно, работает быстрее реального времени и локально на MacBook Pro M4 Max. Открыт waitlist, ранний доступ у исследователей безопасности ИИ.",
+      "primary_source_url": "https://block.xyz/dessa",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Dessa — speech-to-speech модель из ИИ-лаборатории Block: аудио на входе и выходе без перевода в текст",
+          "source": "https://block.xyz/dessa",
+          "quote_hint": "What it is paragraph"
+        },
+        {
+          "claim": "Full-duplex: слушает и говорит одновременно, может перебивать и давать короткие реплики",
+          "source": "https://block.xyz/dessa",
+          "quote_hint": "Full-duplex paragraph"
+        },
+        {
+          "claim": "По данным Block: обучена с нуля только на человеческой речи, без текста и предобученных моделей; работает быстрее реального времени локально на MacBook Pro M4 Max или лучше",
+          "source": "https://block.xyz/dessa",
+          "quote_hint": "Training data and Hardware bullets"
+        },
+        {
+          "claim": "Есть лист ожидания; ранний доступ у небольшой группы исследователей безопасности ИИ",
+          "source": "https://block.xyz/dessa",
+          "quote_hint": "Waitlist bullet"
+        }
+      ],
+      "removed_claims": [
+        "'бывшая команда Dessa' и роль Джека Дорси — не подтверждено",
+        "дата релиза — на странице только дата политики конфиденциальности 21.10; поиск по теме ничего не нашёл",
+        "Verge и HN не открывались"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "9b35c0bfb2f0e3cd6f0b40f1544c7158083b755d",
+      "kind": "news",
+      "status": "verified",
+      "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+      "company": "IBM",
+      "product": "Granite Speech 5.0",
+      "section": "F",
+      "importance": 5,
+      "published_at": "2026-10-21T14:58:18Z",
+      "summary_raw": "IBM обновила семейство речевых моделей: новая granite-speech-5.0-2b (6 языков, перевод), расширенная 470m-turboctc на 7 языков и улучшенная 4.1-2b-plus для многоголосых записей. IBM заявляет второе место среди открытых ASR-моделей на Open ASR Leaderboard (средний WER 5.06% по английскому на 21.10.2026). Лицензия Apache 2.0.",
+      "primary_source_url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+      "attribution": "по данным IBM",
+      "checked_claims": [
+        {
+          "claim": "IBM выпустила granite-speech-5.0-2b (транскрипция: английский, французский, немецкий, испанский, португальский, японский; перевод с/на английский, плюс английский в итальянский и китайский)",
+          "source": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+          "quote_hint": "Models and Languages sections"
+        },
+        {
+          "claim": "Обновлены granite-speech-5.0-470m-turboctc (7 языков, 19 870 RTFx) и granite-speech-4.1-2b-plus (многоголосые записи)",
+          "source": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+          "quote_hint": "Turbo CTC bullet; 4.1-2b-plus"
+        },
+        {
+          "claim": "Лицензия Apache 2.0 для всех трёх моделей",
+          "source": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+          "quote_hint": "License bullet"
+        },
+        {
+          "claim": "По данным IBM: granite-speech-5.0-2b — 2-е место среди открытых ASR-моделей на Open ASR Leaderboard, средний WER по английскому 5.06%",
+          "source": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+          "quote_hint": "Open ASR Leaderboard bullet"
+        }
+      ],
+      "removed_claims": [
+        "'на 21.10.2026' для рейтинга — дата снимка не проверена, формулировать 'на момент публикации'"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "566564edc50afe349bc8fdef71be09825228fc06",
+      "kind": "news",
+      "status": "verified",
+      "title": "Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds",
+      "company": "Исследователи (аффилиация не указана)",
+      "product": "Matrix-Game 4.0",
+      "section": "F",
+      "importance": 6,
+      "published_at": "2026-10-19T20:00:00Z",
+      "summary_raw": "Система для интерактивных игровых миров, где логику игры исполняет лёгкий движок, кодовый агент превращает идеи игрока в код, а авторегрессионная видеомодель дорисовывает детальную картинку по low-poly-прокси. Авторы заявляют 480p при 60 FPS на одной RTX 5090 с задержкой 112 мс и обещают выложить код, веса и ассеты; конкретные ссылки на репозиторий на странице не подтверждены.",
+      "primary_source_url": "https://arxiv.org/abs/2610.27999",
+      "attribution": "по данным авторов статьи",
+      "checked_claims": [
+        {
+          "claim": "Matrix-Game 4.0: лёгкий движок хранит состояние мира и правила, мультимодальный кодовый агент превращает идеи игрока в код, авторегрессионный видеорендерер дорисовывает low-poly кадры",
+          "source": "https://arxiv.org/abs/2610.27999",
+          "quote_hint": "Abstract: separating game execution from visual generation"
+        },
+        {
+          "claim": "По данным авторов: 480p при 60 FPS на одной RTX 5090 с задержкой 112 мс от нажатия до кадра",
+          "source": "https://arxiv.org/abs/2610.27999",
+          "quote_hint": "Performance bullets"
+        },
+        {
+          "claim": "Авторы заявляют, что выкладывают код, веса и low-poly ассеты; проектная страница matrix-game-v4-0.github.io",
+          "source": "https://arxiv.org/abs/2610.27999",
+          "quote_hint": "Code release statement"
+        }
+      ],
+      "removed_claims": [
+        "аффилиация авторов не указана на странице — не называть компанию",
+        "работающие ссылки на репозиторий/веса не проверялись"
+      ],
+      "hashtag": null
+    }
+  ]
+}

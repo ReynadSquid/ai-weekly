@@ -11,3 +11,7 @@
 2026-10-24T06:41:39Z | gate       | решение=pass годных=16 слухов=0 отклонено=4 (20%) 
 2026-10-24T06:41:42Z | factcheck  | шаг выполнен. 20 проверено: 7 verified, 9 partially, 4 rejected
 2026-10-24T06:41:42Z | gate       | шаг выполнен. pass, 16 годных
+2026-10-24T06:41:45Z | write      | editor_input: 16 новостей
+2026-10-24T06:43:35Z | write      | шаг выполнен. editor_input → posts.json, draft.md
+2026-10-24T06:44:12Z | qa         | шаг выполнен. pass, blocker 0
+2026-10-24T06:44:24Z | publish    | шаг выполнен. dry-run, 3 сообщения

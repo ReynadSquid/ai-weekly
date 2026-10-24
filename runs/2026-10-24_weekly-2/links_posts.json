@@ -1,0 +1,114 @@
+{
+  "https://openai.com/index/openai-models-google-cloud": {
+    "url": "https://openai.com/index/openai-models-google-cloud",
+    "status": 403,
+    "final_url": "https://openai.com/index/openai-models-google-cloud",
+    "error": null,
+    "verdict": "unverifiable"
+  },
+  "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation": {
+    "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://claude.com/resources/articles/claude-duet": {
+    "url": "https://claude.com/resources/articles/claude-duet",
+    "status": 200,
+    "final_url": "https://claude.com/resources/articles/claude-duet",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://openai.com/index/securing-our-frontier-model-training-environment": {
+    "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "status": 403,
+    "final_url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "error": null,
+    "verdict": "unverifiable"
+  },
+  "https://policies.google.com/privacy": {
+    "url": "https://policies.google.com/privacy",
+    "status": 200,
+    "final_url": "https://policies.google.com/privacy",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://openai.com/index/chatgpt-ads-expands-26-new-countries": {
+    "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+    "status": 403,
+    "final_url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+    "error": null,
+    "verdict": "unverifiable"
+  },
+  "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/": {
+    "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies": {
+    "url": "https://bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies",
+    "status": 200,
+    "final_url": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://mistral.ai/news/voxtral-3/": {
+    "url": "https://mistral.ai/news/voxtral-3/",
+    "status": 200,
+    "final_url": "https://mistral.ai/news/voxtral-3/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/": {
+    "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+    "status": 200,
+    "final_url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.kimi.ai/blog/kimi-k3-1-pro": {
+    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "status": 200,
+    "final_url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/": {
+    "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://block.xyz/dessa": {
+    "url": "https://block.xyz/dessa",
+    "status": 200,
+    "final_url": "https://block.xyz/dessa",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash": {
+    "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+    "status": 200,
+    "final_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://arxiv.org/abs/2610.27999": {
+    "url": "https://arxiv.org/abs/2610.27999",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2610.27999",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/blog/ibm-granite/granite-speech-5": {
+    "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+    "error": null,
+    "verdict": "ok"
+  }
+}
