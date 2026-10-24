@@ -1,0 +1,9 @@
+✅ Выпуск опубликован — AI Weekly #1 (2026-10-24_weekly-2, режим dry-run)
+Окно: 17–24 октября 2026
+Собрано: 332 → после дедупа 279
+Фактчек: проверено 20, годных 16, слухов 0, отклонено 4 (20%)
+В выпуске: 16 новостей + 0 слухов
+QA: pass, замечаний 3
+Telegram: published, сообщений 3, ссылка https://t.me/jgrgihselrw/7
+Недоступные источники (14): x.ai/news; openai.com/index/* (страницы); qwenlm.github.io/blog; Meta, Perplexity, Apple, Google/Gemini, AMD, xAI; Веб-поиски (Series A, open-source, регулирование, RU) вернули в основном агрегат; Шведский запрет ChatGPT/Claude (sverigesradio.se) не подтверждён: сайт 403, поис; arstechnica.com недоступен для WebFetch; Disney/Character.AI и $15B ad-powered A; Кандидатов меньше цели 10-30: крупные события недели (OpenAI, Anthropic, Google,; github.com/trending; github.com/trending; openai.com/index/coordinated-disclosure-of-critical-vulnerabilities: 403; openai.com/index/low-resource-programming-languages: 403, пропущено
+Попыток запуска: 1. Лог: runs/2026-10-24_weekly-2/run.log
