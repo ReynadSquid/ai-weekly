@@ -154,7 +154,14 @@ def split_issue(posts: dict, limit: int = DEFAULT_LIMIT) -> list[str]:
     return blocks
 
 
-def build_messages(posts: dict, limit: int = DEFAULT_LIMIT) -> tuple[list[dict], list[str]]:
+POST_TAG = "#AIWeekly"  # хэштег под каждым постом — для поиска по каналу
+
+
+def with_tag(text: str, tag: str = POST_TAG) -> str:
+    return text if not tag or tag in text else f"{text}\n\n{tag}"
+
+
+def build_messages(posts: dict, limit: int = DEFAULT_LIMIT, tag: str = POST_TAG) -> tuple[list[dict], list[str]]:
     errors: list[str] = []
     for part, text in [("header", posts.get("header", "")), ("footer", posts.get("footer", ""))]:
         errors += [f"{part}: {e}" for e in validate_html(text or "")]
@@ -162,11 +169,12 @@ def build_messages(posts: dict, limit: int = DEFAULT_LIMIT) -> tuple[list[dict],
         for item in s.get("items", []):
             errors += [f"{s.get('key')}/{item.get('id')}: {e}" for e in validate_html(item.get("html", ""))]
     try:
-        texts = split_issue(posts, limit)
+        texts = split_issue(posts, limit - (visible_len(tag) + 2 if tag else 0))
     except ValueError as e:
         return [], errors + [str(e)]
     messages = []
     for i, t in enumerate(texts):
+        t = with_tag(t, tag)
         n = visible_len(t)
         if n > TG_LIMIT:
             errors.append(f"сообщение {i}: {n} > {TG_LIMIT}")
@@ -179,15 +187,18 @@ CAPTION_LIMIT = 1024
 
 
 def build_cover_variant(posts: dict, limit: int = DEFAULT_LIMIT) -> tuple[dict | None, str | None]:
-    """Вариант с обложкой: шапка — подпись к фото, дальше разделы без шапки и без превью ссылок.
-    Возвращает (variant, причина_почему_нет). Отсутствие варианта — не ошибка: выпуск уйдёт без обложки."""
-    header = (posts.get("header") or "").strip()
-    if not header:
+    """Вариант с обложкой: подпись к фото — только строка-заголовок выпуска («AI Weekly #N · даты») и
+    хэштег; три главных события не дублируются (обложка уже показывает, о ком выпуск). Дальше разделы
+    без шапки и без превью ссылок. Возвращает (variant, причина_почему_нет); отсутствие варианта —
+    не ошибка: выпуск уйдёт без обложки."""
+    title = next((l.strip() for l in (posts.get("header") or "").splitlines() if l.strip()), "")
+    if not title:
         return None, "нет шапки для подписи"
+    header = with_tag(title)
     if visible_len(header) > CAPTION_LIMIT:
-        return None, f"шапка {visible_len(header)} > {CAPTION_LIMIT} символов подписи"
+        return None, f"подпись {visible_len(header)} > {CAPTION_LIMIT} символов"
     if validate_html(header):
-        return None, "шапка не проходит валидацию HTML"
+        return None, "заголовок выпуска не проходит валидацию HTML"
     messages, errors = build_messages(dict(posts, header=""), limit)
     if errors or not messages:
         return None, "; ".join(errors) or "нет сообщений"

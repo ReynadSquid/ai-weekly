@@ -105,7 +105,8 @@ def test_full_dry_run(repo, fake_tg, monkeypatch, capsys):
     (rd / "draft.md").write_text("# draft", encoding="utf-8")
     assert split_messages.main(["--run", RUN]) == 0
     mj = common.read_json(rd / "messages.json")
-    assert len(mj["messages"]) >= 2 and mj["cover"]["caption"] == posts["header"]
+    assert len(mj["messages"]) >= 2
+    assert mj["cover"]["caption"] == "<b>AI Weekly #1 · 18–25 октября 2026</b>\n\n#AIWeekly"
     msgs = mj["cover"]["messages"]
     assert "AI Weekly #1" not in msgs[0]["text"]  # шапка ушла в подпись к обложке
 

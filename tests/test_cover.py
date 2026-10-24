@@ -60,14 +60,24 @@ def posts(header="<b>AI Weekly #1 · 18–25 октября 2026</b>\n\n• a\n�
             "footer": "Итог.\n\n#AIWeekly"}
 
 
-def test_cover_variant_moves_header_to_caption():
+def test_cover_caption_is_title_only_with_tag():
     v, why = split_messages.build_cover_variant(posts())
-    assert why is None and v["caption"].startswith("<b>AI Weekly #1")
-    assert all("AI Weekly #1" not in m["text"] for m in v["messages"])
+    assert why is None
+    assert v["caption"] == "<b>AI Weekly #1 · 18–25 октября 2026</b>\n\n#AIWeekly"  # без трёх событий
+    assert all("AI Weekly #1" not in m["text"] and "• a" not in m["text"] for m in v["messages"])
     assert all(m["disable_preview"] for m in v["messages"])
 
 
-def test_cover_variant_refused_for_long_header():
+def test_every_post_ends_with_tag_once_and_fits():
+    v, _ = split_messages.build_cover_variant(posts())
+    for m in v["messages"]:
+        assert m["text"].endswith("#AIWeekly") and m["text"].count("#AIWeekly") == 1
+        assert m["length"] <= split_messages.DEFAULT_LIMIT
+    msgs, errors = split_messages.build_messages(posts())
+    assert errors == [] and all(m["text"].count("#AIWeekly") == 1 for m in msgs)
+
+
+def test_cover_variant_refused_for_long_title():
     v, why = split_messages.build_cover_variant(posts(header="<b>Х</b>" + "х" * 1100))
     assert v is None and "1024" in why
 
