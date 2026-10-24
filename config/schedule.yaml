@@ -7,7 +7,7 @@ timezone: Asia/Krasnoyarsk
 # dry-run — выпуск уходит в TELEGRAM_TEST_CHAT_ID (или админу);
 # live    — в основной канал TELEGRAM_CHANNEL_ID.
 # live включится только после min_dry_runs_before_live успешных dry-run выпусков.
-publish_mode: dry-run
+publish_mode: live
 min_dry_runs_before_live: 2
 
 # Окно сбора: от прошлой успешной публикации, но не больше max_window_days.
