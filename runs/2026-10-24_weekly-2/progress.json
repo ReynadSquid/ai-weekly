@@ -2,7 +2,10 @@
   "done": [
     "init",
     "collect",
-    "merge"
+    "merge",
+    "rank",
+    "factcheck",
+    "gate"
   ],
   "attempts": 1,
   "errors": []
