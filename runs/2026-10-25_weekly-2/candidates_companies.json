@@ -1,0 +1,246 @@
+{
+ "items": [
+  {
+   "title": "OpenAI says it will no longer train its AI models on the live internet",
+   "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+   "source": "techcrunch.com",
+   "source_type": "media",
+   "published_at": "2026-10-23T16:05:00Z",
+   "company": "OpenAI",
+   "product": "GPT",
+   "section": "A",
+   "summary_raw": "OpenAI объявила, что обучение фронтирных моделей будет идти без доступа к живому интернету: вместо него — кэшированная и индексированная копия веб-контента. По данным TechCrunch, поводом стал случай, когда модель через ошибку конфигурации выходила в сеть (20 сентября), после чего обучение приостановили. Первоисточник — пост OpenAI, который в издании только упомянут; напрямую его открыть не удалось (403).",
+   "importance": 9
+  },
+  {
+   "title": "OpenAI to bring AI models to Google's cloud, in further expansion beyond Microsoft",
+   "url": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/",
+   "source": "arstechnica.com",
+   "source_type": "media",
+   "published_at": "2026-10-21T04:51:00Z",
+   "company": "OpenAI",
+   "product": "GPT",
+   "section": "A",
+   "summary_raw": "Модели OpenAI станут доступны в облаке Google и в Antigravity, что расширяет присутствие компании за пределы Microsoft. Детали взяты из заголовков и анонса СМИ; страницу целиком не открывал, первоисточник не найден (CNBC вернул 403).",
+   "importance": 7
+  },
+  {
+   "title": "Donating Agent Skills to the Agentic AI Foundation",
+   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Anthropic",
+   "product": "Claude",
+   "section": "A",
+   "summary_raw": "Anthropic передаёт открытый стандарт Agent Skills фонду Agentic AI Foundation при Linux Foundation, включая название, логотип, GitHub-организацию и домен agentskills.io. По словам компании, стандарт уже интегрировали более 70 платформ. Дальше планируются версионные релизы, формальный процесс предложений и рекомендации по безопасности.",
+   "importance": 7
+  },
+  {
+   "title": "Investing in the public benefit",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-18T00:00:00Z",
+   "company": "Anthropic",
+   "product": "Claude",
+   "section": "A",
+   "summary_raw": "Пост Anthropic о вложениях в общественную пользу, опубликован 18 октября. Содержимое страницы не открывал, только заголовок и дата из ленты новостей.",
+   "importance": 3
+  },
+  {
+   "title": "Microsoft's Mustafa Suleyman says its AI outperforms doctors on hard cases",
+   "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+   "source": "techcrunch.com",
+   "source_type": "media",
+   "published_at": "2026-10-22T11:43:00Z",
+   "company": "Microsoft",
+   "product": "Copilot",
+   "section": "A",
+   "summary_raw": "Система MAI-DxO от Microsoft, где несколько ИИ-агентов работают как консилиум, верно решила 83% сложных случаев из NEJM в симуляции против 36% у врачей общей практики без специалистов. Результаты опубликованы в Science, лучше всего система работала на моделях OpenAI. Microsoft планирует испытания в реальных условиях с больницей Beth Israel Deaconess.",
+   "importance": 8
+  },
+  {
+   "title": "Voxtral 3",
+   "url": "https://mistral.ai/news/voxtral-3/",
+   "source": "mistral.ai/news",
+   "source_type": "official",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Mistral",
+   "product": "Mistral",
+   "section": "B",
+   "summary_raw": "Mistral выпустила семейство Voxtral 3: распознавание речи (в т.ч. realtime с задержкой до 500 мс), TTS с клонированием голоса и SDK для голосовых агентов на базе LiveKit. Цены: от $0.0035 за минуту транскрипции, голосовой агент с Mistral Small 4 — $0.04/мин. Доступно через API в ЕС, США и глобально или самостоятельный хостинг.",
+   "importance": 7
+  },
+  {
+   "title": "Mistral Advances AI for Engineering with NVIDIA",
+   "url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+   "source": "mistral.ai/news",
+   "source_type": "official",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "Mistral",
+   "product": "Mistral",
+   "section": "B",
+   "summary_raw": "Mistral и NVIDIA развивают ИИ-процессы для инженерных расчётов и симуляций в авиации, авто и полупроводниках. Mistral Large 4 (около 1 трлн параметров, 49 млрд активных) доступна в публичном превью, веса обещают в конце октября. Компания также нацелена на 1 ГВт вычислительных мощностей к 2030 году.",
+   "importance": 8
+  },
+  {
+   "title": "DeepSeek wrapping up $15 billion fundraising to fuel AI race, sources say",
+   "url": "https://www.msn.com/en-us/technology/tech-companies/deepseek-wrapping-up-15-billion-fundraising-to-fuel-ai-race-sources-say/ar-AA2fO0dx",
+   "source": "msn.com",
+   "source_type": "media",
+   "published_at": "2026-10-22T03:23:46Z",
+   "company": "DeepSeek",
+   "product": "DeepSeek",
+   "section": "B",
+   "summary_raw": "По данным источников, DeepSeek заканчивает раунд финансирования на сумму порядка $15 млрд. Другие СМИ ранее называли минимум $12 млрд при участии Tencent; сама компания сделку не подтверждала. Цифры предварительные.",
+   "importance": 7
+  },
+  {
+   "title": "Perplexity launches AI computer for Mac, lets users complete tasks without internet",
+   "url": "https://www.msn.com/en-in/news/other/perplexity-launches-ai-computer-for-mac-lets-users-complete-tasks-without-internet/ar-AA2fJ7mc",
+   "source": "msn.com",
+   "source_type": "media",
+   "published_at": "2026-10-21T01:08:56Z",
+   "company": "Perplexity",
+   "product": "Perplexity",
+   "section": "B",
+   "summary_raw": "Perplexity выпустила версию своего агента, который может выполнять задачи локально на Mac без интернета. Первоисточник (блог Perplexity) не найден, пересказ по заголовку СМИ.",
+   "importance": 5
+  },
+  {
+   "title": "Amazon launches TorchNeuron to let AI developers run PyTorch code on Trainium chips",
+   "url": "https://cryptobriefing.com/amazon-torchneuron-trainium-pytorch-nvidia/",
+   "source": "cryptobriefing.com",
+   "source_type": "media",
+   "published_at": "2026-10-24T08:20:00Z",
+   "company": "Amazon",
+   "product": "Nova",
+   "section": "B",
+   "summary_raw": "Amazon представила TorchNeuron, позволяющий запускать код на PyTorch на чипах Trainium. Первоисточник AWS не найден.",
+   "importance": 5
+  },
+  {
+   "title": "Amazon Polly delivers a major upgrade to its Generative engine",
+   "url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+   "source": "aws.amazon.com/blogs/machine-learning",
+   "source_type": "official",
+   "published_at": "2026-10-22T18:06:35Z",
+   "company": "Amazon",
+   "product": "Bedrock",
+   "section": "B",
+   "summary_raw": "Генеративный движок Amazon Polly обновлён: речь стала выразительнее при низкой задержке. Добавлено 14 голосов, впервые доступны хинди и финский, всего 57 голосов. Цены не изменились.",
+   "importance": 4
+  },
+  {
+   "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+   "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-21T10:45:17Z",
+   "company": "NVIDIA",
+   "product": "GPU",
+   "section": "C",
+   "summary_raw": "Google Cloud объявил о выходе инстансов A5X на системах NVIDIA Vera Rubin NVL72, общая доступность ожидается в следующем месяце. Планируется масштабирование до 960 тысяч GPU Rubin. Первым клиентом стала Ineffable Intelligence Дэвида Сильвера.",
+   "importance": 8
+  },
+  {
+   "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+   "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-22T15:00:02Z",
+   "company": "NVIDIA",
+   "product": "GPU",
+   "section": "C",
+   "summary_raw": "NVIDIA представила Minerva, AIOps-платформу для мониторинга AI-фабрик: граф знаний по GPU, сетям и задачам, группировка алертов и прогноз сбоев. Уже используется IREN, внедрять планируют IBM, Lambda и Tesla.",
+   "importance": 6
+  },
+  {
+   "title": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
+   "url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-22T05:00:27Z",
+   "company": "NVIDIA",
+   "product": "NIM",
+   "section": "C",
+   "summary_raw": "NVIDIA расширила платформу мировых моделей Cosmos: новые инструменты обучения, чекпоинты для симуляции и пять Data Factory blueprints. Обновлённые NIM Cosmos 3 дают до 2x ускорения инференса по данным компании.",
+   "importance": 6
+  },
+  {
+   "title": "GTC Berlin 2026: Live Updates From NVIDIA CEO Jensen Huang's Keynote",
+   "url": "https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-21T09:30:16Z",
+   "company": "NVIDIA",
+   "product": "GPU",
+   "section": "C",
+   "summary_raw": "Прямая трансляция ключевого доклада Дженсена Хуанга на GTC Berlin 2026, где был представлен пакет европейских анонсов (открытые модели, облачные партнёры, DSX).",
+   "importance": 6
+  },
+  {
+   "title": "AMD And Intel Unite To Supercharge AI Software Across All x86 CPUs",
+   "url": "https://hothardware.com/news/amd-and-intel-unite-pytorch-dnn",
+   "source": "hothardware.com",
+   "source_type": "media",
+   "published_at": "2026-10-23T11:55:00Z",
+   "company": "AMD",
+   "product": "ROCm",
+   "section": "C",
+   "summary_raw": "AMD и Intel объединяют усилия для ускорения ИИ-софта на всех x86-процессорах, в заголовке упомянут PyTorch. Детали не проверял, первоисточник не найден.",
+   "importance": 4
+  },
+  {
+   "title": "ElevenLabs launches 2 AI voice models with 90+ language support",
+   "url": "https://www.newsbytesapp.com/news/science/elevenlabs-launches-2-ai-voice-models-with-90-language-support/tldr",
+   "source": "newsbytesapp.com",
+   "source_type": "media",
+   "published_at": "2026-10-21T08:26:00Z",
+   "company": "ElevenLabs",
+   "product": "ElevenLabs",
+   "section": "D",
+   "summary_raw": "ElevenLabs выпустила две новые голосовые модели с поддержкой более 90 языков. Первоисточник (блог ElevenLabs) не найден.",
+   "importance": 5
+  },
+  {
+   "title": "Reservoir Sues Suno & Anthropic in Latest Lawsuits Over AI Music",
+   "url": "https://www.billboard.com/pro/reservoir-sues-suno-anthropic-over-ai-training/",
+   "source": "billboard.com",
+   "source_type": "media",
+   "published_at": "2026-10-22T05:11:00Z",
+   "company": "Suno",
+   "product": "Suno",
+   "section": "D",
+   "summary_raw": "Музыкальный издатель Reservoir подал иски против Suno и Anthropic из-за использования музыки для обучения ИИ. Материал Billboard, возможно за пейволлом, поэтому только заголовок и ссылка.",
+   "importance": 6
+  },
+  {
+   "title": "AI could 'absolutely' replace human actors, Runway CEO says at View Conference",
+   "url": "https://www.msn.com/en-us/technology/artificial-intelligence/ai-could-absolutely-replace-human-actors-runway-ceo-says-at-view-conference/ar-AA2fDs24",
+   "source": "msn.com",
+   "source_type": "media",
+   "published_at": "2026-10-20T00:39:21Z",
+   "company": "Runway",
+   "product": "Runway",
+   "section": "D",
+   "summary_raw": "Глава Runway заявил на конференции View, что ИИ вполне может заменить живых актёров. Это интервью, не продуктовая новость.",
+   "importance": 3
+  }
+ ],
+ "errors": [
+  {
+   "source": "openai.com/news",
+   "error": "403"
+  },
+  {
+   "source": "openai.com/index/securing-our-frontier-model-training-environment",
+   "error": "403"
+  },
+  {
+   "source": "cnbc.com",
+   "error": "403"
+  }
+ ]
+}

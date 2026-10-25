@@ -1,0 +1,166 @@
+{
+ "items": [
+  {
+   "title": "Recursive Flint",
+   "url": "https://huggingface.co/RecursiveSI/flint",
+   "source": "huggingface.co/models",
+   "source_type": "research",
+   "published_at": "2026-10-21T14:20:58Z",
+   "company": "Recursive (Recursive Superintelligence)",
+   "product": "Flint",
+   "section": "F",
+   "summary_raw": "Открытая MoE-модель для кодинг-агентов: около 39,8 млрд параметров всего, около 2,5 млрд активных на токен, лицензия Apache 2.0, веса в BF16 (около 80 ГБ). По заявлению авторов: Terminal-Bench 2.1 — 54,9%, SWE-bench Pro v2 — 89,7%, SWE-bench Verified — 74,2%; они же оговаривают, что методики оценки у разных источников различаются. Дата релиза на странице не указана, дата взята из ленты HF.",
+   "importance": 8
+  },
+  {
+   "title": "Granite Speech 5.0",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-21T14:58:18Z",
+   "company": "IBM",
+   "product": "Granite Speech 5.0",
+   "section": "F",
+   "summary_raw": "IBM выпустила под Apache 2.0 новую 2B-модель распознавания речи granite-speech-5.0-2b и обновила две другие (быстрая 470M для on-device и 4.1-2b-plus для записей с несколькими говорящими). По данным IBM, 5.0-2b занимает 2-е место среди открытых ASR-моделей по среднему WER на английском (5,06%) в Open ASR Leaderboard; цифры не перепроверялись.",
+   "importance": 7
+  },
+  {
+   "title": "NVIDIA Kumo Relational",
+   "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-21T18:26:30Z",
+   "company": "NVIDIA",
+   "product": "Kumo Relational",
+   "section": "F",
+   "summary_raw": "Предобученная модель для предсказаний прямо на реляционных базах данных без обучения под задачу и без ручной генерации признаков. Веса на HF (лицензия OpenMDW 1.1), код под Apache 2.0, есть NIM. NVIDIA заявляет превосходство над supervised-подходами и пайплайнами с градиентным бустингом на 41 задаче из 15 баз и масштабирование до баз с 500+ млрд строк.",
+   "importance": 7
+  },
+  {
+   "title": "Hugging Face и TorchTPU: нативная поддержка TPU",
+   "url": "https://huggingface.co/blog/hf-torchtpu",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Hugging Face",
+   "product": "TorchTPU",
+   "section": "F",
+   "summary_raw": "TPU теперь подключается как обычное PyTorch-устройство: Transformers, Diffusers и Kernels работают без портирования на torch_xla (device_map=\"tpu\", pipe.to(\"tpu\")). В Kernels Hub появились TPU-ядра на Pallas; авторы заявляют ускорение декодинга до 21,5x на Qwen3-30B-A3B и 96,5% проходящих тестов Transformers на TPU.",
+   "importance": 7
+  },
+  {
+   "title": "NVIDIA Cosmos3-H-Embodied-Nano",
+   "url": "https://huggingface.co/nvidia/Cosmos3-H-Embodied-Nano",
+   "source": "huggingface.co/labs",
+   "source_type": "research",
+   "published_at": "2026-10-19T12:45:34Z",
+   "company": "NVIDIA",
+   "product": "Cosmos3-H-Embodied-Nano",
+   "section": "F",
+   "summary_raw": "Мировая модель для хирургической робототехники (около 16 млрд параметров), дообученная из Cosmos3-Nano на данных Open-H-Embodiment; решает прямую и обратную динамику и генерацию политики. Лицензия NVIDIA Open Model License. Ограничения по карточке: обучена на клипах 2,4 с, качество падает после примерно 6 с.",
+   "importance": 6
+  },
+  {
+   "title": "Bringing foundational models to the front lines of TB screening",
+   "url": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
+   "source": "research.google/blog",
+   "source_type": "research",
+   "published_at": "2026-10-23T18:51:33Z",
+   "company": "Google Research",
+   "product": "TB screening / MedGemma / HeAR",
+   "section": "F",
+   "summary_raw": "Google рассказывает, как ИИ для скрининга туберкулёза по рентгену дошёл до сертифицированного инструмента (партнёр Nexus AI, около 40 учреждений в шести странах) и открытых моделей MedSigLIP и MedGemma. Цифры (более 25 000 оценённых снимков, ответ менее чем за 45 с) заявлены самим Google.",
+   "importance": 5
+  },
+  {
+   "title": "StreamEval: бенчмарк интерактивной потоковой генерации видео",
+   "url": "https://arxiv.org/abs/2610.28402",
+   "source": "arxiv.org (HF Papers)",
+   "source_type": "research",
+   "published_at": "2026-10-20T20:00:00Z",
+   "company": "StreamEval Team",
+   "product": "StreamEval",
+   "section": "F",
+   "summary_raw": "Бенчмарк для интерактивной генерации видео: 5 типов задач, 300 сценариев длиной 15–300 с, 10 метрик. Оценено 37 моделей; авторы делают вывод, что высокое визуальное качество не гарантирует надёжного выполнения запросов (например, лучший Following в генерации миров по тексту — 25,93 из 100). Самая заметная статья недели на HF Papers (447 upvotes).",
+   "importance": 7
+  },
+  {
+   "title": "Matrix-Game 4.0: игровые миры в реальном времени на видеомоделях",
+   "url": "https://arxiv.org/abs/2610.27999",
+   "source": "arxiv.org (HF Papers)",
+   "source_type": "research",
+   "published_at": "2026-10-20T20:00:00Z",
+   "company": "авторы Matrix-Game (18 авторов, аффилиации на странице не указаны)",
+   "product": "Matrix-Game 4.0",
+   "section": "F",
+   "summary_raw": "Система разделяет игровую логику (лёгкий движок) и визуализацию (авторегрессионная видеомодель, дистиллированная до 1–2 шагов). Кодинг-агент превращает идеи игрока в код. Авторы заявляют 480p при 60 FPS на одной RTX 5090 и задержку 112 мс.",
+   "importance": 7
+  },
+  {
+   "title": "BrainLoRA: масштабирование PEFT для brain encoding",
+   "url": "https://arxiv.org/abs/2610.26802",
+   "source": "arxiv.org (HF Papers)",
+   "source_type": "research",
+   "published_at": "2026-10-19T20:00:00Z",
+   "company": "авторы статьи (Ying, Adeli и др.)",
+   "product": "BrainLoRA",
+   "section": "F",
+   "summary_raw": "LoRA-адаптеры к крупным мультимодальным моделям (до 104B параметров) для предсказания нейронных откликов. Авторы заявляют лучший результат на Algonauts 2025 и первое место ансамбля из 200+ моделей в публичном пост-лидерборде.",
+   "importance": 5
+  },
+  {
+   "title": "EgoXperience: эгоцентричные представления из человеческого опыта",
+   "url": "https://arxiv.org/abs/2610.26625",
+   "source": "arxiv.org (HF Papers)",
+   "source_type": "research",
+   "published_at": "2026-10-19T20:00:00Z",
+   "company": "авторы статьи (в т.ч. Ziwei Liu)",
+   "product": "EgoX",
+   "section": "F",
+   "summary_raw": "Полный пайплайн для эгоцентричного видео: разметка, датасет около 50 часов и модель, за один проход восстанавливающая камеру, сцену, руки и объекты. Авторы заявляют снижение ошибки камеры на 68,9% и рук на 65,6% относительно сильнейших базовых методов.",
+   "importance": 5
+  },
+  {
+   "title": "MemT-1.0: модели с нативной памятью",
+   "url": "https://arxiv.org/abs/2610.26825",
+   "source": "arxiv.org (HF Papers)",
+   "source_type": "research",
+   "published_at": "2026-10-19T20:00:00Z",
+   "company": "авторы статьи (74 автора)",
+   "product": "MemT-1.0",
+   "section": "F",
+   "summary_raw": "Семейство моделей, где память — часть вычислений самой модели (Gated DeltaNet-2 с токен-уровневым обновлением). Авторы заявляют ускорение инференса примерно в 1,86 раза и сокращение хранилища в 66 раз при истории 128K токенов относительно полного KV-кэша.",
+   "importance": 6
+  },
+  {
+   "title": "PAR: рекуррентность для обобщения на длинные последовательности",
+   "url": "https://arxiv.org/abs/2610.27628",
+   "source": "arxiv.org (HF Papers)",
+   "source_type": "research",
+   "published_at": "2026-10-20T20:00:00Z",
+   "company": "авторы статьи (Wang, Tong и др.)",
+   "product": "PAR",
+   "section": "F",
+   "summary_raw": "Метод обучения рекуррентных итераций с промежуточной супервизией и контролем нормы состояния. По заявлению авторов, Qwen2.5-0.5B, обученная на 32 ходах, даёт 95,5% точности на 512 ходах (swap-S5) против 0,8% у явной цепочки рассуждений.",
+   "importance": 5
+  },
+  {
+   "title": "S-Agent 2.0: пространственное мышление через кодинг-агента",
+   "url": "https://arxiv.org/abs/2610.28354",
+   "source": "arxiv.org (HF Papers)",
+   "source_type": "research",
+   "published_at": "2026-10-20T20:00:00Z",
+   "company": "авторы статьи (в т.ч. Ziwei Liu)",
+   "product": "S-Agent 2.0",
+   "section": "F",
+   "summary_raw": "Универсальному кодинг-агенту (Codex, Claude Code и др.) дают CLI-набор 3D-восприятия с постоянной памятью сцены. Авторы заявляют прирост на MMSI-Bench и ReVSI, например 66,5 и 82,3 на Qwen3.8-27B.",
+   "importance": 5
+  }
+ ],
+ "errors": [
+  {
+   "source": "github.com/trending",
+   "error": "HTTP 403 от GitHub Search API; репозитории не включены"
+  }
+ ]
+}

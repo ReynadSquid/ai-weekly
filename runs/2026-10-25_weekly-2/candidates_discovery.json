@@ -1,0 +1,200 @@
+{
+ "items": [
+  {
+   "title": "Flapping Airplanes привлекла $1 млрд серией A",
+   "url": "https://www.indexventures.com/perspectives/toward-more-efficient-ai-leading-flapping-airplanes-1b-series-a/",
+   "source": "indexventures.com",
+   "source_type": "company_blog",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "Flapping Airplanes",
+   "product": "исследовательская лаборатория",
+   "section": "E",
+   "summary_raw": "Годовалая лаборатория, делающая ставку на модели, которым нужно сильно меньше данных. Серия A на $1 млрд, лидеры Index Ventures и Lux Capital; по данным Bloomberg, оценка около $6 млрд. Продукта пока нет. Оценка в $6 млрд — со слов СМИ. Также: siliconangle.com/2026/10/21/year-old-ai-research-lab-flapping-airplanes-raises-1b-at-a-reported-6b-valuation/",
+   "importance": 8
+  },
+  {
+   "title": "Moonshot AI выпустила Kimi K3.1 Pro",
+   "url": "https://siliconangle.com/2026/10/23/moonshot-ai-launches-new-flagship-kim-k3-1-pro-model-with-3t-parameters/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-10-23T00:00:00Z",
+   "company": "Moonshot AI",
+   "product": "Kimi K3.1 Pro",
+   "section": "E",
+   "summary_raw": "Обновление июльской Kimi K3 (около 3 трлн параметров), доступно через платные облачные сервисы Moonshot; веса обещают открыть к 4 ноября. Заявлено превосходство над Claude Opus 5.5 в части задач. Первоисточник Moonshot не найден (отдельный поиск подтверждения K3.1 не дал) — требует проверки. also_seen_at: the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/",
+   "importance": 7
+  },
+  {
+   "title": "ASI (бывш. Air Space Intelligence): $325 млн серии C при оценке $3 млрд",
+   "url": "https://www.airspace-intelligence.com/news/asi-secures-usd325m-series-c-at-usd3b-valuation",
+   "source": "airspace-intelligence.com",
+   "source_type": "press_release",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "ASI",
+   "product": "AI для авиации, обороны и энергосетей",
+   "section": "E",
+   "summary_raw": "Раунд возглавил Spark Capital. Компания моделирует воздушное движение и энергосети; клиенты — FAA, United, Delta, армия США.",
+   "importance": 6
+  },
+  {
+   "title": "Otter.ai получила $320 млн от Customer Value Fund General Catalyst",
+   "url": "https://www.businesswire.com/news/home/20261020026393/en/",
+   "source": "businesswire.com",
+   "source_type": "press_release",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Otter.ai",
+   "product": "AI-ассистент для встреч",
+   "section": "E",
+   "summary_raw": "Это нединамичное (не размывающее доли) финансирование, его нужно возвращать. Деньги пойдут на продажи, международную экспансию и продукт. Компания заявляет 40+ млн пользователей. Также: siliconangle.com/2026/10/20/otter-ai-raises-320m-in-funding-for-its-ai-meeting-assistant/",
+   "importance": 6
+  },
+  {
+   "title": "Pathos AI закрыла $237 млн серии E",
+   "url": "https://www.businesswire.com/news/home/20261023421846/en/Pathos-AI-Secures-%24237-Million-in-Series-E-Financing-to-Scale-Agentic-AI-Drug-Development-Platform-and-Advance-Oncology-Pipeline",
+   "source": "businesswire.com",
+   "source_type": "press_release",
+   "published_at": "2026-10-23T00:00:00Z",
+   "company": "Pathos AI",
+   "product": "Foundry",
+   "section": "E",
+   "summary_raw": "Раунд при оценке около $3 млрд, лидер Bristol Myers Squibb. Платформа использует онкологические данные для поиска кандидатов в лекарства и планирования испытаний. Ссылка взята из статьи SiliconANGLE, напрямую не открывалась.",
+   "importance": 5
+  },
+  {
+   "title": "Inception выпустила диффузионную LLM Mercury 3",
+   "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+   "source": "inceptionlabs.ai",
+   "source_type": "company_blog",
+   "published_at": "2026-10-19T00:00:00Z",
+   "company": "Inception",
+   "product": "Mercury 3",
+   "section": "E",
+   "summary_raw": "Заявлено 1000+ токенов в секунду, контекст 1 млн токенов, превосходство над GPT-6 Luna и Claude Haiku 5.5 при скорости в 4–8 раз выше. Данные самой компании, независимой проверки пока нет. Доступна по API.",
+   "importance": 6
+  },
+  {
+   "title": "Block показала речевую модель Dessa",
+   "url": "https://block.xyz/dessa",
+   "source": "block.xyz",
+   "source_type": "company_blog",
+   "published_at": "2026-10-23T00:00:00Z",
+   "company": "Block",
+   "product": "Dessa",
+   "section": "E",
+   "summary_raw": "Экспериментальная speech-to-speech модель, обученная с нуля на человеческой речи, слушает и говорит одновременно, улавливает эмоции; может работать локально на мощном MacBook Pro. Ранний доступ для исследователей безопасности. Также: the-decoder.com, theverge.com",
+   "importance": 5
+  },
+  {
+   "title": "Canva представила собственную модель генерации изображений, которая планирует дизайн",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+   "source": "theverge.com",
+   "source_type": "media",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Canva",
+   "product": "внутренняя image-модель",
+   "section": "E",
+   "summary_raw": "Первая собственная image-модель Canva планирует композицию перед генерацией. Страница Verge не открылась, деталь взята из заголовка; первоисточник Canva не найден.",
+   "importance": 4
+  },
+  {
+   "title": "ServiceNow и NVIDIA запустили корпоративного агента Arc",
+   "url": "https://www.zdnet.com/innovation/exclusive-servicenow-and-nvidia-launch-arc-a-new-ai-agent-for-enterprise/",
+   "source": "zdnet.com",
+   "source_type": "media",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "ServiceNow",
+   "product": "Arc",
+   "section": "E",
+   "summary_raw": "Новый ИИ-агент для предприятий, совместная разработка ServiceNow и NVIDIA. Первоисточник не открывался; только заголовок.",
+   "importance": 4
+  },
+  {
+   "title": "Scaled Cognition: недорогая голосовая модель для клиентской поддержки",
+   "url": "https://siliconangle.com/2026/10/20/scaled-cognition-targets-customer-service-with-low-cost-voice-model/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Scaled Cognition",
+   "product": "голосовая модель",
+   "section": "E",
+   "summary_raw": "Стартап нацелен на поддержку клиентов с недорогой голосовой моделью. Только заголовок, первоисточник не найден.",
+   "importance": 3
+  },
+  {
+   "title": "Action State выпустила инструменты проверки взаимодействия ИИ-агентов",
+   "url": "https://siliconangle.com/2026/10/22/startup-action-state-launches-tools-for-verifying-interactions-between-ai-agents/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Action State",
+   "product": "верификация агентов",
+   "section": "E",
+   "summary_raw": "Стартап запустил инструменты для проверки взаимодействий между ИИ-агентами. Только заголовок, первоисточник не найден.",
+   "importance": 3
+  },
+  {
+   "title": "Швеция: правительственные офисы запретят ChatGPT и Claude",
+   "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+   "source": "sverigesradio.se",
+   "source_type": "media",
+   "published_at": "2026-10-23T00:00:00Z",
+   "company": "Правительство Швеции",
+   "product": "регулирование",
+   "section": "E",
+   "summary_raw": "По заголовку Sveriges Radio, канцелярия правительства откажется от ChatGPT и Claude. Страница не открывалась, детали требуют проверки.",
+   "importance": 5
+  },
+  {
+   "title": "Пенсильвания: закон об обязательной маркировке рекламы с ИИ",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+   "source": "theverge.com",
+   "source_type": "media",
+   "published_at": "2026-10-24T00:00:00Z",
+   "company": "Пенсильвания",
+   "product": "SB 806",
+   "section": "E",
+   "summary_raw": "Поиск: SB 806 принят палатой 7 октября (163-40), ждёт подписи губернатора; штраф до $3000 за нарушение. Статус подписи уточнить.",
+   "importance": 4
+  },
+  {
+   "title": "Agentic AI Foundation приняла ещё четыре open-source проекта",
+   "url": "https://siliconangle.com/2026/10/22/agentic-ai-foundation-adds-four-more-open-source-ai-tools/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Agentic AI Foundation",
+   "product": "Open Responses, Agent Skills, OpenEnv, OpenSandbox",
+   "section": "F",
+   "summary_raw": "Фонд теперь включает 10 проектов; добавлены Open Responses (OpenAI), Agent Skills (Anthropic), OpenEnv (Hugging Face), OpenSandbox (Alibaba). Репозитории первоисточников не найдены.",
+   "importance": 5
+  },
+  {
+   "title": "Ai2 выпустила OlmoEarth v1.3 со спутниковыми эмбеддингами всей планеты",
+   "url": "https://siliconangle.com/2026/10/22/ai2-releases-olmoearth-v1-3-state-of-the-art-ai-ready-satellite-embeddings-for-the-whole-planet/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Ai2",
+   "product": "OlmoEarth v1.3",
+   "section": "F",
+   "summary_raw": "Открытые эмбеддинги спутниковых данных для всей планеты. Только заголовок, первоисточник Ai2 не найден.",
+   "importance": 4
+  },
+  {
+   "title": "OpenMobile-2: открытые агенты для смартфонов догоняют закрытые модели",
+   "url": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/",
+   "source": "the-decoder.com",
+   "source_type": "media",
+   "published_at": "2026-10-25T00:00:00Z",
+   "company": "",
+   "product": "OpenMobile-2",
+   "section": "F",
+   "summary_raw": "Исследование показывает, что открытые мобильные агенты сопоставимы с проприетарными. Первоисточник (статья) не найден.",
+   "importance": 3
+  }
+ ],
+ "errors": [
+  "Поиск не подтвердил Kimi K3.1 Pro и название Canva Craft; первоисточники для части пунктов не найдены",
+  "Прямой запрос к businesswire (Pathos) не открылся"
+ ]
+}
