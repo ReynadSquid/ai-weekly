@@ -97,15 +97,35 @@ def company_counts(editor_input: dict) -> list[tuple[str, int]]:
 
 
 def plan_tiles(companies: list[tuple[str, int]], mapping: dict[str, str]) -> list[dict]:
-    """Какие плитки рисовать: до 12 логотипов, остальное — «+N». Чистая функция, покрыта тестами."""
-    with_logo = [(c, n, s) for c, n in companies if (s := resolve_logo(c, mapping))]
-    if len(companies) > len(with_logo) or len(with_logo) > MAX_TILES:
-        with_logo = with_logo[:MAX_TILES - 1]
-    tiles = [{"company": c, "count": n, "logo": s} for c, n, s in with_logo]
-    rest = len(companies) - len(tiles)
-    if rest:
-        tiles.append({"company": f"+{rest}", "count": 0, "logo": None})
+    """Какие плитки рисовать (чистая функция, покрыта тестами):
+    - до 12 плиток; сначала компании с логотипом, затем с монограммой (латинское название без логотипа);
+      внутри групп — по числу новостей;
+    - если компаний больше, чем плиток, последняя плитка — «+N», и ряды заполнены целиком;
+    - служебные группы на кириллице («Облака и дата-центры») плитку не получают и уходят в «+N»."""
+    from companies import derived_hashtag
+
+    logo = [{"company": c, "count": n, "logo": s, "kind": "logo"}
+            for c, n in companies if (s := resolve_logo(c, mapping))]
+    mono = [{"company": c, "count": n, "logo": None, "kind": "mono"}
+            for c, n in companies if not resolve_logo(c, mapping) and derived_hashtag(c)]
+    cands = sorted(logo + mono, key=lambda t: (t["kind"] != "logo", -t["count"]))
+    if len(companies) <= MAX_TILES and len(cands) == len(companies):
+        return cands
+    tiles = cands[:MAX_TILES - 1]
+    tiles.append({"company": f"+{len(companies) - len(tiles)}", "count": 0, "logo": None, "kind": "more"})
     return tiles
+
+
+def monogram(name: str) -> str:
+    """«1Password» → «1P», «Canva» → «C», «Recursive SI» → «RS»."""
+    words = re.findall(r"[A-Za-z0-9]+", name)
+    if not words:
+        return name[:1].upper()
+    if len(words) >= 2:
+        return (words[0][0] + words[1][0]).upper()
+    w = words[0]
+    caps = re.findall(r"[A-Z0-9]", w)
+    return "".join(caps[:2]) if len(caps) >= 2 else w[0].upper()
 
 
 def _label(company: str) -> str:
@@ -163,6 +183,7 @@ def build_cover(title: str, issue_label: str, tiles: list[dict], out: Path) -> P
     lf.set_variation_by_name("SemiBold")
     bf = ImageFont.truetype(str(FONT_TITLE), 60)
     pluf = ImageFont.truetype(str(FONT_TITLE), 120)
+    monof = ImageFont.truetype(str(FONT_TITLE), 110)
     lay = Image.new("RGBA", (W, H))
     ld = ImageDraw.Draw(lay)
     y0 = 700
@@ -172,10 +193,13 @@ def build_cover(title: str, issue_label: str, tiles: list[dict], out: Path) -> P
         hot = t["count"] >= 2
         ld.rounded_rectangle([x, y, x + TILE, y + TILE], 56, fill=INK + (225,),
                              outline=(MUSTARD if hot else CYAN) + (255,), width=10 if hot else 6)
-        if not t["logo"]:
+        if t.get("kind") == "more" or (not t["logo"] and t["company"].startswith("+")):
             ld.text((x + TILE // 2, y + TILE // 2), t["company"], font=pluf, fill=CREAM, anchor="mm")
             continue
-        lay.alpha_composite(render_logo(t["logo"], 150), (x + (TILE - 150) // 2, y + 42))
+        if t["logo"]:
+            lay.alpha_composite(render_logo(t["logo"], 150), (x + (TILE - 150) // 2, y + 42))
+        else:  # монограмма для компании без логотипа
+            ld.text((x + TILE // 2, y + 118), monogram(t["company"]), font=monof, fill=CREAM, anchor="mm")
         label = _label(t["company"])
         f = lf
         while f.getlength(label) > TILE - 30 and f.size > 28:

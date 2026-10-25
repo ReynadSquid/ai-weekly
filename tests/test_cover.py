@@ -14,11 +14,29 @@ MAPPING = {"openai": "openai", "anthropic": "anthropic", "moonshotai": "kimi"}
 
 # ---------- плитки ----------
 
-def test_plan_tiles_orders_and_collapses_rest():
-    companies = [("OpenAI", 3), ("Anthropic", 2), ("Moonshot AI", 1), ("Canva", 1), ("Block", 1)]
+def test_plan_tiles_logos_then_monograms():
+    companies = [("OpenAI", 3), ("Canva", 2), ("Anthropic", 2), ("Moonshot AI", 1), ("Block", 1)]
     tiles = make_cover.plan_tiles(companies, MAPPING)
-    assert [t["company"] for t in tiles] == ["OpenAI", "Anthropic", "Moonshot AI", "+2"]
-    assert tiles[0]["count"] == 3 and tiles[2]["logo"] == "kimi" and tiles[-1]["logo"] is None
+    assert [t["company"] for t in tiles] == ["OpenAI", "Anthropic", "Moonshot AI", "Canva", "Block"]
+    assert [t["kind"] for t in tiles] == ["logo", "logo", "logo", "mono", "mono"]
+    assert tiles[2]["logo"] == "kimi"
+
+
+def test_plan_tiles_full_rows_and_more_in_last_slot():
+    names = ["OpenAI", "Anthropic", "Moonshot AI"] + [f"Startup{n}" for n in range(11)] + ["Облака и дата-центры"]
+    tiles = make_cover.plan_tiles([(c, 1) for c in names], MAPPING)
+    assert len(tiles) == 12 and tiles[-1] == {"company": "+4", "count": 0, "logo": None, "kind": "more"}
+    assert all(t["kind"] in ("logo", "mono") for t in tiles[:-1])
+
+
+def test_cyrillic_group_never_gets_a_tile():
+    tiles = make_cover.plan_tiles([("OpenAI", 1), ("Облака и дата-центры", 1)], MAPPING)
+    assert [t["company"] for t in tiles] == ["OpenAI", "+1"]
+
+
+def test_monogram():
+    assert [make_cover.monogram(n) for n in ("1Password", "Canva", "RecursiveSI", "Recursive SI", "Block")] == \
+        ["1P", "C", "RS", "RS", "B"]
 
 
 def test_plan_tiles_max_twelve():

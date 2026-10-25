@@ -53,8 +53,12 @@ def test_split_respects_limit_and_never_breaks_items():
     joined = "\n\n".join(m["text"] for m in msgs)
     for s in sections:
         for it in s["items"]:
-            # каждая новость целиком и ровно один раз (с пустой строкой после заголовка)
-            assert joined.count(split_messages.separate_title(it["html"])) == 1
+            # каждая новость целиком и ровно один раз: заголовок, текст и ссылка в одном сообщении
+            title = it["html"].split("\n")[0][3:-4]
+            href = it["html"].rsplit('href="', 1)[1].split('"')[0]
+            holder = [m["text"] for m in msgs if f". {title}</b>" in m["text"]]
+            assert len(holder) == 1 and holder[0].count(f'href="{href}"') == 1
+            assert joined.count(f". {title}</b>") == 1
     for m in msgs:
         assert m["length"] <= 4000 < TG_LIMIT
     assert [m["disable_preview"] for m in msgs] == [False] + [True] * (len(msgs) - 1)
@@ -80,3 +84,36 @@ def test_oversized_item_is_error():
     posts = issue([{"key": "A", "title": "A", "items": [item(1, 5000)]}])
     msgs, errors = build_messages(posts)
     assert errors and not msgs
+
+
+ITEM = ('<b>Anthropic передала стандарт</b>\nТекст новости.\n'
+        '<i>Почему важно:</i> за стандартом теперь фонд.\n<a href="https://a.com/x">Источник</a>')
+
+
+def test_decorate_item_variant_b_with_number_and_date():
+    out = split_messages.decorate_item(ITEM, 1, "22 октября")
+    assert out == ('<b>1. Anthropic передала стандарт</b>\n<i>22 октября</i>\n\nТекст новости.\n\n'
+                   '<blockquote><b>Почему важно:</b> за стандартом теперь фонд.</blockquote>\n'
+                   '<a href="https://a.com/x">→ Источник</a>')
+    assert validate_html(out) == []
+
+
+def test_decorate_item_without_date_and_unknown_shape():
+    assert split_messages.decorate_item(ITEM, 3).startswith("<b>3. Anthropic передала стандарт</b>\n\nТекст")
+    assert split_messages.decorate_item("Просто текст\nещё", 1) == "Просто текст\nещё"  # не по шаблону — как есть
+
+
+def test_numbering_runs_through_whole_issue():
+    p = {"header": "", "footer": "", "sections": [
+        {"key": "A", "title": "A", "items": [{"id": "a", "html": ITEM}, {"id": "b", "html": ITEM}]},
+        {"key": "G", "title": "G", "items": [{"id": "c", "html": ITEM}]}]}
+    msgs, errors = build_messages(p, item_dates={"a": "21 октября"})
+    text = "\n".join(m["text"] for m in msgs)
+    assert errors == [] and "<b>1. Anthropic" in text and "<b>2. Anthropic" in text and "<b>3. Anthropic" in text
+    assert text.count("<i>21 октября</i>") == 1
+
+
+def test_date_label():
+    assert split_messages.date_label("2026-10-22") == "22 октября"
+    assert split_messages.date_label("2026-11-01T14:00:00Z") == "1 ноября"
+    assert split_messages.date_label(None) is None

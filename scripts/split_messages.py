@@ -181,6 +181,52 @@ def separate_title(item_html: str) -> str:
     return re.sub(r"^(\s*<b>.*?</b>)\n(?!\n)", r"\1\n\n", item_html, count=1, flags=re.S)
 
 
+MONTHS_GEN = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября",
+              "октября", "ноября", "декабря"]
+_WHY = re.compile(r"^\s*<i>\s*Почему важно:?\s*</i>\s*:?\s*")
+_SRC = re.compile(r'^\s*<a href="([^"]+)">\s*(?:→\s*)?Источник\s*</a>\s*$')
+
+
+def date_label(value: str | None) -> str | None:
+    """«2026-10-22» или ISO-время → «22 октября»."""
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2})", value or "")
+    return f"{int(m.group(3))} {MONTHS_GEN[int(m.group(2)) - 1]}" if m else None
+
+
+def decorate_item(item_html: str, number: int | None = None, date: str | None = None) -> str:
+    """Оформление новости (вариант B):
+        <b>N. Заголовок</b>
+        <i>22 октября</i>
+
+        Текст.
+
+        <blockquote><b>Почему важно:</b> …</blockquote>
+        <a href="…">→ Источник</a>
+    Если новость не по шаблону (нет жирного заголовка в первой строке) — остаётся как есть."""
+    lines = [l for l in item_html.strip().split("\n")]
+    m = re.match(r"^\s*<b>(.*?)</b>\s*$", lines[0] if lines else "")
+    if not m:
+        return separate_title(item_html)
+    title = m.group(1).strip()
+    if number is not None and not re.match(r"^\d+\.\s", title):
+        title = f"{number}. {title}"
+    head = [f"<b>{title}</b>"] + ([f"<i>{date}</i>"] if date else [])
+    body, why, src = [], None, None
+    for line in lines[1:]:
+        if _WHY.match(line) and why is None:
+            why = _WHY.sub("", line).strip()
+        elif _SRC.match(line):
+            src = _SRC.match(line).group(1)
+        elif line.strip():
+            body.append(line)
+    out = "\n".join(head) + "\n\n" + "\n".join(body)
+    if why:
+        out += f"\n\n<blockquote><b>Почему важно:</b> {why}</blockquote>"
+    if src:
+        out += f'\n<a href="{src}">→ Источник</a>'
+    return out
+
+
 def _tags_of(value) -> list[str]:
     if not value:
         return []
@@ -198,17 +244,23 @@ def drop_hashtag_lines(text: str) -> str:
 
 
 def build_messages(posts: dict, limit: int = DEFAULT_LIMIT,
-                   item_tags: dict[str, object] | None = None) -> tuple[list[dict], list[str]]:
+                   item_tags: dict[str, object] | None = None,
+                   item_dates: dict[str, str | None] | None = None) -> tuple[list[dict], list[str]]:
     """Нарезка + под каждым сообщением строка хэштегов компаний его новостей и #AIWeekly.
-    item_tags: id новости → хэштег или список хэштегов (компании новости и упомянутые в ней)."""
+    item_tags: id новости → хэштег или список хэштегов (компании новости и упомянутые в ней).
+    item_dates: id новости → дата («22 октября»). Новости нумеруются сквозь весь выпуск."""
     errors: list[str] = []
     for part, text in [("header", posts.get("header", "")), ("footer", posts.get("footer", ""))]:
         errors += [f"{part}: {e}" for e in validate_html(text or "")]
     for s in posts.get("sections", []):
         for item in s.get("items", []):
             errors += [f"{s.get('key')}/{item.get('id')}: {e}" for e in validate_html(item.get("html", ""))]
+    item_dates = item_dates or {}
+    counter = iter(range(1, 10_000))
     posts = dict(posts, footer=drop_hashtag_lines(posts.get("footer", "")),
-                 sections=[dict(s, items=[dict(i, html=separate_title(i.get("html", ""))) for i in s.get("items", [])])
+                 sections=[dict(s, items=[dict(i, html=decorate_item(i["html"], next(counter),
+                                                                     item_dates.get(i.get("id"))))
+                                          for i in s.get("items", []) if i.get("html", "").strip()])
                            for s in posts.get("sections", [])])
     items = [i for s in posts.get("sections", []) for i in s.get("items", []) if i.get("html", "").strip()]
     item_tags = item_tags or {}
@@ -232,7 +284,8 @@ CAPTION_LIMIT = 1024
 
 
 def build_cover_variant(posts: dict, limit: int = DEFAULT_LIMIT,
-                        item_tags: dict[str, object] | None = None) -> tuple[dict | None, str | None]:
+                        item_tags: dict[str, object] | None = None,
+                        item_dates: dict[str, str | None] | None = None) -> tuple[dict | None, str | None]:
     """Вариант с обложкой: подпись к фото — только строка-заголовок выпуска («AI Weekly #N · даты») и
     хэштег; три главных события не дублируются (обложка уже показывает, о ком выпуск). Дальше разделы
     без шапки и без превью ссылок. Возвращает (variant, причина_почему_нет); отсутствие варианта —
@@ -245,7 +298,7 @@ def build_cover_variant(posts: dict, limit: int = DEFAULT_LIMIT,
         return None, f"подпись {visible_len(header)} > {CAPTION_LIMIT} символов"
     if validate_html(header):
         return None, "заголовок выпуска не проходит валидацию HTML"
-    messages, errors = build_messages(dict(posts, header=""), limit, item_tags)
+    messages, errors = build_messages(dict(posts, header=""), limit, item_tags, item_dates)
     if errors or not messages:
         return None, "; ".join(errors) or "нет сообщений"
     for m in messages:
@@ -271,11 +324,15 @@ def main(argv=None) -> int:
     html_by_id = {i.get("id"): i.get("html", "") for s in posts.get("sections", []) for i in s.get("items", [])}
     directory = Directory()
     item_tags = {it["id"]: directory.item_tags(it, html_by_id.get(it["id"], "")) for it in ed.get("items", [])}
-    messages, errors = build_messages(posts, limit, item_tags)
+    # дата новости: подтверждённая фактчекером дата события, иначе дата публикации у сборщика
+    fc = {f["id"]: f for f in (read_json(rd / "factcheck.json") or {}).get("items", [])}
+    item_dates = {it["id"]: date_label((fc.get(it["id"]) or {}).get("event_date") or it.get("published_at"))
+                  for it in ed.get("items", [])}
+    messages, errors = build_messages(posts, limit, item_tags, item_dates)
     out = {"issue_id": posts.get("issue_id", args.run), "messages": messages, "errors": errors}
     cover_note = None
     if (read_json(rd / "init.json") or {}).get("cover") and not errors:
-        out["cover"], cover_note = build_cover_variant(posts, limit, item_tags)
+        out["cover"], cover_note = build_cover_variant(posts, limit, item_tags, item_dates)
     write_json(rd / "messages.json", out)
     print(json.dumps({"ok": not errors, "messages": len(messages),
                       "lengths": [m["length"] for m in messages], "errors": errors,

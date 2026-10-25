@@ -4,7 +4,10 @@
       "Bash(git add *)",
       "Bash(git -c 'user.name=AI Weekly' -c user.email=hentusky25@proton.me commit -q -m 'Хэштеги всех упомянутых компаний, 12 логотипов на обложке, отступ после заголовка новости *)",
       "Bash(git pull *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(PYTHONIOENCODING=utf-8 python -I \"C:/Temp/claude/C--Users-xdd-Documents-Clode-ai-weekly/b4ebfe03-33c2-4da6-8c9d-4ab4a90a1884/scratchpad/test_publish.py\" \"C:/Users/xdd/Documents/Clode/ai-weekly\")",
+      "Bash(grep -v \"^  \\\\|^{$\\\\|^}$\\\\|\\\\\"lengths\\\\\"\\\\|^\\\\s*[0-9]*,\\\\?$\")",
+      "Bash(PYTHONIOENCODING=utf-8 python test_publish.py \"C:/Users/xdd/Documents/Clode/ai-weekly\" --no-variants)"
     ]
   }
 }
