@@ -92,7 +92,7 @@ ITEM = ('<b>Anthropic передала стандарт</b>\nТекст ново
 
 def test_decorate_item_variant_b_with_number_and_date():
     out = split_messages.decorate_item(ITEM, 1, "22 октября")
-    assert out == ('<b>1. Anthropic передала стандарт</b>\n<i>22 октября</i>\n\nТекст новости.\n\n'
+    assert out == ('<b>1. Anthropic передала стандарт</b>\n<i>Дата публикации: 22 октября</i>\n\nТекст новости.\n\n'
                    '<blockquote><b>Почему важно:</b> за стандартом теперь фонд.</blockquote>\n'
                    '<a href="https://a.com/x">→ Источник</a>')
     assert validate_html(out) == []
@@ -110,10 +110,17 @@ def test_numbering_runs_through_whole_issue():
     msgs, errors = build_messages(p, item_dates={"a": "21 октября"})
     text = "\n".join(m["text"] for m in msgs)
     assert errors == [] and "<b>1. Anthropic" in text and "<b>2. Anthropic" in text and "<b>3. Anthropic" in text
-    assert text.count("<i>21 октября</i>") == 1
+    assert text.count("<i>Дата публикации: 21 октября</i>") == 1
 
 
 def test_date_label():
     assert split_messages.date_label("2026-10-22") == "22 октября"
     assert split_messages.date_label("2026-11-01T14:00:00Z") == "1 ноября"
     assert split_messages.date_label(None) is None
+
+
+def test_decorate_item_compact():
+    out = split_messages.decorate_item(ITEM, 1, "22 октября", compact=True)
+    assert out == ('<b>1. Anthropic передала стандарт</b>\n<i>Дата публикации: 22 октября</i>\nТекст новости.\n'
+                   '<blockquote><b>Почему важно:</b> за стандартом теперь фонд.</blockquote>\n'
+                   '<a href="https://a.com/x">→ Источник</a>')

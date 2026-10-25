@@ -193,13 +193,17 @@ def date_label(value: str | None) -> str | None:
     return f"{int(m.group(3))} {MONTHS_GEN[int(m.group(2)) - 1]}" if m else None
 
 
-def decorate_item(item_html: str, number: int | None = None, date: str | None = None) -> str:
+DATE_PREFIX = "Дата публикации: "
+
+
+def decorate_item(item_html: str, number: int | None = None, date: str | None = None,
+                  compact: bool = False) -> str:
     """Оформление новости (вариант B):
         <b>N. Заголовок</b>
-        <i>22 октября</i>
-
+        <i>Дата публикации: 22 октября</i>
+                                              ← нет в compact
         Текст.
-
+                                              ← нет в compact
         <blockquote><b>Почему важно:</b> …</blockquote>
         <a href="…">→ Источник</a>
     Если новость не по шаблону (нет жирного заголовка в первой строке) — остаётся как есть."""
@@ -210,7 +214,8 @@ def decorate_item(item_html: str, number: int | None = None, date: str | None = 
     title = m.group(1).strip()
     if number is not None and not re.match(r"^\d+\.\s", title):
         title = f"{number}. {title}"
-    head = [f"<b>{title}</b>"] + ([f"<i>{date}</i>"] if date else [])
+    head = [f"<b>{title}</b>"] + ([f"<i>{DATE_PREFIX}{date}</i>"] if date else [])
+    gap = "\n" if compact else "\n\n"
     body, why, src = [], None, None
     for line in lines[1:]:
         if _WHY.match(line) and why is None:
@@ -219,9 +224,9 @@ def decorate_item(item_html: str, number: int | None = None, date: str | None = 
             src = _SRC.match(line).group(1)
         elif line.strip():
             body.append(line)
-    out = "\n".join(head) + "\n\n" + "\n".join(body)
+    out = "\n".join(head) + (gap if date else "\n\n") + "\n".join(body)
     if why:
-        out += f"\n\n<blockquote><b>Почему важно:</b> {why}</blockquote>"
+        out += f"{gap}<blockquote><b>Почему важно:</b> {why}</blockquote>"
     if src:
         out += f'\n<a href="{src}">→ Источник</a>'
     return out
