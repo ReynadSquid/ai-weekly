@@ -19,7 +19,8 @@ import sys
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 from html.parser import HTMLParser
-from urllib.parse import urlencode
+import time
+from urllib.parse import parse_qs, urlencode, urlsplit
 
 from common import (RunLog, domain, iso, load_yaml, now_utc, parse_dt, read_json, run_dir,
                     setup_stdio, url_id, write_json)
@@ -83,8 +84,57 @@ def parse_rss(xml_text: str, src: dict) -> list[dict]:
         if not link or not title:
             continue
         out.append(candidate(title=title, url=link, source=src["name"], source_type=src["source_type"],
-                             published_at=parse_dt(date), excerpt=summary, company=src.get("company")))
+                             published_at=parse_dt(date), excerpt=summary, company=src.get("company"),
+                             section=src.get("section")))
     return out
+
+
+def parse_bing_news(xml_text, src: dict, company: str | None = None, section: str | None = None) -> list[dict]:
+    """Лента Bing News: ссылка вида bing.com/news/apiclick.aspx?...&url=<статья> → берём прямую ссылку на статью."""
+    root = ET.fromstring(xml_text.encode("utf-8") if isinstance(xml_text, str) else xml_text)
+    out = []
+    for e in root.iter("item"):
+        link = (e.findtext("link") or "").strip()
+        real = parse_qs(urlsplit(link).query).get("url", [link])[0]
+        title = e.findtext("title") or ""
+        if not real.startswith("http") or not title:
+            continue
+        out.append(candidate(title=title, url=real, source=src["name"], source_type="media",
+                             published_at=parse_dt(e.findtext("pubDate")), excerpt=e.findtext("description") or "",
+                             company=company, section=section,
+                             extra={"discovered_via": "bing.com/news", "publisher": domain(real)}))
+    return out
+
+
+# ---------- robots.txt ----------
+
+SOFT_ERRORS: list[dict] = []  # частичные сбои источника (источник отработал, но не целиком)
+ROBOTS_AGENT = "AIWeeklyBot"
+_robots_cache: dict[str, object] = {}
+
+
+def robots_allowed(url: str) -> bool:
+    """Читаем только то, что разрешает robots.txt сайта (требование ТЗ). robots.txt недоступен → разрешено."""
+    import urllib.robotparser
+
+    parts = urlsplit(url)
+    base = f"{parts.scheme}://{parts.netloc}"
+    if base not in _robots_cache:
+        rp = urllib.robotparser.RobotFileParser()
+        try:
+            resp = get_with_retries(base + "/robots.txt", retries=1, timeout=15)
+            rp.parse(resp.text().splitlines())
+        except Exception:
+            rp = None
+        _robots_cache[base] = rp
+    rp = _robots_cache[base]
+    return True if rp is None else rp.can_fetch(ROBOTS_AGENT, url)
+
+
+def _get(url: str, **kw):
+    if not robots_allowed(url):
+        raise FetchError(f"{url}: robots.txt запрещает чтение")
+    return get_with_retries(url, **kw)
 
 
 def parse_arxiv(xml_text: str, src: dict) -> list[dict]:
@@ -234,16 +284,16 @@ def fetch_source(src: dict, since: datetime, defaults: dict) -> list[dict]:
     params = src.get("params") or {}
     t = src["type"]
     if t == "rss":
-        return parse_rss(get_with_retries(src["url"], **kw).body, src)
+        return parse_rss(_get(src["url"], **kw).body, src)
     if t == "arxiv":
         cats = " OR ".join(f"cat:{c}" for c in params.get("categories", ["cs.AI"]))
         q = urlencode({"search_query": cats, "sortBy": "submittedDate", "sortOrder": "descending",
                        "max_results": params.get("max_results", 60)})
-        return parse_arxiv(get_with_retries(f"{src['url']}?{q}", **kw).body, src)
+        return parse_arxiv(_get(f"{src['url']}?{q}", **kw).body, src)
     if t == "hn":
         q = urlencode({"tags": "story", "hitsPerPage": 1000,
                        "numericFilters": f"created_at_i>{int(since.timestamp())},points>={params.get('min_points', 100)}"})
-        data = json.loads(get_with_retries(f"{src['url']}?{q}", **kw).text())
+        data = json.loads(_get(f"{src['url']}?{q}", **kw).text())
         kw_re = re.compile(params.get("keywords", r"\bAI\b"), re.I)
         data["hits"] = [h for h in data.get("hits", []) if kw_re.search(h.get("title") or "")]
         return parse_hn(data, src, params.get("min_points", 100))
@@ -251,22 +301,58 @@ def fetch_source(src: dict, since: datetime, defaults: dict) -> list[dict]:
         out, day = [], since.date()
         while day <= now_utc().date():
             try:
-                data = json.loads(get_with_retries(f"{src['url']}?date={day.isoformat()}", **kw).text())
+                data = json.loads(_get(f"{src['url']}?date={day.isoformat()}", **kw).text())
                 out += parse_hf_papers(data, src, params.get("min_upvotes", 10))
             except FetchError:
                 pass  # день без выпуска — не ошибка
             day += timedelta(days=1)
         return out
     if t == "hf_models":
+        if params.get("authors"):  # новые модели конкретных лабораторий (DeepSeek, Qwen, Meta …)
+            out = []
+            for author in params["authors"]:
+                q = urlencode({"author": author, "sort": "createdAt", "direction": -1,
+                               "limit": params.get("limit", 5), "full": "true"})
+                rows = json.loads(_get(f"{src['url']}?{q}", **kw).text())
+                out += [m for m in parse_hf_models(rows, src) if (parse_dt(m["published_at"]) or since) >= since]
+            return out
         q = urlencode({"sort": "trendingScore", "direction": -1, "limit": params.get("limit", 25)})
-        return parse_hf_models(json.loads(get_with_retries(f"{src['url']}?{q}", **kw).text()), src)
+        return parse_hf_models(json.loads(_get(f"{src['url']}?{q}", **kw).text()), src)
+    if t == "bing_news":
+        # Поиск новостей по каждой компании watchlist: замена сайтам, которые закрыты для роботов
+        # (openai.com, x.ai, anthropic.com/news …). В дайджест всё равно идёт первоисточник — его ищет фактчекер.
+        out, failed = [], []
+        wl = load_yaml("watchlist.yaml") or {}
+        for c in wl.get("companies", []):
+            name = c["name"]
+            if not re.fullmatch(r"[A-Za-z0-9 .&+\-]+", name):
+                continue  # служебные группы на кириллице
+            query = c.get("news_query") or f'"{name}" {params.get("suffix", "AI")}'.strip()
+            url = f"{src['url']}?{urlencode({'q': query, 'format': 'rss'})}"
+            got = None
+            for attempt in range(2):  # Bing иногда притормаживает отдельный запрос — повторяем
+                try:
+                    got = parse_bing_news(_get(url, **kw).body, src, company=name, section=c.get("section"))
+                    break
+                except Exception:
+                    time.sleep(params.get("pause_sec", 1) * 5)
+            if got is None:
+                failed.append(name)
+            else:
+                out += [g for g in got if (parse_dt(g["published_at"]) or since) >= since][:params.get("per_company", 8)]
+            time.sleep(params.get("pause_sec", 1))
+        if failed and not out:
+            raise FetchError(f"bing news: все {len(failed)} запросов не удались")
+        if failed:
+            SOFT_ERRORS.append({"source": f"{src['name']} ({', '.join(failed)})", "error": "поиск по компании не ответил"})
+        return out
     if t == "github":
         out = []
         for topic in params.get("topics", ["llm"]):
             q = urlencode({"q": f"topic:{topic} created:>={since.date().isoformat()} "
                                 f"stars:>={params.get('min_stars', 200)}",
                            "sort": "stars", "order": "desc", "per_page": 15})
-            data = json.loads(get_with_retries(f"{src['url']}?{q}", **kw,
+            data = json.loads(_get(f"{src['url']}?{q}", **kw,
                                                headers={"Accept": "application/vnd.github+json"}).text())
             out += parse_github(data, src)
         return out
@@ -279,7 +365,7 @@ def fetch_telegram(cfg: dict, defaults: dict) -> tuple[list[dict], list[dict]]:
     for ch in cfg.get("channels", []):
         name = ch["username"].lstrip("@")
         try:
-            resp = get_with_retries(f"https://t.me/s/{name}", retries=defaults.get("retries", 3),
+            resp = _get(f"https://t.me/s/{name}", retries=defaults.get("retries", 3),
                                     pause=defaults.get("retry_pause_sec", 5),
                                     timeout=defaults.get("timeout_sec", 20))
             posts = parse_tg(resp.text(), name)
@@ -323,12 +409,13 @@ def main(argv=None) -> int:
             continue
         try:
             got = [i for i in fetch_source(src, since, defaults) if in_window(i, since, until)]
-            got = got[:per_source]
+            got = got[:src.get("max_items", per_source)]
             stats[src["name"]] = len(got)
             items += got
         except Exception as e:
             errors.append({"source": src["name"], "error": str(e)[:300]})
             stats[src["name"]] = "error"
+    errors += SOFT_ERRORS
     if "telegram" in groups:
         tg_items, tg_errors = fetch_telegram(load_yaml("tg_sources.yaml"), defaults)
         tg_items = [i for i in tg_items if in_window(i, since, until)]

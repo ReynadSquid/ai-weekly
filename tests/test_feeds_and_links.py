@@ -110,3 +110,32 @@ def test_get_with_retries_no_retry_on_404(monkeypatch):
     except net.FetchError:
         pass
     assert len(calls) == 1
+
+
+BING = """<?xml version="1.0"?><rss version="2.0"><channel><title>Bing</title>
+<item><title>xAI launches Grok 5</title>
+<link>http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=1&amp;url=https%3a%2f%2fwww.reuters.com%2ftech%2fxai-grok-5&amp;c=1</link>
+<pubDate>Sat, 24 Oct 2026 22:19:00 GMT</pubDate><description>xAI said…</description></item></channel></rss>"""
+
+
+def test_parse_bing_news_extracts_real_url():
+    it = fetch_feeds.parse_bing_news(BING, {"name": "bing.com/news"}, company="xAI", section="A")[0]
+    assert it["url"] == "https://www.reuters.com/tech/xai-grok-5"
+    assert it["company"] == "xAI" and it["section"] == "A" and it["publisher"] == "reuters.com"
+    assert it["published_at"] == "2026-10-24T22:19:00Z"
+
+
+def test_robots_disallowed_source_is_not_fetched(monkeypatch):
+    import urllib.robotparser
+
+    rp = urllib.robotparser.RobotFileParser()
+    rp.parse(["User-agent: *", "Disallow: /"])
+    monkeypatch.setitem(fetch_feeds._robots_cache, "https://blocked.example", rp)
+    calls = []
+    monkeypatch.setattr(fetch_feeds, "get_with_retries", lambda *a, **k: calls.append(a))
+    try:
+        fetch_feeds._get("https://blocked.example/feed.xml")
+        assert False, "должно быть запрещено"
+    except net.FetchError as e:
+        assert "robots.txt" in str(e)
+    assert calls == []

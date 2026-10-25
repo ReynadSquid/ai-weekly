@@ -8,35 +8,51 @@ defaults:
   timeout_sec: 20
   retries: 3
   retry_pause_sec: 5
-  max_items_per_source: 40
+  max_items_per_source: 40   # у источника можно переопределить полем max_items
 
 feeds:
-  # --- официальные блоги компаний ---
-  - {name: openai.com/news, type: rss, url: "https://openai.com/news/rss.xml", group: companies, source_type: official, company: OpenAI}
+  # Перед каждым запросом fetch_feeds.py проверяет robots.txt сайта и не читает запрещённое.
+  # Сайты, закрытые для роботов (openai.com, x.ai, anthropic.com/news, techcrunch, arstechnica,
+  # microsoft source, export.arxiv.org), заменены разрешёнными аналогами и поиском Bing News ниже.
+
+  # --- официальные блоги и пресс-релизы компаний ---
   - {name: blog.google/ai, type: rss, url: "https://blog.google/technology/ai/rss/", group: companies, source_type: official, company: Google}
   - {name: deepmind.google/blog, type: rss, url: "https://deepmind.google/blog/rss.xml", group: companies, source_type: official, company: Google}
   - {name: research.google/blog, type: rss, url: "https://research.google/blog/rss/", group: research, source_type: research, company: Google}
-  - {name: blogs.microsoft.com/ai, type: rss, url: "https://news.microsoft.com/source/topics/ai/feed/", group: companies, source_type: official, company: Microsoft}
   - {name: blogs.nvidia.com, type: rss, url: "https://blogs.nvidia.com/feed/", group: companies, source_type: official, company: NVIDIA}
   - {name: aws.amazon.com/ml-blog, type: rss, url: "https://aws.amazon.com/blogs/machine-learning/feed/", group: companies, source_type: official, company: Amazon}
+  - {name: apple.com/newsroom, type: rss, url: "https://www.apple.com/newsroom/rss-feed.rss", group: companies, source_type: official, company: Apple}
   - {name: machinelearning.apple.com, type: rss, url: "https://machinelearning.apple.com/rss.xml", group: research, source_type: research, company: Apple}
+  - {name: about.fb.com/news, type: rss, url: "https://about.fb.com/news/feed/", group: companies, source_type: official, company: Meta}
+  - {name: ir.amd.com, type: rss, url: "https://ir.amd.com/news-events/press-releases/rss", group: companies, source_type: official, company: AMD}
+  - {name: cursor.com/changelog, type: rss, url: "https://cursor.com/changelog/rss.xml", group: companies, source_type: official, company: Cursor}
   - {name: huggingface.co/blog, type: rss, url: "https://huggingface.co/blog/feed.xml", group: research, source_type: official, company: Hugging Face}
+
+  # --- поиск новостей по каждой компании из watchlist (Bing News, прямые ссылки на статьи) ---
+  # Закрывает компании без открытого блога/RSS: OpenAI, Anthropic, xAI, Microsoft, Mistral, DeepSeek,
+  # Perplexity, Midjourney, Runway, ElevenLabs, Suno … Запрос: поле news_query компании или "<имя>" AI.
+  - {name: bing.com/news, type: bing_news, url: "https://www.bing.com/news/search", group: companies, source_type: media,
+     max_items: 200, params: {suffix: AI, per_company: 8, pause_sec: 1}}
 
   # --- СМИ и агрегаторы (только для обнаружения; в дайджест — первоисточник) ---
   - {name: theverge.com/ai, type: rss, url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", group: media, source_type: media}
-  - {name: techcrunch.com/ai, type: rss, url: "https://techcrunch.com/category/artificial-intelligence/feed/", group: media, source_type: media}
-  - {name: arstechnica.com/ai, type: rss, url: "https://arstechnica.com/ai/feed/", group: media, source_type: media}
+  - {name: the-decoder.com, type: rss, url: "https://the-decoder.com/feed/", group: media, source_type: media}
+  - {name: siliconangle.com/ai, type: rss, url: "https://siliconangle.com/category/ai/feed/", group: media, source_type: media}
+  - {name: zdnet.com/ai, type: rss, url: "https://www.zdnet.com/topic/artificial-intelligence/rss.xml", group: media, source_type: media}
   # keywords — регулярное выражение по заголовку (без учёта регистра)
   - {name: news.ycombinator.com, type: hn, url: "https://hn.algolia.com/api/v1/search_by_date", group: media, source_type: aggregator,
      params: {keywords: "\\b(AI|LLMs?|GPT|OpenAI|Anthropic|Claude|Gemini|DeepMind|Llama|Mistral|DeepSeek|Qwen|Copilot|Grok|NVIDIA|agents?|models?|inference|transformer)\\b", min_points: 150}}
 
   # --- исследования и open-source ---
-  - {name: arxiv.org, type: arxiv, url: "https://export.arxiv.org/api/query", group: research, source_type: research,
-     params: {categories: [cs.AI, cs.CL, cs.LG, cs.CV], max_results: 30}}
+  # arXiv публикует по будням; по выходным лента пустая — заметные статьи всё равно приходят через HF Papers
+  - {name: rss.arxiv.org, type: rss, url: "https://rss.arxiv.org/rss/cs.AI+cs.CL+cs.LG+cs.CV", group: research, source_type: research, section: F}
   - {name: huggingface.co/papers, type: hf_papers, url: "https://huggingface.co/api/daily_papers", group: research, source_type: research,
      params: {min_upvotes: 20}}
   - {name: huggingface.co/models, type: hf_models, url: "https://huggingface.co/api/models", group: research, source_type: research,
      params: {limit: 25}}
+  # новые модели лабораторий, чьи сайты закрыты или без RSS
+  - {name: huggingface.co/labs, type: hf_models, url: "https://huggingface.co/api/models", group: research, source_type: official,
+     params: {authors: [deepseek-ai, Qwen, mistralai, meta-llama, google, microsoft, nvidia, openai, moonshotai, MiniMaxAI], limit: 5}}
   - {name: github.com/trending, type: github, url: "https://api.github.com/search/repositories", group: research, source_type: research,
      params: {topics: [llm, ai-agents, generative-ai, machine-learning], min_stars: 300}}
 

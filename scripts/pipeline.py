@@ -145,8 +145,11 @@ def cmd_init(args) -> int:
     if rec and rec.get("status") == "published" and not args.force:
         out({"status": "already_published", "run_id": run_id, "mode": mode})
         return 0
-    if rec and rec.get("status") == "published":
-        # Ручной повтор (--force) в уже опубликованный день — отдельный выпуск <дата>_<тип>-N.
+    other_published = any(k.startswith(f"{run_id}:") and k != key and v.get("status") == "published"
+                          for k, v in db["issues"].items())
+    if (rec and rec.get("status") == "published") or other_published:
+        # Ручной повтор (--force) в уже опубликованный день, или папка дня принадлежит опубликованному
+        # выпуску в другом режиме (dry-run в день live-выпуска) — отдельный выпуск <дата>_<тип>-N.
         n = 2
         while f"{run_id}-{n}:{mode}" in db["issues"] or run_dir(f"{run_id}-{n}").exists():
             n += 1
@@ -193,6 +196,8 @@ def cmd_init(args) -> int:
     lives = live_issues(db)
     until = window_until(now, slot, tzinfo, sched)
     since = window_since(lives, until, sched)
+    if getattr(args, "since_days", None):  # ручной тестовый прогон: окно «последние N дней»
+        since = until - timedelta(days=args.since_days)
     issue_number = len({r["issue_id"] for r in lives if r["issue_id"].endswith(f"_{kind}")}) + 1
     cfg = sched["issues"][kind]
     init = {
@@ -539,6 +544,42 @@ def cmd_finalize(args) -> int:
     return 0
 
 
+MISSED_MIN_IMPORTANCE = 8
+
+
+def missed_important(rd: Path, gate: dict) -> list[dict]:
+    """Кандидаты с важностью 8+ (оценка куратора, иначе сборщика), не попавшие в выпуск, и почему."""
+    if not gate:
+        return []
+    short = read_json(rd / "shortlist.json", {}) or {}
+    fc = {f["id"]: f for f in (read_json(rd / "factcheck.json", {}) or {}).get("items", [])}
+    published = set(gate.get("publish_ids", [])) | set(gate.get("rumor_ids", []))
+    in_short = {i["id"]: i for i in short.get("items", [])}
+    in_reserve = {i["id"]: i for i in short.get("reserve", [])}
+    dropped_hist = set(short.get("dropped_as_history", []))
+    out = []
+    for c in (read_json(rd / "candidates.json", {}) or {}).get("items", []):
+        cid = c["id"]
+        rated = in_short.get(cid) or in_reserve.get(cid) or c
+        imp = rated.get("importance") or c.get("importance") or 0
+        if not isinstance(imp, (int, float)) or imp < MISSED_MIN_IMPORTANCE or cid in published or cid in dropped_hist:
+            continue
+        status = (fc.get(cid) or {}).get("status")
+        if status == "rejected":
+            why = "отклонена фактчекером"
+        elif status == "rumor":
+            why = "слух сверх лимита раздела «Слухи»"
+        elif cid in in_short or status in ("verified", "partially"):
+            why = "не поместилась в лимит выпуска"
+        elif cid in in_reserve:
+            why = "в резерве куратора"
+        else:
+            why = "не отобрана куратором"
+        out.append({"id": cid, "title": rated.get("title") or c.get("title", ""), "importance": int(imp),
+                    "company": rated.get("company") or c.get("company"), "why": why})
+    return sorted(out, key=lambda m: -m["importance"])
+
+
 def build_report(run_id: str, event: str | None = None) -> str:
     rd = run_dir(run_id)
     init = read_json(rd / "init.json", {})
@@ -577,6 +618,12 @@ def build_report(run_id: str, event: str | None = None) -> str:
             lines.append(f"Обложка НЕ отправлена, выпуск ушёл без неё: {rec['cover_error']}")
     if progress.get("aborted"):
         lines.append(f"Причина остановки: {progress['aborted']}")
+    missed = missed_important(rd, gate)
+    if missed:
+        lines.append(f"Важное, что не вошло ({len(missed)}):")
+        lines += [f"  • [{m['importance']}] {m['title'][:110]} — {m['why']}" for m in missed[:8]]
+    elif gate:
+        lines.append("Важное, что не вошло: нет")
     src_err = cand.get("source_errors", [])
     if src_err:
         lines.append(f"Недоступные источники ({len(src_err)}): " +
@@ -674,6 +721,7 @@ def main(argv=None) -> int:
     p.add_argument("--resume", action="store_true", help="продолжить (по умолчанию и так продолжает)")
     p.add_argument("--fresh", action="store_true", help="начать слот заново, удалив промежуточные файлы")
     p.add_argument("--force", action="store_true", help="игнорировать слот/lock/«уже опубликовано»")
+    p.add_argument("--since-days", type=float, help="ручной тест: окно сбора — последние N дней")
     p.set_defaults(fn=cmd_init)
     p = sub.add_parser("step")
     p.add_argument("run_id")

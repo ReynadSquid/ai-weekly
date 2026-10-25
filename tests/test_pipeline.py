@@ -273,3 +273,36 @@ def test_monday_cron(capsys, monday):
     rows = json.loads(capsys.readouterr().out)
     main = next(r for r in rows if r["kind"] == "weekly" and r["purpose"] == "основной слот")
     assert main["cron_local"] == "0 9 * * 1" and main["cron_utc"] == "0 2 * * 1"
+
+
+def test_report_lists_missed_important(repo, capsys, monkeypatch):
+    monkeypatch.setenv("AIW_NOW", "2026-10-25T03:05:00Z")
+    run_init(capsys)
+    rd = repo / "runs" / "2026-10-25_weekly"
+    c = lambda i, imp, t: {"id": i, "title": t, "url": f"https://x.com/{i}", "importance": imp}
+    common.write_json(rd / "candidates.json", {"items": [
+        c("pub", 9, "Опубликовано"), c("rej", 8, "Отклонено"), c("res", 9, "В резерве"),
+        c("skip", 8, "Не отобрано"), c("low", 6, "Неважное"), c("old", 9, "Уже было")]})
+    common.write_json(rd / "shortlist.json", {"items": [{"id": "pub"}, {"id": "rej"}],
+                                              "reserve": [{"id": "res", "importance": 9}],
+                                              "dropped_as_history": ["old"]})
+    common.write_json(rd / "factcheck.json", {"items": [{"id": "pub", "status": "verified"},
+                                                        {"id": "rej", "status": "rejected"}]})
+    common.write_json(rd / "gate.json", {"decision": "pass", "publish_ids": ["pub"], "rumor_ids": []})
+    report = pipeline.build_report("2026-10-25_weekly")
+    assert "Важное, что не вошло (3):" in report
+    assert "[9] В резерве — в резерве куратора" in report
+    assert "[8] Отклонено — отклонена фактчекером" in report
+    assert "[8] Не отобрано — не отобрана куратором" in report
+    assert "Опубликовано" not in report and "Неважное" not in report and "Уже было" not in report
+
+
+def test_dry_run_on_live_published_day_gets_own_run(repo, capsys, monkeypatch):
+    common.write_json(pipeline.PUBLISHED, {"issues": {
+        "2026-10-25_weekly:live": {"issue_id": "2026-10-25_weekly", "mode": "live", "status": "published"}}})
+    common.write_json(common.RUNS / "2026-10-25_weekly" / "init.json", {"mode": "live", "run_id": "2026-10-25_weekly"})
+    monkeypatch.setenv("AIW_NOW", "2026-10-25T07:30:00Z")
+    res = run_init(capsys, "--dry-run", "--kind", "weekly", "--force", "--since-days", "7")
+    assert res["status"] == "proceed" and res["run_id"] == "2026-10-25_weekly-2"
+    assert res["init"]["window"]["since"] == "2026-10-18T07:30:00Z"
+    assert common.read_json(common.RUNS / "2026-10-25_weekly" / "init.json")["mode"] == "live"  # боевой не тронут
