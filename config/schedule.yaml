@@ -10,16 +10,21 @@ timezone: Asia/Krasnoyarsk
 publish_mode: live
 min_dry_runs_before_live: 2
 
-# Окно сбора: от прошлой успешной публикации, но не больше max_window_days.
-max_window_days: 8
-default_window_days: 7  # если прошлых выпусков ещё нет
+# Окно сбора: от конца окна прошлого live-выпуска до полуночи дня выпуска (window_end: day_start),
+# то есть выпуск в понедельник берёт неделю целиком, по воскресенье включительно. Не больше max_window_days.
+window_end: day_start    # day_start | now
+max_window_days: 9
+default_window_days: 7   # если прошлых выпусков ещё нет
+
+# Плановые выпуски не раньше этой даты (до неё init отвечает not_due). Ручной --force не ограничен.
+first_issue_date: 2026-11-02
 
 issues:
   weekly:
     enabled: true
     title: "AI Weekly"
-    day: sunday          # monday..sunday
-    time: "10:00"        # локальное время timezone
+    day: monday          # monday..sunday
+    time: "09:00"        # локальное время timezone
     target_items: [12, 20]
     cover: true          # обложка с логотипами компаний первым сообщением
     min_items: 8

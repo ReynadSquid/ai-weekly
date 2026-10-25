@@ -75,9 +75,9 @@ init → collect (4 сборщика параллельно + RSS/API-скрип
    - **Name:** `AI Weekly`
    - **Prompt:** текст из [docs/cloud-task-prompt.md](docs/cloud-task-prompt.md)
    - **Model:** Opus или Sonnet последней версии
-   - **Trigger → Schedule → Weekly:** воскресенье **10:05** (по вашему времени; если время в браузере не
+   - **Trigger → Schedule → Weekly:** понедельник **09:05** (по вашему времени; если время в браузере не
      красноярское, возьмите `cron_utc` из `python scripts/pipeline.py cron`). Плюс ещё два триггера-повтора:
-     воскресенье 16:05 и 22:05 — они продолжат выпуск, если основной запуск сорвался (например, кончились лимиты),
+     понедельник 15:05 и 21:05 — они продолжат выпуск, если основной запуск сорвался (например, кончились лимиты),
      и ничего не сделают, если выпуск уже вышел.
    - **Advanced → Repository:** ваш `ai-weekly`; **Cloud environment:** созданное выше; **Connectors:** уберите все.
 5. **Run now** — первый тестовый прогон (режим `dry-run` включён в `config/schedule.yaml` по умолчанию).
@@ -131,6 +131,8 @@ python scripts/pipeline.py cron                       # cron-строки из s
 | Telegram-каналы для поиска новостей | `config/tg_sources.yaml` |
 | Формат выпуска (разделы A–G, эмодзи, стиль) | `config/format.md` — ключи разделов должны совпадать с `section` в watchlist |
 | День и время | `config/schedule.yaml` → затем `python scripts/pipeline.py cron` и обновить триггер задачи |
+| Окно сбора | `config/schedule.yaml` → `window_end: day_start` — выпуск в понедельник берёт неделю целиком (до полуночи дня выпуска), начало окна стыкуется с концом окна прошлого выпуска |
+| Не публиковать до даты | `config/schedule.yaml` → `first_issue_date` |
 | Включить средний выпуск | `config/schedule.yaml` → `issues.midweek.enabled: true` + триггер в среду 18:05 |
 | Перейти на основной канал | `config/schedule.yaml` → `publish_mode: live` (сработает только после 2 успешных dry-run) |
 | Пороги качества | `config/schedule.yaml` → `min_items`, `max_rejected_ratio` |

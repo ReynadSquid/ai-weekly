@@ -197,7 +197,7 @@ def date_label(value: str | None) -> str | None:
 
 DATE_PREFIX = "Дата публикации: "
 WHY_LABEL = "Что это значит:"  # редактор пишет «Почему важно:», в канал уходит эта подпись
-ITEM_SEP = "\n•••\n"          # разделитель между новостями одного раздела
+ITEM_SEP = "\n\n"             # разделитель между новостями одного раздела (пробовали «\n•••\n»)
 
 
 def decorate_item(item_html: str, number: int | None = None, date: str | None = None,

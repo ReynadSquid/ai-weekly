@@ -80,6 +80,28 @@ def date_range_label(since: datetime, until: datetime, tzinfo) -> str:
     return f"{a.day} {MONTHS[a.month - 1]} – {b.day} {MONTHS[b.month - 1]} {b.year}"
 
 
+def window_until(now: datetime, slot: datetime | None, tzinfo, sched: dict) -> datetime:
+    """Конец окна сбора. window_end: day_start — полночь дня выпуска по местному времени (выпуск
+    в понедельник 9:00 берёт неделю целиком, по воскресенье включительно); now — момент запуска."""
+    if sched.get("window_end", "now") == "day_start" and slot is not None:
+        midnight = slot.astimezone(tzinfo).replace(hour=0, minute=0, second=0, microsecond=0)
+        return midnight.astimezone(timezone.utc)
+    return now
+
+
+def window_since(lives: list[dict], until: datetime, sched: dict) -> datetime:
+    """Начало окна = конец окна прошлого live-выпуска (без дыр и повторов), но не раньше
+    until − max_window_days. Нет прошлых выпусков — default_window_days назад."""
+    prev_until = None
+    for r in lives:
+        init = read_json(run_dir(r["issue_id"]) / "init.json", {}) or {}
+        cand = parse_dt((init.get("window") or {}).get("until")) or parse_dt(r.get("finished_at"))
+        if cand and cand <= until and (prev_until is None or cand > prev_until):
+            prev_until = cand
+    since = prev_until or until - timedelta(days=sched.get("default_window_days", 7))
+    return max(since, until - timedelta(days=sched.get("max_window_days", 8)))
+
+
 def cmd_init(args) -> int:
     sched = load_yaml("schedule.yaml")
     tzinfo = tz()
@@ -96,6 +118,11 @@ def cmd_init(args) -> int:
     if kind not in sched["issues"]:
         out({"status": "error", "error": f"неизвестный тип выпуска {kind}"})
         return 2
+    first = sched.get("first_issue_date")
+    if first and slot and slot.date().isoformat() < str(first) and not args.force:
+        out({"status": "not_due", "now_local": now_local.isoformat(),
+             "hint": f"выпуски по расписанию начинаются с {first} (schedule.yaml → first_issue_date)"})
+        return 0
     slot_date = (slot or now_local).date().isoformat()
     run_id = f"{slot_date}_{kind}"
     rd = run_dir(run_id)
@@ -163,19 +190,17 @@ def cmd_init(args) -> int:
         out(lock)
         return 0
 
-    max_days = sched.get("max_window_days", 8)
     lives = live_issues(db)
-    last = max((parse_dt(r.get("finished_at")) for r in lives), default=None)
-    since = last if last else now - timedelta(days=sched.get("default_window_days", 7))
-    since = max(since, now - timedelta(days=max_days))
+    until = window_until(now, slot, tzinfo, sched)
+    since = window_since(lives, until, sched)
     issue_number = len({r["issue_id"] for r in lives if r["issue_id"].endswith(f"_{kind}")}) + 1
     cfg = sched["issues"][kind]
     init = {
         "run_id": run_id, "kind": kind, "mode": mode, "title": cfg.get("title", "AI Weekly"),
         "issue_number": issue_number, "slot_local": slot.isoformat() if slot else None,
         "started_at": iso(now),
-        "window": {"since": iso(since), "until": iso(now)},
-        "date_range": date_range_label(since, now, tzinfo),
+        "window": {"since": iso(since), "until": iso(until)},
+        "date_range": date_range_label(since, until - timedelta(seconds=1), tzinfo),
         "target_items": cfg.get("target_items", [12, 20]), "min_items": cfg.get("min_items", 8),
         "cover": bool(cfg.get("cover", False)),
         "max_rejected_ratio": sched.get("max_rejected_ratio", 0.4),

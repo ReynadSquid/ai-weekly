@@ -124,11 +124,11 @@ def test_decorate_item_optional_gap_before_why():
     assert "Текст новости.\n\n<blockquote>" in out
 
 
-def test_items_separated_by_dots_but_not_after_section_title():
+def test_items_separated_by_blank_line():
     p = {"header": "", "footer": "", "sections": [
         {"key": "A", "title": "Раздел", "items": [{"id": "a", "html": ITEM}, {"id": "b", "html": ITEM}]}]}
     msgs, errors = build_messages(p)
     text = msgs[0]["text"]
-    assert errors == [] and text.count("\n•••\n") == 1
+    assert errors == [] and "•••" not in text
     assert text.startswith("<b>Раздел</b>\n\n<b>1. Anthropic")
-    assert '→ Источник</a>\n•••\n<b>2. Anthropic' in text
+    assert '→ Источник</a>\n\n<b>2. Anthropic' in text

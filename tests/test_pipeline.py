@@ -223,3 +223,53 @@ def test_cron_converts_to_utc(capsys):
     main = next(r for r in rows if r["kind"] == "weekly" and r["purpose"] == "основной слот")
     assert main["cron_local"] == "0 10 * * 0"
     assert main["cron_utc"] == "0 3 * * 0"  # Красноярск = UTC+7
+
+
+# ---------- понедельник 9:00, окно до полуночи, первый выпуск 02.11 ----------
+
+@pytest.fixture
+def monday(fixed_schedule):
+    fixed_schedule.update(window_end="day_start", max_window_days=9, first_issue_date="2026-11-02")
+    fixed_schedule["issues"]["weekly"].update(day="monday", time="09:00")
+    return fixed_schedule
+
+
+def live(issue_id, until, finished):
+    common.write_json(common.RUNS / issue_id / "init.json", {"window": {"until": until}})
+    return {"issue_id": issue_id, "mode": "live", "status": "published", "finished_at": finished}
+
+
+def test_monday_before_first_issue_date_is_not_due(repo, capsys, monkeypatch, monday):
+    monkeypatch.setenv("AIW_NOW", "2026-10-26T02:05:00Z")  # пн 26.10 09:05 Красноярск
+    assert run_init(capsys)["status"] == "not_due"
+
+
+def test_first_monday_issue_covers_gap_since_previous_window(repo, capsys, monkeypatch, monday):
+    common.write_json(pipeline.PUBLISHED, {"issues": {
+        "2026-10-25_weekly:live": live("2026-10-25_weekly", "2026-10-25T03:05:00Z", "2026-10-25T05:47:46Z"),
+        "a:dry-run": {"issue_id": "a", "mode": "dry-run", "status": "published"},
+        "b:dry-run": {"issue_id": "b", "mode": "dry-run", "status": "published"}}})
+    monkeypatch.setenv("AIW_NOW", "2026-11-02T02:05:00Z")  # пн 02.11 09:05
+    res = run_init(capsys, "--live")
+    assert res["status"] == "proceed" and res["run_id"] == "2026-11-02_weekly"
+    assert res["init"]["window"] == {"since": "2026-10-25T03:05:00Z", "until": "2026-11-01T17:00:00Z"}
+    assert res["init"]["date_range"] == "25 октября – 1 ноября 2026"
+    assert res["init"]["issue_number"] == 2
+
+
+def test_steady_weekly_window_is_previous_calendar_week(repo, capsys, monkeypatch, monday):
+    common.write_json(pipeline.PUBLISHED, {"issues": {
+        "2026-11-02_weekly:live": live("2026-11-02_weekly", "2026-11-01T17:00:00Z", "2026-11-02T02:20:00Z"),
+        "a:dry-run": {"issue_id": "a", "mode": "dry-run", "status": "published"},
+        "b:dry-run": {"issue_id": "b", "mode": "dry-run", "status": "published"}}})
+    monkeypatch.setenv("AIW_NOW", "2026-11-09T08:05:00Z")  # повторный слот пн 15:05
+    res = run_init(capsys, "--live")
+    assert res["init"]["window"] == {"since": "2026-11-01T17:00:00Z", "until": "2026-11-08T17:00:00Z"}
+    assert res["init"]["date_range"] == "2–8 ноября 2026"
+
+
+def test_monday_cron(capsys, monday):
+    pipeline.main(["cron"])
+    rows = json.loads(capsys.readouterr().out)
+    main = next(r for r in rows if r["kind"] == "weekly" and r["purpose"] == "основной слот")
+    assert main["cron_local"] == "0 9 * * 1" and main["cron_utc"] == "0 2 * * 1"
