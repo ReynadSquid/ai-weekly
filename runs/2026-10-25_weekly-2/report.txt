@@ -1,0 +1,12 @@
+✅ Выпуск опубликован — AI Weekly #2 (2026-10-25_weekly-2, режим dry-run)
+Окно: 18–25 октября 2026
+Собрано: 413 → после дедупа 340
+Фактчек: проверено 20, годных 13, слухов 4, отклонено 3 (15%)
+В выпуске: 13 новостей + 3 слухов
+QA: pass
+Telegram: published, сообщений 3, ссылка https://t.me/jgrgihselrw/48
+Обложка: отправлена
+Важное, что не вошло (1):
+  • [8] PHP Foundation выпустила патчи для двух критических уязвимостей — не отобрана куратором
+Недоступные источники (10): openai.com/news; openai.com/index/securing-our-frontier-model-training-environment; cnbc.com; Поиск не подтвердил Kimi K3.1 Pro и название Canva Craft; первоисточники для час; Прямой запрос к businesswire (Pathos) не открылся; github.com/trending; github.com/trending; OpenAI: страницы coordinated-disclosure, low-resource-programming-languages, sec; Посты без первоисточника/новостной сути (t.me-only, реклама, мемы) отброшены; arXiv-работы (2610.07130, 2610.07907, 2610.19247) поданы до окна - не включены
+Попыток запуска: 1. Лог: runs/2026-10-25_weekly-2/run.log
