@@ -111,3 +111,27 @@ def test_token_never_in_published_or_errors(env):
 def test_mask_hides_token_pattern(monkeypatch):
     monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
     assert TOKEN not in common.mask(f"https://api.telegram.org/bot{TOKEN}/sendMessage")
+
+
+def test_republish_before_supersedes_old_publication_once(env):
+    from common import parse_dt
+
+    fake1 = FakeTelegram()
+    tg_publish.publish("2026-10-25_weekly", token=TOKEN, call=fake1, sleep=lambda s: None)
+    db_path = env / "state" / "published.json"
+    db = json.loads(db_path.read_text(encoding="utf-8"))
+    db["issues"]["2026-10-25_weekly:dry-run"]["finished_at"] = "2026-10-25T03:15:00Z"
+    db_path.write_text(json.dumps(db), encoding="utf-8")
+
+    cutoff = parse_dt("2026-10-25T04:00:00Z")  # граница — до момента повторной публикации
+    fake2 = FakeTelegram()
+    res = tg_publish.publish("2026-10-25_weekly", token=TOKEN, call=fake2, sleep=lambda s: None,
+                             republish_before=cutoff)
+    assert res["status"] == "published" and len(sent_texts(fake2)) == 3
+    db = json.loads(db_path.read_text(encoding="utf-8"))
+    assert len(db["superseded"]) == 1 and db["superseded"][0]["finished_at"] == "2026-10-25T03:15:00Z"
+
+    fake3 = FakeTelegram()  # повторный запуск разовой задачи ничего не дублирует
+    res = tg_publish.publish("2026-10-25_weekly", token=TOKEN, call=fake3, sleep=lambda s: None,
+                             republish_before=cutoff)
+    assert res["status"] == "already_published" and fake3.calls == []

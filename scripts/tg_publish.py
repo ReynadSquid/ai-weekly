@@ -31,7 +31,8 @@ import urllib.request
 import uuid
 from pathlib import Path
 
-from common import STATE, iso, load_dotenv, mask, now_utc, read_json, run_dir, setup_stdio, write_json
+from common import (STATE, iso, load_dotenv, mask, now_utc, parse_dt, read_json, run_dir, setup_stdio,
+                    write_json)
 
 PUBLISHED = STATE / "published.json"
 PAUSE_SEC = 3
@@ -155,7 +156,12 @@ def public_link(chat_id: str, message_id: int) -> str | None:
     return None
 
 
-def publish(run_id: str, *, token: str, call=api_call, sleep=time.sleep, cover_maker=ensure_cover) -> dict:
+def publish(run_id: str, *, token: str, call=api_call, sleep=time.sleep, cover_maker=ensure_cover,
+            republish_before=None) -> dict:
+    """republish_before (datetime): разовая повторная публикация. Если выпуск уже опубликован РАНЬШЕ
+    этого момента (старые сообщения админ удалил из канала), прежняя запись уходит в
+    published.json → superseded и выпуск отправляется заново. Публикация после этого момента
+    считается актуальной — повторный запуск ничего не шлёт."""
     rd = run_dir(run_id)
     init = read_json(rd / "init.json") or {}
     mode = init.get("mode", "dry-run")
@@ -171,6 +177,13 @@ def publish(run_id: str, *, token: str, call=api_call, sleep=time.sleep, cover_m
     db = read_json(PUBLISHED, {"issues": {}})
     key = f"{run_id}:{mode}"
     rec = db["issues"].get(key)
+    if rec and rec.get("status") == "published" and republish_before:
+        done = parse_dt(rec.get("finished_at") or rec.get("started_at"))
+        if done and done < republish_before:
+            db.setdefault("superseded", []).append(dict(rec, key=key, superseded_at=iso(now_utc())))
+            del db["issues"][key]
+            write_json(PUBLISHED, db)
+            rec = None
     if rec and rec.get("status") == "published":
         return {"status": "already_published", "key": key, "messages": len(rec["messages"])}
     if not rec:
@@ -279,6 +292,8 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     g = ap.add_mutually_exclusive_group(required=True)
     g.add_argument("--run")
+    ap.add_argument("--republish-before", metavar="ISO_UTC",
+                    help="разовая повторная публикация выпуска, вышедшего раньше этого момента (UTC)")
     g.add_argument("--report", help="файл с текстом отчёта или '-' для stdin")
     g.add_argument("--check", action="store_true")
     args = ap.parse_args(argv)
@@ -297,7 +312,7 @@ def main(argv=None) -> int:
         return 2
     if args.check:
         return check(token)
-    result = publish(args.run, token=token)
+    result = publish(args.run, token=token, republish_before=parse_dt(args.republish_before))
     print(json.dumps(result, ensure_ascii=False))
     return {"published": 0, "already_published": 0}.get(result["status"], 3)
 
