@@ -172,3 +172,47 @@ def test_multipart_body_contains_photo_and_caption(tmp_path):
     assert ctype.startswith("multipart/form-data; boundary=")
     assert b'name="photo"; filename="c.jpg"' in body and b"\xff\xd8\xffJPEG" in body
     assert "<b>Привет</b>".encode() in body and json.dumps("x")  # noqa
+
+
+# ---------- хэштеги по сообщениям ----------
+
+def test_company_hashtag():
+    h = split_messages.company_hashtag
+    assert h("OpenAI", "#OpenAI") == "#OpenAI"
+    assert h("Moonshot AI") == "#MoonshotAI" and h("Hugging Face") == "#HuggingFace"
+    assert h("Исследователи (аффилиация не указана)") is None and h(None) is None
+
+
+def test_each_message_gets_its_own_company_tags():
+    p = {"header": "", "footer": "#OpenAI #Meta #AIWeekly",
+         "sections": [{"key": "A", "title": "A", "items": [
+             {"id": f"i{n}", "html": f"<b>Новость {n}</b>\n" + "т" * 1500} for n in range(6)]}]}
+    tags = {"i0": "#OpenAI", "i1": "#OpenAI", "i2": "#Anthropic", "i3": "#Meta", "i4": None, "i5": "#Meta"}
+    msgs, errors = split_messages.build_messages(p, item_tags=tags)
+    assert errors == [] and len(msgs) >= 2
+    for m in msgs:
+        last = m["text"].rsplit("\n\n", 1)[1]
+        assert last.endswith("#AIWeekly") and m["text"].count("#AIWeekly") == 1
+        expected = [tags[f"i{n}"] for n in range(6) if f"Новость {n}<" in m["text"] and tags[f"i{n}"]]
+        assert last == " ".join(dict.fromkeys(expected + ["#AIWeekly"]))
+        assert m["length"] <= split_messages.TG_LIMIT
+    assert "#OpenAI #Meta #AIWeekly" not in msgs[-1]["text"].rsplit("\n\n", 1)[0]  # подвал редактора убран
+
+
+def test_footer_text_kept_hashtags_dropped():
+    assert split_messages.drop_hashtag_lines("Спасибо!\n\n#OpenAI #AIWeekly") == "Спасибо!"
+
+
+def test_ensure_deps_reinstalls_broken_pillow(monkeypatch):
+    import subprocess
+    import sys
+
+    calls = []
+    monkeypatch.setitem(sys.modules, "PIL", None)  # как сломанный системный Pillow: импорт падает
+
+    def fake_run(cmd, **kw):
+        calls.append(cmd)
+        sys.modules.pop("PIL", None)  # «установили» рабочую копию
+    monkeypatch.setattr(subprocess, "run", fake_run)
+    assert make_cover.ensure_deps()
+    assert calls and "--ignore-installed" in calls[0] and "pillow" in calls[0]

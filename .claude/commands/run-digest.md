@@ -15,7 +15,9 @@ argument-hint: "[--dry-run|--live] [--kind auto|weekly|midweek] [--resume] [--fr
 ## 0. Подготовка
 ```bash
 python -m pip install -q -r requirements.txt
+python scripts/make_cover.py --check
 ```
+`--check` чинит Pillow, если в образе сломанный системный (результат — только для отчёта, выпуск не блокирует).
 
 ## 1. Init
 ```bash

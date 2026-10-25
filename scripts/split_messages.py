@@ -155,26 +155,57 @@ def split_issue(posts: dict, limit: int = DEFAULT_LIMIT) -> list[str]:
 
 
 POST_TAG = "#AIWeekly"  # хэштег под каждым постом — для поиска по каналу
+TAG_RESERVE = 300  # место под строку хэштегов в каждом сообщении
 
 
 def with_tag(text: str, tag: str = POST_TAG) -> str:
     return text if not tag or tag in text else f"{text}\n\n{tag}"
 
 
-def build_messages(posts: dict, limit: int = DEFAULT_LIMIT, tag: str = POST_TAG) -> tuple[list[dict], list[str]]:
+def company_hashtag(company: str | None, hashtag: str | None = None) -> str | None:
+    """Хэштег компании: из watchlist (поле hashtag), иначе из латинского названия («Moonshot AI» → #MoonshotAI)."""
+    if hashtag:
+        return hashtag
+    if company and re.fullmatch(r"[A-Za-z0-9 .&+\-]+", company):
+        tag = re.sub(r"[^A-Za-z0-9]", "", company)
+        return f"#{tag}" if tag else None
+    return None
+
+
+def tag_line(tags: list[str | None]) -> str:
+    return " ".join(dict.fromkeys([t for t in tags if t] + [POST_TAG]))
+
+
+def _is_hashtag_line(line: str) -> bool:
+    words = line.split()
+    return bool(words) and all(w.startswith("#") for w in words)
+
+
+def drop_hashtag_lines(text: str) -> str:
+    """Хэштеги всего выпуска из подвала редактора не нужны — у каждого сообщения своя строка."""
+    return "\n".join(l for l in (text or "").splitlines() if not _is_hashtag_line(l)).strip()
+
+
+def build_messages(posts: dict, limit: int = DEFAULT_LIMIT,
+                   item_tags: dict[str, str | None] | None = None) -> tuple[list[dict], list[str]]:
+    """Нарезка + под каждым сообщением строка хэштегов компаний, чьи новости в нём есть, и #AIWeekly."""
     errors: list[str] = []
     for part, text in [("header", posts.get("header", "")), ("footer", posts.get("footer", ""))]:
         errors += [f"{part}: {e}" for e in validate_html(text or "")]
     for s in posts.get("sections", []):
         for item in s.get("items", []):
             errors += [f"{s.get('key')}/{item.get('id')}: {e}" for e in validate_html(item.get("html", ""))]
+    posts = dict(posts, footer=drop_hashtag_lines(posts.get("footer", "")))
+    items = [i for s in posts.get("sections", []) for i in s.get("items", []) if i.get("html", "").strip()]
+    item_tags = item_tags or {}
     try:
-        texts = split_issue(posts, limit - (visible_len(tag) + 2 if tag else 0))
+        texts = split_issue(posts, limit - TAG_RESERVE)
     except ValueError as e:
         return [], errors + [str(e)]
     messages = []
     for i, t in enumerate(texts):
-        t = with_tag(t, tag)
+        tags = [item_tags.get(it.get("id")) for it in items if it["html"].strip() in t]
+        t = f"{t}\n\n{tag_line(tags)}"
         n = visible_len(t)
         if n > TG_LIMIT:
             errors.append(f"сообщение {i}: {n} > {TG_LIMIT}")
@@ -186,7 +217,8 @@ def build_messages(posts: dict, limit: int = DEFAULT_LIMIT, tag: str = POST_TAG)
 CAPTION_LIMIT = 1024
 
 
-def build_cover_variant(posts: dict, limit: int = DEFAULT_LIMIT) -> tuple[dict | None, str | None]:
+def build_cover_variant(posts: dict, limit: int = DEFAULT_LIMIT,
+                        item_tags: dict[str, str | None] | None = None) -> tuple[dict | None, str | None]:
     """Вариант с обложкой: подпись к фото — только строка-заголовок выпуска («AI Weekly #N · даты») и
     хэштег; три главных события не дублируются (обложка уже показывает, о ком выпуск). Дальше разделы
     без шапки и без превью ссылок. Возвращает (variant, причина_почему_нет); отсутствие варианта —
@@ -199,7 +231,7 @@ def build_cover_variant(posts: dict, limit: int = DEFAULT_LIMIT) -> tuple[dict |
         return None, f"подпись {visible_len(header)} > {CAPTION_LIMIT} символов"
     if validate_html(header):
         return None, "заголовок выпуска не проходит валидацию HTML"
-    messages, errors = build_messages(dict(posts, header=""), limit)
+    messages, errors = build_messages(dict(posts, header=""), limit, item_tags)
     if errors or not messages:
         return None, "; ".join(errors) or "нет сообщений"
     for m in messages:
@@ -219,11 +251,13 @@ def main(argv=None) -> int:
         print(json.dumps({"ok": False, "errors": ["нет posts.json"]}, ensure_ascii=False))
         return 1
     limit = min(args.limit, TG_LIMIT)
-    messages, errors = build_messages(posts, limit)
+    ed = read_json(rd / "editor_input.json") or {}
+    item_tags = {it["id"]: company_hashtag(it.get("company"), it.get("hashtag")) for it in ed.get("items", [])}
+    messages, errors = build_messages(posts, limit, item_tags)
     out = {"issue_id": posts.get("issue_id", args.run), "messages": messages, "errors": errors}
     cover_note = None
     if (read_json(rd / "init.json") or {}).get("cover") and not errors:
-        out["cover"], cover_note = build_cover_variant(posts, limit)
+        out["cover"], cover_note = build_cover_variant(posts, limit, item_tags)
     write_json(rd / "messages.json", out)
     print(json.dumps({"ok": not errors, "messages": len(messages),
                       "lengths": [m["length"] for m in messages], "errors": errors,

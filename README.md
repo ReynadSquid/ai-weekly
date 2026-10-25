@@ -66,8 +66,11 @@ init → collect (4 сборщика параллельно + RSS/API-скрип
      Network secrets для Telegram не подходят: токен Telegram передаётся в адресе запроса, а не в заголовке.
    - **Setup script:**
      ```bash
-     pip install pyyaml tzdata pytest pillow resvg-py
+     pip install pyyaml tzdata pytest
+     PIP_BREAK_SYSTEM_PACKAGES=1 pip install --ignore-installed pillow resvg-py
      ```
+     Вторая строка ставит свой Pillow поверх системного: в образе есть Pillow под другую версию Python,
+     и обычный `pip install pillow` его не заменяет (обложка тогда не собирается).
 4. **Задача.** [claude.ai/code/routines](https://claude.ai/code/routines) → New task → Set up manually:
    - **Name:** `AI Weekly`
    - **Prompt:** текст из [docs/cloud-task-prompt.md](docs/cloud-task-prompt.md)

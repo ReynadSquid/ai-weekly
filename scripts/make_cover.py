@@ -28,6 +28,40 @@ TILE, TILE_GAP, PER_ROW, MAX_TILES = 300, 46, 4, 8
 X0 = 140
 
 
+def ensure_deps(install=True) -> str:
+    """Pillow и resvg-py, пригодные для текущего Python.
+
+    В облачном образе есть системный Pillow (/usr/lib/python3/dist-packages), собранный под другую
+    версию Python: `pip install pillow` считает его установленным, а импорт падает на PIL._imaging.
+    Тогда ставим свои копии поверх (--ignore-installed) и импортируем заново."""
+    import importlib
+
+    def _try():
+        from PIL import Image  # noqa: F401  — падает на сломанном системном Pillow
+        import resvg_py  # noqa: F401
+        import PIL
+        return PIL.__version__
+
+    try:
+        return _try()
+    except ImportError as first:
+        if not install:
+            raise
+        import os
+        import subprocess
+
+        env = dict(os.environ, PIP_BREAK_SYSTEM_PACKAGES="1")
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--ignore-installed", "pillow", "resvg-py"],
+                       check=False, env=env, capture_output=True, timeout=600)
+        for name in [m for m in sys.modules if m.split(".")[0] in ("PIL", "resvg_py")]:
+            del sys.modules[name]
+        importlib.invalidate_caches()
+        try:
+            return _try()
+        except ImportError as second:
+            raise ImportError(f"{second} (до переустановки: {first})") from second
+
+
 def _norm(s: str) -> str:
     return re.sub(r"[^a-z0-9]", "", (s or "").lower())
 
@@ -158,6 +192,7 @@ def build_cover(title: str, issue_label: str, tiles: list[dict], out: Path) -> P
 
 
 def make_for_run(run_id: str) -> Path:
+    ensure_deps()
     rd = run_dir(run_id)
     init = read_json(rd / "init.json")
     ed = read_json(rd / "editor_input.json")
@@ -173,8 +208,17 @@ def make_for_run(run_id: str) -> Path:
 def main(argv=None) -> int:
     setup_stdio()
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--run", required=True)
+    g = ap.add_mutually_exclusive_group(required=True)
+    g.add_argument("--run")
+    g.add_argument("--check", action="store_true", help="проверить/починить Pillow и resvg-py")
     args = ap.parse_args(argv)
+    if args.check:
+        try:
+            print(json.dumps({"ok": True, "pillow": ensure_deps(), "python": sys.version.split()[0]}))
+            return 0
+        except Exception as e:
+            print(json.dumps({"ok": False, "error": f"{type(e).__name__}: {e}"}, ensure_ascii=False))
+            return 1
     try:
         path = make_for_run(args.run)
     except Exception as e:  # обложка необязательна — выпуск уйдёт без неё
