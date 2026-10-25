@@ -1,0 +1,135 @@
+{
+  "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation": {
+    "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://claude.com/product/claude-duet": {
+    "url": "https://claude.com/product/claude-duet",
+    "status": 200,
+    "final_url": "https://claude.com/product/claude-duet",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://9to5google.com/?p=734157": {
+    "url": "https://9to5google.com/?p=734157",
+    "status": 200,
+    "final_url": "https://9to5google.com/2026/10/21/openai-gpt-models-google-antigravity-cloud/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/": {
+    "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.anthropic.com/news/public-benefit-fund": {
+    "url": "https://www.anthropic.com/news/public-benefit-fund",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/news/public-benefit-fund",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/": {
+    "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://thenextweb.com/news/chatgpt-ads-89-countries-100000-advertisers": {
+    "url": "https://thenextweb.com/news/chatgpt-ads-89-countries-100000-advertisers",
+    "status": 200,
+    "final_url": "https://thenextweb.com/news/chatgpt-ads-89-countries-100000-advertisers",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://mistral.ai/news/voxtral-3/": {
+    "url": "https://mistral.ai/news/voxtral-3/",
+    "status": 200,
+    "final_url": "https://mistral.ai/news/voxtral-3/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac": {
+    "url": "https://www.perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac",
+    "status": 403,
+    "final_url": "https://www.perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac",
+    "error": null,
+    "verdict": "unverifiable"
+  },
+  "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/": {
+    "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/": {
+    "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+    "status": 200,
+    "final_url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.kimi.ai/blog/kimi-k3-1-pro": {
+    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "status": 200,
+    "final_url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/": {
+    "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://block.xyz/dessa": {
+    "url": "https://block.xyz/dessa",
+    "status": 200,
+    "final_url": "https://block.xyz/dessa",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents": {
+    "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+    "status": 200,
+    "final_url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/RecursiveSI/flint": {
+    "url": "https://huggingface.co/RecursiveSI/flint",
+    "status": 200,
+    "final_url": "https://huggingface.co/RecursiveSI/flint",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/blog/ibm-granite/granite-speech-5": {
+    "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/blog/nvidia/kumo-relational": {
+    "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/nvidia/kumo-relational",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/": {
+    "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+    "error": null,
+    "verdict": "ok"
+  }
+}

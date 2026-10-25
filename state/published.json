@@ -63,6 +63,37 @@
       ],
       "link": "https://t.me/jgrgihselrw/7",
       "finished_at": "2026-10-24T06:44:20Z"
+    },
+    "2026-10-25_weekly:live": {
+      "issue_id": "2026-10-25_weekly",
+      "mode": "live",
+      "issue_number": 1,
+      "status": "published",
+      "started_at": "2026-10-25T03:15:11Z",
+      "messages": [
+        {
+          "index": 0,
+          "message_id": 1791,
+          "hash": "913e49db47e3cb71",
+          "sent_at": "2026-10-25T03:15:12Z"
+        },
+        {
+          "index": 1,
+          "message_id": 1792,
+          "hash": "d3a80c71327c1afe",
+          "sent_at": "2026-10-25T03:15:16Z"
+        },
+        {
+          "index": 2,
+          "message_id": 1793,
+          "hash": "4481042bbf1674d3",
+          "sent_at": "2026-10-25T03:15:20Z"
+        }
+      ],
+      "cover_error": "ImportError: cannot import name '_imaging' from 'PIL' (/usr/lib/python3/dist-packages/PIL/__init__.py)",
+      "variant": "plain",
+      "link": "https://t.me/neurooruen/1791",
+      "finished_at": "2026-10-25T03:15:20Z"
     }
   }
 }

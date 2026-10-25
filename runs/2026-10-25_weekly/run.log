@@ -12,3 +12,7 @@
 2026-10-25T03:12:22Z | gate       | решение=pass годных=18 слухов=1 отклонено=1 (5%) 
 2026-10-25T03:12:24Z | factcheck  | шаг выполнен. 20 проверено: verified 14, partially 4, rumor 1, rejected 1
 2026-10-25T03:12:24Z | gate       | шаг выполнен. pass 18 годных
+2026-10-25T03:12:27Z | write      | editor_input: 19 новостей
+2026-10-25T03:13:55Z | write      | шаг выполнен. editor_input 19 → posts.json, draft.md
+2026-10-25T03:15:09Z | qa         | шаг выполнен. pass, 3 сообщения, 19 новостей, 4 minor
+2026-10-25T03:15:22Z | publish    | шаг выполнен. published 3 сообщения, https://t.me/neurooruen/1791; cover_error: PIL ImportError, выпуск без обложки
