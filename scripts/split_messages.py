@@ -176,6 +176,17 @@ def tag_line(tags: list[str | None]) -> str:
     return " ".join(dict.fromkeys([t for t in tags if t] + [POST_TAG]))
 
 
+def separate_title(item_html: str) -> str:
+    """Пустая строка между жирным заголовком новости и её текстом — заголовок визуально отделён."""
+    return re.sub(r"^(\s*<b>.*?</b>)\n(?!\n)", r"\1\n\n", item_html, count=1, flags=re.S)
+
+
+def _tags_of(value) -> list[str]:
+    if not value:
+        return []
+    return [value] if isinstance(value, str) else [t for t in value if t]
+
+
 def _is_hashtag_line(line: str) -> bool:
     words = line.split()
     return bool(words) and all(w.startswith("#") for w in words)
@@ -187,15 +198,18 @@ def drop_hashtag_lines(text: str) -> str:
 
 
 def build_messages(posts: dict, limit: int = DEFAULT_LIMIT,
-                   item_tags: dict[str, str | None] | None = None) -> tuple[list[dict], list[str]]:
-    """Нарезка + под каждым сообщением строка хэштегов компаний, чьи новости в нём есть, и #AIWeekly."""
+                   item_tags: dict[str, object] | None = None) -> tuple[list[dict], list[str]]:
+    """Нарезка + под каждым сообщением строка хэштегов компаний его новостей и #AIWeekly.
+    item_tags: id новости → хэштег или список хэштегов (компании новости и упомянутые в ней)."""
     errors: list[str] = []
     for part, text in [("header", posts.get("header", "")), ("footer", posts.get("footer", ""))]:
         errors += [f"{part}: {e}" for e in validate_html(text or "")]
     for s in posts.get("sections", []):
         for item in s.get("items", []):
             errors += [f"{s.get('key')}/{item.get('id')}: {e}" for e in validate_html(item.get("html", ""))]
-    posts = dict(posts, footer=drop_hashtag_lines(posts.get("footer", "")))
+    posts = dict(posts, footer=drop_hashtag_lines(posts.get("footer", "")),
+                 sections=[dict(s, items=[dict(i, html=separate_title(i.get("html", ""))) for i in s.get("items", [])])
+                           for s in posts.get("sections", [])])
     items = [i for s in posts.get("sections", []) for i in s.get("items", []) if i.get("html", "").strip()]
     item_tags = item_tags or {}
     try:
@@ -204,7 +218,7 @@ def build_messages(posts: dict, limit: int = DEFAULT_LIMIT,
         return [], errors + [str(e)]
     messages = []
     for i, t in enumerate(texts):
-        tags = [item_tags.get(it.get("id")) for it in items if it["html"].strip() in t]
+        tags = [tag for it in items if it["html"].strip() in t for tag in _tags_of(item_tags.get(it.get("id")))]
         t = f"{t}\n\n{tag_line(tags)}"
         n = visible_len(t)
         if n > TG_LIMIT:
@@ -218,7 +232,7 @@ CAPTION_LIMIT = 1024
 
 
 def build_cover_variant(posts: dict, limit: int = DEFAULT_LIMIT,
-                        item_tags: dict[str, str | None] | None = None) -> tuple[dict | None, str | None]:
+                        item_tags: dict[str, object] | None = None) -> tuple[dict | None, str | None]:
     """Вариант с обложкой: подпись к фото — только строка-заголовок выпуска («AI Weekly #N · даты») и
     хэштег; три главных события не дублируются (обложка уже показывает, о ком выпуск). Дальше разделы
     без шапки и без превью ссылок. Возвращает (variant, причина_почему_нет); отсутствие варианта —
@@ -251,8 +265,12 @@ def main(argv=None) -> int:
         print(json.dumps({"ok": False, "errors": ["нет posts.json"]}, ensure_ascii=False))
         return 1
     limit = min(args.limit, TG_LIMIT)
+    from companies import Directory
+
     ed = read_json(rd / "editor_input.json") or {}
-    item_tags = {it["id"]: company_hashtag(it.get("company"), it.get("hashtag")) for it in ed.get("items", [])}
+    html_by_id = {i.get("id"): i.get("html", "") for s in posts.get("sections", []) for i in s.get("items", [])}
+    directory = Directory()
+    item_tags = {it["id"]: directory.item_tags(it, html_by_id.get(it["id"], "")) for it in ed.get("items", [])}
     messages, errors = build_messages(posts, limit, item_tags)
     out = {"issue_id": posts.get("issue_id", args.run), "messages": messages, "errors": errors}
     cover_note = None

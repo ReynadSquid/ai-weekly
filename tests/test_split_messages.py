@@ -1,4 +1,10 @@
+import split_messages
 from split_messages import TG_LIMIT, build_messages, split_issue, validate_html, visible_len
+
+
+def test_separate_title():
+    assert split_messages.separate_title("<b>Заголовок</b>\nТекст") == "<b>Заголовок</b>\n\nТекст"
+    assert split_messages.separate_title("<b>З</b>\n\nТекст") == "<b>З</b>\n\nТекст"  # не удваивает
 
 
 def item(i, n=300):
@@ -47,7 +53,8 @@ def test_split_respects_limit_and_never_breaks_items():
     joined = "\n\n".join(m["text"] for m in msgs)
     for s in sections:
         for it in s["items"]:
-            assert joined.count(it["html"]) == 1  # каждая новость целиком и ровно один раз
+            # каждая новость целиком и ровно один раз (с пустой строкой после заголовка)
+            assert joined.count(split_messages.separate_title(it["html"])) == 1
     for m in msgs:
         assert m["length"] <= 4000 < TG_LIMIT
     assert [m["disable_preview"] for m in msgs] == [False] + [True] * (len(msgs) - 1)

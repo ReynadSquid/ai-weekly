@@ -24,7 +24,7 @@ BRAND = ROOT / "branding"
 FONT_TITLE = BRAND / "fonts" / "RussoOne-Regular.ttf"
 FONT_TEXT = BRAND / "fonts" / "Exo2-Variable.ttf"
 INK, CYAN, PINK, CREAM, MUSTARD = (20, 10, 46), (62, 240, 255), (255, 61, 127), (246, 242, 255), (255, 182, 39)
-TILE, TILE_GAP, PER_ROW, MAX_TILES = 300, 46, 4, 8
+TILE, TILE_GAP, PER_ROW, MAX_TILES = 300, 46, 4, 12  # 3 ряда по 4
 X0 = 140
 
 
@@ -85,18 +85,19 @@ def resolve_logo(company: str, mapping: dict[str, str]) -> str | None:
 
 def company_counts(editor_input: dict) -> list[tuple[str, int]]:
     """Компании подтверждённых новостей по убыванию числа новостей (порядок внутри — как в выпуске)."""
+    from companies import split_companies
+
     counts: dict[str, int] = {}
     for it in editor_input.get("items", []):
         if it.get("kind") != "news":
             continue
-        c = (it.get("company") or "").strip()
-        if c:
+        for c in split_companies(it.get("company")):  # «NVIDIA / Google Cloud» → обе компании
             counts[c] = counts.get(c, 0) + 1
     return sorted(counts.items(), key=lambda kv: -kv[1])
 
 
 def plan_tiles(companies: list[tuple[str, int]], mapping: dict[str, str]) -> list[dict]:
-    """Какие плитки рисовать: до 8 логотипов, остальное — «+N». Чистая функция, покрыта тестами."""
+    """Какие плитки рисовать: до 12 логотипов, остальное — «+N». Чистая функция, покрыта тестами."""
     with_logo = [(c, n, s) for c, n in companies if (s := resolve_logo(c, mapping))]
     if len(companies) > len(with_logo) or len(with_logo) > MAX_TILES:
         with_logo = with_logo[:MAX_TILES - 1]

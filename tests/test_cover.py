@@ -21,11 +21,17 @@ def test_plan_tiles_orders_and_collapses_rest():
     assert tiles[0]["count"] == 3 and tiles[2]["logo"] == "kimi" and tiles[-1]["logo"] is None
 
 
-def test_plan_tiles_max_eight():
-    slugs = ["openai", "anthropic", "google", "meta", "mistral", "deepseek", "nvidia", "ibm", "xai", "apple"]
+def test_plan_tiles_max_twelve():
+    slugs = ["openai", "anthropic", "google", "meta", "mistral", "deepseek", "nvidia", "ibm", "xai", "apple",
+             "perplexity", "microsoft", "cursor", "suno"]
     tiles = make_cover.plan_tiles([(s, 1) for s in slugs], {})
-    assert len(tiles) == 8 and tiles[-1]["company"] == "+3"
-    assert len(make_cover.plan_tiles([(s, 1) for s in slugs[:8]], {})) == 8  # ровно 8 — без «+N»
+    assert len(tiles) == 12 and tiles[-1]["company"] == "+3"
+    assert len(make_cover.plan_tiles([(s, 1) for s in slugs[:12]], {})) == 12  # ровно 12 — без «+N»
+
+
+def test_company_counts_splits_compound_names():
+    ed = {"items": [{"kind": "news", "company": "NVIDIA / Google Cloud"}, {"kind": "news", "company": "NVIDIA"}]}
+    assert make_cover.company_counts(ed) == [("NVIDIA", 2), ("Google Cloud", 1)]
 
 
 def test_company_counts_skips_rumors():
