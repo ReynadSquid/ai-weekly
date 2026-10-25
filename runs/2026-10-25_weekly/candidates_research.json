@@ -1,0 +1,158 @@
+{
+ "items": [
+  {
+   "title": "Flint (RecursiveSI) — открытая MoE-модель для кода",
+   "url": "https://huggingface.co/RecursiveSI/flint",
+   "source": "huggingface.co/models",
+   "source_type": "research",
+   "published_at": "2026-10-21T14:20:58Z",
+   "company": "Recursive Superintelligence",
+   "product": "Flint",
+   "section": "F",
+   "summary_raw": "Открытая (Apache 2.0) MoE-модель примерно на 40B параметров, из них около 2,5B активны на токен; контекст 262 144 токена. Заточена под работу с кодовой базой: поиск багов, правки, тесты, многошаговые вызовы инструментов. Разработчик заявляет 74,2% на SWE-bench Verified, 89,7% на SWE-bench Pro v2 и 54,9% на Terminal-Bench 2.1 (часть сравнений — собственные замеры, условия оценки различаются). На странице 782 лайка и 4 795 скачиваний за месяц; дата релиза на карточке не указана, дата — по данным ленты HF.",
+   "importance": 8
+  },
+  {
+   "title": "Granite Speech 5.0: новые открытые модели распознавания речи от IBM",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-21T14:58:18Z",
+   "company": "IBM",
+   "product": "Granite Speech 5.0",
+   "section": "F",
+   "summary_raw": "IBM выпустила три речевые модели под Apache 2.0: Granite Speech 5.0 2B (транскрипция и перевод), обновлённую Turbo CTC на 470M и Granite Speech 4.1 2B Plus для совещаний. По заявлению IBM, 2B-модель занимает 2-е место среди открытых ASR-моделей по среднему WER на английском (5,06%) по Open ASR Leaderboard, а Turbo CTC ускорилась примерно с 12 600 до 19 870 RTFx. Поддержка в Transformers, vLLM, llama.cpp, mlx-audio.",
+   "importance": 7
+  },
+  {
+   "title": "Kumo Relational: предобученная модель для предсказаний по реляционным БД",
+   "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-21T18:26:30Z",
+   "company": "NVIDIA / Kumo",
+   "product": "Kumo Relational",
+   "section": "F",
+   "summary_raw": "Фундаментальная модель, делающая предсказания прямо по реляционным базам без обучения под задачу. Код открыт (Apache 2.0), веса — под OpenMDW 1.1. По данным NVIDIA и Kumo, на 41 задаче из 15 БД на RelBench V1 она опережает градиентный бустинг на ручных признаках почти на 4 пункта AUROC, а на SAP SALT обходит ансамбли AutoGluon на 8% по MRR. Авторы честно отмечают ограничения: на больших обучающих выборках специализированные модели могут быть лучше.",
+   "importance": 7
+  },
+  {
+   "title": "Hugging Face и TorchTPU: нативная поддержка TPU в Transformers и Diffusers",
+   "url": "https://huggingface.co/blog/hf-torchtpu",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Hugging Face / Google",
+   "product": "TorchTPU",
+   "section": "F",
+   "summary_raw": "Hugging Face интегрировала TorchTPU (PyTorch-бэкенд Google для TPU): TPU работает как обычное устройство PyTorch, модели грузятся через device_map=\"tpu\", в Diffusers — pipe.to(\"tpu\"). По данным HF, проходит 96,5% тестов, запускаемых на TPU; ядра на Pallas в Kernels Hub ускоряют декодинг Qwen3-30B-A3B в 21,5 раза при батче 64 (замер авторов).",
+   "importance": 7
+  },
+  {
+   "title": "Matrix-Game 4.0: управляемые игровые миры в реальном времени",
+   "url": "https://arxiv.org/abs/2610.27999",
+   "source": "arxiv.org",
+   "source_type": "research",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "авторы Matrix-Game (Jihai Zhang и др.)",
+   "product": "Matrix-Game 4.0",
+   "section": "F",
+   "summary_raw": "Система разделяет игровую логику и генерацию картинки: лёгкий движок ведёт состояние мира и правила, кодинг-агент превращает идеи игрока в код, а авторегрессионная видеомодель дорисовывает low-poly кадры в детальную картинку. Авторы заявляют 480p при 60 FPS на одной RTX 5090 с задержкой 112 мс и демонстрируют шутер и гонки. Обещан выпуск кода, весов и ассетов; сам релиз и лицензию я не проверял.",
+   "importance": 6
+  },
+  {
+   "title": "MemT-1.0: модели с памятью, встроенной в вычисления",
+   "url": "https://arxiv.org/abs/2610.26825",
+   "source": "arxiv.org",
+   "source_type": "research",
+   "published_at": "2026-10-19T20:00:00Z",
+   "company": "коллектив авторов (Zhiyu Li и др., 74 автора)",
+   "product": "MemT-1.0",
+   "section": "F",
+   "summary_raw": "Семейство моделей (Nano и Flash), где память — часть самой архитектуры (Gated DeltaNet-2 и Mixture-of-Storage), а не внешний поиск. Обучение двухэтапное на 34B токенов. Авторы заявляют для Nano при истории 128K токенов ускорение примерно в 1,86 раза и сокращение постоянного хранилища в 66 раз относительно полного KV-кэша. Ссылки на веса и лицензия на странице не указаны.",
+   "importance": 5
+  },
+  {
+   "title": "Sage-A1.5: агентная MoE-модель на 35B для долгих задач",
+   "url": "https://arxiv.org/abs/2610.28578",
+   "source": "arxiv.org",
+   "source_type": "research",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "InternScience (авторы Wenjie Lou, Tianshuo Peng и др.)",
+   "product": "Sage-A1.5",
+   "section": "F",
+   "summary_raw": "35B MoE-модель с акцентом на оркестрацию субагентов с изолированным контекстом, проверку промежуточных результатов и исследовательские научные задачи. В аннотации нет количественных бенчмарков, только качественные демонстрации. Чекпойнты размещены на Hugging Face (InternScience/Sage-A1.5), лицензия не указана.",
+   "importance": 5
+  },
+  {
+   "title": "ThinkingBox-Training: оценки по БД как награды для RL-агентов",
+   "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-22T22:24:34Z",
+   "company": "Microsoft",
+   "product": "ThinkingBox-Training",
+   "section": "F",
+   "summary_raw": "Microsoft показала, как исполняемые проверки по базам данных превращать в RL-награды. По данным Microsoft, у Qwen3.8-27B средний pass@1 вырос с 51,70% до 60,78% после 50 шагов GRPO на 187 задачах; код открыт (MIT), данные бенчмарка — CDLA-Permissive-2.0.",
+   "importance": 6
+  },
+  {
+   "title": "DeepSeek-V4.1-Flash-1017: сверхсжатые GGUF-квантизации от ISTA-DASLab",
+   "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+   "source": "huggingface.co/models",
+   "source_type": "research",
+   "published_at": "2026-10-23T09:43:05Z",
+   "company": "ISTA-DASLab (IST Austria)",
+   "product": "DeepSeek-V4.1-Flash",
+   "section": "F",
+   "summary_raw": "Лаборатория выложила неоднородные квантизации 763B MoE-модели DeepSeek-V4.1-Flash-1017 (MIT) на 1,75–2,25 бита на вес. По заявлению авторов, версия на 2,0 бита сохраняет 100% среднего результата базовой модели на AIME25, GPQA-Diamond и LiveCodeBench v6 и помещается на одну GPU на 12 ГБ через движок Strata; llama.cpp DeepSeek-V4.1 пока не поддерживает. 212 лайков, 32 479 скачиваний за месяц.",
+   "importance": 6
+  },
+  {
+   "title": "Granite Timeseries Ensemble: ансамбль моделей прогнозирования от IBM",
+   "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-22T07:51:31Z",
+   "company": "IBM Research",
+   "product": "Granite Timeseries Ensemble r1",
+   "section": "F",
+   "summary_raw": "Рецепт, объединяющий четыре предобученные модели Granite для временных рядов без дообучения. IBM заявляет MASE 0,683 против 0,685 у лучшей одиночной модели на 97 конфигурациях GIFT-Eval и 3-е место среди допустимых систем; сама компания называет выигрыш небольшим и главным плюсом считает устойчивость.",
+   "importance": 4
+  },
+  {
+   "title": "AnyLanguageModel 1.0: локальные и облачные модели в Swift-приложениях",
+   "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Hugging Face",
+   "product": "AnyLanguageModel",
+   "section": "F",
+   "summary_raw": "Вышла версия 1.0 Swift-библиотеки с API в стиле Foundation Models: один и тот же код работает с локальными (llama.cpp, MLX, Core ML) и облачными моделями (OpenAI, Anthropic, Gemini, Ollama и др.). Добавлены вызов инструментов, управляемая генерация, ввод изображений и запуск на Linux; вместе вышли swift-huggingface 1.0 и swift-xet 1.0. Лицензия в статье не названа.",
+   "importance": 4
+  },
+  {
+   "title": "Fibo 2.0 (BRIA) в репакетe Comfy-Org для ComfyUI",
+   "url": "https://huggingface.co/Comfy-Org/Fibo-2.0",
+   "source": "huggingface.co/models",
+   "source_type": "research",
+   "published_at": "2026-10-20T18:53:36Z",
+   "company": "Comfy-Org / BRIA AI",
+   "product": "Fibo 2.0",
+   "section": "F",
+   "summary_raw": "Текст-в-изображение модель BRIA AI, переупакованная Comfy-Org для ComfyUI (bf16 и int8-веса, текстовый энкодер Qwen3-VL 4B, VAE Flux 2). Лицензия CC BY-NC 4.0, коммерческое использование требует соглашения с BRIA. Метрик на карточке нет; 169 лайков и 111 611 скачиваний за месяц.",
+   "importance": 3
+  }
+ ],
+ "errors": [
+  {
+   "source": "arxiv.org",
+   "error": "HTTP 429"
+  },
+  {
+   "source": "github.com/trending",
+   "error": "HTTP 403 (GitHub-раздел не собран)"
+  }
+ ]
+}

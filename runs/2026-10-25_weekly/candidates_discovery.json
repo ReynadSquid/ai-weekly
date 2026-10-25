@@ -1,0 +1,167 @@
+{
+ "items": [
+  {
+   "title": "1Password for Agents: вход агентов в аккаунты без доступа к паролям",
+   "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+   "source": "1password.com",
+   "source_type": "press_release",
+   "published_at": "2026-10-22T13:00:00Z",
+   "company": "1Password",
+   "product": "1Password for Agents",
+   "section": "E",
+   "summary_raw": "Анонс 22 октября: агент подтверждается цифровым ключом, пользователь одобряет запрос на своём устройстве, 1Password сам вводит данные в форму, агент пароль не получает. Партнёры: Claude Duet, ChatGPT Work, dots, Muse, Grok Bot, Town и др. Дата общей доступности и цены не названы.",
+   "importance": 7,
+   "also_seen_at": [
+    "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+   ]
+  },
+  {
+   "title": "Canva Craft: первая собственная модель генерации изображений",
+   "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+   "source": "techcrunch.com",
+   "source_type": "media",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Canva",
+   "product": "Canva Craft",
+   "section": "E",
+   "summary_raw": "Сначала модель планирует раскладку, масштаб и текст, затем генерирует до 2K в 30 пропорциях; обучена на шаблонах дизайнеров. Доступна всем в Dream Lab и через API; обещана поддержка в ChatGPT/Gemini через MCP; облегчённые Craftfast и Craft-ultrafast позже. Первоисточник на canva.com не найден.",
+   "importance": 7,
+   "also_seen_at": [
+    "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
+   ]
+  },
+  {
+   "title": "Block представил Dessa: речевую модель, обученную только на речи",
+   "url": "https://block.xyz/dessa",
+   "source": "block.xyz",
+   "source_type": "company_site",
+   "published_at": "2026-10-23T00:00:00Z",
+   "company": "Block",
+   "product": "Dessa",
+   "section": "E",
+   "summary_raw": "Полнодуплексная speech-to-speech модель из лаборатории Block (подчиняется Джеку Дорси): слушает и говорит одновременно, передаёт эмоции и паузы, работает быстрее реального времени локально на MacBook Pro M4 Max. Обучена на одном GB200 NVL72. Открыт лист ожидания, доступ у небольшой группы исследователей; публичного запуска пока нет.",
+   "importance": 7,
+   "also_seen_at": [
+    "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/"
+   ]
+  },
+  {
+   "title": "Nirva привлекла 25 млн долл. на кулон-диктофон с ИИ",
+   "url": "https://www.nirva.life/",
+   "source": "nirva.life",
+   "source_type": "company_site",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Nirva",
+   "product": "Nirva pendant",
+   "section": "E",
+   "summary_raw": "Pre-Series A на 25 млн (всего 33 млн с прошлым раундом на 8 млн). Кулон/браслет за 249 долл. слушает только владельца, не хранит аудио по умолчанию; предзаказы в ноябре, отправка ранним пользователям к концу года. Данные о раунде взяты из TechCrunch; главная страница компании самостоятельно не проверена.",
+   "importance": 5,
+   "also_seen_at": [
+    "https://techcrunch.com/2026/10/22/nirva-raises-33m-for-a-pendant-that-only-listens-to-you/"
+   ]
+  },
+  {
+   "title": "Disney забирает команду и лицензию Character.AI в рамках банкротной сделки",
+   "url": "https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/",
+   "source": "arstechnica.com",
+   "source_type": "media",
+   "published_at": "2026-10-19T00:00:00Z",
+   "company": "Disney / Character.AI",
+   "product": "Character.AI",
+   "section": "E",
+   "summary_raw": "По сообщениям, Disney выступает основным претендентом (stalking horse) с заявкой 20 млн долл. на бессрочную неисключительную лицензию и предложил работу не менее чем 60 сотрудникам; иски и регуляторные риски остаются у Character.AI. Условия могут измениться на аукционе; страница не открывалась, детали из поисковой выдачи, первоисточник не найден.",
+   "importance": 6
+  },
+  {
+   "title": "Wiz: PHP2Shell, критические уязвимости ядра PHP найдены с помощью ИИ-моделей",
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
+   "source": "wiz.io",
+   "source_type": "company_blog",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "Wiz",
+   "product": "PHP2Shell",
+   "section": "F",
+   "summary_raw": "Несколько ошибок памяти в ядре PHP (CVE-2026-109618, CVE-2026-109619), до CVSS 9.2, позволяют удалённое выполнение кода без аутентификации. Исследователи использовали фронтирные модели для поиска и сборки эксплойта. Патчи вышли 21 октября; затронуты почти все версии, вплоть до 5.4.",
+   "importance": 8,
+   "also_seen_at": [
+    "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/"
+   ]
+  },
+  {
+   "title": "ProjectDiscovery: бэкдор в малой открытой модели через LoRA-адаптер",
+   "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+   "source": "projectdiscovery.io",
+   "source_type": "company_blog",
+   "published_at": "2026-10-19T00:00:00Z",
+   "company": "ProjectDiscovery",
+   "product": "abliterated models research",
+   "section": "F",
+   "summary_raw": "Показано, что триггерная фраза заставляет бэкдорную модель запускать удалённый код и красть .env; бенчмарки и сканеры это не ловят, атака стоила менее 50 долл. Рекомендации: песочница, разделение сети и выполнения команд, проверка издателя весов.",
+   "importance": 5
+  },
+  {
+   "title": "WorldTUI: модель на 360M параметров имитирует терминал",
+   "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+   "source": "simedw.com",
+   "source_type": "personal_blog",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "Simon Edwardsson",
+   "product": "WorldTUI",
+   "section": "F",
+   "summary_raw": "Дообученная из Qwen2.5-Coder-0.5B модель предсказывает экран по нажатиям клавиш, работает в браузере через WebGPU (208 МБ после 4-бит квантования). Исследовательская демонстрация; веса автор обещает позже.",
+   "importance": 3
+  },
+  {
+   "title": "Spotify делает ставку на роль музыкального сервиса, который выбирают ИИ-агенты",
+   "url": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
+   "source": "techcrunch.com",
+   "source_type": "media",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Spotify",
+   "product": "Spotify in AI agents",
+   "section": "E",
+   "summary_raw": "В Q3 у Spotify 788 млн MAU и около 5 млрд евро выручки. Сервис интегрирован с Meta Muse, ChatGPT и Claude; данные слушателей партнёрам не передаются. Первоисточник (письмо акционерам) не найден.",
+   "importance": 4
+  },
+  {
+   "title": "Apollo: признаков отдачи от ИИ вне техсектора пока нет",
+   "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+   "source": "apollo.com",
+   "source_type": "analysis",
+   "published_at": "2026-10-24T00:00:00Z",
+   "company": "Apollo",
+   "product": "Daily Spark",
+   "section": "E",
+   "summary_raw": "Главный экономист Apollo Торстен Слок: выручка на сотрудника и маржа растут у Mag 7, но стоят на месте у остальных компаний S&P 500; роста производительности не видно. Мнение автора.",
+   "importance": 4
+  },
+  {
+   "title": "Правительственные учреждения Швеции запретят ChatGPT и Claude",
+   "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+   "source": "sverigesradio.se",
+   "source_type": "media",
+   "published_at": "2026-10-23T00:00:00Z",
+   "company": "Правительство Швеции",
+   "product": "ChatGPT, Claude",
+   "section": "E",
+   "summary_raw": "По заголовку Sveriges Radio, канцелярия правительства Швеции собирается запретить ChatGPT и Claude. Страница вернула 403, детали и причины не проверены, использовать только после подтверждения.",
+   "importance": 4
+  },
+  {
+   "title": "Пенсильвания обяжет маркировать вводящую в заблуждение ИИ-рекламу",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+   "source": "theverge.com",
+   "source_type": "media",
+   "published_at": "2026-10-24T00:00:00Z",
+   "company": "Пенсильвания",
+   "product": "AI Deceptive Advertising Act (SB 806)",
+   "section": "E",
+   "summary_raw": "Закон требует раскрывать ИИ-контент, вводящий потребителей в заблуждение о природе товара или услуги. По поиску, Палата одобрила SB 806 7 октября, Сенат ранее 48-2. Статус подписи губернатора и дата вступления в силу не проверены; страница Verge не открывалась.",
+   "importance": 5
+  }
+ ],
+ "errors": [
+  "Часть страниц (Ars Technica, The Verge, Sveriges Radio) недоступна для чтения, детали взяты из поиска/заголовков",
+  "Веб-поиск по стартапам, open-source и Product Hunt не дал проверяемых находок за окно"
+ ]
+}

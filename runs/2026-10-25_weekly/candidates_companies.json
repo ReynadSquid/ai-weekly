@@ -1,0 +1,122 @@
+{
+ "items": [
+  {
+   "title": "Donating Agent Skills to the Agentic AI Foundation",
+   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Anthropic",
+   "product": "Claude",
+   "section": "A",
+   "summary_raw": "Anthropic передаёт открытый стандарт Agent Skills фонду Agentic AI Foundation при Linux Foundation, включая название, логотип и домен. Стандарт интегрировали более 70 платформ, опубликовано около миллиона навыков, установок почти 280 млн.",
+   "importance": 8
+  },
+  {
+   "title": "Investing in the public benefit",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-18T00:00:00Z",
+   "company": "Anthropic",
+   "product": "",
+   "section": "A",
+   "summary_raw": "Anthropic выделяет 5% акций новому Public Benefit Fund (с оговоркой об одобрении акционеров); доля может расти на 2% за каждые 50% роста стоимости. Вместе с обязательствами сооснователей и сотрудников около 20% акций пойдёт на общественные цели.",
+   "importance": 7
+  },
+  {
+   "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "Anthropic",
+   "product": "",
+   "section": "A",
+   "summary_raw": "Физик Кристофер Стаббс вошёл в Long-Term Benefit Trust Anthropic.",
+   "importance": 3
+  },
+  {
+   "title": "Open call for guest investigators in the life sciences",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-22T00:00:00Z",
+   "company": "Anthropic",
+   "product": "Claude",
+   "section": "A",
+   "summary_raw": "Anthropic объявила открытый набор приглашённых исследователей в области наук о жизни.",
+   "importance": 3
+  },
+  {
+   "title": "Perplexity Computer now runs fully local on Mac",
+   "url": "https://www.perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac",
+   "source": "perplexity.ai/hub",
+   "source_type": "official",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Perplexity",
+   "product": "Computer",
+   "section": "B",
+   "summary_raw": "Perplexity Computer теперь целиком работает локально на Mac, включая модель и выполнение задач. Доступно подписчикам Pro, Max и Enterprise на Apple silicon, рекомендуется от 36 ГБ памяти; модели — Qwen 3.6 и PPLX Pro.",
+   "importance": 7
+  },
+  {
+   "title": "Perplexity brings Computer to enterprise infrastructure with Valarian",
+   "url": "https://www.perplexity.ai/hub/blog/perplexity-brings-computer-to-enterprise-infrastructure-with-valarian",
+   "source": "perplexity.ai/hub",
+   "source_type": "official",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Perplexity",
+   "product": "Computer",
+   "section": "B",
+   "summary_raw": "Совместно с британской Valarian Perplexity запускает Computer на собственной инфраструктуре организаций, в том числе в изолированных сетях, с открытыми моделями и аудитом доступа. Развёртывания доступны уже сейчас.",
+   "importance": 6
+  },
+  {
+   "title": "Voxtral 3",
+   "url": "https://mistral.ai/news/voxtral-3/",
+   "source": "mistral.ai/news",
+   "source_type": "official",
+   "published_at": "2026-10-20T00:00:00Z",
+   "company": "Mistral",
+   "product": "Voxtral",
+   "section": "B",
+   "summary_raw": "Mistral выпустила семейство речевых моделей Voxtral 3 (транскрипция, realtime, TTS) и SDK голосовых агентов на LiveKit для 50+ языков. Транскрипция от $0,0035 за минуту, TTS — $13 за 1 млн символов.",
+   "importance": 7
+  },
+  {
+   "title": "Mistral Advances AI for Engineering with NVIDIA",
+   "url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+   "source": "mistral.ai/news",
+   "source_type": "official",
+   "published_at": "2026-10-21T00:00:00Z",
+   "company": "Mistral",
+   "product": "Mistral Large 4",
+   "section": "B",
+   "summary_raw": "Mistral и NVIDIA развивают ИИ для инженерных расчётов и создадут открытые бенчмарки и датасеты. Mistral Large 4 (около 1 трлн параметров, 49 млрд активных) обучена на 3800 GPU Grace Blackwell, веса планируют выложить в конце октября.",
+   "importance": 8
+  }
+ ],
+ "errors": [
+  {
+   "source": "openai.com (страницы /index/*)",
+   "error": "403 при WebFetch, детали не проверены; даны по заголовкам из RSS"
+  },
+  {
+   "source": "x.ai/news",
+   "error": "403"
+  },
+  {
+   "source": "amd.com/en/newsroom.html",
+   "error": "503"
+  },
+  {
+   "source": "apple.com/newsroom",
+   "error": "список статей не отобразился"
+  },
+  {
+   "source": "runway.com/news",
+   "error": "нет списка статей"
+  }
+ ]
+}
