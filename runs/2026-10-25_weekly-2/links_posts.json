@@ -1,0 +1,114 @@
+{
+  "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/": {
+    "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
+    "status": 200,
+    "final_url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/": {
+    "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://siliconangle.com/2026/10/20/openai-acquires-orchestra-bio-to-bring-ai-agents-into-drug-development/": {
+    "url": "https://siliconangle.com/2026/10/20/openai-acquires-orchestra-bio-to-bring-ai-agents-into-drug-development/",
+    "status": 200,
+    "final_url": "https://siliconangle.com/2026/10/20/openai-acquires-orchestra-bio-to-bring-ai-agents-into-drug-development/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/": {
+    "url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+    "status": 200,
+    "final_url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/": {
+    "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+    "status": 200,
+    "final_url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/": {
+    "url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+    "status": 200,
+    "final_url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/": {
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
+    "status": 200,
+    "final_url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.indexventures.com/perspectives/toward-more-efficient-ai-leading-flapping-airplanes-1b-series-a/": {
+    "url": "https://www.indexventures.com/perspectives/toward-more-efficient-ai-leading-flapping-airplanes-1b-series-a/",
+    "status": 200,
+    "final_url": "https://www.indexventures.com/perspectives/toward-more-efficient-ai-leading-flapping-airplanes-1b-series-a/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.inceptionlabs.ai/blog/introducing-mercury-3": {
+    "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+    "status": 200,
+    "final_url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://fal.ai/flux-3-max": {
+    "url": "https://fal.ai/flux-3-max",
+    "status": 200,
+    "final_url": "https://fal.ai/flux-3-max",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/blog/hf-torchtpu": {
+    "url": "https://huggingface.co/blog/hf-torchtpu",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/hf-torchtpu",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://arxiv.org/abs/2610.27999": {
+    "url": "https://arxiv.org/abs/2610.27999",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2610.27999",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://siliconangle.com/2026/10/22/report-openai-closing-on-30b-bridge-funding-round-to-tide-it-over-before-ipo/": {
+    "url": "https://siliconangle.com/2026/10/22/report-openai-closing-on-30b-bridge-funding-round-to-tide-it-over-before-ipo/",
+    "status": 200,
+    "final_url": "https://siliconangle.com/2026/10/22/report-openai-closing-on-30b-bridge-funding-round-to-tide-it-over-before-ipo/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/": {
+    "url": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/",
+    "status": 200,
+    "final_url": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/": {
+    "url": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/",
+    "status": 200,
+    "final_url": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://aljazeera.com/economy/2026/10/21/anthropic-posts-80bn-loss-in-first-half-of-2026-wsj": {
+    "url": "https://aljazeera.com/economy/2026/10/21/anthropic-posts-80bn-loss-in-first-half-of-2026-wsj",
+    "status": 200,
+    "final_url": "https://www.aljazeera.com:443/news/2026/10/21/anthropic-posts-80bn-loss-in-first-half-of-2026-wsj",
+    "error": null,
+    "verdict": "ok"
+  }
+}

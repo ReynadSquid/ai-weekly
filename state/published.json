@@ -103,6 +103,40 @@
       "link": "https://t.me/neurooruen/1794",
       "variant": "cover",
       "finished_at": "2026-10-25T05:47:46Z"
+    },
+    "2026-10-25_weekly-2:dry-run": {
+      "issue_id": "2026-10-25_weekly-2",
+      "mode": "dry-run",
+      "issue_number": 2,
+      "status": "published",
+      "started_at": "2026-10-25T08:13:22Z",
+      "messages": [
+        {
+          "index": 0,
+          "message_id": 49,
+          "hash": "618f64628bcdb7a1",
+          "sent_at": "2026-10-25T08:13:28Z"
+        },
+        {
+          "index": 1,
+          "message_id": 50,
+          "hash": "73aee970169396ef",
+          "sent_at": "2026-10-25T08:13:32Z"
+        },
+        {
+          "index": 2,
+          "message_id": 51,
+          "hash": "71d89f06fc0f65a0",
+          "sent_at": "2026-10-25T08:13:35Z"
+        }
+      ],
+      "cover": {
+        "message_id": 48,
+        "sent_at": "2026-10-25T08:13:24Z"
+      },
+      "link": "https://t.me/jgrgihselrw/48",
+      "variant": "cover",
+      "finished_at": "2026-10-25T08:13:35Z"
     }
   },
   "superseded": [
