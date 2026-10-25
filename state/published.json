@@ -69,6 +69,48 @@
       "mode": "live",
       "issue_number": 1,
       "status": "published",
+      "started_at": "2026-10-25T05:47:29Z",
+      "messages": [
+        {
+          "index": 0,
+          "message_id": 1795,
+          "hash": "9f94de10f9840456",
+          "sent_at": "2026-10-25T05:47:35Z"
+        },
+        {
+          "index": 1,
+          "message_id": 1796,
+          "hash": "172974bed259f975",
+          "sent_at": "2026-10-25T05:47:39Z"
+        },
+        {
+          "index": 2,
+          "message_id": 1797,
+          "hash": "d027c2c633fe3fef",
+          "sent_at": "2026-10-25T05:47:42Z"
+        },
+        {
+          "index": 3,
+          "message_id": 1798,
+          "hash": "a24ad7e217eec1e9",
+          "sent_at": "2026-10-25T05:47:46Z"
+        }
+      ],
+      "cover": {
+        "message_id": 1794,
+        "sent_at": "2026-10-25T05:47:31Z"
+      },
+      "link": "https://t.me/neurooruen/1794",
+      "variant": "cover",
+      "finished_at": "2026-10-25T05:47:46Z"
+    }
+  },
+  "superseded": [
+    {
+      "issue_id": "2026-10-25_weekly",
+      "mode": "live",
+      "issue_number": 1,
+      "status": "published",
       "started_at": "2026-10-25T03:15:11Z",
       "messages": [
         {
@@ -93,7 +135,9 @@
       "cover_error": "ImportError: cannot import name '_imaging' from 'PIL' (/usr/lib/python3/dist-packages/PIL/__init__.py)",
       "variant": "plain",
       "link": "https://t.me/neurooruen/1791",
-      "finished_at": "2026-10-25T03:15:20Z"
+      "finished_at": "2026-10-25T03:15:20Z",
+      "key": "2026-10-25_weekly:live",
+      "superseded_at": "2026-10-25T05:47:29Z"
     }
-  }
+  ]
 }

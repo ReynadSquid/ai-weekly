@@ -1,10 +1,11 @@
 ✅ Выпуск опубликован — AI Weekly #1 (2026-10-25_weekly, режим live)
+Событие: Повторная публикация выпуска с обложкой (старые сообщения удалены владельцем)
 Окно: 18–25 октября 2026
 Собрано: 297 → после дедупа 255
 Фактчек: проверено 20, годных 18, слухов 1, отклонено 1 (5%)
 В выпуске: 18 новостей + 1 слухов
 QA: pass, замечаний 4
-Telegram: published, сообщений 3, ссылка https://t.me/neurooruen/1791
-Обложка НЕ отправлена, выпуск ушёл без неё: ImportError: cannot import name '_imaging' from 'PIL' (/usr/lib/python3/dist-packages/PIL/__init__.py)
+Telegram: published, сообщений 4, ссылка https://t.me/neurooruen/1794
+Обложка: отправлена
 Недоступные источники (17): openai.com (страницы /index/*); x.ai/news; amd.com/en/newsroom.html; apple.com/newsroom; runway.com/news; Часть страниц (Ars Technica, The Verge, Sveriges Radio) недоступна для чтения, д; Веб-поиск по стартапам, open-source и Product Hunt не дал проверяемых находок за; arxiv.org; github.com/trending; arxiv.org; github.com/trending; openai.com (coordinated-disclosure-of-critical-vulnerabilities, low-resource-pro
 Попыток запуска: 1. Лог: runs/2026-10-25_weekly/run.log
