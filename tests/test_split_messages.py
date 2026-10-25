@@ -91,8 +91,8 @@ ITEM = ('<b>Anthropic передала стандарт</b>\nТекст ново
 
 
 def test_decorate_item_variant_b_with_number_and_date():
-    out = split_messages.decorate_item(ITEM, 1, "22 октября")
-    assert out == ('<b>1. Anthropic передала стандарт</b>\n<i>Дата публикации: 22 октября</i>\n\nТекст новости.\n\n'
+    out = split_messages.decorate_item(ITEM, 1, "22.10.2026")
+    assert out == ('<b>1. Anthropic передала стандарт</b>\n<i>Дата публикации: 22.10.2026</i>\n\nТекст новости.\n'
                    '<blockquote><b>Почему важно:</b> за стандартом теперь фонд.</blockquote>\n'
                    '<a href="https://a.com/x">→ Источник</a>')
     assert validate_html(out) == []
@@ -107,20 +107,18 @@ def test_numbering_runs_through_whole_issue():
     p = {"header": "", "footer": "", "sections": [
         {"key": "A", "title": "A", "items": [{"id": "a", "html": ITEM}, {"id": "b", "html": ITEM}]},
         {"key": "G", "title": "G", "items": [{"id": "c", "html": ITEM}]}]}
-    msgs, errors = build_messages(p, item_dates={"a": "21 октября"})
+    msgs, errors = build_messages(p, item_dates={"a": "21.10.2026"})
     text = "\n".join(m["text"] for m in msgs)
     assert errors == [] and "<b>1. Anthropic" in text and "<b>2. Anthropic" in text and "<b>3. Anthropic" in text
-    assert text.count("<i>Дата публикации: 21 октября</i>") == 1
+    assert text.count("<i>Дата публикации: 21.10.2026</i>") == 1
 
 
 def test_date_label():
-    assert split_messages.date_label("2026-10-22") == "22 октября"
-    assert split_messages.date_label("2026-11-01T14:00:00Z") == "1 ноября"
+    assert split_messages.date_label("2026-10-22") == "22.10.2026"
+    assert split_messages.date_label("2026-11-01T14:00:00Z") == "01.11.2026"
     assert split_messages.date_label(None) is None
 
 
-def test_decorate_item_compact():
-    out = split_messages.decorate_item(ITEM, 1, "22 октября", compact=True)
-    assert out == ('<b>1. Anthropic передала стандарт</b>\n<i>Дата публикации: 22 октября</i>\nТекст новости.\n'
-                   '<blockquote><b>Почему важно:</b> за стандартом теперь фонд.</blockquote>\n'
-                   '<a href="https://a.com/x">→ Источник</a>')
+def test_decorate_item_optional_gap_before_why():
+    out = split_messages.decorate_item(ITEM, 1, "22.10.2026", gap_before_why=True)
+    assert "Текст новости.\n\n<blockquote>" in out

@@ -188,23 +188,22 @@ _SRC = re.compile(r'^\s*<a href="([^"]+)">\s*(?:→\s*)?Источник\s*</a>\
 
 
 def date_label(value: str | None) -> str | None:
-    """«2026-10-22» или ISO-время → «22 октября»."""
+    """«2026-10-22» или ISO-время → «22.10.2026»."""
     m = re.match(r"(\d{4})-(\d{2})-(\d{2})", value or "")
-    return f"{int(m.group(3))} {MONTHS_GEN[int(m.group(2)) - 1]}" if m else None
+    return f"{m.group(3)}.{m.group(2)}.{m.group(1)}" if m else None
 
 
 DATE_PREFIX = "Дата публикации: "
 
 
 def decorate_item(item_html: str, number: int | None = None, date: str | None = None,
-                  compact: bool = False) -> str:
+                  gap_before_why: bool = False) -> str:
     """Оформление новости (вариант B):
         <b>N. Заголовок</b>
-        <i>Дата публикации: 22 октября</i>
-                                              ← нет в compact
+        <i>Дата публикации: 22.10.2026</i>
+
         Текст.
-                                              ← нет в compact
-        <blockquote><b>Почему важно:</b> …</blockquote>
+        <blockquote><b>Почему важно:</b> …</blockquote>     ← без пустой строки перед цитатой
         <a href="…">→ Источник</a>
     Если новость не по шаблону (нет жирного заголовка в первой строке) — остаётся как есть."""
     lines = [l for l in item_html.strip().split("\n")]
@@ -215,7 +214,7 @@ def decorate_item(item_html: str, number: int | None = None, date: str | None = 
     if number is not None and not re.match(r"^\d+\.\s", title):
         title = f"{number}. {title}"
     head = [f"<b>{title}</b>"] + ([f"<i>{DATE_PREFIX}{date}</i>"] if date else [])
-    gap = "\n" if compact else "\n\n"
+    gap = "\n\n" if gap_before_why else "\n"
     body, why, src = [], None, None
     for line in lines[1:]:
         if _WHY.match(line) and why is None:
@@ -224,7 +223,7 @@ def decorate_item(item_html: str, number: int | None = None, date: str | None = 
             src = _SRC.match(line).group(1)
         elif line.strip():
             body.append(line)
-    out = "\n".join(head) + (gap if date else "\n\n") + "\n".join(body)
+    out = "\n".join(head) + "\n\n" + "\n".join(body)
     if why:
         out += f"{gap}<blockquote><b>Почему важно:</b> {why}</blockquote>"
     if src:
