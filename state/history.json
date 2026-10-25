@@ -1,3 +1,225 @@
 {
-  "items": []
+  "items": [
+    {
+      "id": "cc012b1e3b750154d264a457e79317094fb5a0a7",
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "urls": [
+        "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+      ],
+      "company": "Anthropic",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "5dbb54a005401fc70149c16868b8f3287a1f4a20",
+      "title": "Claude Duet",
+      "url": "https://claude.com/product/claude-duet",
+      "urls": [
+        "https://claude.com/product/claude-duet",
+        "https://t.me/ai_newz/4815",
+        "https://t.me/data_secrets/10191"
+      ],
+      "company": "Anthropic",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "61f4d0141ff303c02405716db977e4c6353bca59",
+      "title": "OpenAI models are coming to Google Cloud",
+      "url": "https://9to5google.com/?p=734157",
+      "urls": [
+        "https://openai.com/index/openai-models-google-cloud",
+        "https://openai.com/index/openai-models-google-cloud/",
+        "https://news.ycombinator.com/item?id=50180079"
+      ],
+      "company": "OpenAI",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "48e2274fdf2ba9fe48db533ddecc410e5cc41b05",
+      "title": "Securing our frontier model training environment",
+      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+      "urls": [
+        "https://openai.com/index/securing-our-frontier-model-training-environment",
+        "https://openai.com/index/securing-our-frontier-model-training-environment/",
+        "https://t.me/data_secrets/10206"
+      ],
+      "company": "OpenAI",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "27825e300358401234fc8ca55cc275b9d4171e9a",
+      "title": "Build more responsive apps with the Decisions API",
+      "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+      "urls": [
+        "https://openai.com/index/decisions-api"
+      ],
+      "company": "OpenAI",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "74fcf21eca7add4a8265b1181e42f31fbfb429bc",
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "url": "https://thenextweb.com/news/chatgpt-ads-89-countries-100000-advertisers",
+      "urls": [
+        "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
+      ],
+      "company": "OpenAI",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "66d5720ec836838d2d67b7f24d4c6f30004e00be",
+      "title": "Investing in the public benefit",
+      "url": "https://www.anthropic.com/news/public-benefit-fund",
+      "urls": [
+        "https://www.anthropic.com/news/public-benefit-fund"
+      ],
+      "company": "Anthropic",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "afe5d96a9d4684fb96de500346e2384550461c1d",
+      "title": "Voxtral 3",
+      "url": "https://mistral.ai/news/voxtral-3/",
+      "urls": [
+        "https://mistral.ai/news/voxtral-3/"
+      ],
+      "company": "Mistral",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "7336336e41a4b71d6e1d91e1099027c0a2e14077",
+      "title": "Perplexity Computer now runs fully local on Mac",
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac",
+      "urls": [
+        "https://www.perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac"
+      ],
+      "company": "Perplexity",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "d2321eb5a0cf03d8bf36a85f52ab55d767dca4f2",
+      "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
+      "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+      "urls": [
+        "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/"
+      ],
+      "company": "DeepSeek",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "db73069fa994e2557975af177d40aafb5c416c37",
+      "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+      "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+      "urls": [
+        "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/"
+      ],
+      "company": "NVIDIA / Google Cloud",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "3599c9715bbbe9051121fa1de35b5d0f615a6aac",
+      "title": "Вышла Kimi K3.1 Pro.",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "urls": [
+        "https://www.kimi.ai/blog/kimi-k3-1-pro",
+        "https://t.me/denissexy/11755",
+        "https://t.me/ai_newz/4818",
+        "http://kimi.ai/blog/kimi-k3-1-pro",
+        "https://t.me/data_secrets/10204"
+      ],
+      "company": "Moonshot AI",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "865ffb65f1d593f079bea5171bf4619d03fdfa05",
+      "title": "Canva Craft: первая собственная модель генерации изображений",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "urls": [
+        "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+        "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
+      ],
+      "company": "Canva",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "2ca67924f9fca88f90b4b29f6c6565e8ee2418b1",
+      "title": "Dessa: Conversation Model trained only on speech",
+      "url": "https://block.xyz/dessa",
+      "urls": [
+        "https://block.xyz/dessa"
+      ],
+      "company": "Block",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "0bb5b0dd2b519ac6045629e1f5580abc97197108",
+      "title": "1Password for Agents: вход агентов в аккаунты без доступа к паролям",
+      "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+      "urls": [
+        "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+        "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+      ],
+      "company": "1Password",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "9b35c0bfb2f0e3cd6f0b40f1544c7158083b755d",
+      "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+      "urls": [
+        "https://huggingface.co/blog/ibm-granite/granite-speech-5"
+      ],
+      "company": "IBM",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "59f554d8046d1f5eea44c37209afb7ecbaa44884",
+      "title": "RecursiveSI/flint (Hugging Face trending)",
+      "url": "https://huggingface.co/RecursiveSI/flint",
+      "urls": [
+        "https://huggingface.co/RecursiveSI/flint"
+      ],
+      "company": "RecursiveSI",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "7104bc51c29585ccdecea918ca97d9dd062d8aaf",
+      "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+      "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+      "urls": [
+        "https://huggingface.co/blog/nvidia/kumo-relational"
+      ],
+      "company": "NVIDIA / Kumo",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "2bef5e15539918e46a8023c91e28fa38331431f0",
+      "title": "DeepSeek reportedly raises $15B days after US restrictions",
+      "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+      "urls": [
+        "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/"
+      ],
+      "company": "DeepSeek",
+      "issue_id": "2026-10-25_weekly",
+      "published_at": "2026-10-25T03:15:24Z"
+    }
+  ]
 }
