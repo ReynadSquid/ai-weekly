@@ -95,8 +95,9 @@ def validate_html(text: str) -> list[str]:
     return errors
 
 
-def split_issue(posts: dict, limit: int = DEFAULT_LIMIT) -> list[str]:
+def split_issue(posts: dict, limit: int = DEFAULT_LIMIT, item_sep: str | None = None) -> list[str]:
     sep = "\n\n"
+    item_sep = ITEM_SEP if item_sep is None else item_sep  # между новостями раздела — «•••»
     blocks: list[str] = []  # готовые сообщения
     cur = ""
 
@@ -123,7 +124,7 @@ def split_issue(posts: dict, limit: int = DEFAULT_LIMIT) -> list[str]:
         if not items:
             continue
         title = f"<b>{section['title']}</b>" if section.get("title") else ""
-        whole = sep.join(([title] if title else []) + items)
+        whole = sep.join(([title] if title else []) + [item_sep.join(items)])
         if fits(cur, whole):
             push(whole)
             continue
@@ -141,7 +142,8 @@ def split_issue(posts: dict, limit: int = DEFAULT_LIMIT) -> list[str]:
             if visible_len(item) > limit - (visible_len(cont) + 2 if cont else 0):
                 raise ValueError(f"новость не помещается в одно сообщение: {item[:80]!r}")
             if fits(cur, item):
-                cur = cur + sep + item if cur else item
+                joint = sep if cur in (title, cont) else item_sep  # после заголовка раздела — пустая строка
+                cur = cur + joint + item if cur else item
             else:
                 blocks.append(cur)
                 cur = cont + sep + item if cont else item
@@ -194,6 +196,8 @@ def date_label(value: str | None) -> str | None:
 
 
 DATE_PREFIX = "Дата публикации: "
+WHY_LABEL = "Что это значит:"  # редактор пишет «Почему важно:», в канал уходит эта подпись
+ITEM_SEP = "\n•••\n"          # разделитель между новостями одного раздела
 
 
 def decorate_item(item_html: str, number: int | None = None, date: str | None = None,
@@ -203,7 +207,7 @@ def decorate_item(item_html: str, number: int | None = None, date: str | None = 
         <i>Дата публикации: 22.10.2026</i>
 
         Текст.
-        <blockquote><b>Почему важно:</b> …</blockquote>     ← без пустой строки перед цитатой
+        <blockquote><b>Что это значит:</b> …</blockquote>   ← без пустой строки перед цитатой
         <a href="…">→ Источник</a>
     Если новость не по шаблону (нет жирного заголовка в первой строке) — остаётся как есть."""
     lines = [l for l in item_html.strip().split("\n")]
@@ -225,7 +229,7 @@ def decorate_item(item_html: str, number: int | None = None, date: str | None = 
             body.append(line)
     out = "\n".join(head) + "\n\n" + "\n".join(body)
     if why:
-        out += f"{gap}<blockquote><b>Почему важно:</b> {why}</blockquote>"
+        out += f"{gap}<blockquote><b>{WHY_LABEL}</b> {why}</blockquote>"
     if src:
         out += f'\n<a href="{src}">→ Источник</a>'
     return out

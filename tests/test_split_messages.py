@@ -93,7 +93,7 @@ ITEM = ('<b>Anthropic передала стандарт</b>\nТекст ново
 def test_decorate_item_variant_b_with_number_and_date():
     out = split_messages.decorate_item(ITEM, 1, "22.10.2026")
     assert out == ('<b>1. Anthropic передала стандарт</b>\n<i>Дата публикации: 22.10.2026</i>\n\nТекст новости.\n'
-                   '<blockquote><b>Почему важно:</b> за стандартом теперь фонд.</blockquote>\n'
+                   '<blockquote><b>Что это значит:</b> за стандартом теперь фонд.</blockquote>\n'
                    '<a href="https://a.com/x">→ Источник</a>')
     assert validate_html(out) == []
 
@@ -122,3 +122,13 @@ def test_date_label():
 def test_decorate_item_optional_gap_before_why():
     out = split_messages.decorate_item(ITEM, 1, "22.10.2026", gap_before_why=True)
     assert "Текст новости.\n\n<blockquote>" in out
+
+
+def test_items_separated_by_dots_but_not_after_section_title():
+    p = {"header": "", "footer": "", "sections": [
+        {"key": "A", "title": "Раздел", "items": [{"id": "a", "html": ITEM}, {"id": "b", "html": ITEM}]}]}
+    msgs, errors = build_messages(p)
+    text = msgs[0]["text"]
+    assert errors == [] and text.count("\n•••\n") == 1
+    assert text.startswith("<b>Раздел</b>\n\n<b>1. Anthropic")
+    assert '→ Источник</a>\n•••\n<b>2. Anthropic' in text
