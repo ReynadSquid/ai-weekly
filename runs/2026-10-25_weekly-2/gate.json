@@ -1,0 +1,35 @@
+{
+  "checked": 20,
+  "publishable": 13,
+  "rumor": 4,
+  "rejected": 3,
+  "rejected_ratio": 0.15,
+  "unchecked_in_shortlist": [],
+  "statuses": {
+    "rumor": 4,
+    "partially": 2,
+    "rejected": 3,
+    "verified": 11
+  },
+  "decision": "pass",
+  "publish_ids": [
+    "82899c94557909a44cbd7635c225768b39bb032d",
+    "f50b40848884b222637766a04161e75e05408358",
+    "d40ac50ad0822ed1313dc99888bfe17c4cd8bb03",
+    "34f5058a8f9b3e3e45451aca0cd04d811671d476",
+    "84cd8d44e9825e737133c110f0549311792b0780",
+    "566564edc50afe349bc8fdef71be09825228fc06",
+    "0c63a761301701ac017571ebbeccb51e282b4bab",
+    "99c8819be3a739485364a927f9ab64f218e5c879",
+    "c3ecf70aef54997156b1909884991c3d5c706b82",
+    "79e072c528493212dadbe0626496c7bede00d5c2",
+    "2ae00a76da3226e6a82dffe3fdba33ed5724da35",
+    "d26ae9b2d9ce501ca5e5f8678040fb18be02e6db",
+    "a20157163c87e1f1d986c933b7fccbb596c47f34"
+  ],
+  "rumor_ids": [
+    "898721bdc762d6bc87480e23492f7ebae3a70f6b",
+    "fd2784d8397a727fd83549de72dfb5effdb71bb9",
+    "60f7f9822d2095278271dd38abbbed585beaf4e6"
+  ]
+}

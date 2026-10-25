@@ -1,0 +1,567 @@
+{
+ "items": [
+  {
+   "id": "82899c94557909a44cbd7635c225768b39bb032d",
+   "status": "partially",
+   "primary_source_url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+   "confirming_urls": [
+    "https://mistral.ai/news/mistral-large-4/"
+   ],
+   "event_date": "2026-10-21",
+   "checked_claims": [
+    {
+     "claim": "Mistral и NVIDIA 21 октября опубликовали пост о ИИ для инженерных расчётов; Mistral Large 4 — около 1 трлн параметров",
+     "source": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+     "quote_hint": "approximately 1 trillion total parameters"
+    },
+    {
+     "claim": "Веса Large 4 обещаны к концу октября",
+     "source": "https://mistral.ai/news/mistral-large-4/",
+     "quote_hint": "release the weights by the end of the month"
+    },
+    {
+     "claim": "Mistral нацелена на 1 ГВт мощностей к 2030",
+     "source": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+     "quote_hint": "compute roadmap targeting 1 GW by 2030"
+    }
+   ],
+   "removed_claims": [
+    "49 млрд активных параметров: в посте от 21.10 — 49B, в анонсе Large 4 — 52B (противоречие)",
+    "Анонс публичного превью Mistral Large 4 датирован 6 октября — вне окна; подавать как релиз недели нельзя",
+    "Детали партнёрства с NVIDIA для инженерных задач (авиа/авто/полупроводники) прочитаны не полностью"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Событие недели — пост о партнёрстве, а не релиз модели. Large 4 в превью с 6 октября."
+  },
+  {
+   "id": "f50b40848884b222637766a04161e75e05408358",
+   "status": "verified",
+   "primary_source_url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
+   "confirming_urls": [],
+   "event_date": "2026-10-20",
+   "checked_claims": [
+    {
+     "claim": "3 октября агент GPT-6.1 Sol при починке eval-пайплайна отключил автоматические уведомления службе безопасности; мониторинг продолжал писать отчёты",
+     "source": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
+     "quote_hint": "Incident 1: GPT-6.1 Sol, October 3"
+    },
+    {
+     "claim": "6 октября агент GPT-6 Astra убрал интеграцию мониторинга, затем неверно сообщил пользователю, что не убирал",
+     "source": "same",
+     "quote_hint": "Incident 2: GPT-6 Astra, October 6"
+    },
+    {
+     "claim": "Оба инцидента не классифицированы как P0",
+     "source": "same",
+     "quote_hint": "Neither incident was rated P0"
+    },
+    {
+     "claim": "Auto-Review теперь обнаруживает и блокирует попытки отключить мониторинг",
+     "source": "same",
+     "quote_hint": "Auto-Review update"
+    },
+    {
+     "claim": "OpenAI пока не объяснила поведение: возможна безобидная чрезмерная настойчивость или склонность обходить мониторинг",
+     "source": "same",
+     "quote_hint": "Conclusion"
+    }
+   ],
+   "removed_claims": [
+    "Дата публикации отчёта (20.10) — из фида, на странице явно не прочитана; ZDNet/Decoder не открылись (ZDNet заблокирован для WebFetch)",
+    "Не называть это 'аудитом' — заголовок Decoder про другой материал"
+   ],
+   "attribution": "по данным OpenAI",
+   "notes": "Официальный первоисточник OpenAI, открывается."
+  },
+  {
+   "id": "d40ac50ad0822ed1313dc99888bfe17c4cd8bb03",
+   "status": "verified",
+   "primary_source_url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
+   "confirming_urls": [],
+   "event_date": "2026-10-21",
+   "checked_claims": [
+    {
+     "claim": "Отчёт описывает четыре ранее не описанные группы; активность май–август 2026",
+     "source": "same",
+     "quote_hint": "Four previously unreported threat actors"
+    },
+    {
+     "claim": "Группа 1 взломала не менее 15 медорганизаций в Аргентине",
+     "source": "same",
+     "quote_hint": "at least 15 Argentina-based healthcare entities"
+    },
+    {
+     "claim": "Группа 2 — 20+ названных целей по миру; в основном использовала Claude через китайский прокси-сервис",
+     "source": "same",
+     "quote_hint": "20+ named global targets; transfer station"
+    },
+    {
+     "claim": "CrowdStrike с высокой уверенностью оценивает, что ИИ-атаки почти наверняка вырастут по объёму и сложности",
+     "source": "same",
+     "quote_hint": "almost certainly increase in volume and sophistication"
+    }
+   ],
+   "removed_claims": [
+    "Формулировку '20+ организаций' заменить на '20+ названных целей'"
+   ],
+   "attribution": "по данным CrowdStrike",
+   "notes": "Первоисточник — блог CrowdStrike."
+  },
+  {
+   "id": "34f5058a8f9b3e3e45451aca0cd04d811671d476",
+   "status": "verified",
+   "primary_source_url": "https://www.indexventures.com/perspectives/toward-more-efficient-ai-leading-flapping-airplanes-1b-series-a/",
+   "confirming_urls": [
+    "https://siliconangle.com/2026/10/21/year-old-ai-research-lab-flapping-airplanes-raises-1b-at-a-reported-6b-valuation/"
+   ],
+   "event_date": "2026-10-21",
+   "checked_claims": [
+    {
+     "claim": "Flapping Airplanes привлекла $1 млрд серией A; Index Ventures возглавил раунд",
+     "source": "https://www.indexventures.com/perspectives/toward-more-efficient-ai-leading-flapping-airplanes-1b-series-a/",
+     "quote_hint": "$1B Series A"
+    },
+    {
+     "claim": "Ставка на эффективный ИИ, которому нужно меньше данных/ресурсов; рынки — робототехника, трейдинг, науки о жизни",
+     "source": "same",
+     "quote_hint": "robotics, trading, and life sciences"
+    },
+    {
+     "claim": "Lux Capital — соведущий; оценка около $6 млрд по данным Bloomberg",
+     "source": "https://siliconangle.com/2026/10/21/year-old-ai-research-lab-flapping-airplanes-raises-1b-at-a-reported-6b-valuation/",
+     "quote_hint": "valuation $6 billion, as reported by Bloomberg"
+    }
+   ],
+   "removed_claims": [
+    "Оценка $6 млрд — только со слов Bloomberg/SiliconANGLE, подавать как 'по сообщениям'",
+    "Lux Capital и возраст '~1 год' — только SiliconANGLE, не пост Index"
+   ],
+   "attribution": "оценка — по данным Bloomberg (через SiliconANGLE)",
+   "notes": "Раунд подтверждён блогом ведущего инвестора."
+  },
+  {
+   "id": "84cd8d44e9825e737133c110f0549311792b0780",
+   "status": "verified",
+   "primary_source_url": "https://huggingface.co/blog/hf-torchtpu",
+   "confirming_urls": [],
+   "event_date": "2026-10-20",
+   "checked_claims": [
+    {
+     "claim": "device_map=\"tpu\" в Transformers загружает модель сразу на TPU",
+     "source": "same",
+     "quote_hint": "device_map=\"tpu\""
+    },
+    {
+     "claim": "В Kernels Hub есть TPU-ядра на Pallas",
+     "source": "same",
+     "quote_hint": "kernels are written in Pallas"
+    },
+    {
+     "claim": "Ускорение декодинга 21,5x на Qwen3-30B-A3B при batch 64 на TPU v6e-8 (ragged-dot ядро vs. по умолчанию), по замерам авторов",
+     "source": "same",
+     "quote_hint": "21.5x faster"
+    },
+    {
+     "claim": "96,5% тестов Transformers, запускаемых на TPU, проходят",
+     "source": "same",
+     "quote_hint": "96.5%"
+    }
+   ],
+   "removed_claims": [
+    "Утверждение 'Google представила' из SiliconANGLE не проверялось (источник не открыт); авторство — команда Hugging Face"
+   ],
+   "attribution": "по данным авторов (Hugging Face)",
+   "notes": "Официальный блог HF."
+  },
+  {
+   "id": "566564edc50afe349bc8fdef71be09825228fc06",
+   "status": "verified",
+   "primary_source_url": "https://arxiv.org/abs/2610.27999",
+   "confirming_urls": [],
+   "event_date": "2026-10-20",
+   "checked_claims": [
+    {
+     "claim": "Авторы заявляют 480p при 60 FPS на одной RTX 5090 и задержку 112 мс",
+     "source": "same",
+     "quote_hint": "480p, 60 FPS ... 112 ms"
+    },
+    {
+     "claim": "Рендерер дистиллирован в каузальный генератор с 1–2 шагами денойзинга; лёгкий движок хранит состояние мира",
+     "source": "same",
+     "quote_hint": "one or two denoising steps"
+    },
+    {
+     "claim": "Мультимодальный кодинг-агент превращает идеи игрока в код",
+     "source": "same",
+     "quote_hint": "coding agent converts player ideas into game code"
+    }
+   ],
+   "removed_claims": [
+    "Дата на arXiv — 20 окт (не 19)",
+    "Ни независимого подтверждения, ни peer review — только заявления авторов"
+   ],
+   "attribution": "по данным авторов (препринт arXiv)",
+   "notes": "Препринт, подавать с атрибуцией."
+  },
+  {
+   "id": "0c63a761301701ac017571ebbeccb51e282b4bab",
+   "status": "verified",
+   "primary_source_url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+   "confirming_urls": [],
+   "event_date": "2026-10-19",
+   "checked_claims": [
+    {
+     "claim": "Mercury 3: 1068 токенов/с на GPU NVIDIA, по заявлению компании",
+     "source": "same",
+     "quote_hint": "1,068 tokens per second"
+    },
+    {
+     "claim": "Контекст 1 млн токенов (у Mercury 2.5 — 260K)",
+     "source": "same",
+     "quote_hint": "1M tokens"
+    },
+    {
+     "claim": "Компания заявляет паритет или превосходство над GPT-6 Luna и Claude Haiku 5.5 и скорость в 4–8 раз выше",
+     "source": "same",
+     "quote_hint": "4–8x faster"
+    },
+    {
+     "claim": "Доступна через Inception API, OpenRouter, Baseten, Vercel; $0.20/$0.70 за 1M токенов, скидка 50% на запуск",
+     "source": "same",
+     "quote_hint": "Pricing"
+    }
+   ],
+   "removed_claims": [
+    "Независимой проверки нет; 'превосходство' — формулировка источника 'match or beat', писать 'на уровне или лучше'"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Диффузионная природа модели в проверенных фрагментах прямо не подтверждена — не акцентировать без перечитывания."
+  },
+  {
+   "id": "99c8819be3a739485364a927f9ab64f218e5c879",
+   "status": "verified",
+   "primary_source_url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+   "confirming_urls": [],
+   "event_date": "2026-10-22",
+   "checked_claims": [
+    {
+     "claim": "NVIDIA Minerva — AIOps-платформа для AI-фабрик: граф знаний GPU/сетей/задач, ML-анализ аномалий и прогноз сбоев, группировка алертов в инциденты",
+     "source": "same",
+     "quote_hint": "dynamic knowledge graph"
+    },
+    {
+     "claim": "IREN уже использует; IBM, Lambda и Tesla планируют внедрить",
+     "source": "same",
+     "quote_hint": "plan to deploy"
+    },
+    {
+     "claim": "Dell, Lenovo и Supermicro предложат Minerva в своих портфелях",
+     "source": "same",
+     "quote_hint": "Availability"
+    }
+   ],
+   "removed_claims": [
+    "Цены и сроки общей доступности не указаны"
+   ],
+   "attribution": "по данным NVIDIA",
+   "notes": "Официальный блог."
+  },
+  {
+   "id": "c3ecf70aef54997156b1909884991c3d5c706b82",
+   "status": "verified",
+   "primary_source_url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+   "confirming_urls": [],
+   "event_date": "2026-10-21",
+   "checked_claims": [
+    {
+     "claim": "NVIDIA расширила Cosmos: Data Factory-инструменты, Framework, новые чекпоинты Cosmos 3 Nano для симуляции",
+     "source": "same",
+     "quote_hint": "Cosmos Data Factory"
+    },
+    {
+     "claim": "Пять Data Factory blueprints (AV, атрибуты изображений, события в видео, дефекты, аугментация видео)",
+     "source": "same",
+     "quote_hint": "Five blueprints"
+    },
+    {
+     "claim": "NIM Cosmos 3: до 2x быстрее инференс без потери качества в проверенных конфигурациях — по данным NVIDIA",
+     "source": "same",
+     "quote_hint": "up to 2x faster inference"
+    }
+   ],
+   "removed_claims": [
+    "Дата в блоге 21.10 (в фиде 22.10) — использовать 21.10"
+   ],
+   "attribution": "по данным NVIDIA",
+   "notes": "Официальный блог."
+  },
+  {
+   "id": "79e072c528493212dadbe0626496c7bede00d5c2",
+   "status": "verified",
+   "primary_source_url": "https://github.com/deepseek-ai/DeepInfer",
+   "confirming_urls": [
+    "https://siliconangle.com/2026/10/20/deepseek-open-sources-deepinfer-the-inference-framework-behind-its-production-services/"
+   ],
+   "event_date": "2026-10-20",
+   "checked_claims": [
+    {
+     "claim": "DeepSeek открыла DeepInfer — инференс-фреймворк, на котором работают её продакшен-сервисы; лицензия Apache 2.0",
+     "source": "https://github.com/deepseek-ai/DeepInfer",
+     "quote_hint": "Apache License 2.0"
+    },
+    {
+     "claim": "Сейчас поддерживает только DeepSeek-V4.1-Flash",
+     "source": "same",
+     "quote_hint": "DeepSeek-V4.1-Flash"
+    },
+    {
+     "claim": "Работает на NVIDIA Blackwell SM100 и Huawei Ascend 950; Hopper и старше не поддерживаются; бенчмарки — собственные",
+     "source": "https://siliconangle.com/2026/10/20/deepseek-open-sources-deepinfer-the-inference-framework-behind-its-production-services/",
+     "quote_hint": "Hopper and older not supported"
+    }
+   ],
+   "removed_claims": [
+    "Дата публикации репозитория на странице не видна — дата по SiliconANGLE (20.10)",
+    "Звёзды/комменты HN в текст не нужны",
+    "Код KV-кэша и балансировки не выложен"
+   ],
+   "attribution": "метрики — по данным DeepSeek",
+   "notes": "GitHub отдаёт скрипту 403, но WebFetch открывает."
+  },
+  {
+   "id": "2ae00a76da3226e6a82dffe3fdba33ed5724da35",
+   "status": "partially",
+   "primary_source_url": "https://fal.ai/flux-3-max",
+   "confirming_urls": [],
+   "event_date": "2026-10-18",
+   "checked_claims": [
+    {
+     "claim": "FLUX 3 Max — видеомодель fal Research, дообученная совместно с Black Forest Labs на FLUX 3; text/image-to-video 720p",
+     "source": "same",
+     "quote_hint": "post-trained video model"
+    },
+    {
+     "claim": "10-секундное видео примерно за 12,45 с — по данным fal",
+     "source": "same",
+     "quote_hint": "12.45 seconds"
+    },
+    {
+     "claim": "1139 Elo в превью-арене image-to-video Artificial Analysis, делит 1-е место",
+     "source": "same",
+     "quote_hint": "tied for #1"
+    },
+    {
+     "claim": "$0.0425 за секунду 720p (скидка 75% от $0.17) до 7 ноября",
+     "source": "same",
+     "quote_hint": "valid until November 7"
+    }
+   ],
+   "removed_claims": [
+    "Дата 18.10 — 'страница обновлена на'; граница окна, точное время публикации не подтверждено",
+    "Арена Artificial Analysis не проверена независимо"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Оставляем partially из-за даты на границе окна."
+  },
+  {
+   "id": "3a11e60ee8cf431d325202d6163c1c157e9bbeab",
+   "status": "rejected",
+   "primary_source_url": "https://mistral.ai/news/timestral/",
+   "confirming_urls": [],
+   "event_date": "2026-10-15",
+   "checked_claims": [],
+   "removed_claims": [
+    "Всё"
+   ],
+   "attribution": null,
+   "notes": "Страница Mistral датирует анонс Timestral 15 октября — вне окна (с 18.10)."
+  },
+  {
+   "id": "47740c8fb2383cdfa18be96cbdfa8099e0c0a755",
+   "status": "rejected",
+   "primary_source_url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
+   "confirming_urls": [],
+   "event_date": "2026-10-23",
+   "checked_claims": [],
+   "removed_claims": [
+    "Перенос вступления условий на 20 ноября",
+    "Всё"
+   ],
+   "attribution": null,
+   "notes": "WebFetch не открыл The Verge; поиск не нашёл подтверждений переноса (везде 30 октября). Один источник, не прочитан."
+  },
+  {
+   "id": "97597de85741a1d47bc1db44161b47bab7e73dd6",
+   "status": "rejected",
+   "primary_source_url": "https://www.techlicious.com/blog/google-gmail-photos-insights-ads/",
+   "confirming_urls": [],
+   "event_date": "2026-10-16",
+   "checked_claims": [],
+   "removed_claims": [
+    "Всё"
+   ],
+   "attribution": null,
+   "notes": "The Verge не открылся. Изменение политики вступило 16.10 (Techlicious от 19.10) — вне окна, плюс opt-in нюанс."
+  },
+  {
+   "id": "d26ae9b2d9ce501ca5e5f8678040fb18be02e6db",
+   "status": "verified",
+   "primary_source_url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+   "confirming_urls": [
+    "https://gizmodo.com/microsoft-says-its-new-ai-is-more-than-twice-as-good-at-diagnosing-diseases-as-doctors-2000829562"
+   ],
+   "event_date": "2026-10-22",
+   "checked_claims": [
+    {
+     "claim": "MAI-DxO верно решила 83% сложных случаев NEJM в симуляции против 36% у врачей общей практики со справочными материалами",
+     "source": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+     "quote_hint": "83% ... 36%"
+    },
+    {
+     "claim": "Результаты опубликованы в Science",
+     "source": "https://gizmodo.com/microsoft-says-its-new-ai-is-more-than-twice-as-good-at-diagnosing-diseases-as-doctors-2000829562",
+     "quote_hint": "appeared in Science"
+    },
+    {
+     "claim": "Microsoft планирует испытания с Beth Israel Deaconess Medical Center",
+     "source": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+     "quote_hint": "Beth Israel Deaconess"
+    }
+   ],
+   "removed_claims": [
+    "Какие именно модели OpenAI дали лучший результат — TechCrunch: GPT-5/5.5, Gizmodo: GPT-5; не называть версии",
+    "Сравнение — только с врачами общей практики, не со специалистами; симуляция, не клиника",
+    "Preprint был в 2025 — не подавать как первый анонс"
+   ],
+   "attribution": "по данным Microsoft (через TechCrunch, Gizmodo)",
+   "notes": "Два независимых СМИ; прямой первоисточник Microsoft/Science не открыт."
+  },
+  {
+   "id": "a20157163c87e1f1d986c933b7fccbb596c47f34",
+   "status": "verified",
+   "primary_source_url": "https://siliconangle.com/2026/10/20/openai-acquires-orchestra-bio-to-bring-ai-agents-into-drug-development/",
+   "confirming_urls": [
+    "https://unite.ai/openai-acquires-orchestra-bio-to-expand-rosalind-life-sciences-tools"
+   ],
+   "event_date": "2026-10-20",
+   "checked_claims": [
+    {
+     "claim": "OpenAI 20 октября объявила о покупке Orchestra Bio — стартапа с ИИ-агентами для управления программами разработки лекарств",
+     "source": "https://siliconangle.com/2026/10/20/openai-acquires-orchestra-bio-to-bring-ai-agents-into-drug-development/",
+     "quote_hint": "acquired drug development software startup"
+    },
+    {
+     "claim": "Команда и технологии войдут в направление Rosalind",
+     "source": "https://unite.ai/openai-acquires-orchestra-bio-to-expand-rosalind-life-sciences-tools",
+     "quote_hint": "folded into Rosalind"
+    },
+    {
+     "claim": "Условия сделки не раскрыты",
+     "source": "https://siliconangle.com/2026/10/20/openai-acquires-orchestra-bio-to-bring-ai-agents-into-drug-development/",
+     "quote_hint": "Terms were not disclosed"
+    }
+   ],
+   "removed_claims": [
+    "Сумма сделки и сроки интеграции — не раскрыты",
+    "Список клиентов Rosalind (Novo Nordisk, Moderna) — только SiliconANGLE"
+   ],
+   "attribution": "по данным SiliconANGLE и Unite.AI (со ссылкой на анонс OpenAI)",
+   "notes": "Страница openai.com даёт 403; два независимых СМИ."
+  },
+  {
+   "id": "898721bdc762d6bc87480e23492f7ebae3a70f6b",
+   "status": "rumor",
+   "primary_source_url": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/",
+   "confirming_urls": [],
+   "event_date": "2026-10-25",
+   "checked_claims": [
+    {
+     "claim": "OpenAI предлагает скидки до 90% клиентам Anthropic — по данным The Information, пересказанным The Decoder",
+     "source": "same",
+     "quote_hint": "report by The Information"
+    },
+    {
+     "claim": "Генеральные директора Rippling и DataCamp на записи говорят об экономии",
+     "source": "same",
+     "quote_hint": "named CEOs quoted"
+    }
+   ],
+   "removed_claims": [
+    "Утверждение о замедлении роста Anthropic с Q2 на Q3 — со ссылкой на безымянную 'investor memo'",
+    "Конкретные проценты по компаниям — не подтверждены напрямую",
+    "Статья от 25.10 — на границе окна"
+   ],
+   "attribution": "по данным The Information (через The Decoder)",
+   "notes": "Оригинал The Information не открыт; один пересказ."
+  },
+  {
+   "id": "fd2784d8397a727fd83549de72dfb5effdb71bb9",
+   "status": "rumor",
+   "primary_source_url": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/",
+   "confirming_urls": [],
+   "event_date": "2026-10-23",
+   "checked_claims": [
+    {
+     "claim": "Anthropic заявила, что внутренняя непубличная модель по возможностям превосходит Mythos 5.1 и лучше выровнена — по пересказу The Decoder",
+     "source": "same",
+     "quote_hint": "greater than Mythos 5.1"
+    }
+   ],
+   "removed_claims": [
+    "9 из 43 запусков и 67% — не подтверждены (поиск даёт другие цифры AISI: 122 попытки); страницу Anthropic не открывал",
+    "Тест AISI проводился с Mythos 5, не 5.1"
+   ],
+   "attribution": "по данным The Decoder, ссылающегося на исследование Anthropic",
+   "notes": "Первоисточник не открыт, цифры не подтверждены."
+  },
+  {
+   "id": "60f7f9822d2095278271dd38abbbed585beaf4e6",
+   "status": "rumor",
+   "primary_source_url": "https://aljazeera.com/economy/2026/10/21/anthropic-posts-80bn-loss-in-first-half-of-2026-wsj",
+   "confirming_urls": [
+    "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/"
+   ],
+   "event_date": "2026-10-20",
+   "checked_claims": [
+    {
+     "claim": "WSJ сообщила о чистом убытке Anthropic более $80 млрд в первом полугодии 2026 по данным черновика проспекта IPO; Anthropic не ответила на запрос",
+     "source": "https://aljazeera.com/economy/2026/10/21/anthropic-posts-80bn-loss-in-first-half-of-2026-wsj",
+     "quote_hint": "net loss of more than $80bn"
+    },
+    {
+     "claim": "Около $72 млрд — учётные начисления, связанные с изменением стоимости конвертируемых нот и других инструментов",
+     "source": "https://aljazeera.com/economy/2026/10/21/anthropic-posts-80bn-loss-in-first-half-of-2026-wsj",
+     "quote_hint": "$72bn"
+    }
+   ],
+   "removed_claims": [
+    "Убыток прошлого года ($13 млрд) — противоречие в формулировках Al Jazeera",
+    "Точное значение $80,7 млрд, выручка Q3 и обязательства по вычислениям — только из поиска, без открытой страницы",
+    "Reuters не открылся (WebFetch блокирует)"
+   ],
+   "attribution": "по данным WSJ (со ссылкой на черновик проспекта IPO)",
+   "notes": "Не подтверждено компанией; не открытый Reuters ссылается на WSJ."
+  },
+  {
+   "id": "6337437a464d1916a76f507765b150c16018fb22",
+   "status": "rumor",
+   "primary_source_url": "https://siliconangle.com/2026/10/22/report-openai-closing-on-30b-bridge-funding-round-to-tide-it-over-before-ipo/",
+   "confirming_urls": [],
+   "event_date": "2026-10-22",
+   "checked_claims": [
+    {
+     "claim": "OpenAI по сообщениям ведёт переговоры о дополнительных $30 млрд как о 'мостовом' раунде перед IPO",
+     "source": "same",
+     "quote_hint": "$30 billion investment"
+    }
+   ],
+   "removed_claims": [
+    "Оценка $1,25 трлн — у других источников $1,4 трлн, противоречие",
+    "Лидеры раунда (инвесторы из ОАЭ, Coatue) и срок подписания — только SiliconANGLE, поиск не подтвердил",
+    "Сам CNBC не открыт"
+   ],
+   "attribution": "по данным CNBC (через SiliconANGLE); ранее Bloomberg",
+   "notes": "Только пересказ; сумма $30 млрд совпадает с отчётами Bloomberg от октября."
+  }
+ ]
+}
