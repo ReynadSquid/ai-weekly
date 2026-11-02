@@ -1,0 +1,7 @@
+2026-11-02T02:07:36Z | init       | run=2026-11-02_weekly mode=live окно 2026-10-25T03:06:02Z → 2026-11-01T17:00:00Z
+2026-11-02T02:07:49Z | collect    | fetch_feeds[telegram]: 56 кандидатов, ошибок источников: 0
+2026-11-02T02:07:50Z | collect    | fetch_feeds[media]: 115 кандидатов, ошибок источников: 0
+2026-11-02T02:07:52Z | collect    | fetch_feeds[research]: 61 кандидатов, ошибок источников: 0
+2026-11-02T02:09:33Z | collect    | fetch_feeds[companies]: 123 кандидатов, ошибок источников: 1
+2026-11-02T02:09:33Z | collect    | источник недоступен: bing.com/news (Meta, DeepSeek, Apple, Amazon, Midjourney, Runway) — поиск по компании не ответил
+2026-11-02T02:10:56Z | collect    | шаг выполнен. 4 collectors: companies 15, discovery 14, research 14, telegram 4; errors: openai 403, bing, tg

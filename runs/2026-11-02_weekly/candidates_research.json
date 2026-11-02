@@ -1,0 +1,173 @@
+{
+ "items": [
+  {
+   "title": "Mistral Large 4 (Le Chonk) на Hugging Face",
+   "url": "https://huggingface.co/blog/mistral-large4",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-29T00:00:00Z",
+   "company": "Mistral AI",
+   "product": "Mistral Large 4",
+   "section": "F",
+   "summary_raw": "Мультимодальная MoE-модель (текст+изображения на входе, текст на выходе): около 1 трлн параметров всего, около 49 млрд активных, контекст 1M токенов; есть варианты FP8 и NVFP4. Лицензия Mistral Ecosystem Open-Weight (производная от MIT с ограничениями на сервисы model-as-a-service).",
+   "importance": 9
+  },
+  {
+   "title": "Sleep framework: как LLM сохранять знания при непрерывном обучении",
+   "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+   "source": "research.google/blog",
+   "source_type": "research",
+   "published_at": "2026-10-27T17:35:00Z",
+   "company": "Google Research (Ali Behrouz, Vahab Mirrokni)",
+   "product": "Sleep framework",
+   "section": "F",
+   "summary_raw": "Модель чередует работу и офлайн-фазу «сна»: контекст переносится в параметры через MoE-блоки памяти, а модель сама генерирует и фильтрует обучающие примеры. По заявлению авторов, результат 79.2% на AIME 24, 69.0% на AIME 25 и 46.1% на HMMT 25, лучше SFT, GRPO и OPSD.",
+   "importance": 8
+  },
+  {
+   "title": "Baidu Unlimited OCR 2",
+   "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+   "source": "huggingface.co/models",
+   "source_type": "research",
+   "published_at": "2026-10-27T03:57:46Z",
+   "company": "Baidu",
+   "product": "Unlimited-OCR-2",
+   "section": "F",
+   "summary_raw": "Открытая модель на 3B параметров для разбора документов под лицензией MIT. Baidu заявляет, что особое разреженное скользящее внимание держит расход памяти почти постоянным независимо от длины документа, и сообщает о SOTA на бенчмарках MPDocBench и MarathonDocBench (по данным Baidu).",
+   "importance": 8
+  },
+  {
+   "title": "Microsoft Mage-VL-Cowork",
+   "url": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+   "source": "huggingface.co/models",
+   "source_type": "research",
+   "published_at": "2026-10-30T12:13:24Z",
+   "company": "Microsoft (Mage Team)",
+   "product": "Mage-VL-Cowork",
+   "section": "F",
+   "summary_raw": "Компактная (4B) vision-language модель-агент для управления компьютером: действует и по скриншотам (мышь/клавиатура), и через shell-команды. Apache-2.0. Microsoft заявляет 66.0% на OSWorld-Verified при лимите 50 шагов, лучший результат среди 4B-моделей; онлайн-RL, по её словам, добавил около 10 пунктов.",
+   "importance": 8
+  },
+  {
+   "title": "Liquid AI LFM3: единая основа для текста, зрения, аудио и решений",
+   "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-27T17:16:52Z",
+   "company": "Liquid AI",
+   "product": "LFM3",
+   "section": "F",
+   "summary_raw": "Новое поколение открытых весов: текст, зрение, аудио, omni и модели принятия решений на общей архитектуре, размеры около 2B. Liquid AI заявляет, что LFM3-1.7B обходит LFM2.5-2.6B при на 35% меньшем числе параметров и набирает 38.42 против 3.02 на WebArena-Verified. Лицензия в посте не указана.",
+   "importance": 7
+  },
+  {
+   "title": "Old Ideas, Novel Problems: могут ли LLM оценивать новизну идей",
+   "url": "https://huggingface.co/blog/allenai/novelty-bench",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-27T16:12:42Z",
+   "company": "Ai2",
+   "product": "Novelty benchmark",
+   "section": "F",
+   "summary_raw": "Новый бенчмарк на основе рецензий ICLR 2026 проверяет, способны ли LLM надёжно судить о новизне исследовательской идеи. Авторы сообщают, что небольшая смена формулировки промпта роняла точность GPT-5.4 с 93.5% до 40.9%, а простой промпт-бейзлайн на Claude Opus 4.6 обошёл два специализированных оценщика.",
+   "importance": 7
+  },
+  {
+   "title": "EmbeddingGemma 2: единые мультимодальные представления",
+   "url": "https://arxiv.org/abs/2610.37364",
+   "source": "huggingface.co/papers",
+   "source_type": "research",
+   "published_at": "2026-10-27T00:00:00Z",
+   "company": "Авторы во главе с Henrique Schechter Vera (аффилиация на странице не указана; по названию — семейство Gemma)",
+   "product": "EmbeddingGemma 2",
+   "section": "F",
+   "summary_raw": "Открытая эмбеддинг-модель, отображающая текст, изображения, аудио и видео в одно общее пространство. Авторы заявляют новый парето-фронт качество/эффективность и превосходство над моделями в 2–12 раз крупнее.",
+   "importance": 7
+  },
+  {
+   "title": "Nemotron-Labs-Diffusion-Uni (NLD-Uni)",
+   "url": "https://arxiv.org/abs/2610.36466",
+   "source": "huggingface.co/papers",
+   "source_type": "research",
+   "published_at": "2026-10-27T00:00:00Z",
+   "company": "Shufan Li, Pavlo Molchanov и др. (связь с NVIDIA — по названию, на странице не указана)",
+   "product": "NLD-Uni",
+   "section": "F",
+   "summary_raw": "Единая дискретная диффузионная LLM для понимания и генерации изображений; способности переносятся из авторегрессионных VLM и flow-моделей через кросс-парадигмальную дистилляцию. Авторы заявляют SOTA среди унифицированных диффузионных LLM на VQA, рассуждениях, grounding, text-to-image и редактировании.",
+   "importance": 6
+  },
+  {
+   "title": "PDRVLA: VLA-модель с представлением физической динамики",
+   "url": "https://arxiv.org/abs/2610.37381",
+   "source": "huggingface.co/papers",
+   "source_type": "research",
+   "published_at": "2026-10-27T00:00:00Z",
+   "company": "Hanqing Wang и соавторы",
+   "product": "PDRVLA",
+   "section": "F",
+   "summary_raw": "Модуль физической динамики извлекает «физические токены» из признаков vision-language и направляет генерацию действий без генерации будущего видео. Авторы приводят результаты в симуляции: 99.3% на LIBERO, 93.6% на RoboTwin 2.0, 81.5% на SimplerEnv.",
+   "importance": 6
+  },
+  {
+   "title": "Hy-Nomas: интерактивная генерация миров",
+   "url": "https://arxiv.org/abs/2610.36729",
+   "source": "huggingface.co/papers",
+   "source_type": "research",
+   "published_at": "2026-10-27T00:00:00Z",
+   "company": "Qiaoling Chen и соавторы",
+   "product": "Hy-Nomas",
+   "section": "F",
+   "summary_raw": "Диффузионная видео-модель мира на 8B, следующая последовательным текстовым командам и управлению камерой с сохранением истории. По человеческой оценке авторы заявляют превосходство над существующими мирами-моделями (цифр нет).",
+   "importance": 6
+  },
+  {
+   "title": "Work Agents: Systems, Capabilities, and Optimization",
+   "url": "https://arxiv.org/abs/2610.35845",
+   "source": "huggingface.co/papers",
+   "source_type": "research",
+   "published_at": "2026-10-26T00:00:00Z",
+   "company": "Zishan Xu, Enjun Du и соавторы",
+   "product": "Work Agents",
+   "section": "F",
+   "summary_raw": "Обзорная работа об агентах для рабочих задач как о связке базовой модели и рантайма: вводятся понятия персистентности и открытости работы, пять форм цифровой работы и пять семейств способностей. Экспериментальных результатов нет.",
+   "importance": 5
+  },
+  {
+   "title": "IBM Granite Switch 4.1.1",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-10-29T13:37:07Z",
+   "company": "IBM",
+   "product": "Granite Switch",
+   "section": "F",
+   "summary_raw": "Модульная архитектура: один чекпоинт с переключаемыми адаптерами. Патч 4.1.1 совместим с 4.1, обновляет модель распознавания речи (10 языков с пунктуацией и регистром) и адаптер Decision; базовая модель не менялась.",
+   "importance": 5
+  },
+  {
+   "title": "Mika: открытый ИИ-агент для Android",
+   "url": "https://github.com/wangzan101/Mika",
+   "source": "github.com/trending",
+   "source_type": "research",
+   "published_at": "2026-10-29T14:34:07Z",
+   "company": "wangzan101",
+   "product": "Mika",
+   "section": "F",
+   "summary_raw": "Приложение-ассистент для Android выполняет задачи в приложениях и вебе на скрытом экране, пока пользователь пользуется телефоном. Работает на устройстве, подключается к выбранному провайдеру модели, без серверов Mika. Apache-2.0, около 4 тыс. звёзд.",
+   "importance": 5
+  },
+  {
+   "title": "Kanzo: self-hosted канбан для людей и агентов",
+   "url": "https://github.com/emanuele-em/kanzo",
+   "source": "github.com/trending",
+   "source_type": "research",
+   "published_at": "2026-10-25T11:14:03Z",
+   "company": "emanuele-em",
+   "product": "kanzo",
+   "section": "F",
+   "summary_raw": "Самохостируемая канбан-доска в браузере, которая одновременно работает как MCP-сервер, чтобы люди и кодинг-агенты вели общие задачи. Один небольшой бинарник, синхронизация через приватный git. AGPL-3.0, около 620 звёзд.",
+   "importance": 4
+  }
+ ],
+ "errors": []
+}

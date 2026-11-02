@@ -1,0 +1,198 @@
+{
+ "items": [
+  {
+   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+   "url": "https://www.anthropic.com/news/s1-sec",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-26T00:00:00Z",
+   "company": "Anthropic",
+   "product": "Claude",
+   "section": "A",
+   "summary_raw": "Anthropic подала в SEC форму S-1 для IPO акций класса A. Листинг планируется на Nasdaq Global Select Market под тикером ANT; число акций и ценовой диапазон не определены, андеррайтеры - Goldman Sachs и Morgan Stanley. Регистрация ещё не вступила в силу.",
+   "importance": 9
+  },
+  {
+   "title": "Introducing Gemini 4 Carbon",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+   "source": "blog.google",
+   "source_type": "official",
+   "published_at": "2026-10-28T17:00:58Z",
+   "company": "Google",
+   "product": "Gemini",
+   "section": "A",
+   "summary_raw": "Google представила Gemini 4 Carbon; доступ пока получили лишь отдельные специалисты по кибербезопасности, затем он расширится через программу Fairwind. Заявлены первое место в Artificial Analysis Intelligence Index v5.0 (59) и 88,2% на SEC-bench Pro. Вводная цена - $2 за млн входных и $10 за млн выходных токенов, затем $4 и $20.",
+   "importance": 9
+  },
+  {
+   "title": "Genie 4: A new generation of world simulation",
+   "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+   "source": "deepmind.google",
+   "source_type": "official",
+   "published_at": "2026-10-27T16:01:38Z",
+   "company": "Google",
+   "product": "DeepMind",
+   "section": "A",
+   "summary_raw": "DeepMind показала Genie 4 - модель мира для интерактивной симуляции в реальном времени с нативным звуком. Доступна как исследовательское превью для доверенных тестировщиков, затем придёт подписчикам Google AI Ultra через Project Genie и партнёрам через Gemini API и AI Studio.",
+   "importance": 7
+  },
+  {
+   "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+   "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+   "source": "anthropic.com/news",
+   "source_type": "official",
+   "published_at": "2026-10-27T00:00:00Z",
+   "company": "Anthropic",
+   "product": "Claude",
+   "section": "A",
+   "summary_raw": "Anthropic расширяет партнёрство с GSA: скидка 40% на Claude Enterprise, Claude for Government и API для госорганов всех уровней, оценочная экономия около $1 млрд. Минимального объёма закупок нет; Claude уже используют около 500 организаций США.",
+   "importance": 7
+  },
+  {
+   "title": "Mistral Large 4 (Le Chonk): открытые веса",
+   "url": "https://mistral.ai/news/mistral-large-4-oss/",
+   "source": "mistral.ai/news",
+   "source_type": "official",
+   "published_at": "2026-10-29T00:00:00Z",
+   "company": "Mistral",
+   "product": "Mistral Large 4",
+   "section": "B",
+   "summary_raw": "Mistral опубликовала открытые веса мультимодальной MoE-модели Large 4 на 1 трлн параметров, нацеленной на агентное программирование и кибербезопасность. Лицензия - модифицированная MIT (для MaaS нужна отдельная коммерческая); API стоит $0,70 за млн входных и $2,10 за млн выходных токенов.",
+   "importance": 8
+  },
+  {
+   "title": "AMD and Meta Advance Strategic Partnership to Power Meta's Superintelligence Infrastructure",
+   "url": "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure",
+   "source": "ir.amd.com",
+   "source_type": "official",
+   "published_at": "2026-10-27T13:20:00Z",
+   "company": "AMD",
+   "product": "Instinct",
+   "section": "C",
+   "summary_raw": "AMD и Meta углубляют партнёрство: системы Helios уже тестируются у Meta, Meta будет использовать кастомный GPU Instinct на архитектуре MI450. AMD вложит $1 млрд в размещение акций Meta; речь идёт о развёртывании на уровне гигаватт.",
+   "importance": 8
+  },
+  {
+   "title": "Muse is now available in Singapore",
+   "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+   "source": "about.fb.com",
+   "source_type": "official",
+   "published_at": "2026-10-28T00:00:03Z",
+   "company": "Meta",
+   "product": "Meta AI",
+   "section": "A",
+   "summary_raw": "Персональный ИИ-агент Meta Muse запущен в Сингапуре на iOS, Android и muse.ai, с партнёрами Shopee, Grab, Agoda и др. Подключаются Gmail, Calendar и Instagram; агент запрашивает разрешение перед чувствительными действиями. Для основных задач бесплатно, есть платные планы.",
+   "importance": 5
+  },
+  {
+   "title": "Siri AI is available in more languages starting today",
+   "url": "https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/",
+   "source": "apple.com/newsroom",
+   "source_type": "official",
+   "published_at": "2026-10-26T18:37:30Z",
+   "company": "Apple",
+   "product": "Apple Intelligence",
+   "section": "B",
+   "summary_raw": "С обновлениями 27.2 Siri AI (бета) стал доступен на французском, японском, корейском, португальском и испанском. До конца 2026 года обещаны китайский (традиционный), норвежский, турецкий и вьетнамский. В ЕС функция пока недоступна.",
+   "importance": 6
+  },
+  {
+   "title": "Apple introduces the new 14-inch MacBook Pro with M6",
+   "url": "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+   "source": "apple.com/newsroom",
+   "source_type": "official",
+   "published_at": "2026-10-27T12:59:39Z",
+   "company": "Apple",
+   "product": "Apple Intelligence",
+   "section": "B",
+   "summary_raw": "Apple анонсировала 14-дюймовый MacBook Pro с чипом M6 от $1999, отгрузки с 6 ноября. Заявлено до 25% прироста в локальных ИИ-задачах относительно M5 и ускорение Neural Engine до 1,9x. Часть серверных функций Apple Intelligence, включая Siri AI, имеет дневные лимиты.",
+   "importance": 6
+  },
+  {
+   "title": "Thin, Light and Built for Everything: NVIDIA RTX Spark Windows Laptops Gain New Models, Agents, Games",
+   "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/",
+   "source": "blogs.nvidia.com",
+   "source_type": "official",
+   "published_at": "2026-10-28T15:00:46Z",
+   "company": "NVIDIA",
+   "product": "GPU",
+   "section": "C",
+   "summary_raw": "Ноутбуки RTX Spark от ASUS, Dell, HP, Lenovo, Microsoft и MSI поступили в продажу от $2599, до 128 ГБ унифицированной памяти. NVIDIA также выпустила открытую модель распознавания речи Nemotron 3.5 Transcribe на 40 языков.",
+   "importance": 6
+  },
+  {
+   "title": "Malicious Claude Code extension on Cursor planted SSH backdoors",
+   "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+   "source": "bleepingcomputer.com",
+   "source_type": "media",
+   "published_at": "2026-10-30T10:36:00Z",
+   "company": "Cursor",
+   "product": "Cursor",
+   "section": "D",
+   "summary_raw": "Подменённая версия расширения Claude Code 2.1.313 около 11 часов 29 октября была доступна в маркетплейсе Cursor; могли пострадать до 5000 разработчиков. Код пытался установить SSH-бэкдор, Cursor удалил расширение и временно закрыл маркетплейс для аудита. Как злоумышленники опубликовали сборку под именем Anthropic, пока неясно.",
+   "importance": 8
+  },
+  {
+   "title": "OpenAI Cuts Funding Target by $10 Billion as Investor Jitters Shake AI Markets",
+   "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-cuts-funding-target-by-10-billion-as-investor-jitters-shake-ai-markets/",
+   "source": "pymnts.com",
+   "source_type": "media",
+   "published_at": "2026-11-01T14:45:00Z",
+   "company": "OpenAI",
+   "product": "GPT",
+   "section": "A",
+   "summary_raw": "По данным FT и WSJ, OpenAI снизила цель раунда с $30 до $20 млрд при оценке $1,25 трлн вместо $1,4 трлн; привлечено около $11 млрд. OpenAI не прокомментировала сообщения.",
+   "importance": 8
+  },
+  {
+   "title": "OpenAI plans to buy Google's AI chips, The Information reports",
+   "url": "https://www.detroitnews.com/story/tech/2026/10/27/openai-plans-to-buy-googles-ai-chips-the-information-reports/92470838007/",
+   "source": "detroitnews.com",
+   "source_type": "media",
+   "published_at": "2026-10-27T20:34:00Z",
+   "company": "OpenAI",
+   "product": "GPT",
+   "section": "A",
+   "summary_raw": "Со ссылкой на The Information сообщается, что OpenAI планирует закупать ИИ-чипы (TPU) Google. Подробности статьи не удалось открыть (платный доступ), заголовок и ссылка сохранены.",
+   "importance": 6
+  },
+  {
+   "title": "Suno MCP tool lets users make songs inside ChatGPT, Claude, and Gemini",
+   "url": "https://www.musicbusinessworldwide.com/sunos-new-mcp-tool-lets-users-make-songs-inside-chatgpt-claude-and-gemini-as-its-developer-api-gets-a-sign-in-portal-but-remains-in-beta/",
+   "source": "musicbusinessworldwide.com",
+   "source_type": "media",
+   "published_at": "2026-10-30T01:47:00Z",
+   "company": "Suno",
+   "product": "Suno",
+   "section": "D",
+   "summary_raw": "Suno запустила MCP-инструмент (бета), позволяющий создавать песни из ChatGPT, Claude и Gemini; работает на всех тарифах по заявке на ранний доступ, кредиты списываются с плана Suno. Параллельно виден портал для API разработчиков, который стартует только для избранных партнёров.",
+   "importance": 5
+  },
+  {
+   "title": "Microsoft offers a quarter of its global workforce voluntary buyouts as AI spending climbs",
+   "url": "https://apnews.com/article/microsoft-buyout-ai-layoff-xbox-c5a639f53615be198db1799adf6837e1",
+   "source": "apnews.com",
+   "source_type": "media",
+   "published_at": "2026-10-27T10:16:00Z",
+   "company": "Microsoft",
+   "product": "Copilot",
+   "section": "A",
+   "summary_raw": "AP сообщает, что Microsoft предложила добровольные выкупы четверти сотрудников по всему миру на фоне роста расходов на ИИ (по другим публикациям, около 60 тысяч человек). Страницу открыть не удалось, детали не проверены.",
+   "importance": 6
+  }
+ ],
+ "errors": [
+  {
+   "source": "openai.com/news",
+   "error": "403"
+  },
+  {
+   "source": "bing.com/news (Meta, DeepSeek, Apple, Amazon, Midjourney, Runway)",
+   "error": "поиск по компании не ответил (fetch_feeds)"
+  },
+  {
+   "source": "theverge.com, apnews.com, arstechnica.com, msn.com",
+   "error": "WebFetch недоступен"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "items": [
+  {
+   "title": "Anthropic подала заявку S-1 в SEC на IPO",
+   "url": "https://www.anthropic.com/news/s1-sec",
+   "source": "anthropic.com",
+   "source_type": "official",
+   "published_at": "2026-10-26T00:00:00Z",
+   "company": "Anthropic",
+   "product": null,
+   "section": "companies",
+   "summary_raw": "Anthropic подала в SEC форму S-1 для планируемого IPO акций класса A; планируется листинг на Nasdaq Global Select Market под тикером ANT; число акций и диапазон цены не определены.",
+   "importance": 9,
+   "discovered_via": "https://t.me/ai_newz/4819"
+  },
+  {
+   "title": "Google DeepMind представила Genie 4",
+   "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+   "source": "deepmind.google",
+   "source_type": "official",
+   "published_at": "2026-10-27T00:00:00Z",
+   "company": "Google",
+   "product": "Genie 4",
+   "section": "companies",
+   "summary_raw": "Мультимодальная world-модель генерирует интерактивные симуляции в реальном времени, со звуком и улучшенной физикой; пока research preview для доверенных тестеров, затем Google AI Ultra и ранний доступ в Gemini API; остаются проблемы с дрейфом и консистентностью.",
+   "importance": 7,
+   "discovered_via": "https://t.me/ai_newz/4825"
+  },
+  {
+   "title": "Mistral выложила веса Mistral Large 4",
+   "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+   "source": "huggingface.co/mistralai",
+   "source_type": "official",
+   "published_at": "2026-10-29T00:00:00Z",
+   "company": "Mistral",
+   "product": "Mistral Large 4",
+   "section": "companies",
+   "summary_raw": "Мультимодальная MoE-модель, около 1 трлн параметров (около 49 млрд активных), контекст 1M токенов, 160+ языков; лицензия Mistral Ecosystem Open-Weight License, для MaaS-бизнеса нужна отдельная коммерческая лицензия. Дата на странице не указана, дата по постам каналов.",
+   "importance": 8,
+   "discovered_via": "https://t.me/ai_newz/4826"
+  },
+  {
+   "title": "Google получила первый ответ от TPU на орбите в проекте Suncatcher",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+   "source": "blog.google",
+   "source_type": "official",
+   "published_at": "2026-10-30T00:00:00Z",
+   "company": "Google",
+   "product": "Project Suncatcher",
+   "section": "research",
+   "summary_raw": "Прототип спутника, запущенный 1 октября, вернул первый ответ модели Gemma 4 на TPU в орбите; далее проверка термальных и радиационных нагрузок, пара связанных спутников планируется на 2027 год.",
+   "importance": 6,
+   "discovered_via": "https://t.me/data_secrets/10252"
+  }
+ ],
+ "errors": [
+  "Первоисточник не найден или недоступен, пост пропущен: GPT 6.1 Terra, Gemini 4 Carbon, переименование подписок Anthropic, лимиты Pro OpenAI, Kimi K3.1/distillation, OpenAI API credits (help.openai.com 403), OpenAI/Anthropic time-horizon (openai.com 403), Tencent world model, Metaculus, Starcloud, Stripe-OpenRouter (материал от августа, вне окна)",
+  "arXiv-посты вне окна по дате подачи"
+ ]
+}

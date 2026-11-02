@@ -1,0 +1,163 @@
+{
+ "items": [
+  {
+   "title": "Dulo (Thrun, Aoun) raises $130M",
+   "url": "https://dulo.com/",
+   "source": "dulo.com (round per SiliconANGLE, first reported by The Information)",
+   "source_type": "company_site",
+   "published_at": "2026-10-30T00:00:00Z",
+   "company": "Dulo",
+   "product": "Foundation models for hardware design",
+   "section": "E",
+   "summary_raw": "Стартап Себастьяна Труна и Адриана Аоуна, строящий фундаментальные модели для проектирования железа, привлёк около $130M; среди инвесторов Эрик Шмидт, Джон Дерр, Рам Шрирам, Марк Бениофф. Оценка не раскрыта. Сайт — одностраничный; раунд подтверждён Аоуном в X, пресс-релиза нет.",
+   "importance": 7
+  },
+  {
+   "title": "Wabi raises $55M at $1.25B valuation",
+   "url": "https://siliconangle.com/2026/10/29/wabi-reels-in-55m-for-its-consumer-focused-ai-assistant/",
+   "source": "SiliconANGLE (первоисточник — релиз PR Newswire, прямой ссылки не найдено)",
+   "source_type": "media",
+   "published_at": "2026-10-29T00:00:00Z",
+   "company": "Wabi",
+   "product": "Wabi group-chat AI assistant",
+   "section": "E",
+   "summary_raw": "Стартап Эухении Куйды (основатель Replika) привлёк $55M при оценке $1.25B, лид IVP, также a16z, Forerunner, Amazon Alexa Fund. Продукт — групповой чат со встроенным ИИ-агентом и мини-приложениями; Mac, iOS, Android. Данных о пользователях нет. Источники расходятся: seed или более поздний раунд.",
+   "importance": 8
+  },
+  {
+   "title": "Google, Microsoft, OpenAI, Anthropic back single robots.txt opt-out for AI training",
+   "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+   "source": "Microsoft Bing blog (также OpenAI: https://openai.com/index/helping-websites-express-ai-training-preferences/; also_seen_at SiliconANGLE, The Verge)",
+   "source_type": "company_blog",
+   "published_at": "2026-10-30T00:00:00Z",
+   "company": "Индустрия (Google, Microsoft, OpenAI, Anthropic)",
+   "product": "AI training opt-out in robots.txt",
+   "section": "E",
+   "summary_raw": "Крупные ИИ-компании поддержали единую запись в robots.txt для отказа от использования сайта в обучении моделей; черновик отправлен в IETF. Microsoft и OpenAI внедрят в ближайшие месяцы, Google в следующем году; Meta идею поддержала без обязательств. Название токена из одного вторичного источника — не использовать без проверки.",
+   "importance": 8
+  },
+  {
+   "title": "Opera launches WebAI preview for on-device AI in the browser",
+   "url": "https://www.zdnet.com/innovation/opera-webai-local-ai-browser/",
+   "source": "ZDNet (первоисточник Opera не открыт; also_seen_at alternativeto.net, androidheadlines)",
+   "source_type": "media",
+   "published_at": "2026-10-28T00:00:00Z",
+   "company": "Opera",
+   "product": "WebAI",
+   "section": "E",
+   "summary_raw": "Opera запустила превью WebAI — предложение стандарта, позволяющего сайтам и расширениям запускать ИИ-модели локально в браузере. Превью в Opera One (GX и Neon по части источников), Windows и Mac на Apple silicon; по умолчанию выключено. Источники расходятся в деталях; страницу Opera нужно проверить.",
+   "importance": 6
+  },
+  {
+   "title": "Solink raises $100M+ for AI video-data platform",
+   "url": "https://siliconangle.com/2026/10/29/solink-raises-more-than-100m-to-pull-business-data-from-security-cameras-with-ai/",
+   "source": "SiliconANGLE (прямого релиза не найдено)",
+   "source_type": "media",
+   "published_at": "2026-10-29T00:00:00Z",
+   "company": "Solink",
+   "product": "Solink AI vision intelligence",
+   "section": "E",
+   "summary_raw": "Solink привлёк более $100M (лид Vertu Capital, также Goldman Sachs Growth Equity, Golub Growth, Comcast Ventures) на ИИ-аналитику поверх существующих камер наблюдения; ~500 тыс. камер на 35 тыс. объектов в 65 странах.",
+   "importance": 5
+  },
+  {
+   "title": "Crux Labs raises over $6M for enterprise agents with human judgment",
+   "url": "https://siliconangle.com/2026/10/29/crux-labs-raises-over-6m-to-improve-enterprise-agents-with-human-judgment/",
+   "source": "SiliconANGLE (первоисточник не проверен)",
+   "source_type": "media",
+   "published_at": "2026-10-29T00:00:00Z",
+   "company": "Crux Labs",
+   "product": "Crux Labs",
+   "section": "E",
+   "summary_raw": "Небольшой раунд свыше $6M на улучшение корпоративных агентов с помощью человеческих оценок.",
+   "importance": 3
+  },
+  {
+   "title": "Circuit Mind raises $25M for AI agents checking circuit schematics",
+   "url": "https://siliconangle.com/2026/10/28/circuit-mind-lands-25m-and-puts-ai-agents-to-work-checking-circuit-board-schematics/",
+   "source": "SiliconANGLE (первоисточник не проверен)",
+   "source_type": "media",
+   "published_at": "2026-10-28T00:00:00Z",
+   "company": "Circuit Mind",
+   "product": "Circuit Mind agents",
+   "section": "E",
+   "summary_raw": "Circuit Mind привлёк $25M на ИИ-агентов, проверяющих схемы печатных плат.",
+   "importance": 4
+  },
+  {
+   "title": "Jedify launches Data Agents",
+   "url": "https://siliconangle.com/2026/10/28/jedify-formally-launches-data-agents-for-building-ai-analysts-in-plain-language/",
+   "source": "SiliconANGLE (первоисточник не проверен)",
+   "source_type": "media",
+   "published_at": "2026-10-28T00:00:00Z",
+   "company": "Jedify",
+   "product": "Data Agents",
+   "section": "E",
+   "summary_raw": "Jedify официально запустил Data Agents — конструктор ИИ-аналитиков на естественном языке.",
+   "importance": 3
+  },
+  {
+   "title": "Virtana lets AI agents pull in third-party agents for IT incidents",
+   "url": "https://siliconangle.com/2026/10/28/virtana-lets-its-ai-agents-pull-in-agents-from-other-vendors-to-work-it-incidents/",
+   "source": "SiliconANGLE (первоисточник не проверен)",
+   "source_type": "media",
+   "published_at": "2026-10-28T00:00:00Z",
+   "company": "Virtana",
+   "product": "Virtana AI agents",
+   "section": "E",
+   "summary_raw": "Агенты Virtana умеют подключать агентов других вендоров для разбора IT-инцидентов.",
+   "importance": 3
+  },
+  {
+   "title": "Memdoor: team of 5 Qwen3.8-27B models claims to beat Fable 5 on LiveCodeBench Hard",
+   "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+   "source": "GitHub (found via Hacker News)",
+   "source_type": "repo",
+   "published_at": "2026-10-31T00:00:00Z",
+   "company": "guregodevo",
+   "product": "Memdoor",
+   "section": "F",
+   "summary_raw": "Open-source пример: команда из пяти моделей Qwen3.8-27B якобы обходит Fable 5 на LiveCodeBench Hard. Заявление автора, независимо не проверено.",
+   "importance": 3
+  },
+  {
+   "title": "nesformer: a working Nintendo in ~1GB of Qwen weights",
+   "url": "https://github.com/dbreunig/nesformer",
+   "source": "GitHub (found via Hacker News)",
+   "source_type": "repo",
+   "published_at": "2026-10-30T00:00:00Z",
+   "company": "dbreunig",
+   "product": "nesformer",
+   "section": "F",
+   "summary_raw": "Эксперимент: эмуляция NES внутри весов модели Qwen объёмом около 1 ГБ. Любительский проект.",
+   "importance": 2
+  },
+  {
+   "title": "Dayjob: Tax - evaluating AI agents on 50 professional tax assignments",
+   "url": "https://surgehq.ai/blog/dayjob-tax",
+   "source": "Surge AI blog (found via Hacker News)",
+   "source_type": "research",
+   "published_at": "2026-10-28T00:00:00Z",
+   "company": "Surge AI",
+   "product": "Dayjob: Tax benchmark",
+   "section": "F",
+   "summary_raw": "Бенчмарк Surge AI: оценка ИИ-агентов на 50 профессиональных налоговых заданиях.",
+   "importance": 4
+  },
+  {
+   "title": "Talos: Volta infostealer uses LLMs to rank victims by value",
+   "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+   "source": "Cisco Talos blog (found via Hacker News)",
+   "source_type": "research",
+   "published_at": "2026-10-31T00:00:00Z",
+   "company": "Cisco Talos",
+   "product": "Volta infostealer analysis",
+   "section": "F",
+   "summary_raw": "Исследование Talos: вредонос Volta использует LLM, чтобы оценивать ценность жертв и расставлять приоритеты.",
+   "importance": 5
+  }
+ ],
+ "errors": [
+  "Первоисточники не открыты для Opera, Wabi (PR Newswire), Solink, Crux, Circuit Mind, Jedify, Virtana: ссылки на SiliconANGLE/ZDNet; WebFetch на openai.com дал 403; ZDNet недоступен"
+ ]
+}
