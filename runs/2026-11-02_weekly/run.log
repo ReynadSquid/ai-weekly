@@ -5,3 +5,9 @@
 2026-11-02T02:09:33Z | collect    | fetch_feeds[companies]: 123 кандидатов, ошибок источников: 1
 2026-11-02T02:09:33Z | collect    | источник недоступен: bing.com/news (Meta, DeepSeek, Apple, Amazon, Midjourney, Runway) — поиск по компании не ответил
 2026-11-02T02:10:56Z | collect    | шаг выполнен. 4 collectors: companies 15, discovery 14, research 14, telegram 4; errors: openai 403, bing, tg
+2026-11-02T02:11:04Z | merge      | вход 401 → выход 347 (дубли url 50, дубли заголовков 4, история 0, вне окна 0); ошибок источников 7
+2026-11-02T02:11:07Z | merge      | шаг выполнен. 401 → 347
+2026-11-02T02:12:15Z | rank       | шаг выполнен. 347 → shortlist 20 + reserve 10
+2026-11-02T02:15:25Z | gate       | решение=pass годных=17 слухов=3 отклонено=0 (0%) 
+2026-11-02T02:15:28Z | factcheck  | шаг выполнен. 20 проверено: 12 verified, 5 partially, 3 rumor
+2026-11-02T02:15:28Z | gate       | шаг выполнен. pass, 17 к публикации
