@@ -220,6 +220,236 @@
       "company": "DeepSeek",
       "issue_id": "2026-10-25_weekly",
       "published_at": "2026-10-25T03:15:24Z"
+    },
+    {
+      "id": "8a77e646571ba4d58515e7833bd3b43420286a74",
+      "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "urls": [
+        "https://www.anthropic.com/news/s1-sec",
+        "https://t.me/ai_newz/4819",
+        "https://t.me/seeallochnaya/4010"
+      ],
+      "company": "Anthropic",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "6318bf62f2c5750d4debc093ba5deffe66f9f836",
+      "title": "Introducing Gemini 4 Carbon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "https://news.ycombinator.com/item?id=50276792"
+      ],
+      "company": "Google",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "8ccea7e89b7030862a9f53eb527a17d29d33f0d5",
+      "title": "Mistral Large 4 (Le Chonk): открытые веса",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "urls": [
+        "https://mistral.ai/news/mistral-large-4-oss/",
+        "https://news.ycombinator.com/item?id=50289418"
+      ],
+      "company": "Mistral",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "f83cc121976df47a5fd75910748530f15046c9cb",
+      "title": "AMD and Meta Advance Strategic Partnership to Power Meta's Superintelligence Infrastructure",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure",
+      "urls": [
+        "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure"
+      ],
+      "company": "AMD",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "40ab6c049676090d9f9f919ded4dbb54e7c07eb4",
+      "title": "Malicious Claude Code extension on Cursor planted SSH backdoors",
+      "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+      "urls": [
+        "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/"
+      ],
+      "company": "Cursor",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "fb772694f531bd9fbf7c2e81477116403c7b77a1",
+      "title": "Google, Microsoft, OpenAI, Anthropic back single robots.txt opt-out for AI training",
+      "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+      "urls": [
+        "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/"
+      ],
+      "company": "Индустрия (Google, Microsoft, OpenAI, Anthropic)",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "5ef94984dce414f6cd0dec7eb033a3aff5071eaa",
+      "title": "Genie 4: A new generation of world simulation",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "urls": [
+        "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "https://t.me/ai_newz/4825"
+      ],
+      "company": "Google",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "31f854764086b8ecc2788bdb62bdfe670d3860ae",
+      "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+      "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "urls": [
+        "https://www.anthropic.com/news/expanding-partnership-gsa"
+      ],
+      "company": "Anthropic",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "63a60d5375b55a303dc5fe1b22fde1e7219248cd",
+      "title": "microsoft/Mage-VL-Cowork (Hugging Face trending)",
+      "url": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+      "urls": [
+        "https://huggingface.co/microsoft/Mage-VL-Cowork"
+      ],
+      "company": "microsoft",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "c55904e21a85a75ce7c8f881a764bdd05b06b741",
+      "title": "baidu/Unlimited-OCR-2 (Hugging Face trending)",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+      "urls": [
+        "https://huggingface.co/baidu/Unlimited-OCR-2"
+      ],
+      "company": "baidu",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "feb4caa835f163bd378978a5179817d24a9feb99",
+      "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+      "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+      "urls": [
+        "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "https://news.ycombinator.com/item?id=50272479"
+      ],
+      "company": "Google",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "c350724d4712c97714dd93f5cdf6f3fe22b5b0b2",
+      "title": "Google получила первый ответ от TPU на орбите в проекте Suncatcher",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+      "urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+        "https://t.me/data_secrets/10252"
+      ],
+      "company": "Google",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "1fff1698b18b443752bc0b4d67dc49ffd055d210",
+      "title": "Apple Intelligence is finally coming to China with iOS 27.3",
+      "url": "https://macrumors.com/2026/10/30/apple-says-ios-27-3-beta-coming-next-week/",
+      "urls": [
+        "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
+      ],
+      "company": "n/a",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "3275f348adfd01763bae9ebecfdba6f721ab6ad8",
+      "title": "Microsoft offers a quarter of its global workforce voluntary buyouts as AI spending climbs",
+      "url": "https://www.scrippsnews.com/business/microsoft-offers-a-quarter-of-its-global-workforce-voluntary-buyouts-as-ai-spending-accelerates",
+      "urls": [
+        "https://apnews.com/article/microsoft-buyout-ai-layoff-xbox-c5a639f53615be198db1799adf6837e1",
+        "bing.com/news"
+      ],
+      "company": "Microsoft",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "b226a00cc7adc899e811793ded4c60bd366e32e7",
+      "title": "Wabi raises $55M at $1.25B valuation",
+      "url": "https://siliconangle.com/2026/10/29/wabi-reels-in-55m-for-its-consumer-focused-ai-assistant/",
+      "urls": [
+        "https://siliconangle.com/2026/10/29/wabi-reels-in-55m-for-its-consumer-focused-ai-assistant/"
+      ],
+      "company": "Wabi",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "b8f879cf4c8064e213ff5b9562d644830abcade8",
+      "title": "Opera launches WebAI preview for on-device AI in the browser",
+      "url": "https://press.opera.com/2026/10/27/opera-doubles-down-on-local-ai-shipping-models-directly-in-its-browsers/",
+      "urls": [
+        "https://www.zdnet.com/innovation/opera-webai-local-ai-browser/"
+      ],
+      "company": "Opera",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "6fd95d08d91dec40b5924f8180b5ddcb48783102",
+      "title": "Siri AI is available in more languages starting today",
+      "url": "https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/",
+      "urls": [
+        "https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/"
+      ],
+      "company": "Apple",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "5d6c194393bb6c2f827c4345b8d806798be84827",
+      "title": "Dulo (Thrun, Aoun) raises $130M",
+      "url": "https://www.theinformation.com/articles/sebastian-thrun-raises-130-million-ai-engineering-startup-dulo",
+      "urls": [
+        "https://dulo.com/"
+      ],
+      "company": "Dulo",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "e4d839d6fa57301a69fb279fec114d0d65e6e3e4",
+      "title": "OpenAI Cuts Funding Target by $10 Billion as Investor Jitters Shake AI Markets",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-cuts-funding-target-by-10-billion-as-investor-jitters-shake-ai-markets/",
+      "urls": [
+        "https://www.pymnts.com/news/artificial-intelligence/2026/openai-cuts-funding-target-by-10-billion-as-investor-jitters-shake-ai-markets/",
+        "bing.com/news"
+      ],
+      "company": "OpenAI",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "9b0513da17f0d2f79d922e708ae25b7027e4c537",
+      "title": "OpenAI plans to buy Google's AI chips, The Information reports",
+      "url": "https://decrypt.co/382090/openai-plans-buy-google-ai-chips-looks-beyond-nvidia",
+      "urls": [
+        "https://www.detroitnews.com/story/tech/2026/10/27/openai-plans-to-buy-googles-ai-chips-the-information-reports/92470838007/",
+        "bing.com/news"
+      ],
+      "company": "OpenAI",
+      "issue_id": "2026-11-02_weekly",
+      "published_at": "2026-11-02T02:20:02Z"
     }
   ]
 }

@@ -1,0 +1,13 @@
+✅ Выпуск опубликован — AI Weekly #2 (2026-11-02_weekly, режим live)
+Окно: 25 октября – 1 ноября 2026
+Собрано: 401 → после дедупа 347
+Фактчек: проверено 20, годных 17, слухов 3, отклонено 0 (0%)
+В выпуске: 17 новостей + 3 слухов
+QA: pass, замечаний 2
+Telegram: published, сообщений 4, ссылка https://t.me/neurooruen/1799
+Обложка: отправлена
+Важное, что не вошло (2):
+  • [9] Welcome Le Chonk: Mistral Large 4 on Hugging Face — не отобрана куратором
+  • [8] Mistral выложила веса Mistral Large 4 — не отобрана куратором
+Недоступные источники (7): openai.com/news; bing.com/news (Meta, DeepSeek, Apple, Amazon, Midjourney, Runway); theverge.com, apnews.com, arstechnica.com, msn.com; Первоисточники не открыты для Opera, Wabi (PR Newswire), Solink, Crux, Circuit M; bing.com/news (Meta, DeepSeek, Apple, Amazon, Midjourney, Runway); Первоисточник не найден или недоступен, пост пропущен: GPT 6.1 Terra, Gemini 4 C; arXiv-посты вне окна по дате подачи
+Попыток запуска: 1. Лог: runs/2026-11-02_weekly/run.log
