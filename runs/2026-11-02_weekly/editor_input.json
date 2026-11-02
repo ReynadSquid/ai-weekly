@@ -1,0 +1,778 @@
+{
+  "issue": {
+    "run_id": "2026-11-02_weekly",
+    "kind": "weekly",
+    "title": "AI Weekly",
+    "issue_number": 2,
+    "date_range": "25 октября – 1 ноября 2026",
+    "mode": "live"
+  },
+  "items": [
+    {
+      "id": "8a77e646571ba4d58515e7833bd3b43420286a74",
+      "kind": "news",
+      "status": "verified",
+      "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+      "company": "Anthropic",
+      "product": "Claude",
+      "section": "A",
+      "importance": 9,
+      "published_at": "2026-10-26T00:00:00Z",
+      "summary_raw": "Anthropic подала в SEC форму S-1 для IPO акций класса A. Листинг планируется на Nasdaq Global Select Market под тикером ANT; число акций и ценовой диапазон не определены, андеррайтеры - Goldman Sachs и Morgan Stanley. Регистрация ещё не вступила в силу.",
+      "primary_source_url": "https://www.anthropic.com/news/s1-sec",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Anthropic подала форму S-1 в SEC для предлагаемого IPO акций класса A",
+          "source": "https://www.anthropic.com/news/s1-sec",
+          "quote_hint": "registration statement on Form S-1 ... proposed IPO of Class A"
+        },
+        {
+          "claim": "Листинг на Nasdaq Global Select Market, тикер ANT",
+          "source": "https://www.anthropic.com/news/s1-sec",
+          "quote_hint": "Nasdaq Global Select Market, ticker ANT"
+        },
+        {
+          "claim": "Число акций и ценовой диапазон ещё не определены; регистрация не вступила в силу",
+          "source": "https://www.anthropic.com/news/s1-sec",
+          "quote_hint": "have not yet been determined / has not yet become effective"
+        }
+      ],
+      "removed_claims": [
+        "Goldman Sachs и Morgan Stanley как «андеррайтеры» — страница лишь называет их контактами для получения проспекта, слово underwriter не используется"
+      ],
+      "hashtag": "#Anthropic"
+    },
+    {
+      "id": "6318bf62f2c5750d4debc093ba5deffe66f9f836",
+      "kind": "news",
+      "status": "verified",
+      "title": "Introducing Gemini 4 Carbon",
+      "company": "Google",
+      "product": "Gemini",
+      "section": "A",
+      "importance": 9,
+      "published_at": "2026-10-28T17:00:58Z",
+      "summary_raw": "Google представила Gemini 4 Carbon; доступ пока получили лишь отдельные специалисты по кибербезопасности, затем он расширится через программу Fairwind. Заявлены первое место в Artificial Analysis Intelligence Index v5.0 (59) и 88,2% на SEC-bench Pro. Вводная цена - $2 за млн входных и $10 за млн выходных токенов, затем $4 и $20.",
+      "primary_source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Доступ начался для части специалистов по кибербезопасности, затем расширение через Fairwind Program; широкий релиз ещё впереди",
+          "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "quote_hint": "subset of cyber defenders ... Fairwind Program"
+        },
+        {
+          "claim": "№1 в Artificial Analysis Intelligence Index v5.0 со счётом 59 (заявление Google)",
+          "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "quote_hint": "Intelligence Index v5.0: 59, #1"
+        },
+        {
+          "claim": "88,2% на SEC-bench Pro (по данным Google)",
+          "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "quote_hint": "SEC-bench Pro 88.2%"
+        },
+        {
+          "claim": "Вводная цена $2 / $10 за млн входных/выходных токенов, затем $4 / $20",
+          "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "quote_hint": "Pricing per 1M tokens"
+        }
+      ],
+      "removed_claims": [
+        "Утверждение «№1» подавать только как заявление Google; независимую страницу Artificial Analysis не открывал"
+      ],
+      "hashtag": "#Google"
+    },
+    {
+      "id": "8ccea7e89b7030862a9f53eb527a17d29d33f0d5",
+      "kind": "news",
+      "status": "partially",
+      "title": "Mistral Large 4 (Le Chonk): открытые веса",
+      "company": "Mistral",
+      "product": "Mistral Large 4",
+      "section": "B",
+      "importance": 8,
+      "published_at": "2026-10-29T00:00:00Z",
+      "summary_raw": "Mistral опубликовала открытые веса мультимодальной MoE-модели Large 4 на 1 трлн параметров, нацеленной на агентное программирование и кибербезопасность. Лицензия - модифицированная MIT (для MaaS нужна отдельная коммерческая); API стоит $0,70 за млн входных и $2,10 за млн выходных токенов.",
+      "primary_source_url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Открытые веса Mistral Large 4 на Hugging Face; MoE, около 1 трлн параметров, мультимодальный вход",
+          "source": "https://mistral.ai/news/mistral-large-4-oss/",
+          "quote_hint": "1 trillion total, MoE, multimodal input"
+        },
+        {
+          "claim": "Лицензия Mistral Ecosystem Open-Weight — модифицированная MIT; для MaaS нужна отдельная коммерческая лицензия",
+          "source": "https://mistral.ai/news/mistral-large-4-oss/",
+          "quote_hint": "modified MIT; MaaS needs separate commercial license"
+        },
+        {
+          "claim": "API: $0,70 за млн входных и $2,10 за млн выходных токенов",
+          "source": "https://mistral.ai/news/mistral-large-4-oss/",
+          "quote_hint": "$0.70 input, $2.10 output"
+        },
+        {
+          "claim": "Акцент на агентном программировании и кибербезопасности",
+          "source": "https://mistral.ai/news/mistral-large-4-oss/",
+          "quote_hint": "agentic coding and cybersecurity"
+        }
+      ],
+      "removed_claims": [
+        "Точная дата публикации весов: на странице Mistral не указана (есть «публичное превью ранее в этом месяце»), HF-блог датирован 29 октября — не утверждать дату релиза превью",
+        "Число активных параметров: 49B в тексте HF-блога против A52B в названии — не указывать",
+        "Прозвище «Le Chonk» — только из заголовка HF-блога, на странице Mistral не подтверждено"
+      ],
+      "hashtag": "#Mistral"
+    },
+    {
+      "id": "f83cc121976df47a5fd75910748530f15046c9cb",
+      "kind": "news",
+      "status": "verified",
+      "title": "AMD and Meta Advance Strategic Partnership to Power Meta's Superintelligence Infrastructure",
+      "company": "AMD",
+      "product": "Instinct",
+      "section": "C",
+      "importance": 8,
+      "published_at": "2026-10-27T13:20:00Z",
+      "summary_raw": "AMD и Meta углубляют партнёрство: системы Helios уже тестируются у Meta, Meta будет использовать кастомный GPU Instinct на архитектуре MI450. AMD вложит $1 млрд в размещение акций Meta; речь идёт о развёртывании на уровне гигаватт.",
+      "primary_source_url": "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Первые стойки AMD Helios установлены и тестируются у Meta, более широкое развёртывание ожидается",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure",
+          "quote_hint": "Helios rackscale systems installed and undergoing testing"
+        },
+        {
+          "claim": "Meta развернёт кастомный GPU Instinct на архитектуре MI450",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure",
+          "quote_hint": "custom Instinct GPU ... MI450"
+        },
+        {
+          "claim": "AMD вложит $1 млрд в размещение акций Meta (деньги идут от AMD к Meta)",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure",
+          "quote_hint": "AMD will invest $1 billion in Meta's equity offering"
+        },
+        {
+          "claim": "Лиза Су: развёртывание инфраструктуры на уровне гигаватт",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure",
+          "quote_hint": "infrastructure at gigawatt scale"
+        }
+      ],
+      "removed_claims": [],
+      "hashtag": "#AMD"
+    },
+    {
+      "id": "40ab6c049676090d9f9f919ded4dbb54e7c07eb4",
+      "kind": "news",
+      "status": "partially",
+      "title": "Malicious Claude Code extension on Cursor planted SSH backdoors",
+      "company": "Cursor",
+      "product": "Cursor",
+      "section": "D",
+      "importance": 7,
+      "published_at": "2026-10-30T10:36:00Z",
+      "summary_raw": "Подменённая версия расширения Claude Code 2.1.313 около 11 часов 29 октября была доступна в маркетплейсе Cursor; могли пострадать до 5000 разработчиков. Код пытался установить SSH-бэкдор, Cursor удалил расширение и временно закрыл маркетплейс для аудита. Как злоумышленники опубликовали сборку под именем Anthropic, пока неясно.",
+      "primary_source_url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+      "attribution": "по данным BleepingComputer",
+      "checked_claims": [
+        {
+          "claim": "Вредоносная версия расширения Claude Code 2.1.313 была доступна около 11 часов 29 октября в маркетплейсе Cursor",
+          "source": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+          "quote_hint": "version 2.1.313, ~2:27 to 13:35 PT"
+        },
+        {
+          "claim": "До 5000 разработчиков могли быть затронуты",
+          "source": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+          "quote_hint": "up to 5,000 developers"
+        },
+        {
+          "claim": "Загрузчик добавлял SSH-ключ злоумышленника и закрепление в системе; из-за ошибок SSH часто не включался",
+          "source": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+          "quote_hint": "attacker-controlled SSH key, persistence"
+        },
+        {
+          "claim": "Cursor удалил расширение и временно закрыл маркетплейс для аудита; Anthropic расширение не создавала, как оно попало под её именем — неизвестно",
+          "source": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+          "quote_hint": "Cursor removed extension, shut marketplace"
+        }
+      ],
+      "removed_claims": [
+        "Формулировки «Anthropic взломана» (заголовок Doublepulsar) — не подтверждены",
+        "Заявление Cursor/Anthropic первоисточником не открыто"
+      ],
+      "hashtag": "#Cursor"
+    },
+    {
+      "id": "fb772694f531bd9fbf7c2e81477116403c7b77a1",
+      "kind": "news",
+      "status": "partially",
+      "title": "Google, Microsoft, OpenAI, Anthropic back single robots.txt opt-out for AI training",
+      "company": "Индустрия (Google, Microsoft, OpenAI, Anthropic)",
+      "product": "AI training opt-out in robots.txt",
+      "section": "E",
+      "importance": 8,
+      "published_at": "2026-10-30T00:00:00Z",
+      "summary_raw": "Крупные ИИ-компании поддержали единую запись в robots.txt для отказа от использования сайта в обучении моделей; черновик отправлен в IETF. Microsoft и OpenAI внедрят в ближайшие месяцы, Google в следующем году; Meta идею поддержала без обязательств. Название токена из одного вторичного источника — не использовать без проверки.",
+      "primary_source_url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+      "attribution": "по данным Microsoft и SiliconANGLE",
+      "checked_claims": [
+        {
+          "claim": "Microsoft описала общий сигнал предпочтений для обучения ИИ в IETF Internet-Draft; это ещё не финальный стандарт",
+          "source": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+          "quote_hint": "draft-kelley-aipref-training-preference-signal"
+        },
+        {
+          "claim": "Microsoft: новые настройки AI Training/AI Grounding вступают в силу 1 февраля 2027",
+          "source": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+          "quote_hint": "February 1, 2027"
+        },
+        {
+          "claim": "Google, Microsoft, Anthropic и OpenAI поддерживают предложение, черновик отправлен в IETF (SiliconANGLE)",
+          "source": "https://siliconangle.com/2026/10/30/google-anthropic-and-others-to-support-new-ai-crawling-opt-out-standard/",
+          "quote_hint": "Google, Microsoft, Anthropic, OpenAI; draft to IETF"
+        },
+        {
+          "claim": "Meta поддерживает идею, но не обязалась внедрять (SiliconANGLE)",
+          "source": "https://siliconangle.com/2026/10/30/google-anthropic-and-others-to-support-new-ai-crawling-opt-out-standard/",
+          "quote_hint": "Meta expressed support ... not committed"
+        }
+      ],
+      "removed_claims": [
+        "Названия токена — не использовать (по заданию; в блоге Bing токен есть, но для остальных компаний не подтверждён)",
+        "Сроки OpenAI «в ближайшие месяцы» и Google «в следующем году» — только SiliconANGLE; Verge не открылся, Bing-блог другие компании не называет. Давать только с атрибуцией",
+        "Заголовок «единый robots.txt-стандарт» — это черновик, не стандарт"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "5ef94984dce414f6cd0dec7eb033a3aff5071eaa",
+      "kind": "news",
+      "status": "verified",
+      "title": "Genie 4: A new generation of world simulation",
+      "company": "Google",
+      "product": "DeepMind",
+      "section": "A",
+      "importance": 7,
+      "published_at": "2026-10-27T16:01:38Z",
+      "summary_raw": "DeepMind показала Genie 4 - модель мира для интерактивной симуляции в реальном времени с нативным звуком. Доступна как исследовательское превью для доверенных тестировщиков, затем придёт подписчикам Google AI Ultra через Project Genie и партнёрам через Gemini API и AI Studio.",
+      "primary_source_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Genie 4 — модель мира с управлением в реальном времени (клавиатура и текстовые подсказки)",
+          "source": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "quote_hint": "steer simulations in real time"
+        },
+        {
+          "claim": "Первая real-time модель мира Google с нативной генерацией звука",
+          "source": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "quote_hint": "first real-time world model to generate audio natively"
+        },
+        {
+          "claim": "Исследовательское превью для доверенных тестировщиков; скоро — подписчикам Google AI Ultra через Project Genie и партнёрам раннего доступа Gemini API/AI Studio",
+          "source": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "quote_hint": "research preview for trusted testers; coming soon"
+        }
+      ],
+      "removed_claims": [],
+      "hashtag": "#Google"
+    },
+    {
+      "id": "31f854764086b8ecc2788bdb62bdfe670d3860ae",
+      "kind": "news",
+      "status": "verified",
+      "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+      "company": "Anthropic",
+      "product": "Claude",
+      "section": "A",
+      "importance": 7,
+      "published_at": "2026-10-27T00:00:00Z",
+      "summary_raw": "Anthropic расширяет партнёрство с GSA: скидка 40% на Claude Enterprise, Claude for Government и API для госорганов всех уровней, оценочная экономия около $1 млрд. Минимального объёма закупок нет; Claude уже используют около 500 организаций США.",
+      "primary_source_url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Скидка 40% на Claude Enterprise, Claude for Government и API для госорганов, включая штаты, местные и племенные органы",
+          "source": "https://www.anthropic.com/news/expanding-partnership-gsa",
+          "quote_hint": "40% discount ... state, local, tribal"
+        },
+        {
+          "claim": "Оценочная экономия для государства около $1 млрд",
+          "source": "https://www.anthropic.com/news/expanding-partnership-gsa",
+          "quote_hint": "about $1 billion"
+        },
+        {
+          "claim": "Минимальных обязательств по закупкам нет",
+          "source": "https://www.anthropic.com/news/expanding-partnership-gsa",
+          "quote_hint": "not bound by a minimum spend commitment"
+        },
+        {
+          "claim": "Claude используют около 500 госорганизаций США",
+          "source": "https://www.anthropic.com/news/expanding-partnership-gsa",
+          "quote_hint": "approximately 500"
+        }
+      ],
+      "removed_claims": [
+        "Слово «Claude уже используют ~500» — формулировка «US federal, state and local»"
+      ],
+      "hashtag": "#Anthropic"
+    },
+    {
+      "id": "63a60d5375b55a303dc5fe1b22fde1e7219248cd",
+      "kind": "news",
+      "status": "verified",
+      "title": "microsoft/Mage-VL-Cowork (Hugging Face trending)",
+      "company": "microsoft",
+      "product": "Mage-VL-Cowork",
+      "section": "F",
+      "importance": 8,
+      "published_at": "2026-10-30T12:13:24Z",
+      "summary_raw": "Компактная (4B) vision-language модель-агент для управления компьютером: действует и по скриншотам (мышь/клавиатура), и через shell-команды. Apache-2.0. Microsoft заявляет 66.0% на OSWorld-Verified при лимите 50 шагов, лучший результат среди 4B-моделей; онлайн-RL, по её словам, добавил около 10 пунктов.",
+      "primary_source_url": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+      "attribution": "по данным Microsoft",
+      "checked_claims": [
+        {
+          "claim": "Модель 4B, лицензия Apache-2.0",
+          "source": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+          "quote_hint": "4B; Apache-2.0"
+        },
+        {
+          "claim": "66,0% на OSWorld-Verified при лимите 50 шагов (по данным авторов)",
+          "source": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+          "quote_hint": "66.04%, 50 steps"
+        },
+        {
+          "claim": "Авторы заявляют лучший результат среди 4B-моделей",
+          "source": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+          "quote_hint": "highest performance among 4B models"
+        },
+        {
+          "claim": "Онлайн-RL добавил около 10 п.п. (55,84% до 66,0%)",
+          "source": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+          "quote_hint": "+10.16 over Hybrid SFT"
+        },
+        {
+          "claim": "Действует через скриншоты (computer_use) и shell-команды (bash)",
+          "source": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+          "quote_hint": "computer_use and bash tools"
+        }
+      ],
+      "removed_claims": [
+        "Точная дата публикации на карточке не видна — дата из ленты (30 октября)"
+      ],
+      "hashtag": "#Microsoft"
+    },
+    {
+      "id": "c55904e21a85a75ce7c8f881a764bdd05b06b741",
+      "kind": "news",
+      "status": "verified",
+      "title": "baidu/Unlimited-OCR-2 (Hugging Face trending)",
+      "company": "baidu",
+      "product": "Unlimited-OCR-2",
+      "section": "F",
+      "importance": 7,
+      "published_at": "2026-10-26T03:57:46Z",
+      "summary_raw": "Открытая модель на 3B параметров для разбора документов под лицензией MIT. Baidu заявляет, что особое разреженное скользящее внимание держит расход памяти почти постоянным независимо от длины документа, и сообщает о SOTA на бенчмарках MPDocBench и MarathonDocBench (по данным Baidu).",
+      "primary_source_url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+      "attribution": "по данным Baidu",
+      "checked_claims": [
+        {
+          "claim": "Модель 3B, лицензия MIT",
+          "source": "https://huggingface.co/baidu/Unlimited-OCR-2",
+          "quote_hint": "3B; MIT"
+        },
+        {
+          "claim": "Sparse Reference Sliding Window Attention держит память и задержку почти постоянными независимо от длины документа (заявление авторов)",
+          "source": "https://huggingface.co/baidu/Unlimited-OCR-2",
+          "quote_hint": "SR-SWA ... nearly constant"
+        },
+        {
+          "claim": "Заявлен SOTA на MPDocBench и MarathonDocBench (самоотчёт, без чисел)",
+          "source": "https://huggingface.co/baidu/Unlimited-OCR-2",
+          "quote_hint": "Achieves state-of-the-art performance"
+        },
+        {
+          "claim": "Релиз Unlimited OCR 2 — 27 октября",
+          "source": "https://huggingface.co/baidu/Unlimited-OCR-2",
+          "quote_hint": "2026/10/27: Unlimited OCR 2 released"
+        }
+      ],
+      "removed_claims": [
+        "Числовые результаты бенчмарков — на странице отсутствуют"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "feb4caa835f163bd378978a5179817d24a9feb99",
+      "kind": "news",
+      "status": "verified",
+      "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+      "company": "Google",
+      "product": "Sleep framework",
+      "section": "F",
+      "importance": 7,
+      "published_at": "2026-10-27T17:35:00Z",
+      "summary_raw": "Модель чередует работу и офлайн-фазу «сна»: контекст переносится в параметры через MoE-блоки памяти, а модель сама генерирует и фильтрует обучающие примеры. По заявлению авторов, результат 79.2% на AIME 24, 69.0% на AIME 25 и 46.1% на HMMT 25, лучше SFT, GRPO и OPSD.",
+      "primary_source_url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+      "attribution": "по данным авторов (Google Research)",
+      "checked_claims": [
+        {
+          "claim": "Чередование фазы работы и фазы «сна»: контекст переносится в параметры через предварительно выделенные MoE-блоки памяти",
+          "source": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+          "quote_hint": "Wake and Sleep phase; MoE memory blocks"
+        },
+        {
+          "claim": "Модель генерирует синтетические примеры, фильтрует и дообучается на лучших",
+          "source": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+          "quote_hint": "Dreaming ... gradient-based data selection"
+        },
+        {
+          "claim": "79,2% AIME 24, 69,0% AIME 25, 46,1% HMMT 25 (по данным авторов)",
+          "source": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+          "quote_hint": "79.2 / 69.0 / 46.1"
+        },
+        {
+          "claim": "Превосходит SFT, GRPO и OPSD по заявлению авторов",
+          "source": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+          "quote_hint": "outperformed SFT, GRPO, OPSD"
+        }
+      ],
+      "removed_claims": [
+        "Числа базовых методов не приведены — не сравнивать количественно"
+      ],
+      "hashtag": "#Google"
+    },
+    {
+      "id": "c350724d4712c97714dd93f5cdf6f3fe22b5b0b2",
+      "kind": "news",
+      "status": "verified",
+      "title": "Google получила первый ответ от TPU на орбите в проекте Suncatcher",
+      "company": "Google",
+      "product": "Project Suncatcher",
+      "section": "A",
+      "importance": 6,
+      "published_at": "2026-10-30T00:00:00Z",
+      "summary_raw": "Прототип спутника, запущенный 1 октября, вернул первый ответ модели Gemma 4 на TPU в орбите; далее проверка термальных и радиационных нагрузок, пара связанных спутников планируется на 2027 год.",
+      "primary_source_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Прототип спутника запущен 1 октября",
+          "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+          "quote_hint": "launched October 1"
+        },
+        {
+          "claim": "Gemma 4 на TPU уровня дата-центра ответила на запрос (хайку) при пролёте над Свальбардом — «первый ответ ИИ от TPU в орбите»",
+          "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+          "quote_hint": "first-ever AI response from a data center class TPU in orbit"
+        },
+        {
+          "claim": "Далее — проверки термальных и радиационных нагрузок",
+          "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+          "quote_hint": "thermal stress and radiation"
+        },
+        {
+          "claim": "Пара связанных спутников — 2027 год",
+          "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+          "quote_hint": "twin interconnected satellites in 2027"
+        }
+      ],
+      "removed_claims": [
+        "Год запуска (1 октября) на странице явно не указан — подразумевается 2026; «первый» — формулировка Google"
+      ],
+      "hashtag": "#Google"
+    },
+    {
+      "id": "1fff1698b18b443752bc0b4d67dc49ffd055d210",
+      "kind": "news",
+      "status": "partially",
+      "title": "Apple Intelligence is finally coming to China with iOS 27.3",
+      "company": "n/a",
+      "product": null,
+      "section": "B",
+      "importance": 5,
+      "published_at": "2026-10-30T22:32:53Z",
+      "summary_raw": "Apple will launch Apple Intelligence in China with iOS 27.3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelligence features will be available first in an iOS 27.3 beta that's set to launch on November 4th, with a full iOS 27.3 release scheduled for December. This launch doesn't bring […]",
+      "primary_source_url": "https://macrumors.com/2026/10/30/apple-says-ios-27-3-beta-coming-next-week/",
+      "attribution": "по данным MacRumors со ссылкой на Apple",
+      "checked_claims": [
+        {
+          "claim": "Первая бета iOS 27.3 с частью функций Apple Intelligence для Китая выйдет 4 ноября; публичный релиз — в декабре",
+          "source": "https://macrumors.com/2026/10/30/apple-says-ios-27-3-beta-coming-next-week/",
+          "quote_hint": "first developer beta arrives Wednesday, November 4"
+        },
+        {
+          "claim": "Функции: Writing Tools, Genmoji, Clean Up, сводки уведомлений, Visual Intelligence и др.; Siri AI и новинки WWDC 2026 в Китае недоступны",
+          "source": "https://macrumors.com/2026/10/30/apple-says-ios-27-3-beta-coming-next-week/",
+          "quote_hint": "Siri AI ... won't be available in China"
+        },
+        {
+          "claim": "Apple сотрудничает с Alibaba: Qwen в Siri, Writing Tools и Visual Intelligence (по MacRumors)",
+          "source": "https://macrumors.com/2026/10/30/apple-says-ios-27-3-beta-coming-next-week/",
+          "quote_hint": "partnered with Alibaba to add Qwen"
+        }
+      ],
+      "removed_claims": [
+        "Страницу Apple (китайский newsroom) не открывал — первоисточник не подтверждён напрямую",
+        "Verge (указанный в shortlist URL) недоступен для WebFetch; содержимое не проверено",
+        "Устройства: iPhone 15 Pro и новее; Mac/iPad не затрагиваются — не расширять"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "3275f348adfd01763bae9ebecfdba6f721ab6ad8",
+      "kind": "news",
+      "status": "verified",
+      "title": "Microsoft offers a quarter of its global workforce voluntary buyouts as AI spending climbs",
+      "company": "Microsoft",
+      "product": "Copilot",
+      "section": "A",
+      "importance": 4,
+      "published_at": "2026-10-27T10:16:00Z",
+      "summary_raw": "AP сообщает, что Microsoft предложила добровольные выкупы четверти сотрудников по всему миру на фоне роста расходов на ИИ (по другим публикациям, около 60 тысяч человек). Страницу открыть не удалось, детали не проверены.",
+      "primary_source_url": "https://www.scrippsnews.com/business/microsoft-offers-a-quarter-of-its-global-workforce-voluntary-buyouts-as-ai-spending-accelerates",
+      "attribution": "по данным AP",
+      "checked_claims": [
+        {
+          "claim": "Microsoft предложила добровольный выход примерно 60 000 сотрудников (около 27% штата, ~223 000 в конце июня) (AP)",
+          "source": "https://www.scrippsnews.com/business/microsoft-offers-a-quarter-of-its-global-workforce-voluntary-buyouts-as-ai-spending-accelerates",
+          "quote_hint": "60,000 ... about 27%"
+        },
+        {
+          "claim": "Предложение для сотрудников в США, Канаде, Индии и Великобритании; сообщено в блоге директора по персоналу Эми Коулман",
+          "source": "https://www.scrippsnews.com/business/microsoft-offers-a-quarter-of-its-global-workforce-voluntary-buyouts-as-ai-spending-accelerates",
+          "quote_hint": "Canada, India, UK and US; Amy Coleman"
+        },
+        {
+          "claim": "Контекст: большие расходы на ИИ и дата-центры (AP)",
+          "source": "https://www.scrippsnews.com/business/microsoft-offers-a-quarter-of-its-global-workforce-voluntary-buyouts-as-ai-spending-accelerates",
+          "quote_hint": "data center investment likely to top $700 billion"
+        },
+        {
+          "claim": "The Decoder подтверждает цифру ~60 000 со ссылкой на блог Microsoft и Bloomberg",
+          "source": "https://the-decoder.com/microsoft-offers-a-quarter-of-its-workforce-voluntary-severance-while-shielding-ai-critical-teams/",
+          "quote_hint": "about 60,000 employees eligible"
+        }
+      ],
+      "removed_claims": [
+        "Формулировка «по всему миру» — предложение действует только в 4 странах",
+        "Оригинальный блог Microsoft и AP-страница не открылись (AP 403), читал синдикацию AP на Scripps",
+        "«Бережёт критичные ИИ-команды» (Decoder) — не проверено"
+      ],
+      "hashtag": "#Microsoft"
+    },
+    {
+      "id": "b226a00cc7adc899e811793ded4c60bd366e32e7",
+      "kind": "news",
+      "status": "partially",
+      "title": "Wabi raises $55M at $1.25B valuation",
+      "company": "Wabi",
+      "product": "Wabi group-chat AI assistant",
+      "section": "E",
+      "importance": 4,
+      "published_at": "2026-10-29T00:00:00Z",
+      "summary_raw": "Стартап Эухении Куйды (основатель Replika) привлёк $55M при оценке $1.25B, лид IVP, также a16z, Forerunner, Amazon Alexa Fund. Продукт — групповой чат со встроенным ИИ-агентом и мини-приложениями; Mac, iOS, Android. Данных о пользователях нет. Источники расходятся: seed или более поздний раунд.",
+      "primary_source_url": "https://siliconangle.com/2026/10/29/wabi-reels-in-55m-for-its-consumer-focused-ai-assistant/",
+      "attribution": "по данным SiliconANGLE",
+      "checked_claims": [
+        {
+          "claim": "Wabi привлёк $55 млн при оценке $1,25 млрд; лид — IVP",
+          "source": "https://siliconangle.com/2026/10/29/wabi-reels-in-55m-for-its-consumer-focused-ai-assistant/",
+          "quote_hint": "$55 million, $1.25 billion, IVP"
+        },
+        {
+          "claim": "Среди инвесторов a16z, Forerunner, Amazon Alexa Fund",
+          "source": "https://siliconangle.com/2026/10/29/wabi-reels-in-55m-for-its-consumer-focused-ai-assistant/",
+          "quote_hint": "Andreessen Horowitz, Forerunner, Amazon Alexa Fund"
+        },
+        {
+          "claim": "Продукт: групповой чат со встроенным ИИ-ассистентом; Mac, iOS, Android, Windows в планах",
+          "source": "https://siliconangle.com/2026/10/29/wabi-reels-in-55m-for-its-consumer-focused-ai-assistant/",
+          "quote_hint": "Mac, iOS, Android; Windows planned"
+        }
+      ],
+      "removed_claims": [
+        "Тип раунда: SiliconANGLE пишет seed, агрегаторы цитируют Series A со слов Куйды — не указывать",
+        "Ангелы (Бениофф, Лютке и др.) — не включать",
+        "Пресс-релиз Wabi и пост в X не открыты; других авторитетных СМИ из списка не нашёл"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "b8f879cf4c8064e213ff5b9562d644830abcade8",
+      "kind": "news",
+      "status": "verified",
+      "title": "Opera launches WebAI preview for on-device AI in the browser",
+      "company": "Opera",
+      "product": "WebAI",
+      "section": "E",
+      "importance": 4,
+      "published_at": "2026-10-28T00:00:00Z",
+      "summary_raw": "Opera запустила превью WebAI — предложение стандарта, позволяющего сайтам и расширениям запускать ИИ-модели локально в браузере. Превью в Opera One (GX и Neon по части источников), Windows и Mac на Apple silicon; по умолчанию выключено. Источники расходятся в деталях; страницу Opera нужно проверить.",
+      "primary_source_url": "https://press.opera.com/2026/10/27/opera-doubles-down-on-local-ai-shipping-models-directly-in-its-browsers/",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Opera запустила WebAI как раннее превью в Opera One; Opera GX и Neon — позже",
+          "source": "https://press.opera.com/2026/10/27/opera-doubles-down-on-local-ai-shipping-models-directly-in-its-browsers/",
+          "quote_hint": "available now in Opera One; GX and Neon to follow"
+        },
+        {
+          "claim": "WebAI — предлагаемый веб-стандарт для запуска ИИ в браузере сайтами и расширениями; поддержка Google и Microsoft (по Opera)",
+          "source": "https://press.opera.com/2026/10/27/opera-doubles-down-on-local-ai-shipping-models-directly-in-its-browsers/",
+          "quote_hint": "proposed web standard ... Google and Microsoft"
+        },
+        {
+          "claim": "Опция выключена, пока пользователь не включит; доступ сайтов по разрешению",
+          "source": "https://press.opera.com/2026/10/27/opera-doubles-down-on-local-ai-shipping-models-directly-in-its-browsers/",
+          "quote_hint": "Nothing is downloaded until the user turns it on"
+        },
+        {
+          "claim": "64-bit Windows (Intel/AMD) и Mac на Apple silicon",
+          "source": "https://press.opera.com/2026/10/27/opera-doubles-down-on-local-ai-shipping-models-directly-in-its-browsers/",
+          "quote_hint": "64-bit Windows PCs and Macs with Apple silicon"
+        }
+      ],
+      "removed_claims": [
+        "Утверждения ZDNet про GX/Neon на старте — расходятся с Opera, не использовать; страница ZDNet недоступна для WebFetch",
+        "Список моделей (Gemma, Apple foundation model на Mac) — из пересказа поиска, пресс-страницей напрямую не проверен"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "6fd95d08d91dec40b5924f8180b5ddcb48783102",
+      "kind": "news",
+      "status": "verified",
+      "title": "Siri AI is available in more languages starting today",
+      "company": "Apple",
+      "product": "Apple Intelligence",
+      "section": "B",
+      "importance": 6,
+      "published_at": "2026-10-26T18:37:30Z",
+      "summary_raw": "С обновлениями 27.2 Siri AI (бета) стал доступен на французском, японском, корейском, португальском и испанском. До конца 2026 года обещаны китайский (традиционный), норвежский, турецкий и вьетнамский. В ЕС функция пока недоступна.",
+      "primary_source_url": "https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "С обновлениями 27.2 Siri AI стал доступен на французском, японском, корейском, португальском и испанском",
+          "source": "https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/",
+          "quote_hint": "French, Japanese, Korean, Portuguese, Spanish"
+        },
+        {
+          "claim": "Siri AI помечен как бета",
+          "source": "https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/",
+          "quote_hint": "listed as beta in 27.2"
+        },
+        {
+          "claim": "До конца 2026: китайский (традиционный), норвежский, турецкий, вьетнамский",
+          "source": "https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/",
+          "quote_hint": "Chinese (Traditional), Norwegian, Turkish, Vietnamese"
+        },
+        {
+          "claim": "В ЕС недоступен; Apple обсуждает путь с регуляторами",
+          "source": "https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/",
+          "quote_hint": "currently unavailable in the EU"
+        }
+      ],
+      "removed_claims": [],
+      "hashtag": "#Apple"
+    },
+    {
+      "id": "5d6c194393bb6c2f827c4345b8d806798be84827",
+      "kind": "rumor",
+      "status": "rumor",
+      "title": "Dulo (Thrun, Aoun) raises $130M",
+      "company": "Dulo",
+      "product": "Foundation models for hardware design",
+      "section": "G",
+      "importance": 7,
+      "published_at": "2026-10-30T00:00:00Z",
+      "summary_raw": "Стартап Себастьяна Труна и Адриана Аоуна, строящий фундаментальные модели для проектирования железа, привлёк около $130M; среди инвесторов Эрик Шмидт, Джон Дерр, Рам Шрирам, Марк Бениофф. Оценка не раскрыта. Сайт — одностраничный; раунд подтверждён Аоуном в X, пресс-релиза нет.",
+      "primary_source_url": "https://www.theinformation.com/articles/sebastian-thrun-raises-130-million-ai-engineering-startup-dulo",
+      "attribution": "по данным The Information",
+      "checked_claims": [
+        {
+          "claim": "The Information сообщила: Себастьян Трун привлёк $130 млн для стартапа Dulo (ИИ для инженерии)",
+          "source": "https://www.theinformation.com/articles/sebastian-thrun-raises-130-million-ai-engineering-startup-dulo",
+          "quote_hint": "Headline: Exclusive: Sebastian Thrun Raises $130 Million for AI Engineering Startup Dulo"
+        }
+      ],
+      "removed_claims": [
+        "Список инвесторов (Шмидт, Дерр, Шрирам, Бениофф) — не подтверждён, статья за пейволлом",
+        "«Подтверждено Аоуном в X» — не проверено",
+        "Тип раунда (seed) и основатель Аоун — только вторичные агрегаторы",
+        "Сайт dulo.com — фрейм без текста, ничего не подтверждает"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "e4d839d6fa57301a69fb279fec114d0d65e6e3e4",
+      "kind": "rumor",
+      "status": "rumor",
+      "title": "OpenAI Cuts Funding Target by $10 Billion as Investor Jitters Shake AI Markets",
+      "company": "OpenAI",
+      "product": "GPT",
+      "section": "G",
+      "importance": 4,
+      "published_at": "2026-11-01T14:45:00Z",
+      "summary_raw": "По данным FT и WSJ, OpenAI снизила цель раунда с $30 до $20 млрд при оценке $1,25 трлн вместо $1,4 трлн; привлечено около $11 млрд. OpenAI не прокомментировала сообщения.",
+      "primary_source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-cuts-funding-target-by-10-billion-as-investor-jitters-shake-ai-markets/",
+      "attribution": "по данным FT и WSJ (в пересказе PYMNTS)",
+      "checked_claims": [
+        {
+          "claim": "По данным FT, OpenAI снизила цель раунда с $30 до $20 млрд; оценка $1,25 трлн вместо $1,4 трлн",
+          "source": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-cuts-funding-target-by-10-billion-as-investor-jitters-shake-ai-markets/",
+          "quote_hint": "FT: target cut from $30B to $20B"
+        },
+        {
+          "claim": "По данным WSJ, привлечено около $11 млрд обязательств; остальное планируют добирать у family offices и состоятельных инвесторов",
+          "source": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-cuts-funding-target-by-10-billion-as-investor-jitters-shake-ai-markets/",
+          "quote_hint": "WSJ: about $11 billion in commitments"
+        },
+        {
+          "claim": "OpenAI не ответила сразу на запрос",
+          "source": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-cuts-funding-target-by-10-billion-as-investor-jitters-shake-ai-markets/",
+          "quote_hint": "did not immediately respond"
+        }
+      ],
+      "removed_claims": [
+        "Оригиналы FT и WSJ не открыты (пейволл) — цифры только через PYMNTS",
+        "Поиск: Bloomberg называл $1,25 трлн как оценку без учёта новых денег (pre-money) — не уточнять pre/post"
+      ],
+      "hashtag": "#OpenAI"
+    },
+    {
+      "id": "9b0513da17f0d2f79d922e708ae25b7027e4c537",
+      "kind": "rumor",
+      "status": "rumor",
+      "title": "OpenAI plans to buy Google's AI chips, The Information reports",
+      "company": "OpenAI",
+      "product": "GPT",
+      "section": "G",
+      "importance": 4,
+      "published_at": "2026-10-27T20:34:00Z",
+      "summary_raw": "Со ссылкой на The Information сообщается, что OpenAI планирует закупать ИИ-чипы (TPU) Google. Подробности статьи не удалось открыть (платный доступ), заголовок и ссылка сохранены.",
+      "primary_source_url": "https://decrypt.co/382090/openai-plans-buy-google-ai-chips-looks-beyond-nvidia",
+      "attribution": "по данным The Information",
+      "checked_claims": [
+        {
+          "claim": "The Information сообщила, что OpenAI планирует купить TPU Google (источник — осведомлённый человек)",
+          "source": "https://decrypt.co/382090/openai-plans-buy-google-ai-chips-looks-beyond-nvidia",
+          "quote_hint": "cited 'a person familiar with the matter'"
+        },
+        {
+          "claim": "Ни одна из компаний не подтвердила; цена, объём и сроки неизвестны",
+          "source": "https://decrypt.co/382090/openai-plans-buy-google-ai-chips-looks-beyond-nvidia",
+          "quote_hint": "Neither company has confirmed"
+        }
+      ],
+      "removed_claims": [
+        "Оригинал The Information и Detroit News (402, платный) не открыты",
+        "Детали про аренду TPU с июня 2025, вакансию и чип Jalapeño — только Decrypt, не включать"
+      ],
+      "hashtag": "#OpenAI"
+    }
+  ]
+}

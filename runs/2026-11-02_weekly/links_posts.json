@@ -1,0 +1,142 @@
+{
+  "https://www.anthropic.com/news/s1-sec": {
+    "url": "https://www.anthropic.com/news/s1-sec",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/news/s1-sec",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/": {
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/": {
+    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "status": 200,
+    "final_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.anthropic.com/news/expanding-partnership-gsa": {
+    "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/": {
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.scrippsnews.com/business/microsoft-offers-a-quarter-of-its-global-workforce-voluntary-buyouts-as-ai-spending-accelerates": {
+    "url": "https://www.scrippsnews.com/business/microsoft-offers-a-quarter-of-its-global-workforce-voluntary-buyouts-as-ai-spending-accelerates",
+    "status": 200,
+    "final_url": "https://www.scrippsnews.com/business/microsoft-offers-a-quarter-of-its-global-workforce-voluntary-buyouts-as-ai-spending-accelerates",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://mistral.ai/news/mistral-large-4-oss/": {
+    "url": "https://mistral.ai/news/mistral-large-4-oss/",
+    "status": 200,
+    "final_url": "https://mistral.ai/news/mistral-large-4-oss/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/": {
+    "url": "https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/",
+    "status": 200,
+    "final_url": "https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://macrumors.com/2026/10/30/apple-says-ios-27-3-beta-coming-next-week/": {
+    "url": "https://macrumors.com/2026/10/30/apple-says-ios-27-3-beta-coming-next-week/",
+    "status": 200,
+    "final_url": "https://www.macrumors.com/2026/10/30/apple-says-ios-27-3-beta-coming-next-week/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure": {
+    "url": "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure",
+    "status": 200,
+    "final_url": "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/": {
+    "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+    "status": 200,
+    "final_url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/": {
+    "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+    "status": 200,
+    "final_url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://siliconangle.com/2026/10/29/wabi-reels-in-55m-for-its-consumer-focused-ai-assistant/": {
+    "url": "https://siliconangle.com/2026/10/29/wabi-reels-in-55m-for-its-consumer-focused-ai-assistant/",
+    "status": 200,
+    "final_url": "https://siliconangle.com/2026/10/29/wabi-reels-in-55m-for-its-consumer-focused-ai-assistant/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://press.opera.com/2026/10/27/opera-doubles-down-on-local-ai-shipping-models-directly-in-its-browsers/": {
+    "url": "https://press.opera.com/2026/10/27/opera-doubles-down-on-local-ai-shipping-models-directly-in-its-browsers/",
+    "status": 200,
+    "final_url": "https://press.opera.com/2026/10/27/opera-doubles-down-on-local-ai-shipping-models-directly-in-its-browsers/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/microsoft/Mage-VL-Cowork": {
+    "url": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+    "status": 200,
+    "final_url": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/baidu/Unlimited-OCR-2": {
+    "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+    "status": 200,
+    "final_url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/": {
+    "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+    "status": 200,
+    "final_url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.theinformation.com/articles/sebastian-thrun-raises-130-million-ai-engineering-startup-dulo": {
+    "url": "https://www.theinformation.com/articles/sebastian-thrun-raises-130-million-ai-engineering-startup-dulo",
+    "status": 403,
+    "final_url": "https://www.theinformation.com/articles/sebastian-thrun-raises-130-million-ai-engineering-startup-dulo",
+    "error": null,
+    "verdict": "unverifiable"
+  },
+  "https://www.pymnts.com/news/artificial-intelligence/2026/openai-cuts-funding-target-by-10-billion-as-investor-jitters-shake-ai-markets/": {
+    "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-cuts-funding-target-by-10-billion-as-investor-jitters-shake-ai-markets/",
+    "status": 200,
+    "final_url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-cuts-funding-target-by-10-billion-as-investor-jitters-shake-ai-markets/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://decrypt.co/382090/openai-plans-buy-google-ai-chips-looks-beyond-nvidia": {
+    "url": "https://decrypt.co/382090/openai-plans-buy-google-ai-chips-looks-beyond-nvidia",
+    "status": 200,
+    "final_url": "https://decrypt.co/382090/openai-plans-buy-google-ai-chips-looks-beyond-nvidia",
+    "error": null,
+    "verdict": "ok"
+  }
+}

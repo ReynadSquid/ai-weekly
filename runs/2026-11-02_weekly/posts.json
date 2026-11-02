@@ -1,0 +1,129 @@
+{
+  "issue_id": "2026-11-02_weekly",
+  "header": "<b>AI Weekly #2 · 25 октября – 1 ноября 2026</b>\n\n• Anthropic подала в SEC заявку S-1 на IPO\n• Google представила Gemini 4 Carbon с ограниченным доступом\n• Mistral опубликовала открытые веса Large 4",
+  "sections": [
+    {
+      "key": "A",
+      "title": "🏢 Лидеры рынка",
+      "items": [
+        {
+          "id": "8a77e646571ba4d58515e7833bd3b43420286a74",
+          "html": "<b>Anthropic подала форму S-1 для IPO</b>\nПо данным компании, она направила в SEC заявку на размещение акций класса A. Листинг планируется на Nasdaq Global Select Market под тикером ANT. Число акций и ценовой диапазон пока не определены, регистрация ещё не вступила в силу.\n<i>Почему важно:</i> это первый формальный шаг Anthropic к выходу на биржу, но сроки и параметры размещения пока неизвестны.\n<a href=\"https://www.anthropic.com/news/s1-sec\">Источник</a>"
+        },
+        {
+          "id": "6318bf62f2c5750d4debc093ba5deffe66f9f836",
+          "html": "<b>Google представила Gemini 4 Carbon</b>\nДоступ получили лишь отдельные специалисты по кибербезопасности, затем он расширится через программу Fairwind; широкий релиз впереди. По данным Google, модель заняла первое место в Artificial Analysis Intelligence Index v5.0 (59 баллов) и набрала 88,2% на SEC-bench Pro. Вводная цена — $2 за млн входных и $10 за млн выходных токенов, затем $4 и $20.\n<i>Почему важно:</i> пока модель доступна узкому кругу, а результаты бенчмарков — заявление самой Google.\n<a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/\">Источник</a>"
+        },
+        {
+          "id": "5ef94984dce414f6cd0dec7eb033a3aff5071eaa",
+          "html": "<b>DeepMind показала Genie 4</b>\nЭто модель мира, в которой симуляцией можно управлять в реальном времени с клавиатуры и текстовыми подсказками. По данным компании, это первая real-time модель мира Google с нативной генерацией звука. Сейчас это исследовательское превью для доверенных тестировщиков; скоро модель появится у подписчиков Google AI Ultra (через Project Genie) и у партнёров раннего доступа Gemini API и AI Studio.\n<i>Почему важно:</i> пока Genie 4 доступна только ограниченному кругу, расширение доступа Google обещает позже.\n<a href=\"https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/\">Источник</a>"
+        },
+        {
+          "id": "31f854764086b8ecc2788bdb62bdfe670d3860ae",
+          "html": "<b>Anthropic расширяет партнёрство с GSA</b>\nПо данным компании, госорганы, включая штаты, местные и племенные органы, получат скидку 40% на Claude Enterprise, Claude for Government и API. Оценочная экономия для государства — около $1 млрд, минимальных обязательств по закупкам нет. Claude уже используют около 500 госорганизаций США.\n<i>Почему важно:</i> государственным заказчикам всех уровней доступны Claude-продукты со скидкой и без обязательного минимума закупок.\n<a href=\"https://www.anthropic.com/news/expanding-partnership-gsa\">Источник</a>"
+        },
+        {
+          "id": "c350724d4712c97714dd93f5cdf6f3fe22b5b0b2",
+          "html": "<b>Project Suncatcher: первый ответ ИИ от TPU на орбите</b>\nПо данным Google, прототип спутника запущен 1 октября, и Gemma 4 на TPU уровня дата-центра ответила на запрос (хайку) при пролёте над Свальбардом. Дальше — проверки термальных и радиационных нагрузок, а пара связанных спутников запланирована на 2027 год.\n<i>Почему важно:</i> проект перешёл от запуска прототипа к проверке работы ИИ-чипов в космосе.\n<a href=\"https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/\">Источник</a>"
+        },
+        {
+          "id": "3275f348adfd01763bae9ebecfdba6f721ab6ad8",
+          "html": "<b>Microsoft предложила добровольный выход около 60 000 сотрудников</b>\nПо данным AP, это около 27% штата (примерно 223 000 человек на конец июня). Предложение действует для сотрудников в США, Канаде, Индии и Великобритании; о нём сообщила директор по персоналу Эми Коулман. AP связывает шаг с крупными расходами на ИИ и дата-центры.\n<i>Почему важно:</i> затраты на ИИ-инфраструктуру сопровождаются масштабным предложением о добровольном уходе из компании.\n<a href=\"https://www.scrippsnews.com/business/microsoft-offers-a-quarter-of-its-global-workforce-voluntary-buyouts-as-ai-spending-accelerates\">Источник</a>"
+        }
+      ]
+    },
+    {
+      "key": "B",
+      "title": "🧩 Второй эшелон",
+      "items": [
+        {
+          "id": "8ccea7e89b7030862a9f53eb527a17d29d33f0d5",
+          "html": "<b>Mistral опубликовала открытые веса Mistral Large 4</b>\nПо данным компании, веса доступны на Hugging Face: это мультимодальная MoE-модель примерно на 1 трлн параметров с акцентом на агентное программирование и кибербезопасность. Лицензия — модифицированная MIT (Mistral Ecosystem Open-Weight), для MaaS нужна отдельная коммерческая. API стоит $0,70 за млн входных и $2,10 за млн выходных токенов.\n<i>Почему важно:</i> для сервисов в формате MaaS условия лицензии требуют отдельного коммерческого соглашения.\n<a href=\"https://mistral.ai/news/mistral-large-4-oss/\">Источник</a>"
+        },
+        {
+          "id": "6fd95d08d91dec40b5924f8180b5ddcb48783102",
+          "html": "<b>Siri AI стал доступен на новых языках</b>\nС обновлениями 27.2 Siri AI (в статусе беты) заработал на французском, японском, корейском, португальском и испанском. До конца 2026 года Apple обещает китайский (традиционный), норвежский, турецкий и вьетнамский. В ЕС функция пока недоступна, Apple обсуждает путь с регуляторами.\n<i>Почему важно:</i> круг языков Siri AI расширился, но пользователям в ЕС он по-прежнему недоступен.\n<a href=\"https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/\">Источник</a>"
+        },
+        {
+          "id": "1fff1698b18b443752bc0b4d67dc49ffd055d210",
+          "html": "<b>Apple Intelligence придёт в Китай с iOS 27.3</b>\nПо данным MacRumors, первая бета iOS 27.3 с частью функций Apple Intelligence выйдет 4 ноября, публичный релиз — в декабре. Среди функций Writing Tools, Genmoji, Clean Up, сводки уведомлений и Visual Intelligence; Siri AI и новинки WWDC 2026 в Китае недоступны. MacRumors также пишет о сотрудничестве Apple с Alibaba: Qwen появится в Siri, Writing Tools и Visual Intelligence.\n<i>Почему важно:</i> часть функций Apple Intelligence станет доступна в Китае, но без Siri AI.\n<a href=\"https://macrumors.com/2026/10/30/apple-says-ios-27-3-beta-coming-next-week/\">Источник</a>"
+        }
+      ]
+    },
+    {
+      "key": "C",
+      "title": "🖥 Инфраструктура и железо",
+      "items": [
+        {
+          "id": "f83cc121976df47a5fd75910748530f15046c9cb",
+          "html": "<b>AMD и Meta углубляют партнёрство</b>\nПо данным AMD, первые стойки Helios уже установлены у Meta и проходят тестирование, более широкое развёртывание ожидается. Meta развернёт кастомный GPU Instinct на архитектуре MI450. AMD вложит $1 млрд в размещение акций Meta; Лиза Су говорит о развёртывании инфраструктуры на уровне гигаватт.\n<i>Почему важно:</i> Meta закрепляет за собой GPU Instinct от AMD, а сама AMD вкладывает в Meta $1 млрд.\n<a href=\"https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure\">Источник</a>"
+        }
+      ]
+    },
+    {
+      "key": "D",
+      "title": "🎨 Креативные и dev-инструменты",
+      "items": [
+        {
+          "id": "40ab6c049676090d9f9f919ded4dbb54e7c07eb4",
+          "html": "<b>В маркетплейсе Cursor нашли вредоносное расширение под видом Claude Code</b>\nПо данным BleepingComputer, версия 2.1.313 была доступна около 11 часов 29 октября, затронуть она могла до 5000 разработчиков. Загрузчик добавлял SSH-ключ злоумышленника и закрепление в системе, но из-за ошибок SSH часто не включался. Cursor удалил расширение и временно закрыл маркетплейс для аудита; Anthropic расширение не создавала, как оно попало под её именем — неизвестно.\n<i>Почему важно:</i> вредоносная версия была доступна в маркетплейсе Cursor около 11 часов, и затронуть она могла до 5000 разработчиков.\n<a href=\"https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/\">Источник</a>"
+        }
+      ]
+    },
+    {
+      "key": "E",
+      "title": "🚀 Новое вне списка",
+      "items": [
+        {
+          "id": "fb772694f531bd9fbf7c2e81477116403c7b77a1",
+          "html": "<b>Крупные ИИ-компании поддержали общий сигнал отказа от обучения ИИ</b>\nПо данным SiliconANGLE, Google, Microsoft, Anthropic и OpenAI поддерживают предложение, черновик отправлен в IETF; Meta идею одобряет, но внедрять не обязалась. Microsoft описала общий сигнал в Internet-Draft — это ещё не финальный стандарт. Её настройки AI Training и AI Grounding вступают в силу 1 февраля 2027.\n<i>Почему важно:</i> владельцы сайтов могут получить единый способ отказа от использования контента в обучении ИИ, но пока это лишь черновик.\n<a href=\"https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/\">Источник</a>"
+        },
+        {
+          "id": "b226a00cc7adc899e811793ded4c60bd366e32e7",
+          "html": "<b>Wabi привлёк $55 млн при оценке $1,25 млрд</b>\nПо данным SiliconANGLE, раунд возглавила IVP, среди инвесторов a16z, Forerunner и Amazon Alexa Fund. Продукт — групповой чат со встроенным ИИ-ассистентом для Mac, iOS и Android; версия для Windows в планах.\n<i>Почему важно:</i> стартап с потребительским ИИ-ассистентом в групповых чатах получил оценку выше миллиарда долларов.\n<a href=\"https://siliconangle.com/2026/10/29/wabi-reels-in-55m-for-its-consumer-focused-ai-assistant/\">Источник</a>"
+        },
+        {
+          "id": "b8f879cf4c8064e213ff5b9562d644830abcade8",
+          "html": "<b>Opera запустила превью WebAI</b>\nПо данным компании, WebAI — предлагаемый веб-стандарт, позволяющий сайтам и расширениям запускать ИИ в браузере; Opera называет поддержку Google и Microsoft. Раннее превью доступно в Opera One; Opera GX и Neon получат его позже. Поддерживаются 64-bit Windows и Mac на Apple silicon. Опция выключена, пока пользователь её не включит, доступ сайтов — по разрешению.\n<i>Почему важно:</i> ИИ-функции в браузере могут работать локально, а включает их сам пользователь.\n<a href=\"https://press.opera.com/2026/10/27/opera-doubles-down-on-local-ai-shipping-models-directly-in-its-browsers/\">Источник</a>"
+        }
+      ]
+    },
+    {
+      "key": "F",
+      "title": "🔬 Исследования и open-source",
+      "items": [
+        {
+          "id": "63a60d5375b55a303dc5fe1b22fde1e7219248cd",
+          "html": "<b>Microsoft выложила Mage-VL-Cowork — компактную модель для управления компьютером</b>\nМодель на 4B параметров под лицензией Apache-2.0 действует через скриншоты (computer_use) и shell-команды (bash). По данным Microsoft, она набирает 66,0% на OSWorld-Verified при лимите 50 шагов — лучший результат среди 4B-моделей; онлайн-RL добавил около 10 п.п. (с 55,84%).\n<i>Почему важно:</i> заявлена небольшая модель для управления компьютером под свободной лицензией Apache-2.0.\n<a href=\"https://huggingface.co/microsoft/Mage-VL-Cowork\">Источник</a>"
+        },
+        {
+          "id": "c55904e21a85a75ce7c8f881a764bdd05b06b741",
+          "html": "<b>Baidu выпустила Unlimited-OCR-2</b>\nОткрытая модель на 3B параметров для разбора документов, лицензия MIT, релиз — 27 октября. По данным Baidu, механизм Sparse Reference Sliding Window Attention держит память и задержку почти постоянными независимо от длины документа. Компания заявляет SOTA на MPDocBench и MarathonDocBench, но чисел не приводит.\n<i>Почему важно:</i> заявленная независимость расхода памяти от длины документа касается длинных документов, но подтверждающих цифр пока нет.\n<a href=\"https://huggingface.co/baidu/Unlimited-OCR-2\">Источник</a>"
+        },
+        {
+          "id": "feb4caa835f163bd378978a5179817d24a9feb99",
+          "html": "<b>Google Research предложила sleep framework для непрерывного обучения LLM</b>\nМодель чередует фазу работы и фазу «сна»: контекст переносится в параметры через заранее выделенные MoE-блоки памяти. Она же генерирует синтетические примеры, фильтрует их и дообучается на лучших. По данным авторов, результат — 79,2% на AIME 24, 69,0% на AIME 25 и 46,1% на HMMT 25, лучше SFT, GRPO и OPSD.\n<i>Почему важно:</i> подход нацелен на то, чтобы модель удерживала знания при непрерывном обучении; цифры пока заявлены самими авторами.\n<a href=\"https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/\">Источник</a>"
+        }
+      ]
+    },
+    {
+      "key": "G",
+      "title": "👂 Слухи",
+      "items": [
+        {
+          "id": "5d6c194393bb6c2f827c4345b8d806798be84827",
+          "html": "<b>По данным The Information, Себастьян Трун привлёк $130 млн для Dulo</b>\nПо данным The Information: Себастьян Трун привлёк $130 млн для Dulo, стартапа в области ИИ для инженерии. Подробности раунда не подтверждены.\n<i>Почему важно:</i> сообщение указывает на крупное финансирование нового ИИ-стартапа, но детали пока неизвестны.\n<a href=\"https://www.theinformation.com/articles/sebastian-thrun-raises-130-million-ai-engineering-startup-dulo\">Источник</a>"
+        },
+        {
+          "id": "e4d839d6fa57301a69fb279fec114d0d65e6e3e4",
+          "html": "<b>По данным FT и WSJ, OpenAI снизила цель нового раунда</b>\nПо данным FT и WSJ (пересказ PYMNTS): по версии FT, цель раунда снижена с $30 до $20 млрд, оценка — $1,25 трлн вместо $1,4 трлн. По версии WSJ, привлечено около $11 млрд обязательств, остальное планируют добрать у family offices и состоятельных инвесторов. OpenAI сразу не ответила на запрос.\n<i>Почему важно:</i> если данные верны, раунд OpenAI проходит с меньшими параметрами, чем планировалось.\n<a href=\"https://www.pymnts.com/news/artificial-intelligence/2026/openai-cuts-funding-target-by-10-billion-as-investor-jitters-shake-ai-markets/\">Источник</a>"
+        },
+        {
+          "id": "9b0513da17f0d2f79d922e708ae25b7027e4c537",
+          "html": "<b>OpenAI может закупить TPU Google</b>\nПо данным The Information (со ссылкой на осведомлённого человека): OpenAI планирует купить TPU Google. Ни одна из компаний сообщение не подтвердила; цена, объём и сроки неизвестны.\n<i>Почему важно:</i> сообщение пока не подтверждено ни OpenAI, ни Google, поэтому условия возможной сделки неизвестны.\n<a href=\"https://decrypt.co/382090/openai-plans-buy-google-ai-chips-looks-beyond-nvidia\">Источник</a>"
+        }
+      ]
+    }
+  ],
+  "footer": "#Anthropic #Google #Microsoft #Mistral #Apple #AMD #Cursor #OpenAI #AIWeekly"
+}

@@ -137,6 +137,46 @@
       "link": "https://t.me/jgrgihselrw/48",
       "variant": "cover",
       "finished_at": "2026-10-25T08:13:35Z"
+    },
+    "2026-11-02_weekly:live": {
+      "issue_id": "2026-11-02_weekly",
+      "mode": "live",
+      "issue_number": 2,
+      "status": "published",
+      "started_at": "2026-11-02T02:19:39Z",
+      "messages": [
+        {
+          "index": 0,
+          "message_id": 1800,
+          "hash": "11daddc50e996e4f",
+          "sent_at": "2026-11-02T02:19:46Z"
+        },
+        {
+          "index": 1,
+          "message_id": 1801,
+          "hash": "7ea7285407b19954",
+          "sent_at": "2026-11-02T02:19:50Z"
+        },
+        {
+          "index": 2,
+          "message_id": 1802,
+          "hash": "c3689b570ba3e916",
+          "sent_at": "2026-11-02T02:19:54Z"
+        },
+        {
+          "index": 3,
+          "message_id": 1803,
+          "hash": "8aa613b6fb8425ed",
+          "sent_at": "2026-11-02T02:19:57Z"
+        }
+      ],
+      "cover": {
+        "message_id": 1799,
+        "sent_at": "2026-11-02T02:19:42Z"
+      },
+      "link": "https://t.me/neurooruen/1799",
+      "variant": "cover",
+      "finished_at": "2026-11-02T02:19:57Z"
     }
   },
   "superseded": [
