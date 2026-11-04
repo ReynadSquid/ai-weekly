@@ -208,6 +208,7 @@ def cmd_init(args) -> int:
         "date_range": date_range_label(since, until - timedelta(seconds=1), tzinfo),
         "target_items": cfg.get("target_items", [12, 20]), "min_items": cfg.get("min_items", 8),
         "cover": bool(cfg.get("cover", False)),
+        "max_finance_items": int(cfg.get("max_finance_items", sched.get("max_finance_items", 1))),
         "max_rejected_ratio": sched.get("max_rejected_ratio", 0.4),
     }
     write_json(rd / "init.json", init)
@@ -407,6 +408,21 @@ def cmd_merge(args) -> int:
 
 # ---------- пороги после фактчека ----------
 
+FINANCE_TOPICS = {"finance", "corporate"}
+_FINANCE_RE = re.compile(
+    r"\b(IPO|S-1|raises?|raised|funding|valuation|valued at|invest(s|ed|ment)?|buyouts?|layoffs?|acquires?|"
+    r"acquisition|revenue|shares?|stake|\$\d+(\.\d+)?\s?[BMbm](illion)?)\b|"
+    r"привлек|раунд|оценк[аеоу]\s+в|инвест|выкуп|увольн|сокращени[ея] штата|акци[йия]|выручк|IPO|поглощ|купит|покупк",
+    re.I)
+
+
+def item_topic(meta: dict) -> str | None:
+    """Тема новости: от куратора, а если её нет — по ключевым словам заголовка (страховка)."""
+    if meta.get("topic"):
+        return meta["topic"]
+    return "finance" if _FINANCE_RE.search(meta.get("title") or "") else None
+
+
 def evaluate_gate(init: dict, shortlist: dict, factcheck: dict) -> dict:
     items = {i["id"]: i for i in factcheck.get("items", [])}
     picked = [i["id"] for i in shortlist.get("items", [])]
@@ -417,6 +433,17 @@ def evaluate_gate(init: dict, shortlist: dict, factcheck: dict) -> dict:
     rejected = [c for c in checked if c["status"] == "rejected"]
     reserve_checked = [c for i, c in items.items() if i not in picked]
     publishable += [c for c in reserve_checked if c["status"] in ("verified", "partially")]
+    # Фокус канала — технологии: финансы/корпоративное не больше max_finance_items (самые важные),
+    # финансовые слухи не публикуются вовсе. Отброшенное уходит в отчёт «Важное, что не вошло».
+    meta = {i["id"]: i for i in shortlist.get("items", []) + shortlist.get("reserve", [])}
+    is_fin = lambda c: item_topic(meta.get(c["id"]) or {}) in FINANCE_TOPICS
+    cap = int(init.get("max_finance_items", 1))
+    fin_keep = {c["id"] for c in sorted((c for c in publishable if is_fin(c)),
+                                       key=lambda c: -((meta.get(c["id"]) or {}).get("importance") or 0))[:cap]}
+    topic_dropped = [c["id"] for c in publishable if is_fin(c) and c["id"] not in fin_keep]
+    topic_dropped += [c["id"] for c in rumors if is_fin(c)]
+    publishable = [c for c in publishable if c["id"] not in topic_dropped]
+    rumors = [c for c in rumors if c["id"] not in topic_dropped]
     total_checked = len(checked) + len(reserve_checked)
     rejected_all = len(rejected) + sum(1 for c in reserve_checked if c["status"] == "rejected")
     ratio = rejected_all / total_checked if total_checked else 1.0
@@ -426,6 +453,7 @@ def evaluate_gate(init: dict, shortlist: dict, factcheck: dict) -> dict:
         "rejected": rejected_all, "rejected_ratio": round(ratio, 3),
         "unchecked_in_shortlist": [i for i in picked if i not in items],
         "statuses": {s: statuses.count(s) for s in set(statuses)},
+        "topic_dropped": topic_dropped,
     }
     if result["unchecked_in_shortlist"]:
         result["decision"] = "need_factcheck"
@@ -565,7 +593,9 @@ def missed_important(rd: Path, gate: dict) -> list[dict]:
         if not isinstance(imp, (int, float)) or imp < MISSED_MIN_IMPORTANCE or cid in published or cid in dropped_hist:
             continue
         status = (fc.get(cid) or {}).get("status")
-        if status == "rejected":
+        if cid in set(gate.get("topic_dropped", [])):
+            why = "финансы/корпоративное сверх квоты"
+        elif status == "rejected":
             why = "отклонена фактчекером"
         elif status == "rumor":
             why = "слух сверх лимита раздела «Слухи»"

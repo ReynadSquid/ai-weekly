@@ -37,6 +37,7 @@ def test_cyrillic_group_never_gets_a_tile():
 def test_monogram():
     assert [make_cover.monogram(n) for n in ("1Password", "Canva", "RecursiveSI", "Recursive SI", "Block")] == \
         ["1P", "C", "RS", "RS", "B"]
+    assert make_cover.monogram("AMD") == "AMD"
 
 
 def test_plan_tiles_max_twelve():
@@ -240,3 +241,21 @@ def test_ensure_deps_reinstalls_broken_pillow(monkeypatch):
     monkeypatch.setattr(subprocess, "run", fake_run)
     assert make_cover.ensure_deps()
     assert calls and "--ignore-installed" in calls[0] and "pillow" in calls[0]
+
+
+def test_cover_merges_case_and_group_duplicates(monkeypatch):
+    ed = {"items": [
+        {"kind": "news", "company": "Google"}, {"kind": "news", "company": "Microsoft"},
+        {"kind": "news", "company": "microsoft"}, {"kind": "news", "company": "Anthropic"},
+        {"kind": "news", "company": "Индустрия (Google, Microsoft, OpenAI, Anthropic)"},
+        {"kind": "news", "company": "n/a"}]}
+    counts = dict(make_cover.company_counts(ed))
+    assert counts == {"Google": 2, "Microsoft": 3, "Anthropic": 2, "OpenAI": 1}
+    tiles = make_cover.plan_tiles(list(counts.items()), {})
+    names = [t["company"] for t in tiles]
+    assert len(names) == len(set(names)) == 4 and not any("Индустрия" in n or ")" in n for n in names)
+
+
+def test_one_tile_per_logo():
+    tiles = make_cover.plan_tiles([("Moonshot AI", 2), ("Kimi", 1)], MAPPING | {"kimi": "kimi"})
+    assert [(t["company"], t["count"]) for t in tiles] == [("Moonshot AI", 3)]

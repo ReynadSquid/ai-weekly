@@ -37,3 +37,19 @@ def test_aliases_share_tag_and_case_sensitive():
     assert d.hashtag("Moonshot AI") == "#MoonshotAI" and d.hashtag("Kimi") == "#MoonshotAI"
     assert d.mentions("metadata и meta-данные") == []
     assert d.hashtag("Облака и дата-центры") == "#инфраструктура"
+
+
+def test_companies_normalizes_messy_values():
+    d = Directory(WL)
+    assert d.companies("n/a") == [] and d.companies("N/A") == [] and d.companies(None) == []
+    assert d.companies("microsoft") == ["Microsoft"] if "microsoft" in d.canon else True
+    assert d.companies("Индустрия (Google, NVIDIA, OpenAI)") == ["Google", "NVIDIA", "OpenAI"]
+    assert d.companies("Облака и дата-центры") == ["Облака и дата-центры"]  # известное имя целиком не режем
+    assert d.companies("Google / Google") == ["Google"]
+
+
+def test_no_single_letter_or_placeholder_hashtags():
+    d = Directory(WL)
+    assert d.item_tags({"company": "n/a", "hashtag": None}, "<b>Apple Intelligence</b>") == []
+    from companies import derived_hashtag
+    assert derived_hashtag("a") is None and derived_hashtag("n") is None and derived_hashtag("n/a") is None

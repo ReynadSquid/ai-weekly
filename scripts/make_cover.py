@@ -85,13 +85,15 @@ def resolve_logo(company: str, mapping: dict[str, str]) -> str | None:
 
 def company_counts(editor_input: dict) -> list[tuple[str, int]]:
     """Компании подтверждённых новостей по убыванию числа новостей (порядок внутри — как в выпуске)."""
-    from companies import split_companies
+    from companies import Directory
 
+    directory = Directory()
     counts: dict[str, int] = {}
     for it in editor_input.get("items", []):
         if it.get("kind") != "news":
             continue
-        for c in split_companies(it.get("company")):  # «NVIDIA / Google Cloud» → обе компании
+        # «NVIDIA / Google Cloud» → обе; «microsoft» → «Microsoft»; «Индустрия (…)» → компании в скобках; «n/a» → нет
+        for c in directory.companies(it.get("company")):
             counts[c] = counts.get(c, 0) + 1
     return sorted(counts.items(), key=lambda kv: -kv[1])
 
@@ -104,8 +106,18 @@ def plan_tiles(companies: list[tuple[str, int]], mapping: dict[str, str]) -> lis
     - служебные группы на кириллице («Облака и дата-центры») плитку не получают и уходят в «+N»."""
     from companies import derived_hashtag
 
-    logo = [{"company": c, "count": n, "logo": s, "kind": "logo"}
-            for c, n in companies if (s := resolve_logo(c, mapping))]
+    logo: list[dict] = []
+    by_slug: dict[str, dict] = {}
+    for c, n in companies:
+        s = resolve_logo(c, mapping)
+        if not s:
+            continue
+        if s in by_slug:  # один логотип — одна плитка (Kimi и Moonshot AI, разный регистр и т.п.)
+            by_slug[s]["count"] += n
+            continue
+        by_slug[s] = {"company": c, "count": n, "logo": s, "kind": "logo"}
+        logo.append(by_slug[s])
+    companies = [(c, n) for c, n in companies if not resolve_logo(c, mapping)] + [(t["company"], t["count"]) for t in logo]
     mono = [{"company": c, "count": n, "logo": None, "kind": "mono"}
             for c, n in companies if not resolve_logo(c, mapping) and derived_hashtag(c)]
     cands = sorted(logo + mono, key=lambda t: (t["kind"] != "logo", -t["count"]))
@@ -124,6 +136,8 @@ def monogram(name: str) -> str:
     if len(words) >= 2:
         return (words[0][0] + words[1][0]).upper()
     w = words[0]
+    if w.isupper() and len(w) <= 4:  # AMD, IBM, SAP — аббревиатура целиком
+        return w
     caps = re.findall(r"[A-Z0-9]", w)
     return "".join(caps[:2]) if len(caps) >= 2 else w[0].upper()
 

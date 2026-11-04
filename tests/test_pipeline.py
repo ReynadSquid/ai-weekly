@@ -306,3 +306,19 @@ def test_dry_run_on_live_published_day_gets_own_run(repo, capsys, monkeypatch):
     assert res["status"] == "proceed" and res["run_id"] == "2026-10-25_weekly-2"
     assert res["init"]["window"]["since"] == "2026-10-18T07:30:00Z"
     assert common.read_json(common.RUNS / "2026-10-25_weekly" / "init.json")["mode"] == "live"  # боевой не тронут
+
+
+def test_gate_caps_finance_and_drops_finance_rumors():
+    init = dict(INIT, max_finance_items=1)
+    sl = {"items": [{"id": f"i{n}", "importance": 9 - n % 3} for n in range(16)], "reserve_left": False}
+    sl["items"][0].update(topic="finance", title="Anthropic files S-1 for IPO", importance=10)
+    sl["items"][1].update(title="Wabi raises $55M at $1.25B valuation")           # без topic → по заголовку
+    sl["items"][2].update(topic="corporate", title="Microsoft buyouts")
+    sl["items"][3].update(topic="model", title="Gemini 4")
+    sl["items"][15].update(title="OpenAI raises funding target")                 # слух о деньгах
+    statuses = ["verified"] * 15 + ["rumor"]
+    r = pipeline.evaluate_gate(init, sl, fc(statuses))
+    assert "i0" in r["publish_ids"]                       # самая важная финансовая осталась
+    assert set(r["topic_dropped"]) == {"i1", "i2", "i15"}
+    assert "i1" not in r["publish_ids"] and r["rumor_ids"] == []
+    assert r["publishable"] == 13 and r["decision"] == "pass"
