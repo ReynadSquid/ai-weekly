@@ -1,0 +1,75 @@
+{
+ "items": [
+  {
+   "title": "METR: ИИ ускорил разработку моделей в Anthropic примерно вдвое",
+   "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+   "source": "METR",
+   "source_type": "blog",
+   "published_at": "2026-11-05T00:00:00Z",
+   "company": "Anthropic",
+   "product": null,
+   "section": "research",
+   "summary_raw": "Независимая оценка METR по итогам доступа с 12 авг по 29 окт 2026: на чётко поставленных задачах темп улучшения моделей в Anthropic около 2x от уровня марта 2024 – октября 2025 (оценка по бенчмаркам 1.9x, 95% ДИ 1.5–2.8x); METR предполагает, что около 80% ускорения даёт ИИ. Неопределённость высокая, часть доказательств Anthropic скрыла, что ограничивает проверяемость.",
+   "importance": 8,
+   "discovered_via": "https://t.me/data_secrets/10285"
+  },
+  {
+   "title": "Google выпустила Gemini Omni 1.2 Flash",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+   "source": "Google Blog",
+   "source_type": "blog",
+   "published_at": "2026-11-05T00:00:00Z",
+   "company": "Google",
+   "product": "Gemini Omni 1.2 Flash",
+   "section": "products",
+   "summary_raw": "Модель общедоступна в Gemini API и Google Cloud; генерирует и редактирует видео до 15 секунд (было 10 в Omni 1.1), поддерживает многошаговое редактирование; цена снижена на 30%, до $0.07 за секунду видео 720p.",
+   "importance": 7,
+   "discovered_via": "https://t.me/ai_newz/4831"
+  },
+  {
+   "title": "Thinking Machines представила Inkling 2 Small",
+   "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+   "source": "Thinking Machines Lab",
+   "source_type": "blog",
+   "published_at": "2026-11-05T00:00:00Z",
+   "company": "Thinking Machines Lab",
+   "product": "Inkling 2 Small",
+   "section": "products",
+   "summary_raw": "MoE-модель, 594B параметров всего, 17B активных, принимает изображения; 31 балл в Artificial Analysis Intelligence Index; пока доступна через Tinker с закрытыми весами. Компания обещает открыть веса под Apache 2.0 на следующей неделе после внешнего тестирования безопасности.",
+   "importance": 7,
+   "discovered_via": "https://t.me/data_secrets/10293"
+  },
+  {
+   "title": "Moonshot AI выпустила Kimi K3.1 Pro с открытыми весами",
+   "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+   "source": "Hugging Face (Moonshot AI)",
+   "source_type": "model_card",
+   "published_at": "2026-11-04T16:08:12Z",
+   "company": "Moonshot AI",
+   "product": "Kimi K3.1 Pro",
+   "section": "research",
+   "summary_raw": "Открытая мультимодальная агентная MoE-модель: 2.8T параметров всего, 104B активных, контекст 1 млн токенов, вход текст и изображения; дообучена из Kimi K3. Дата на карточке не указана, дата взята по времени поста.",
+   "importance": 6,
+   "discovered_via": "https://t.me/ai_newz/4830"
+  },
+  {
+   "title": "Anthropic открыла код FlashProve для доказуемого инференса",
+   "url": "https://github.com/anthropics/FlashProve",
+   "source": "GitHub (anthropics)",
+   "source_type": "repo",
+   "published_at": "2026-11-04T12:16:01Z",
+   "company": "Anthropic",
+   "product": "FlashProve",
+   "section": "research",
+   "summary_raw": "Исследовательский прототип под Apache 2.0 (v0.16.0): нулевое разглашение для доказательства, что ответ выдан зафиксированной моделью; проверка на CPU; прувер запускает Llama 4 Maverick на одной H100; корректность протокола доказана в Lean 4. Репозиторий не поддерживается. Дата на странице не указана.",
+   "importance": 5,
+   "discovered_via": "https://t.me/data_secrets/10275"
+  }
+ ],
+ "errors": [
+  "OpenAI (introducing-gpt-6-cyber, a-thousand-fewer-paths-to-root, introducing-images-2-6, accelerating-engineering-for-the-physical-world): HTTP 403, содержимое не проверено, не включены",
+  "Посты t.me без внешней ссылки (needs_primary_source) не включены: seeallochnaya/4031, denissexy/11778, data_secrets/10271,10276,10280,10284,10294,10295",
+  "Не включены без проверки первоисточника: Binance (расследование кражи), SEC S-1 Anthropic, CVE MS Paint, WSJ Mercedes (пейволл), alignment.openai.com, FLUX 3 Max на fal",
+  "Мнения/реклама/мемы отброшены"
+ ]
+}

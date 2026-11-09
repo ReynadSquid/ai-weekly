@@ -1,0 +1,172 @@
+{
+ "items": [
+  {
+   "title": "Thinking Machines представила Inkling 2 Small",
+   "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+   "source": "thinkingmachines.ai",
+   "source_type": "official",
+   "published_at": "2026-11-05T00:00:00Z",
+   "company": "Thinking Machines Lab",
+   "product": "Inkling 2 Small",
+   "section": "F",
+   "summary_raw": "MoE-модель с картинками на входе, 594B параметров всего / 17B активных. Пока закрытые веса, доступ через Tinker; открытые веса под Apache 2.0 обещаны после внешнего тестирования безопасности. Сильные результаты в агентном кодинге по данным компании.",
+   "importance": 8,
+   "also_seen_at": [
+    "https://siliconangle.com/2026/11/06/thinking-machines-debuts-inkling-2-small-amid-reported-5b-fundraising-push/"
+   ]
+  },
+  {
+   "title": "fal привлёк $1,3 млрд при оценке $16 млрд",
+   "url": "https://fal.ai/blog/series-e-f",
+   "source": "fal.ai",
+   "source_type": "official",
+   "published_at": "2026-11-03T00:00:00Z",
+   "company": "fal",
+   "product": "fal (инференс генеративных медиа)",
+   "section": "E",
+   "summary_raw": "Раунд F под руководством Bessemer при участии NVIDIA; по данным СМИ, оценка $16 млрд против $8 млрд в апреле. Сумма и оценка на странице компании не указаны, берутся из СМИ. Деньги пойдут на вычислительные мощности и команду.",
+   "importance": 8,
+   "also_seen_at": [
+    "https://siliconangle.com/2026/11/03/generative-media-inference-startup-fal-raises-1-3b-at-a-16b-valuation/"
+   ]
+  },
+  {
+   "title": "Salesforce покупает голосовой ИИ-стартап Cresta",
+   "url": "https://www.salesforce.com/news/press-releases/2026/11/02/salesforce-signs-definitive-agreement-to-acquire-cresta/",
+   "source": "salesforce.com",
+   "source_type": "official",
+   "published_at": "2026-11-02T00:00:00Z",
+   "company": "Salesforce",
+   "product": "Cresta",
+   "section": "E",
+   "summary_raw": "Соглашение о покупке голосовой платформы для контакт-центров (голосовые агенты, подсказки операторам); интегрируют в Service Cloud. Цена официально не раскрыта, СМИ пишут о ~$2,7 млрд. Закрытие ожидается в 1 кв. fy2028.",
+   "importance": 7,
+   "also_seen_at": [
+    "https://siliconangle.com/2026/11/03/salesforce-to-buy-customer-service-automation-startup-cresta-for-reported-2-7b/"
+   ]
+  },
+  {
+   "title": "Tencent выпустила Hy4 с визуальным пониманием и computer use",
+   "url": "https://hy.tencent.ai/research/hy4?langVersion=en",
+   "source": "hy.tencent.ai",
+   "source_type": "official",
+   "published_at": "2026-11-04T00:00:00Z",
+   "company": "Tencent",
+   "product": "Hy4",
+   "section": "F",
+   "summary_raw": "Флагманская модель на 770B параметров получила понимание изображений и управление ПО (CLI, GUI, Blender, CAD). Цены API прежние; веса и system card обещаны позже, планируется дешёвая Flash-версия.",
+   "importance": 7,
+   "also_seen_at": [
+    "https://technode.com/2026/11/04/tencent-launches-hy4-with-vision-and-computer-use-capabilities/",
+    "https://siliconangle.com/2026/11/04/tencent-releases-hy4-powerful-frontier-llm-introducing-visual-understanding-and-computer-use/"
+   ]
+  },
+  {
+   "title": "Moonshot AI опубликовала веса Kimi K3.1 Pro",
+   "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+   "source": "huggingface.co",
+   "source_type": "official",
+   "published_at": "2026-11-04T15:30:30Z",
+   "company": "Moonshot AI",
+   "product": "Kimi K3.1 Pro",
+   "section": "F",
+   "summary_raw": "MoE на 2,8T параметров (104B активных), контекст 1M токенов, текст и изображения, собственная лицензия. Бенчмарки заявлены самой компанией.",
+   "importance": 7
+  },
+  {
+   "title": "Linum: text-to-image модель за ~$21 тыс. (Apache 2.0)",
+   "url": "https://www.linum.ai/field-notes/pjit-21k",
+   "source": "linum.ai",
+   "source_type": "official",
+   "published_at": "2026-11-04T16:45:11Z",
+   "company": "Linum",
+   "product": "Pyramid-JiT",
+   "section": "F",
+   "summary_raw": "Пиксельная диффузионная модель ~2B параметров, обучение обошлось в ~$21 тыс. (H100-часы); код и веса открыты. Не умеет рендерить текст.",
+   "importance": 5,
+   "also_seen_at": [
+    "https://news.ycombinator.com/"
+   ]
+  },
+  {
+   "title": "42AI вышла из тени с seed-раундом $62,5 млн",
+   "url": "https://42-ai.com/",
+   "source": "42-ai.com",
+   "source_type": "official",
+   "published_at": "2026-11-02T22:47:38Z",
+   "company": "42AI",
+   "product": "behavioral world model",
+   "section": "E",
+   "summary_raw": "Израильский стартап строит модель, предсказывающую поведение трейдеров в волатильности; клиенты — брокеры. Заявленные метрики точности — от компании.",
+   "importance": 5,
+   "also_seen_at": [
+    "https://siliconangle.com/2026/11/02/42ai-launches-with-62-5m-to-predict-how-traders-act-when-markets-turn-volatile/"
+   ]
+  },
+  {
+   "title": "Atomicwork запустила маркетплейс сертифицированных ИИ-коллег",
+   "url": "https://siliconangle.com/2026/11/06/atomicwork-launches-certified-ai-coworker-marketplace-for-enterprise-it-and-security/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-11-06T14:00:53Z",
+   "company": "Atomicwork",
+   "product": "AI coworker marketplace",
+   "section": "E",
+   "summary_raw": "Маркетплейс сертифицированных ИИ-агентов для корпоративных IT и безопасности. Первоисточник не открывался.",
+   "importance": 3
+  },
+  {
+   "title": "PagerDuty представила ИИ-агента Paige и PD Labs",
+   "url": "https://siliconangle.com/2026/11/03/pagerduty-debuts-paige-ai-agent-with-renamed-pd-reliability-platform-and-pd-labs/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-11-03T13:00:13Z",
+   "company": "PagerDuty",
+   "product": "Paige",
+   "section": "E",
+   "summary_raw": "Новый ИИ-агент для работы с инцидентами, платформа переименована в PD Reliability Platform. Первоисточник не открывался.",
+   "importance": 3
+  },
+  {
+   "title": "Larridin привлекла $30 млн на измерение отдачи от ИИ",
+   "url": "https://siliconangle.com/2026/11/02/vcs-bet-30m-on-larridins-ability-to-help-enterprises-demonstrate-ais-value-for-money/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-11-03T02:12:41Z",
+   "company": "Larridin",
+   "product": "Larridin",
+   "section": "E",
+   "summary_raw": "Раунд $30 млн для платформы, показывающей компаниям ценность внедрения ИИ. Первоисточник не открывался.",
+   "importance": 3
+  },
+  {
+   "title": "Oumi: Frontier AI Engineer теперь строит агентов и дообучает модели",
+   "url": "https://siliconangle.com/2026/11/04/oumis-frontier-ai-engineer-now-builds-ai-agents-and-retrains-the-models-behind-them/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-11-04T14:00:32Z",
+   "company": "Oumi",
+   "product": "Frontier AI Engineer",
+   "section": "E",
+   "summary_raw": "Инструмент собирает ИИ-агентов и переобучает лежащие в их основе модели. Первоисточник не открывался.",
+   "importance": 3
+  },
+  {
+   "title": "Netflix тестирует ИИ-инструмент Discover для поиска контента",
+   "url": "https://www.zdnet.com/home-and-office/netflix-ai-tool-discover-feature/",
+   "source": "zdnet.com",
+   "source_type": "media",
+   "published_at": "2026-11-04T17:05:06Z",
+   "company": "Netflix",
+   "product": "Discover",
+   "section": "E",
+   "summary_raw": "Новая ИИ-функция помогает выбирать, что смотреть. Первоисточник не открывался.",
+   "importance": 4
+  }
+ ],
+ "errors": [
+  "Первоисточники не открыты для Atomicwork, PagerDuty, Larridin, Oumi, Netflix (источник — СМИ)",
+  "Сумма и оценка fal не подтверждены страницей компании",
+  "Мало проверенных регуляторных новостей: поиск дал только EU Digital Omnibus (вступил в силу в июле)"
+ ]
+}

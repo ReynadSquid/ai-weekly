@@ -1,0 +1,62 @@
+{
+ "items": [
+  {
+   "title": "Teammates are agents for complex, ongoing work",
+   "url": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+   "source": "perplexity.ai/hub/blog",
+   "source_type": "official",
+   "published_at": "2026-11-04T12:00:00Z",
+   "company": "Perplexity",
+   "product": "Perplexity Teammates",
+   "section": "B",
+   "summary_raw": "Perplexity представила Teammates — персональных агентов для длительных задач: они планируют проекты, сами возвращаются к работе без нового запроса, помнят прошлые результаты и фидбек, работают в Slack и передают задачи друг другу. Запуск начался в вебе для подписчиков Max, поддержка iOS обещана позже, доступ будут расширять в ближайшие недели.",
+   "importance": 7
+  },
+  {
+   "title": "OpenAI представила GPT-6 Cyber (по сообщениям СМИ, первоисточник openai.com недоступен: 403)",
+   "url": "https://mezha.ua/news/openai-predstavila-novu-model-dlya-kiberzahistu-gpt-6-cyber-316928/amp/",
+   "source": "mezha.ua",
+   "source_type": "media",
+   "published_at": "2026-11-05T12:00:00Z",
+   "company": "OpenAI",
+   "product": "GPT-6 Cyber",
+   "section": "A",
+   "summary_raw": "По данным СМИ, OpenAI анонсировала GPT-6 Cyber — киберверсию GPT-6 Astra для авторизованного поиска уязвимостей и пентеста. Доступ через API и Codex только для одобренных клиентов Daybreak Red. Заявленные цифры (948 эксплойтов повышения привилегий в Linux, 48,5% на ExploitGym) пока не проверены независимо; модель отнесена к категории Critical по Preparedness Framework. Нужен первоисточник openai.com.",
+   "importance": 8
+  },
+  {
+   "title": "OpenAI Secures $11 Billion Funding at $1.25 Trillion Valuation, Bloomberg News Reports",
+   "url": "https://gvwire.com/2026/11/06/openai-secures-11-billion-funding-at-1-25-trillion-valuation-bloomberg-news-reports/",
+   "source": "gvwire.com (Bloomberg)",
+   "source_type": "media",
+   "published_at": "2026-11-06T12:00:00Z",
+   "company": "OpenAI",
+   "product": "",
+   "section": "A",
+   "summary_raw": "Bloomberg сообщает, что OpenAI закрыла первую часть раунда около 11 млрд долларов при оценке 1,25 трлн долларов. Изначально речь шла о 30 млрд, теперь цель снижена примерно до 20 млрд. Официального подтверждения OpenAI нет; в СМИ расходятся данные о pre- и post-money.",
+   "importance": 6
+  },
+  {
+   "title": "Apple Intelligence в Китае: Qwen от Alibaba, тестирование с 4 ноября",
+   "url": "https://de.euronews.com/2026/11/04/apple-startet-ai-probelauf-in-china-mit-alibaba-assistent-qwen",
+   "source": "euronews.com",
+   "source_type": "media",
+   "published_at": "2026-11-04T12:00:00Z",
+   "company": "Apple",
+   "product": "Apple Intelligence / Qwen",
+   "section": "B",
+   "summary_raw": "Apple запустила тестовый период Apple Intelligence в Китае на моделях Qwen от Alibaba: функции доступны в бета-версии iOS с 4 ноября, широкий релиз по сообщениям ожидается в декабре. Qwen задействуют для Siri, инструментов письма и визуального интеллекта; перед отправкой запроса пользователь даёт разрешение. Alibaba заявляет, что запросы не используются для обучения моделей. Нужен первоисточник apple.com.",
+   "importance": 7
+  }
+ ],
+ "errors": [
+  {
+   "source": "openai.com/news",
+   "error": "403 Forbidden"
+  },
+  {
+   "source": "openai.com/index/introducing-gpt-6-cyber",
+   "error": "403 Forbidden"
+  }
+ ]
+}

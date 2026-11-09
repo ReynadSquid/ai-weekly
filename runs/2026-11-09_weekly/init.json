@@ -1,0 +1,22 @@
+{
+  "run_id": "2026-11-09_weekly",
+  "kind": "weekly",
+  "mode": "live",
+  "title": "AI Weekly",
+  "issue_number": 3,
+  "slot_local": "2026-11-09T09:00:00+07:00",
+  "started_at": "2026-11-09T02:06:34Z",
+  "window": {
+    "since": "2026-11-01T17:00:00Z",
+    "until": "2026-11-08T17:00:00Z"
+  },
+  "date_range": "2–8 ноября 2026",
+  "target_items": [
+    12,
+    20
+  ],
+  "min_items": 8,
+  "cover": true,
+  "max_finance_items": 1,
+  "max_rejected_ratio": 0.4
+}

@@ -1,0 +1,137 @@
+{
+ "items": [
+  {
+   "title": "Kimi K3.1 Pro",
+   "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+   "source": "huggingface.co/models",
+   "source_type": "research",
+   "published_at": "2026-11-02T00:00:00Z",
+   "company": "Moonshot AI",
+   "product": "Kimi K3.1 Pro",
+   "section": "F",
+   "summary_raw": "Открытые веса мультимодальной агентной модели, дообученной из Kimi K3. По карточке модели: MoE, 2.8T параметров всего, 104B активных, контекст 1M токенов, вход текст и изображения, кастомная лицензия Kimi K3.1 Pro. Бенчмарки (например BrowseComp 92.1, GPQA-Diamond 94.2) заявлены самой Moonshot, часть на внутренних оценках; на HLE-Diamond модель уступает GPT-6 Astra (39.4 против 65.8, по данным той же карточки). Точная дата релиза на странице не указана, дата взята из ленты HF trending.",
+   "importance": 9
+  },
+  {
+   "title": "Cosmos 3: новые открытые модели для интерактивной симуляции миров",
+   "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-11-05T00:00:00Z",
+   "company": "NVIDIA",
+   "product": "Cosmos 3",
+   "section": "F",
+   "summary_raw": "NVIDIA добавила в семейство Cosmos 3 четыре открытых чекпойнта на базе Cosmos 3 Nano: генерация мультикамерных данных для беспилотников (до 11 ракурсов, RGB плюс LiDAR), потоковая симуляция вождения, превращение управляющих сигналов симулятора в видео и предсказание видео по действиям двурукого робота. Лицензия OpenMDW 1.1 (по заявлению авторов допускает коммерческое использование). Авторы отмечают, что пригодность для обучения и оценки политик ещё предстоит измерить.",
+   "importance": 8
+  },
+  {
+   "title": "Phonon: компактная TTS-модель, работающая на устройстве",
+   "url": "https://huggingface.co/blog/phonon-tts",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-11-05T00:00:00Z",
+   "company": "Gradium / Hugging Face",
+   "product": "Phonon TTS",
+   "section": "F",
+   "summary_raw": "Gradium выпустила малые модели синтеза речи (около 65 и 75 МБ), работающие локально на телефонах, ноутбуках и в браузере; пять языков, больше 100 голосов, клонирование голоса. По данным авторов, на Open TTS Leaderboard модель первая по разборчивости в немецком и испанском и в тройке лидеров во всех оценённых языках, а на CPU первый звук появляется за 28 мс. Английская версия 31m под Apache 2.0, мультиязычная 40m под CC BY-NC.",
+   "importance": 7
+  },
+  {
+   "title": "CWE-bench v2: бенчмарк ИИ-агентов для задач безопасности",
+   "url": "https://huggingface.co/blog/cwe-bench",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-11-03T00:00:00Z",
+   "company": "Collinear AI",
+   "product": "CWE-bench v2",
+   "section": "F",
+   "summary_raw": "Обновлённый бенчмарк: 100 публичных задач по 91 классу уязвимостей, где агент должен найти и исправить дыру в реальном open-source репозитории, не сломав остальное. По данным авторов, из 11 моделей лучший результат у Gemini 4 Argon (67.8% pass@1), следом Claude Opus 5.5 (67.3%). Датасет закрытый (gated), есть отложенная выборка.",
+   "importance": 7
+  },
+  {
+   "title": "Axion 1.0: открытая агентная фундаментальная модель",
+   "url": "https://arxiv.org/abs/2611.03233",
+   "source": "arxiv.org",
+   "source_type": "research",
+   "published_at": "2026-11-02T00:00:00Z",
+   "company": "Авторы Yuqi Jia и др. (организация не указана)",
+   "product": "Axion 1.0",
+   "section": "F",
+   "summary_raw": "Авторы предлагают простой рецепт обучения агентной модели: два лёгких этапа SFT и затем RL, без mid-training, DPO и дистилляции. Публикуются данные, фильтрация, промпты и код обучения. Авторы заявляют конкурентные результаты с ведущими коммерческими моделями на ряде агентных бенчмарков; конкретные цифры не проверялись.",
+   "importance": 6
+  },
+  {
+   "title": "Faster Retrieval for Better, More Efficient RAG",
+   "url": "https://machinelearning.apple.com/research/faster-retrieval",
+   "source": "machinelearning.apple.com",
+   "source_type": "research",
+   "published_at": "2026-11-05T00:00:00Z",
+   "company": "Apple",
+   "product": "SupportNet / KeyNet",
+   "section": "F",
+   "summary_raw": "Исследователи Apple предлагают обучаемую маршрутизацию для поиска по максимальному скалярному произведению (основа RAG и рекомендаций). По их данным, на Natural Questions SupportNet достигает 95% recall примерно в 1.9 раза быстрее обычной маршрутизации по центроидам, а KeyNet с IVF-индексом даёт до 8 раз меньше времени на 99% recall. Работа представлена на ICML 2026.",
+   "importance": 6
+  },
+  {
+   "title": "ToyBlocks: контролируемый мир для обучения и оценки роботов",
+   "url": "https://huggingface.co/blog/allenai/toyblocks",
+   "source": "huggingface.co/blog",
+   "source_type": "research",
+   "published_at": "2026-11-06T00:00:00Z",
+   "company": "Allen Institute for AI (Ai2)",
+   "product": "ToyBlocks",
+   "section": "F",
+   "summary_raw": "Ai2 открыла симулируемый столешничный мир с рукой-манипулятором и кубиками как тестовую площадку для робототехники. Выкладываются ассеты, генераторы задач, датасет из 85 336 длинных демонстраций, две обученные модели и код. По данным Ai2, иерархическая связка Molmo 2 и ManiFlow достигла 55.5% успеха в симуляции и 50% на реальном роботе (30 попыток). Через пару недель обещан второй, больший релиз.",
+   "importance": 7
+  },
+  {
+   "title": "FrontierPhysics: бенчмарк ИИ-агентов для физических исследований",
+   "url": "https://arxiv.org/abs/2611.06910",
+   "source": "arxiv.org",
+   "source_type": "research",
+   "published_at": "2026-11-04T00:00:00Z",
+   "company": "Bingran You и др. (72 автора)",
+   "product": "FrontierPhysics",
+   "section": "F",
+   "summary_raw": "Бенчмарк из 56 задач, написанных 42 физиками по материалам их собственной работы: агент должен изучить литературу, спланировать и провести исследование и оформить результат. По данным авторов, из 22 моделей (26 конфигураций) ни одна не прошла более 46 из 168 прогонов; основные провалы связывают со слабой строгостью рассуждений, а не с нехваткой знаний.",
+   "importance": 6
+  },
+  {
+   "title": "Определение признаков гипертонии по данным умных часов",
+   "url": "https://research.google/blog/detecting-signs-of-hypertension-using-wearable-sensors/",
+   "source": "research.google/blog",
+   "source_type": "research",
+   "published_at": "2026-11-05T00:00:00Z",
+   "company": "Google Research",
+   "product": "AI-PPG-ACC-HTN",
+   "section": "F",
+   "summary_raw": "Модель самообучения по данным оптического пульсового датчика и акселерометра часов оценивает гипертоническое состояние без калибровки манжетой. По данным Google, на проспективном исследовании со 196 участниками чувствительность при первичном скрининге 65.8% при специфичности 90.0% (у офисного измерения давления 55.3%). Авторы подчёркивают, что это ранняя работа, а не диагностический продукт; публикация в Nature.",
+   "importance": 6
+  },
+  {
+   "title": "agent-autoloop",
+   "url": "https://github.com/KKKKhazix/agent-autoloop",
+   "source": "github.com/trending",
+   "source_type": "research",
+   "published_at": "2026-11-03T00:00:00Z",
+   "company": "KKKKhazix",
+   "product": "agent-autoloop",
+   "section": "F",
+   "summary_raw": "Самостоятельно разворачиваемый слой автоматизации для CLI-агентов вроде Claude Code и Codex: берёт задачи из событий (расписание, новые issues, ошибки), ведёт их в фоне и присылает карточку, только если нужно решение человека. Ядро без зависимостей, плагины для источников и каналов уведомлений. MIT, около 4.1k звёзд в трендах GitHub.",
+   "importance": 5
+  },
+  {
+   "title": "poki: управление реальным iPhone из ИИ-агента",
+   "url": "https://github.com/JosssphZhou/poki",
+   "source": "github.com/trending",
+   "source_type": "research",
+   "published_at": "2026-11-05T00:00:00Z",
+   "company": "JosssphZhou",
+   "product": "poki",
+   "section": "F",
+   "summary_raw": "Локальный MCP-сервер и агент, позволяющий ИИ управлять настоящим iPhone без джейлбрейка и дополнительного оборудования; работает на macOS, есть community-порты. AGPL-3.0, около 611 звёзд в трендах GitHub.",
+   "importance": 4
+  }
+ ],
+ "errors": []
+}
