@@ -450,6 +450,205 @@
       "company": "OpenAI",
       "issue_id": "2026-11-02_weekly",
       "published_at": "2026-11-02T02:20:02Z"
+    },
+    {
+      "id": "a4f4c423c54260333db70d9834764f1b9740c579",
+      "title": "Агенты OpenAI обнаружили 948 уязвимостей в ядре Linux",
+      "url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+      "urls": [
+        "https://openai.com/index/a-thousand-fewer-paths-to-root/"
+      ],
+      "company": "OpenAI",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "d7e9e3e89ee778d6f0e0cdfdb8adebe3fbc25559",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "urls": [
+        "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+        "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+        "https://news.ycombinator.com/item?id=50392118",
+        "https://t.me/ai_newz/4831"
+      ],
+      "company": "Google",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "0a437d67f2effbc5f98d2d1d1dd7d2cef925d7b4",
+      "title": "OpenAI выпустили Images 2.6: теперь в ChatGPT можно делать гифки",
+      "url": "https://letsdatascience.com/news/openai-adds-gif-creation-and-editing-to-chatgpt-with-images-4b17e31a",
+      "urls": [
+        "https://openai.com/index/introducing-images-2-6/"
+      ],
+      "company": "OpenAI",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "419825f7f3a6bf4dc1510862dbc76bf2bfc35860",
+      "title": "Новый график с прямыми линиями от наших любимых METR 👏",
+      "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+      "urls": [
+        "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+        "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/#executive-summary",
+        "https://t.me/data_secrets/10285"
+      ],
+      "company": "Anthropic",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "a84942e28c6d52571605a5903062278d0b9c5079",
+      "title": "Design the Muse App, Just for You",
+      "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+      "urls": [
+        "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/"
+      ],
+      "company": "Meta",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "e6bcce74f5e75f0523b2b8f2641ad1aa8a831f6b",
+      "title": "Teammates are agents for complex, ongoing work",
+      "url": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+      "urls": [
+        "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work"
+      ],
+      "company": "Perplexity",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "7eab5dddcfa7727d177f58b1fd27561c99165e39",
+      "title": "Vera Delivers the Best of Both Worlds: Highest Throughput and Fastest Agents",
+      "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+      "urls": [
+        "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/"
+      ],
+      "company": "NVIDIA",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "5d176638f112cbdf40638258d77479e0b9436789",
+      "title": "Build Live Apps in Cursor",
+      "url": "https://cursor.com/changelog/build-live-apps",
+      "urls": [
+        "https://cursor.com/changelog/build-live-apps"
+      ],
+      "company": "Cursor",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "fd1a4c4700c82bdd9d5d1c80eb03edc5d9c0372d",
+      "title": "Voice Chat with Agents",
+      "url": "https://cursor.com/changelog/voice-chat",
+      "urls": [
+        "https://cursor.com/changelog/voice-chat"
+      ],
+      "company": "Cursor",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "7486a9a8c5dfbdf5b03c26643427929092f9cba3",
+      "title": "Thinking Machines представила Inkling 2 Small",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "urls": [
+        "https://thinkingmachines.ai/news/inkling-2-small/",
+        "https://siliconangle.com/2026/11/06/thinking-machines-debuts-inkling-2-small-amid-reported-5b-fundraising-push/",
+        "https://t.me/data_secrets/10293"
+      ],
+      "company": "Thinking Machines Lab",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "bec40466c056d4080d10d33fe5a697224b6357ab",
+      "title": "Tencent выпустила Hy4 с визуальным пониманием и computer use",
+      "url": "https://siliconangle.com/2026/11/04/tencent-releases-hy4-powerful-frontier-llm-introducing-visual-understanding-and-computer-use/",
+      "urls": [
+        "https://hy.tencent.ai/research/hy4?langVersion=en",
+        "https://technode.com/2026/11/04/tencent-launches-hy4-with-vision-and-computer-use-capabilities/",
+        "https://siliconangle.com/2026/11/04/tencent-releases-hy4-powerful-frontier-llm-introducing-visual-understanding-and-computer-use/"
+      ],
+      "company": "Tencent",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "7838c87736f9082fb144453a5a532f0d0cfd974f",
+      "title": "Moonshot AI опубликовала веса Kimi K3.1 Pro",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "urls": [
+        "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+        "https://news.ycombinator.com/item?id=50366999",
+        "https://t.me/ai_newz/4830"
+      ],
+      "company": "Moonshot AI",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "89209ab642b10e254f0682f6d93ea473caa87b4e",
+      "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+      "url": "https://huggingface.co/blog/phonon-tts",
+      "urls": [
+        "https://huggingface.co/blog/phonon-tts"
+      ],
+      "company": "Gradium",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "e8690f74b67f56983d288ac628cf8aa1b7f6cf1c",
+      "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "urls": [
+        "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+      ],
+      "company": "NVIDIA",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "20954e3ac0ff87f74efda3333b11cedb4f109ce2",
+      "title": "CWE-bench v2: More coverage, quality, and transparency",
+      "url": "https://huggingface.co/blog/cwe-bench",
+      "urls": [
+        "https://huggingface.co/blog/cwe-bench"
+      ],
+      "company": "Hugging Face",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "95f5b8b4456c962d6f648249097402e19c97021a",
+      "title": "Anthropic выпустили в опенсорс FlashProve – инструмент для доказуемого инференса",
+      "url": "https://github.com/anthropics/FlashProve",
+      "urls": [
+        "https://github.com/anthropics/FlashProve",
+        "https://t.me/data_secrets/10275"
+      ],
+      "company": "Anthropic",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "3b58ffb304e7b124cccfb142a59a8052fc0d1e06",
+      "title": "Claude Code sends your email address to websites",
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "urls": [
+        "https://github.com/anthropics/claude-code/issues/107757"
+      ],
+      "company": "Anthropic",
+      "issue_id": "2026-11-09_weekly",
+      "published_at": "2026-11-09T02:15:51Z"
     }
   ]
 }
