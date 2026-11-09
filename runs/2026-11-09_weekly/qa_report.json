@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "messages": 3,
+  "lengths": [3673, 2010, 2137],
+  "news_count": 14,
+  "issues": [
+    {
+      "severity": "minor",
+      "item_id": "e6bcce74f5e75f0523b2b8f2641ad1aa8a831f6b",
+      "problem": "В «Почему важно» сказано «пока доступен только подписчикам Max»; в checked_claims — «запуск в вебе для подписчиков Max, iOS позже» (launch first). Слово «только» слегка усиливает формулировку. Ссылка дала 403 (unverifiable, антибот): факт-чек verified, primary_source_url совпадает, так что на публикацию не влияет.",
+      "fix": "Заменить на «на старте доступен подписчикам Max»."
+    }
+  ]
+}

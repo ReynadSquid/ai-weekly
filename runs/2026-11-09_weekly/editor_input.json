@@ -1,0 +1,653 @@
+{
+  "issue": {
+    "run_id": "2026-11-09_weekly",
+    "kind": "weekly",
+    "title": "AI Weekly",
+    "issue_number": 3,
+    "date_range": "2–8 ноября 2026",
+    "mode": "live"
+  },
+  "items": [
+    {
+      "id": "a4f4c423c54260333db70d9834764f1b9740c579",
+      "kind": "news",
+      "status": "verified",
+      "title": "Агенты OpenAI обнаружили 948 уязвимостей в ядре Linux",
+      "company": "OpenAI",
+      "product": "GPT-6 Cyber",
+      "section": "A",
+      "importance": 9,
+      "published_at": "2026-11-05T09:50:46Z",
+      "summary_raw": "OpenAI представила киберверсию GPT-6 для авторизованного поиска уязвимостей; доступ только одобренным клиентам. В посте OpenAI говорится о 948 найденных уязвимостях ядра Linux с помощью ещё не вышедшей кибермодели.",
+      "primary_source_url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+      "attribution": "по данным OpenAI",
+      "checked_claims": [
+        {
+          "claim": "GPT-6 Cyber не публичная: доступна одобренным клиентам программы Daybreak Red, расширение доступа обещано скоро",
+          "source": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+          "quote_hint": "Access: limited to approved Daybreak Red customers"
+        },
+        {
+          "claim": "Модель воспроизвела 1 724 уязвимости ядра Linux и написала рабочие эксплойты повышения привилегий для 948 из них (по данным OpenAI)",
+          "source": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+          "quote_hint": "developed local privilege escalation exploits for 948"
+        },
+        {
+          "claim": "81 ранее неизвестная уязвимость высокой критичности в Firefox (по данным OpenAI)",
+          "source": "https://securityaffairs.com/?p=202546",
+          "quote_hint": "81 new vulnerabilities Mozilla classed high severity"
+        },
+        {
+          "claim": "ExploitGym: 48,5% против 32,1% у GPT-5.6 Cyber (по данным OpenAI)",
+          "source": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+          "quote_hint": "48.5% ... 32.1% for GPT-5.6 Cyber"
+        },
+        {
+          "claim": "OpenAI повысила рейтинг киберриска до Critical (было High)",
+          "source": "https://securityaffairs.com/?p=202546",
+          "quote_hint": "raised ... from High to Critical"
+        }
+      ],
+      "removed_claims": [
+        "формулировка 'обнаружили 948 уязвимостей' неточна: 948 - число уязвимостей, для которых построены эксплойты (из 1 724 воспроизведённых)",
+        "588 ранее неизвестных уязвимостей - не подтверждено (нет в BleepingComputer, в отчёте OpenAI не указано)",
+        "'51% улучшение' (pulse2) - не подтверждено"
+      ],
+      "hashtag": "#OpenAI"
+    },
+    {
+      "id": "d7e9e3e89ee778d6f0e0cdfdb8adebe3fbc25559",
+      "kind": "news",
+      "status": "verified",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "company": "Google",
+      "product": "Gemini Omni 1.2 Flash",
+      "section": "A",
+      "importance": 8,
+      "published_at": "2026-11-05T17:00:00Z",
+      "summary_raw": "Модель общедоступна в Gemini API и Google Cloud; генерирует и редактирует видео до 15 секунд (было 10 в Omni 1.1), поддерживает многошаговое редактирование; цена снижена на 30%, до $0.07 за секунду видео 720p.",
+      "primary_source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "attribution": "по данным Google",
+      "checked_claims": [
+        {
+          "claim": "Gemini Omni 1.2 Flash общедоступна в Gemini API и Google Cloud",
+          "source": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+          "quote_hint": "Generally available through the Gemini API and Google Cloud"
+        },
+        {
+          "claim": "Клипы до 15 секунд (было 10 в Omni 1.1), шаг 1 с, от 3 до 15 с",
+          "source": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+          "quote_hint": "up to 15 seconds, up from 10"
+        },
+        {
+          "claim": "Цена $0,07 за секунду 720p, снижена на 30%",
+          "source": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+          "quote_hint": "$0.07 per second ... cut 30%"
+        },
+        {
+          "claim": "Многошаговое диалоговое редактирование; черновик 360p/720p с апскейлом до 1080p/4K; SynthID",
+          "source": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+          "quote_hint": "multi-turn conversational editing"
+        }
+      ],
+      "removed_claims": [],
+      "hashtag": "#Google"
+    },
+    {
+      "id": "0a437d67f2effbc5f98d2d1d1dd7d2cef925d7b4",
+      "kind": "news",
+      "status": "partially",
+      "title": "OpenAI выпустили Images 2.6: теперь в ChatGPT можно делать гифки",
+      "company": "OpenAI",
+      "product": "Images 2.6",
+      "section": "A",
+      "importance": 8,
+      "published_at": "2026-11-05T07:11:40Z",
+      "summary_raw": "OpenAI выпустили Images 2.6: теперь в ChatGPT можно делать гифки Анимации генерируются по простому запросу, можно настраивать скорость, отдельные кадры и использовать референсы. В API появились две новые модели для разработчиков: GPT-Image-2.6 Flare and Sunburst. Flare – очень шустрая, генерирует изображение всего за 6 секунд. Sunburst чуть медленнее, но дает лучшее качество и согласованность при редактировании. Еще, из интересного, добавили возможность сохранять часто используемые референсы. Например, сохраняете фото своей собаки, обозначаете его именем, и затем в диалоге просто пишете «Шарик",
+      "primary_source_url": "https://letsdatascience.com/news/openai-adds-gif-creation-and-editing-to-chatgpt-with-images-4b17e31a",
+      "attribution": "по данным OpenAI",
+      "checked_claims": [
+        {
+          "claim": "Images 2.6 в ChatGPT и Codex на всех тарифах (включая Free): GIF по тексту или картинке, регулировка скорости, правка кадров",
+          "source": "https://letsdatascience.com/news/openai-adds-gif-creation-and-editing-to-chatgpt-with-images-4b17e31a",
+          "quote_hint": "available in ChatGPT and Codex on all subscription tiers"
+        },
+        {
+          "claim": "В API две модели: GPT-Image-2.6 Flare (быстрая, до 6 с при low quality) и Sunburst (детали и согласованность правок при medium/high)",
+          "source": "https://letsdatascience.com/news/openai-adds-gif-creation-and-editing-to-chatgpt-with-images-4b17e31a",
+          "quote_hint": "as little as six seconds"
+        }
+      ],
+      "removed_claims": [
+        "сохранение референсов с именем (пример с собакой) - не подтверждено",
+        "'Flare генерирует за 6 секунд' - только при низком качестве",
+        "'на 50% быстрее' - единичный источник, не подтверждено",
+        "цены API и лимиты GIF - не подтверждены"
+      ],
+      "hashtag": "#OpenAI"
+    },
+    {
+      "id": "419825f7f3a6bf4dc1510862dbc76bf2bfc35860",
+      "kind": "news",
+      "status": "verified",
+      "title": "Новый график с прямыми линиями от наших любимых METR 👏",
+      "company": "Anthropic",
+      "product": null,
+      "section": "A",
+      "importance": 7,
+      "published_at": "2026-11-05T19:41:05Z",
+      "summary_raw": "Независимая оценка METR по итогам доступа с 12 авг по 29 окт 2026: на чётко поставленных задачах темп улучшения моделей в Anthropic около 2x от уровня марта 2024 – октября 2025 (оценка по бенчмаркам 1.9x, 95% ДИ 1.5–2.8x); METR предполагает, что около 80% ускорения даёт ИИ. Неопределённость высокая, часть доказательств Anthropic скрыла, что ограничивает проверяемость.",
+      "primary_source_url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+      "attribution": "по оценке METR",
+      "checked_claims": [
+        {
+          "claim": "METR наблюдала работу Anthropic с 12 августа по 29 октября 2026",
+          "source": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+          "quote_hint": "August 12 to October 29, 2026"
+        },
+        {
+          "claim": "Темп улучшения на чётко поставленных задачах примерно 2x относительно марта 2024 - октября 2025",
+          "source": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+          "quote_hint": "about 2x the rate"
+        },
+        {
+          "claim": "По бенчмарку AECI - 1,9x (95% ДИ 1,5-2,8x)",
+          "source": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+          "quote_hint": "1.9x ... 95% CI: 1.5-2.8x"
+        },
+        {
+          "claim": "Субъективная оценка METR: около 80% ускорения обусловлено ИИ, неопределённость высокая",
+          "source": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+          "quote_hint": "roughly 80% of the current acceleration"
+        },
+        {
+          "claim": "Anthropic имела право редактуры и скрыла большую часть наиболее информативных доказательств",
+          "source": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+          "quote_hint": "redacted a majority of the evidence"
+        }
+      ],
+      "removed_claims": [],
+      "hashtag": "#Anthropic"
+    },
+    {
+      "id": "a84942e28c6d52571605a5903062278d0b9c5079",
+      "kind": "news",
+      "status": "verified",
+      "title": "Design the Muse App, Just for You",
+      "company": "Meta",
+      "product": "Muse",
+      "section": "A",
+      "importance": 6,
+      "published_at": "2026-11-06T18:00:58Z",
+      "summary_raw": "Today, we're introducing spaces, an interactive way to build a more customized experience in the Muse app. The post Design the Muse App, Just for You appeared first on Meta Newsroom .",
+      "primary_source_url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+      "attribution": "по данным Meta",
+      "checked_claims": [
+        {
+          "claim": "Spaces - кастомные мини-приложения/экраны внутри Muse, создаются описанием идеи",
+          "source": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+          "quote_hint": "custom experience you create inside Muse by describing your idea"
+        },
+        {
+          "claim": "Доступны везде, где доступен Muse, с 6 ноября 2026",
+          "source": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+          "quote_hint": "available everywhere Muse is available"
+        },
+        {
+          "claim": "Примеры: трекер подарков, ежедневная игра слов, доска планирования DIY; можно скрывать, планировать показ, подключённые приложения обновляют в фоне",
+          "source": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+          "quote_hint": "holiday gift tracker, a daily word game"
+        }
+      ],
+      "removed_claims": [
+        "возможность делиться spaces - только 'изучают', не обещано"
+      ],
+      "hashtag": "#Meta"
+    },
+    {
+      "id": "e6bcce74f5e75f0523b2b8f2641ad1aa8a831f6b",
+      "kind": "news",
+      "status": "verified",
+      "title": "Teammates are agents for complex, ongoing work",
+      "company": "Perplexity",
+      "product": "Perplexity Teammates",
+      "section": "B",
+      "importance": 7,
+      "published_at": "2026-11-04T12:00:00Z",
+      "summary_raw": "Perplexity представила Teammates — персональных агентов для длительных задач: они планируют проекты, сами возвращаются к работе без нового запроса, помнят прошлые результаты и фидбек, работают в Slack и передают задачи друг другу. Запуск начался в вебе для подписчиков Max, поддержка iOS обещана позже, доступ будут расширять в ближайшие недели.",
+      "primary_source_url": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+      "attribution": "по данным Perplexity",
+      "checked_claims": [
+        {
+          "claim": "Teammates - персональные агенты для долгой работы: планируют проекты, помнят цели/историю/файлы, координируют сессии Computer и других teammates",
+          "source": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+          "quote_hint": "retain memory of goals, history, and files"
+        },
+        {
+          "claim": "Запуск в вебе для подписчиков Max, iOS позже",
+          "source": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+          "quote_hint": "launch first on the web for Perplexity Max"
+        },
+        {
+          "claim": "Можно добавить teammate в Slack-канал, ему ставят задачи коллеги",
+          "source": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+          "quote_hint": "add a teammate to a Slack channel"
+        }
+      ],
+      "removed_claims": [
+        "цены - на странице не указаны, не использовать",
+        "'расширят доступ в ближайшие недели' - на странице не найдено (из shortlist)"
+      ],
+      "hashtag": "#Perplexity"
+    },
+    {
+      "id": "7eab5dddcfa7727d177f58b1fd27561c99165e39",
+      "kind": "news",
+      "status": "verified",
+      "title": "Vera Delivers the Best of Both Worlds: Highest Throughput and Fastest Agents",
+      "company": "NVIDIA",
+      "product": "Vera",
+      "section": "C",
+      "importance": 6,
+      "published_at": "2026-11-05T20:00:41Z",
+      "summary_raw": "AI agents do more than generate answers. They search for information, query databases, write and test code and take action. Each of those steps relies on a CPU, with agents moving between GPU reasoning and CPU execution throughout a task. As businesses put more agents to work, AI factories need CPUs that can execute those […]",
+      "primary_source_url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+      "attribution": "по данным NVIDIA",
+      "checked_claims": [
+        {
+          "claim": "NVIDIA позиционирует CPU Vera для агентных нагрузок",
+          "source": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+          "quote_hint": "CPU positioned for AI agents"
+        },
+        {
+          "claim": "По сравнению NVIDIA в ЦОД 100 МВт: в 1,6 раза больше агентов на ватт, чем у быстрейшего x86; в 2 раза выше скорость агента, чем у самого энергоэффективного x86",
+          "source": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+          "quote_hint": "1.6x more agents per watt"
+        },
+        {
+          "claim": "Perplexity: агентные кодовые задачи в 1,5 раза быстрее; партнёры тестируют, Perplexity планирует развернуть в продакшене",
+          "source": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+          "quote_hint": "1.5x faster than on traditional CPUs"
+        }
+      ],
+      "removed_claims": [
+        "сроки поставок и цены - не указаны"
+      ],
+      "hashtag": "#NVIDIA"
+    },
+    {
+      "id": "5d176638f112cbdf40638258d77479e0b9436789",
+      "kind": "news",
+      "status": "verified",
+      "title": "Build Live Apps in Cursor",
+      "company": "Cursor",
+      "product": "Build Live Apps",
+      "section": "D",
+      "importance": 7,
+      "published_at": "2026-11-05T00:00:00Z",
+      "summary_raw": "Build and deploy web apps directly in Cursor with cloud agents handling hosting, database, auth, and deployment.",
+      "primary_source_url": "https://cursor.com/changelog/build-live-apps",
+      "attribution": "по данным Cursor",
+      "checked_claims": [
+        {
+          "claim": "Cloud-агент Cursor создаёт веб-приложение, при необходимости поднимает Postgres, настраивает авторизацию через Cursor SSO и хостинг",
+          "source": "https://cursor.com/changelog/build-live-apps",
+          "quote_hint": "scaffolds the web app, sets up a Postgres database"
+        },
+        {
+          "claim": "Перед публикацией - проверки безопасности (утечки секретов); публикуется только явно",
+          "source": "https://cursor.com/changelog/build-live-apps",
+          "quote_hint": "Nothing goes live until the checks pass"
+        },
+        {
+          "claim": "Доступно на всех платных тарифах с cloud agents; деплой из репозиториев Cursor Origin и GitHub, GitLab - 'скоро'",
+          "source": "https://cursor.com/changelog/build-live-apps",
+          "quote_hint": "all paid plans with cloud agents enabled"
+        }
+      ],
+      "removed_claims": [
+        "цены - не указаны",
+        "TechRepublic не открылся"
+      ],
+      "hashtag": "#Cursor"
+    },
+    {
+      "id": "fd1a4c4700c82bdd9d5d1c80eb03edc5d9c0372d",
+      "kind": "news",
+      "status": "verified",
+      "title": "Voice Chat with Agents",
+      "company": "Cursor",
+      "product": "Voice Chat",
+      "section": "D",
+      "importance": 6,
+      "published_at": "2026-11-06T00:00:00Z",
+      "summary_raw": "Talk with your agents in a realtime voice call on desktop, web, and iOS.",
+      "primary_source_url": "https://cursor.com/changelog/voice-chat",
+      "attribution": "по данным Cursor",
+      "checked_claims": [
+        {
+          "claim": "Голосовой звонок в реальном времени с агентами: Agents Window, IDE, web и iOS",
+          "source": "https://cursor.com/changelog/voice-chat",
+          "quote_hint": "Agents Window, the IDE, web, and Cursor for iOS"
+        },
+        {
+          "claim": "Работает на Grok Voice; в Privacy Mode - нулевое хранение данных",
+          "source": "https://cursor.com/changelog/voice-chat",
+          "quote_hint": "runs on Grok Voice"
+        },
+        {
+          "claim": "На iOS можно сказать 'Hey Siri, call Cursor'",
+          "source": "https://cursor.com/changelog/voice-chat",
+          "quote_hint": "Hey Siri, call Cursor"
+        }
+      ],
+      "removed_claims": [
+        "требования к тарифу - не указаны"
+      ],
+      "hashtag": "#Cursor"
+    },
+    {
+      "id": "7486a9a8c5dfbdf5b03c26643427929092f9cba3",
+      "kind": "news",
+      "status": "verified",
+      "title": "Thinking Machines представила Inkling 2 Small",
+      "company": "Thinking Machines Lab",
+      "product": "Inkling 2 Small",
+      "section": "E",
+      "importance": 9,
+      "published_at": "2026-11-05T00:00:00Z",
+      "summary_raw": "MoE-модель с картинками на входе, 594B параметров всего / 17B активных. Пока закрытые веса, доступ через Tinker; открытые веса под Apache 2.0 обещаны после внешнего тестирования безопасности. Сильные результаты в агентном кодинге по данным компании.",
+      "primary_source_url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "attribution": "по данным компании",
+      "checked_claims": [
+        {
+          "claim": "Inkling 2 Small: MoE, 594B параметров всего / 17B активных, принимает изображения",
+          "source": "https://thinkingmachines.ai/news/inkling-2-small/",
+          "quote_hint": "594B total, 17B active"
+        },
+        {
+          "claim": "Пока закрытые веса, доступ через Tinker",
+          "source": "https://thinkingmachines.ai/news/inkling-2-small/",
+          "quote_hint": "initially available through Tinker with closed weights"
+        },
+        {
+          "claim": "Компания намерена выпустить веса под Apache 2.0 'на следующей неделе' после внешнего тестирования безопасности (обещание, не факт)",
+          "source": "https://thinkingmachines.ai/news/inkling-2-small/",
+          "quote_hint": "Apache 2.0 license next week"
+        },
+        {
+          "claim": "По данным компании: 31 балл на Artificial Analysis Intelligence Index",
+          "source": "https://thinkingmachines.ai/news/inkling-2-small/",
+          "quote_hint": "Scores 31 on the Artificial Analysis Intelligence Index"
+        }
+      ],
+      "removed_claims": [
+        "'лидер среди западных open-weight' - веса ещё не выпущены; DesignArena 1340 'станет топ open-weights' - только по заявлению компании и после выхода весов",
+        "сообщение о raising $5B - слух по Business Insider, не использовать как факт"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "bec40466c056d4080d10d33fe5a697224b6357ab",
+      "kind": "news",
+      "status": "verified",
+      "title": "Tencent выпустила Hy4 с визуальным пониманием и computer use",
+      "company": "Tencent",
+      "product": "Hy4",
+      "section": "E",
+      "importance": 8,
+      "published_at": "2026-11-04T00:00:00Z",
+      "summary_raw": "Флагманская модель на 770B параметров получила понимание изображений и управление ПО (CLI, GUI, Blender, CAD). Цены API прежние; веса и system card обещаны позже, планируется дешёвая Flash-версия.",
+      "primary_source_url": "https://siliconangle.com/2026/11/04/tencent-releases-hy4-powerful-frontier-llm-introducing-visual-understanding-and-computer-use/",
+      "attribution": "по данным Tencent",
+      "checked_claims": [
+        {
+          "claim": "Tencent представила Hy4 - первую модель Tencent с computer use (CLI и GUI), добавлено визуальное понимание",
+          "source": "https://siliconangle.com/2026/11/04/tencent-releases-hy4-powerful-frontier-llm-introducing-visual-understanding-and-computer-use/",
+          "quote_hint": "first model with computer-use abilities"
+        },
+        {
+          "claim": "Обучение под Blender и CAD (technode)",
+          "source": "https://technode.com/2026/11/04/tencent-launches-hy4-with-vision-and-computer-use-capabilities/",
+          "quote_hint": "Blender and CAD software"
+        },
+        {
+          "claim": "Цены API те же, что у превью",
+          "source": "https://technode.com/2026/11/04/tencent-launches-hy4-with-vision-and-computer-use-capabilities/",
+          "quote_hint": "unchanged from the Hy4 preview"
+        },
+        {
+          "claim": "Веса и system card обещаны 'вскоре', планируется Flash-версия",
+          "source": "https://technode.com/2026/11/04/tencent-launches-hy4-with-vision-and-computer-use-capabilities/",
+          "quote_hint": "weights and a system card shortly"
+        }
+      ],
+      "removed_claims": [
+        "конкретные цены в долларах - источники расходятся ($0,90/$2,70 vs $0,834/$2,501), не указывать",
+        "число 770B в окончательной версии - SiliconAngle относит к превью (770B/49B active), technode - к Hy4; осторожно, лучше не указывать как параметр финальной модели"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "7838c87736f9082fb144453a5a532f0d0cfd974f",
+      "kind": "news",
+      "status": "verified",
+      "title": "Moonshot AI опубликовала веса Kimi K3.1 Pro",
+      "company": "Moonshot AI",
+      "product": "Kimi K3.1 Pro",
+      "section": "F",
+      "importance": 8,
+      "published_at": "2026-11-04T15:30:30Z",
+      "summary_raw": "MoE на 2,8T параметров (104B активных), контекст 1M токенов, текст и изображения, собственная лицензия. Бенчмарки заявлены самой компанией.",
+      "primary_source_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "attribution": "по данным Moonshot AI",
+      "checked_claims": [
+        {
+          "claim": "Веса Kimi K3.1 Pro опубликованы на Hugging Face",
+          "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "quote_hint": "model card page"
+        },
+        {
+          "claim": "MoE 2,8T параметров всего, 104B активных; контекст 1 048 576 токенов; вход текст и изображения",
+          "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "quote_hint": "2.8T total, 104B activated"
+        },
+        {
+          "claim": "Собственная лицензия Kimi K3.1 Pro License (не стандартная open-source)",
+          "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "quote_hint": "custom Kimi K3.1 Pro License"
+        },
+        {
+          "claim": "Бенчмарки - собственные замеры Moonshot",
+          "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "quote_hint": "Moonshot's own scores use maximum reasoning effort"
+        }
+      ],
+      "removed_claims": [
+        "точная дата выкладки весов - на карточке не указана, СМИ расходятся (2, 4 или 5 ноября); писать 'на этой неделе'",
+        "условия лицензии (MIT-подобная, порог $20 млн) - противоречивые источники, не указывать"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "89209ab642b10e254f0682f6d93ea473caa87b4e",
+      "kind": "news",
+      "status": "partially",
+      "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+      "company": "Gradium",
+      "product": "Phonon TTS",
+      "section": "F",
+      "importance": 6,
+      "published_at": "2026-11-05T00:00:00Z",
+      "summary_raw": "Gradium выпустила малые модели синтеза речи (около 65 и 75 МБ), работающие локально на телефонах, ноутбуках и в браузере; пять языков, больше 100 голосов, клонирование голоса. По данным авторов, на Open TTS Leaderboard модель первая по разборчивости в немецком и испанском и в тройке лидеров во всех оценённых языках, а на CPU первый звук появляется за 28 мс. Английская версия 31m под Apache 2.0, мультиязычная 40m под CC BY-NC.",
+      "primary_source_url": "https://huggingface.co/blog/phonon-tts",
+      "attribution": "по данным авторов",
+      "checked_claims": [
+        {
+          "claim": "Phonon TTS от Gradium: две локальные модели ~65 и ~75 МБ, пять языков (en, fr, de, es, pt), 100+ голосов",
+          "source": "https://huggingface.co/blog/phonon-tts",
+          "quote_hint": "65 MB and 75 MB"
+        },
+        {
+          "claim": "Английская 31m - Apache 2.0, мультиязычная 40m - CC BY-NC (некоммерческая)",
+          "source": "https://huggingface.co/blog/phonon-tts",
+          "quote_hint": "31m English model is Apache 2.0"
+        },
+        {
+          "claim": "По данным авторов: первое место по разборчивости в немецком и испанском на Open TTS Leaderboard, топ-3 во всех языках; 28 мс до первого звука на CPU у 31m",
+          "source": "https://huggingface.co/blog/phonon-tts",
+          "quote_hint": "first in German and Spanish intelligibility"
+        }
+      ],
+      "removed_claims": [
+        "'выпустила'/запуск как новость недели - в тексте блога '200 000 скачиваний за первые две недели', значит модели вышли ~до 22 октября; новое только описание/блог",
+        "клонирование голоса - через Gradium Studio, не локально"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "e8690f74b67f56983d288ac628cf8aa1b7f6cf1c",
+      "kind": "news",
+      "status": "verified",
+      "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+      "company": "NVIDIA",
+      "product": "Cosmos 3",
+      "section": "F",
+      "importance": 7,
+      "published_at": "2026-11-05T19:35:16Z",
+      "summary_raw": "NVIDIA добавила в семейство Cosmos 3 четыре открытых чекпойнта на базе Cosmos 3 Nano: генерация мультикамерных данных для беспилотников (до 11 ракурсов, RGB плюс LiDAR), потоковая симуляция вождения, превращение управляющих сигналов симулятора в видео и предсказание видео по действиям двурукого робота. Лицензия OpenMDW 1.1 (по заявлению авторов допускает коммерческое использование). Авторы отмечают, что пригодность для обучения и оценки политик ещё предстоит измерить.",
+      "primary_source_url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "attribution": "по данным NVIDIA",
+      "checked_claims": [
+        {
+          "claim": "Четыре новых открытых чекпойнта, дообученных из Cosmos 3 Nano: Transfer-Auto, Sim-Auto, Sim-Transfer, Sim-Bimanual",
+          "source": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+          "quote_hint": "all post-trained from Cosmos 3 Nano"
+        },
+        {
+          "claim": "Transfer-Auto: синхронное видео до 11 ракурсов, совместная генерация RGB и LiDAR",
+          "source": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+          "quote_hint": "up to 11 camera views"
+        },
+        {
+          "claim": "Лицензия OpenMDW 1.1, допускает коммерческое и некоммерческое использование на её условиях",
+          "source": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+          "quote_hint": "OpenMDW 1.1"
+        }
+      ],
+      "removed_claims": [
+        "число параметров - блог говорит 16B, карточки 15B, не указывать"
+      ],
+      "hashtag": "#NVIDIA"
+    },
+    {
+      "id": "20954e3ac0ff87f74efda3333b11cedb4f109ce2",
+      "kind": "news",
+      "status": "verified",
+      "title": "CWE-bench v2: More coverage, quality, and transparency",
+      "company": "Hugging Face",
+      "product": "CWE-bench v2",
+      "section": "F",
+      "importance": 6,
+      "published_at": "2026-11-03T00:00:00Z",
+      "summary_raw": "Обновлённый бенчмарк: 100 публичных задач по 91 классу уязвимостей, где агент должен найти и исправить дыру в реальном open-source репозитории, не сломав остальное. По данным авторов, из 11 моделей лучший результат у Gemini 4 Argon (67.8% pass@1), следом Claude Opus 5.5 (67.3%). Датасет закрытый (gated), есть отложенная выборка.",
+      "primary_source_url": "https://huggingface.co/blog/cwe-bench",
+      "attribution": "по данным авторов",
+      "checked_claims": [
+        {
+          "claim": "CWE-bench v2: 100 публичных задач по 91 классу CWE",
+          "source": "https://huggingface.co/blog/cwe-bench",
+          "quote_hint": "100 public tasks covering 91 different CWEs"
+        },
+        {
+          "claim": "Из 11 моделей лучшая - Gemini 4 Argon, 67,8% pass@1 (81,0% pass@4); далее Claude Opus 5.5, 67,3% (78,0% pass@4)",
+          "source": "https://huggingface.co/blog/cwe-bench",
+          "quote_hint": "Gemini 4 Argon leads with 67.8%"
+        },
+        {
+          "claim": "Датасет закрытый (gated), принимаются условия доступа",
+          "source": "https://huggingface.co/blog/cwe-bench",
+          "quote_hint": "dataset is gated"
+        },
+        {
+          "claim": "DeepSeek V4.1 Flash - 57,0% pass@1 при $0,04 за прогон",
+          "source": "https://huggingface.co/blog/cwe-bench",
+          "quote_hint": "$0.04 per rollout"
+        }
+      ],
+      "removed_claims": [
+        "'отложенная выборка (held-out)' - в прочитанном резюме не подтверждена, не указывать"
+      ],
+      "hashtag": null
+    },
+    {
+      "id": "95f5b8b4456c962d6f648249097402e19c97021a",
+      "kind": "news",
+      "status": "partially",
+      "title": "Anthropic выпустили в опенсорс FlashProve – инструмент для доказуемого инференса",
+      "company": "Anthropic",
+      "product": "FlashProve",
+      "section": "F",
+      "importance": 6,
+      "published_at": "2026-11-04T12:16:01Z",
+      "summary_raw": "Исследовательский прототип под Apache 2.0 (v0.16.0): нулевое разглашение для доказательства, что ответ выдан зафиксированной моделью; проверка на CPU; прувер запускает Llama 4 Maverick на одной H100; корректность протокола доказана в Lean 4. Репозиторий не поддерживается. Дата на странице не указана.",
+      "primary_source_url": "https://github.com/anthropics/FlashProve",
+      "attribution": "по данным README репозитория",
+      "checked_claims": [
+        {
+          "claim": "FlashProve - исследовательский прототип доказательства (ZK) того, какая модель ответила, без раскрытия весов; v0.16.0, Apache 2.0",
+          "source": "https://github.com/anthropics/FlashProve",
+          "quote_hint": "Version 0.16.0 ... Apache 2.0"
+        },
+        {
+          "claim": "Проверка доказательства на CPU за секунды",
+          "source": "https://github.com/anthropics/FlashProve",
+          "quote_hint": "verify on a CPU in seconds"
+        },
+        {
+          "claim": "Репозиторий не поддерживается и не принимает вклад",
+          "source": "https://github.com/anthropics/FlashProve",
+          "quote_hint": "not maintained and not accepting contributions"
+        }
+      ],
+      "removed_claims": [
+        "дата публикации - на странице не указана (один коммит, © 2026); попадание в окно подтверждено только датой Telegram-поста 4 ноября",
+        "'прувер запускает Llama 4 Maverick на одной H100' - в README это архитектура Maverick на синтетических весах, контекст 1024 токена; для реальных весов нужно ~330 ГБ RAM; не писать как работающий результат",
+        "корректность 'доказана в Lean 4' - заявление авторов, я Lean-доказательство не проверял"
+      ],
+      "hashtag": "#Anthropic"
+    },
+    {
+      "id": "3b58ffb304e7b124cccfb142a59a8052fc0d1e06",
+      "kind": "news",
+      "status": "partially",
+      "title": "Claude Code sends your email address to websites",
+      "company": "Anthropic",
+      "product": "Claude Code",
+      "section": "D",
+      "importance": 5,
+      "published_at": "2026-11-05T22:17:15Z",
+      "summary_raw": "1601 points, 532 comments",
+      "primary_source_url": "https://github.com/anthropics/claude-code/issues/107757",
+      "attribution": "по данным issue на GitHub",
+      "checked_claims": [
+        {
+          "claim": "В issue #107757 пользователь сообщает, что Claude Code передаёт его email в заголовке User-Agent при веб-поиске; issue открыт 5 ноября",
+          "source": "https://github.com/anthropics/claude-code/issues/107757",
+          "quote_hint": "Privacy violation in User-Agent header"
+        },
+        {
+          "claim": "Представитель Anthropic в треде: встроенный мод cc-plugin-privacy блокирует это в v2.1.317+, включён по умолчанию",
+          "source": "https://github.com/anthropics/claude-code/issues/107757",
+          "quote_hint": "cc-plugin-privacy ... v2.1.317"
+        }
+      ],
+      "removed_claims": [
+        "утверждение о спаме/мошенничестве из-за утечки - слова автора issue, не подтверждено",
+        "нарушение GDPR - мнение комментатора",
+        "заголовок 'Claude Code sends your email address to websites' - это заголовок HN, не issue; исправлена ли проблема, из треда неясно"
+      ],
+      "hashtag": "#Anthropic"
+    }
+  ]
+}

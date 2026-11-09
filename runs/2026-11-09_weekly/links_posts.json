@@ -1,0 +1,100 @@
+{
+  "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/": {
+    "url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+    "status": 200,
+    "final_url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/": {
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/": {
+    "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+    "status": 200,
+    "final_url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/": {
+    "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+    "status": 200,
+    "final_url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work": {
+    "url": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+    "status": 403,
+    "final_url": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+    "error": null,
+    "verdict": "unverifiable"
+  },
+  "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/": {
+    "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+    "status": 200,
+    "final_url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://cursor.com/changelog/build-live-apps": {
+    "url": "https://cursor.com/changelog/build-live-apps",
+    "status": 200,
+    "final_url": "https://cursor.com/changelog/build-live-apps",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://cursor.com/changelog/voice-chat": {
+    "url": "https://cursor.com/changelog/voice-chat",
+    "status": 200,
+    "final_url": "https://cursor.com/changelog/voice-chat",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://thinkingmachines.ai/news/inkling-2-small/": {
+    "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+    "status": 200,
+    "final_url": "https://thinkingmachines.ai/news/inkling-2-small/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://siliconangle.com/2026/11/04/tencent-releases-hy4-powerful-frontier-llm-introducing-visual-understanding-and-computer-use/": {
+    "url": "https://siliconangle.com/2026/11/04/tencent-releases-hy4-powerful-frontier-llm-introducing-visual-understanding-and-computer-use/",
+    "status": 200,
+    "final_url": "https://siliconangle.com/2026/11/04/tencent-releases-hy4-powerful-frontier-llm-introducing-visual-understanding-and-computer-use/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/moonshotai/Kimi-K3.1-Pro": {
+    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+    "status": 200,
+    "final_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation": {
+    "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/blog/phonon-tts": {
+    "url": "https://huggingface.co/blog/phonon-tts",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/phonon-tts",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/blog/cwe-bench": {
+    "url": "https://huggingface.co/blog/cwe-bench",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/cwe-bench",
+    "error": null,
+    "verdict": "ok"
+  }
+}
