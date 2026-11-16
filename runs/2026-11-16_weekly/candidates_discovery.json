@@ -1,0 +1,320 @@
+{
+ "items": [
+  {
+   "title": "Mirendil привлекла $1 млрд в раунде Series A",
+   "url": "https://mirendil.com/news/series-a/",
+   "source": "mirendil.com",
+   "source_type": "official",
+   "published_at": "2026-11-12T17:00:00Z",
+   "company": "Mirendil",
+   "product": "Lor, Mirendil-Base, Fern",
+   "section": "E",
+   "summary_raw": "Стартап бывших исследователей Google DeepMind и Anthropic закрыл Series A на $1 млрд; раунд вели Kleiner Perkins и Clearlake Capital, участвовали в том числе Google, Battery Ventures, Doerr Capital. Компания строит инструменты, где сотни агентов сами ведут R&D: по её словам, один исследователь с агентами предобучил кодовую модель Mirendil-Base с нуля за 3,5 месяца и менее чем за $10 млн вычислений; на её основе сделана Fern с контекстом до 10 млн токенов. Платформа Lor — в закрытой бете. Оценка в официальном посте не названа.",
+   "importance": 8,
+   "also_seen_at": [
+    "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+    "https://siliconangle.com/2026/11/13/mirendil-raises-1b-in-funding-to-speed-up-ai-model-development/"
+   ]
+  },
+  {
+   "title": "LangChain привлекла $300 млн при оценке $3 млрд",
+   "url": "https://www.langchain.com/blog/series-c",
+   "source": "langchain.com",
+   "source_type": "official",
+   "published_at": "2026-11-13T00:00:00Z",
+   "company": "LangChain",
+   "product": "LangSmith, LangGraph, Deep Agents",
+   "section": "E",
+   "summary_raw": "Разработчик популярных open-source фреймворков для агентов объявил Series C на $300 млн при оценке $3 млрд, раунд возглавил CapitalG (Alphabet); по данным SiliconANGLE, участвовали IVP, Sapphire, GIC, DFJ Growth. Деньги пойдут на развитие платной платформы LangSmith (наблюдаемость, оценка и запуск агентов). Оценка выросла более чем вдвое с прошлого раунда ($1,25 млрд в октябре 2025). Первым о сделке 12 ноября сообщил WSJ.",
+   "importance": 8,
+   "also_seen_at": [
+    "https://siliconangle.com/2026/11/12/ai-agent-tooling-provider-langchain-secures-300m-investment/"
+   ]
+  },
+  {
+   "title": "Mercor привлекла $750 млн при оценке $20 млрд",
+   "url": "https://www.mercor.com/blog/series-d/",
+   "source": "mercor.com",
+   "source_type": "official",
+   "published_at": "2026-11-10T16:00:00Z",
+   "company": "Mercor",
+   "product": "Mercor (оценка и дообучение агентов)",
+   "section": "E",
+   "summary_raw": "Поставщик экспертов для обучения и оценки моделей закрыл Series D на $750 млн при оценке $20 млрд (вдвое выше Series C год назад). Компания разворачивается от фронтир-лабораторий к корпорациям: будет строить для каждого заказчика собственные бенчмарки и дообучать открытые модели под его задачи. Среди инвесторов, по SiliconANGLE, — Nvidia, Salesforce, Zoom, Benchmark, Felicis, General Catalyst; часть раунда — выкуп акций сотрудников.",
+   "importance": 8,
+   "also_seen_at": [
+    "https://www.businesswire.com/news/home/20261110410031/en/Mercor-Raises-%24750-Million-Series-D-at-%2420-Billion-Valuation-to-Help-Enterprises-Own-Their-Intelligence",
+    "https://siliconangle.com/2026/11/10/mercor-raises-750m-at-20b-valuation-to-take-ai-agent-evaluation-to-enterprises/"
+   ]
+  },
+  {
+   "title": "Meituan открыла веса LongCat-2.5 — 1,6 трлн параметров под MIT",
+   "url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+   "source": "huggingface.co",
+   "source_type": "official",
+   "published_at": "2026-11-09T00:00:00Z",
+   "company": "Meituan",
+   "product": "LongCat-2.5",
+   "section": "F",
+   "summary_raw": "Мультимодальная MoE-модель для долгих агентных задач и кодинга: 1,6 трлн параметров всего, около 48 млрд активных на токен, обучена на китайских ускорителях без GPU Nvidia; веса под лицензией MIT, есть 4-битная версия и гайд по запуску на Huawei Ascend. Анонс был 2 ноября, веса, по данным СМИ, стали доступны около 9 ноября. Бенчмарки — собственные замеры Meituan.",
+   "importance": 8,
+   "also_seen_at": [
+    "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+    "https://aiweekly.co/alerts/meituan-open-sources-longcat-25-16t-moe-under-mit-license"
+   ]
+  },
+  {
+   "title": "Edge0-145B: модель на 145B параметров для запуска на ноутбуке",
+   "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+   "source": "edge0.ai",
+   "source_type": "official",
+   "published_at": "2026-11-12T18:00:00Z",
+   "company": "Edge0",
+   "product": "Edge0-145B, Edge0-120B",
+   "section": "F",
+   "summary_raw": "Edge0 выложила веса Edge0-145B и Edge0-120B вместе с фреймворком инференса. MoE с ~10B активных параметров; компания заявляет пиковое потребление памяти около 29 ГБ (хватает ноутбука на 48 ГБ), >80 токенов/с и поддержку macOS, Windows, Linux. Бенчмарки внутренние. По карточке на Hugging Face, базовая модель — Qwen3.8-Flash-Next, лицензия собственная (Edge0 Community Model License), а не стандартная open-source.",
+   "importance": 7,
+   "also_seen_at": [
+    "https://huggingface.co/Edge0/Edge0-145B-NVFP4"
+   ]
+  },
+  {
+   "title": "Nominal привлекла $240 млн при оценке $3 млрд",
+   "url": "https://nominal.io/blog/series-c",
+   "source": "nominal.io",
+   "source_type": "official",
+   "published_at": "2026-11-09T00:00:00Z",
+   "company": "Nominal",
+   "product": "Nominal (платформа для испытаний «железа»)",
+   "section": "E",
+   "summary_raw": "Стартап из Остина, делающий софт и ИИ-агентов для испытаний и анализа данных сложной техники (самолёты, спутники, роботы), закрыл Series C на $240 млн; вёл Lightspeed, со-лидер — Insight Partners. Оценка $3 млрд — примерно втрое выше весенней.",
+   "importance": 6,
+   "also_seen_at": [
+    "https://thenextweb.com/news/nominal-series-c-240m-3b-valuation-hardware-ai"
+   ]
+  },
+  {
+   "title": "Reddit запустила Reddit Reviews — ИИ-сводки обсуждений товаров",
+   "url": "https://redditinc.com/news/introducing-reddit-reviews",
+   "source": "redditinc.com",
+   "source_type": "official",
+   "published_at": "2026-11-10T14:55:48Z",
+   "company": "Reddit",
+   "product": "Reddit Reviews",
+   "section": "E",
+   "summary_raw": "Reddit открыла для всех пользователей в США раздел Reviews: ИИ собирает обсуждения товаров из сабреддитов в отдельные страницы с главными выводами. На старте — около 10 тыс. популярных продуктов в электронике, красоте, доме и одежде; расширение на другие страны планируется в 2027 году. Компания утверждает, что бренды не платят за размещение. Часть пользователей критикует идею ИИ-сводок.",
+   "importance": 6,
+   "also_seen_at": [
+    "https://www.zdnet.com/innovation/reddit-reviews-feature/",
+    "https://thenextweb.com/news/reddit-turns-user-threads-into-ai-reviews-for-10000-products"
+   ]
+  },
+  {
+   "title": "United Airlines запретила ИИ-агентам бронировать билеты",
+   "url": "https://skift.com/2026/11/11/united-airlines-moves-to-block-personal-ai-agents-from-booking-flights/",
+   "source": "skift.com",
+   "source_type": "media",
+   "published_at": "2026-11-11T19:49:44Z",
+   "company": "United Airlines",
+   "product": "—",
+   "section": "E",
+   "summary_raw": "United изменила договор перевозки: сторонним ИИ-агентам запрещено покупать, менять и обслуживать билеты — на сайте, в приложении, через онлайн-агентства и агрегаторы, даже если клиент сам подтверждает действия. Такие брони авиакомпания может аннулировать без уведомления. Искать рейсы и цены агентам по-прежнему можно. United ссылается на безопасность данных, приватность и требования регуляторов; критики сомневаются, что запрет удастся технически соблюсти.",
+   "importance": 6,
+   "also_seen_at": [
+    "https://airlinegeeks.com/2026/11/11/united-bans-ai-agents-from-booking-flights-for-customers/",
+    "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/"
+   ]
+  },
+  {
+   "title": "Исследование: китайские модели несут «отпечаток» GPU Nvidia Blackwell",
+   "url": "https://unemploymentlabs.com/checkpoint-forensics",
+   "source": "unemploymentlabs.com",
+   "source_type": "research",
+   "published_at": "2026-11-12T00:00:00Z",
+   "company": "Unemployment Labs",
+   "product": "Checkpoint forensics",
+   "section": "F",
+   "summary_raw": "Независимый отчёт (автор — Will DePue) анализирует числовые паттерны в опубликованных весах и утверждает, что шесть моделей DeepSeek, Moonshot AI, MiniMax и Ant Group, вышедших с апреля 2026, обучались на экспортно-ограниченных GPU Nvidia Blackwell. Это выводы авторов, в отчёте есть раздел об ограничениях метода; независимого подтверждения нет.",
+   "importance": 6
+  },
+  {
+   "title": "Zyphra выпустила открытую TTS-модель ZONOS3-Mini",
+   "url": "https://www.zyphra.com/our-work/zonos3-mini",
+   "source": "zyphra.com",
+   "source_type": "official",
+   "published_at": "2026-11-09T00:00:00Z",
+   "company": "Zyphra",
+   "product": "ZONOS3-Mini",
+   "section": "F",
+   "summary_raw": "Компактная модель синтеза речи с клонированием голоса по короткому образцу и управлением голосом; поддерживает 43 языка, включая русский и украинский, и, по словам Zyphra, работает в реальном времени на устройстве. Веса на Hugging Face под Apache 2.0, есть статья на arXiv и облачная версия.",
+   "importance": 5,
+   "also_seen_at": [
+    "https://huggingface.co/Zyphra/ZONOS3-Mini"
+   ]
+  },
+  {
+   "title": "higurashi открыла Haru-4B — модель для живого голосового диалога",
+   "url": "https://blog.higurashi.ai/melte/haru4b/",
+   "source": "blog.higurashi.ai",
+   "source_type": "official",
+   "published_at": "2026-11-13T00:00:00Z",
+   "company": "higurashi",
+   "product": "Haru-4B",
+   "section": "F",
+   "summary_raw": "Японская компания выложила под Apache 2.0 базовую full-duplex модель речевого диалога: она одновременно слушает и говорит (кадр каждые 133 мс), учится перебиваниям и поддакиваниям на реальной речи, а не на синтетике. Поддерживает девять языков, включая русский; персонаж задаётся текстом, голос — коротким образцом. Выпущена как исследовательская предобученная модель.",
+   "importance": 5,
+   "also_seen_at": [
+    "https://huggingface.co/higurashi-ai/Haru-4B"
+   ]
+  },
+  {
+   "title": "Graphon Labs привлекла $35 млн на долговременную память для агентов",
+   "url": "https://www.graphonlabs.ai/blog/understanding-our-world",
+   "source": "graphonlabs.ai",
+   "source_type": "official",
+   "published_at": "2026-11-10T00:00:00Z",
+   "company": "Graphon Labs",
+   "product": "Graphon Enterprise, On-Device Memory",
+   "section": "E",
+   "summary_raw": "Стартап из Сан-Франциско закрыл Series A на $35 млн во главе с RRE Ventures (участвовали HP, Energy Impact Partners, Hitachi Ventures), всего привлечено $43,3 млн. Делает графовую «постоянную память» для ИИ-агентов, связывающую документы, видео и изображения с учётом источника и времени изменений. Результаты бенчмарков — данные компании.",
+   "importance": 4,
+   "also_seen_at": [
+    "https://thenextweb.com/news/graphon-labs-35m-series-a-ai-agent-memory"
+   ]
+  },
+  {
+   "title": "Lumbra привлекла $25 млн на агентов для чувствительных сред",
+   "url": "https://www.lumbra.ai/",
+   "source": "lumbra.ai",
+   "source_type": "official",
+   "published_at": "2026-11-10T00:00:00Z",
+   "company": "Lumbra",
+   "product": "LumbraOS",
+   "section": "E",
+   "summary_raw": "Разработчик платформы оркестрации ИИ-агентов для разведки и оборонки (работа с секретными данными) закрыл Series A на $25 млн, раунд вели Point72 Ventures и Ansa. Деньги — на расширение в коммерческие отрасли с похожими требованиями к безопасности и проверяемости.",
+   "importance": 4,
+   "also_seen_at": [
+    "https://www.businesswire.com/news/home/20261110290340/en/Lumbra-Raises-%2425M-Series-A-to-Scale-Agentic-AI-for-High-Consequence-Environments"
+   ]
+  },
+  {
+   "title": "Coframe привлекла $25 млн на самооптимизирующиеся сайты",
+   "url": "https://www.coframe.com/post/coframe-series-a",
+   "source": "coframe.com",
+   "source_type": "official",
+   "published_at": "2026-11-09T00:00:00Z",
+   "company": "Coframe",
+   "product": "Coframe",
+   "section": "E",
+   "summary_raw": "Coframe закрыла Series A на $25 млн (со-лидеры Khosla Ventures и Hanabi Capital), общий объём финансирования — $35 млн. Сервис с помощью ИИ генерирует страницы и рекламу, сам ставит эксперименты и внедряет улучшения конверсии.",
+   "importance": 4
+  },
+  {
+   "title": "Kora: Linux-ОС со встроенными ИИ-агентами для ПК на Snapdragon",
+   "url": "https://siliconangle.com/2026/11/10/kora-builds-ai-models-and-agents-into-a-new-linux-os-bound-for-qualcomm-snapdragon-pcs/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-11-10T00:00:00Z",
+   "company": "Kora Systems",
+   "product": "Kora",
+   "section": "E",
+   "summary_raw": "Kora (выросла из Playtron) анонсировала Linux-систему, где модели и агенты встроены в ОС: локальный инференс на CPU/GPU/NPU, «нейронные рабочие пространства» вместо папок, запуск части Windows-приложений. Qualcomm помогает с поддержкой Snapdragon X2 Elite. Первые ПК (с HUMAIN OS) — в 2027 году. Официальный сайт пока заглушка.",
+   "importance": 4
+  },
+  {
+   "title": "Cowbell запускает страховку от ущерба, причинённого ИИ-агентами",
+   "url": "https://siliconangle.com/2026/11/10/cowbell-unveils-ai-liability-insurance-for-small-businesses-that-deploy-ai-agents/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-11-10T00:00:00Z",
+   "company": "Cowbell",
+   "product": "AI Liability",
+   "section": "E",
+   "summary_raw": "Страховщик Cowbell представил отдельный полис для малого и среднего бизнеса США: покрывает потери от ошибок агентов (например, двойные платежи), атак на агентов, дрейфа моделей, кражи API-ключей, а также иски клиентов и регуляторные разбирательства. Продажи — с 1 января 2027 года через брокеров.",
+   "importance": 4,
+   "also_seen_at": [
+    "https://cowbell.insure/"
+   ]
+  },
+  {
+   "title": "РБА: ИИ уже сказывается на найме молодых работников",
+   "url": "https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/",
+   "source": "the-decoder.com",
+   "source_type": "media",
+   "published_at": "2026-11-15T00:00:00Z",
+   "company": "Reserve Bank of Australia",
+   "product": "—",
+   "section": "E",
+   "summary_raw": "Резервный банк Австралии (выступление замглавы Сары Хантер) не видит крупного общего влияния ИИ на занятость, но фиксирует ранние признаки ослабления найма молодых людей в наиболее подверженных ИИ профессиях — разработке ПО, клерикальной и административной работе. Около трёх четвертей опрошенных компаний не меняли численность из-за ИИ.",
+   "importance": 4,
+   "also_seen_at": [
+    "https://www.thenewdaily.com.au/themoneyedition/ai-and-technology/2026/11/09/rba-sees-early-signs-of-weaker-hiring-for-young-workers-in-ai-exposed-roles"
+   ]
+  },
+  {
+   "title": "Hatz AI привлекла $24 млн на ИИ для малого бизнеса через MSP",
+   "url": "https://siliconangle.com/2026/11/12/hatz-ai-raises-24m-to-help-small-businesses-go-ai-native-through-their-msps/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-11-12T00:00:00Z",
+   "company": "Hatz AI",
+   "product": "Hatz AI",
+   "section": "E",
+   "summary_raw": "Series A на $24 млн во главе с Nadia Partners. Hatz делает платформу, через которую ИТ-аутсорсеры (MSP) продают малому бизнесу ИИ-сервисы под своим брендом: маршрутизация к фронтир-моделям, контроль расходов и политик, готовые агенты для тикетов, бухгалтерии и продаж.",
+   "importance": 3,
+   "also_seen_at": [
+    "https://www.hatz.ai"
+   ]
+  },
+  {
+   "title": "Nebuly привлекла $21 млн на измерение отдачи от ИИ",
+   "url": "https://siliconangle.com/2026/11/12/nebuly-wants-to-help-enterprises-understand-exactly-what-their-ai-investments-are-worth-after-raising-21m/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-11-12T00:00:00Z",
+   "company": "Nebuly",
+   "product": "Nebuly",
+   "section": "E",
+   "summary_raw": "Итальянский стартап закрыл раунд на $21 млн во главе с Planven (среди участников Exor Ventures, Vodafone, CDP Venture Capital). Платформа подключается к агентам в инфраструктуре компании и оценивает их бизнес-эффект: продуктивность, выручку, отток. Клиенты — Zeiss, Iveco, Oura; на деньги — экспансия в США.",
+   "importance": 3,
+   "also_seen_at": [
+    "https://www.nebuly.com/"
+   ]
+  },
+  {
+   "title": "Qvyon вышла из тени с $8 млн на проверку безопасности физического ИИ",
+   "url": "https://siliconangle.com/2026/11/12/qvyon-launches-with-8m-to-improve-safety-for-physical-ai-deployments/",
+   "source": "siliconangle.com",
+   "source_type": "media",
+   "published_at": "2026-11-12T00:00:00Z",
+   "company": "Qvyon Technologies",
+   "product": "MIMIC Core",
+   "section": "E",
+   "summary_raw": "Канадский стартап привлёк $8 млн (лид — MaC Venture Capital). Платформа MIMIC превращает реальные записи камер, лидаров и радаров в симуляции с вариациями сценариев для валидации беспилотников и роботов до развёртывания.",
+   "importance": 3,
+   "also_seen_at": [
+    "https://qvyon.com/"
+   ]
+  },
+  {
+   "title": "LibreAGI — приватный торрент-трекер для сохранения открытых моделей",
+   "url": "https://libreagi.com/",
+   "source": "libreagi.com",
+   "source_type": "official",
+   "published_at": "2026-11-12T00:00:00Z",
+   "company": "LibreAGI",
+   "product": "LibreAGI",
+   "section": "F",
+   "summary_raw": "Проект-архив: участники закрытого BitTorrent-трекера хранят копии открытых моделей (Apache-2.0, MIT, Qwen License), которые могут исчезнуть с хостингов; редкие модели дают больше рейтинга, файлы сверяются с исходными коммитами, публичный подписанный каталог позволяет восстановить раздачи. Дата запуска на сайте не указана — проект обсуждали на Hacker News 12 ноября.",
+   "importance": 2
+  }
+ ],
+ "errors": [
+  "Первоисточники не найдены/не открыты для Kora, Cowbell, Hatz AI, Nebuly, Qvyon, United Airlines, РБА (источник — СМИ); thenewdaily.com.au и citybiz.co вернули 403, Business Wire не открылся",
+  "LongCat-2.5: точная дата открытия весов не подтверждена официально (репозиторий HF создан 4.11, СМИ пишут 9.11)",
+  "LangChain: дата в блоге 13.11, первое сообщение (WSJ/SiliconANGLE) — 12.11",
+  "Новость об ИИ и блокнотах Гёделя (The Guardian) не проверена: сайт недоступен для загрузки, иных источников не найдено",
+  "Регуляторных новостей в окне 9–15.11 с первоисточником не найдено (поиск дал только закрытие консультации ЕС по процедурам AI Act 9.11 через вторичный трекер)",
+  "Мелкие пункты из ленты СМИ не включены: относятся к компаниям watchlist (Runway Praxis-1, Apple, Google, Nvidia, Anthropic, OpenAI) или вне окна (Atuin Threads — 27.10, GigaChat 3.5 Reasoning — 10.09)"
+ ]
+}

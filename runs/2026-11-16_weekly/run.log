@@ -1,0 +1,6 @@
+2026-11-16T02:05:51Z | init       | run=2026-11-16_weekly mode=live окно 2026-11-08T17:00:00Z → 2026-11-15T17:00:00Z
+2026-11-16T02:06:13Z | collect    | fetch_feeds[telegram]: 50 кандидатов, ошибок источников: 0
+2026-11-16T02:06:17Z | collect    | fetch_feeds[research]: 85 кандидатов, ошибок источников: 0
+2026-11-16T02:06:23Z | collect    | fetch_feeds[media]: 112 кандидатов, ошибок источников: 0
+2026-11-16T02:06:47Z | collect    | fetch_feeds[companies]: 170 кандидатов, ошибок источников: 0
+2026-11-16T02:12:24Z | collect    | шаг выполнен. 4 сборщика → companies 17(+170 фиды), discovery 21, research 23, telegram 13
