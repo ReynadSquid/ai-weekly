@@ -1,7 +1,10 @@
 {
   "done": [
     "init",
-    "collect"
+    "collect",
+    "merge",
+    "rank",
+    "factcheck"
   ],
   "attempts": 1,
   "errors": []

@@ -1,0 +1,212 @@
+{
+  "https://www.anthropic.com/claude-fable-and-mythos-5-2": {
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://deepmind.google/blog/introducing-gemini-4-hydrogen/": {
+    "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://claude.com/resources/articles/claude-meetings": {
+    "url": "https://claude.com/resources/articles/claude-meetings",
+    "status": 200,
+    "final_url": "https://claude.com/resources/articles/claude-meetings",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://platform.claude.com/docs/en/release-notes/overview": {
+    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "status": 200,
+    "final_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/": {
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/": {
+    "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+    "status": 200,
+    "final_url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://api-docs.deepseek.com/news/news261113": {
+    "url": "https://api-docs.deepseek.com/news/news261113",
+    "status": 200,
+    "final_url": "https://api-docs.deepseek.com/news/news261113/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview": {
+    "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+    "status": 200,
+    "final_url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.perplexity.ai/hub/blog/perplexity-decider": {
+    "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+    "status": 403,
+    "final_url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+    "error": null,
+    "verdict": "unverifiable"
+  },
+  "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm": {
+    "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+    "status": 200,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://runway.com/news/company-news/praxis-1-is-now-available": {
+    "url": "https://runway.com/news/company-news/praxis-1-is-now-available",
+    "status": 200,
+    "final_url": "https://runway.com/news/company-news/praxis-1-is-now-available",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://elevenlabs.io/blog/nyc-summit": {
+    "url": "https://elevenlabs.io/blog/nyc-summit",
+    "status": 200,
+    "final_url": "https://elevenlabs.io/blog/nyc-summit",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://cursor.com/blog/security-incident-update": {
+    "url": "https://cursor.com/blog/security-incident-update",
+    "status": 200,
+    "final_url": "https://cursor.com/blog/security-incident-update",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://skift.com/2026/11/11/united-airlines-moves-to-block-personal-ai-agents-from-booking-flights/": {
+    "url": "https://skift.com/2026/11/11/united-airlines-moves-to-block-personal-ai-agents-from-booking-flights/",
+    "status": 200,
+    "final_url": "https://skift.com/2026/11/11/united-airlines-moves-to-block-personal-ai-agents-from-booking-flights/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer": {
+    "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+    "status": 200,
+    "final_url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://redditinc.com/news/introducing-reddit-reviews": {
+    "url": "https://redditinc.com/news/introducing-reddit-reviews",
+    "status": 200,
+    "final_url": "https://redditinc.com/news/introducing-reddit-reviews",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/blog/ggml-org/llama-cpp-v1": {
+    "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/meituan-longcat/LongCat-2.5": {
+    "url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+    "status": 200,
+    "final_url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://deepmind.google/blog/introducing-alphaproof-code/": {
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "status": 200,
+    "final_url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image": {
+    "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+    "status": 200,
+    "final_url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet": {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+    "status": 200,
+    "final_url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.zyphra.com/our-work/zonos3-mini": {
+    "url": "https://www.zyphra.com/our-work/zonos3-mini",
+    "status": 200,
+    "final_url": "https://www.zyphra.com/our-work/zonos3-mini",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://cursor.com/blog/projects-multiplayer": {
+    "url": "https://cursor.com/blog/projects-multiplayer",
+    "status": 200,
+    "final_url": "https://cursor.com/blog/projects-multiplayer",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://huggingface.co/blog/decision": {
+    "url": "https://huggingface.co/blog/decision",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/decision",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://unemploymentlabs.com/checkpoint-forensics": {
+    "url": "https://unemploymentlabs.com/checkpoint-forensics",
+    "status": 200,
+    "final_url": "https://unemploymentlabs.com/checkpoint-forensics",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://suno.com/blog/introducing-bridge": {
+    "url": "https://suno.com/blog/introducing-bridge",
+    "status": 200,
+    "final_url": "https://suno.com/blog/introducing-bridge",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://code.claude.com/docs/en/changelog": {
+    "url": "https://code.claude.com/docs/en/changelog",
+    "status": 200,
+    "final_url": "https://code.claude.com/docs/en/changelog",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://deepmind.google/blog/gemini-4-carbon-is-now-available/": {
+    "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.anthropic.com/news/roadshow-launch": {
+    "url": "https://www.anthropic.com/news/roadshow-launch",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/news/roadshow-launch",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/": {
+    "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+    "status": 200,
+    "final_url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+    "error": null,
+    "verdict": "ok"
+  }
+}

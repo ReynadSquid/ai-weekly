@@ -1,0 +1,844 @@
+{
+ "items": [
+  {
+   "id": "ffe8a09e969fa29a7c7881cf94d2af2b6afa6488",
+   "status": "verified",
+   "primary_source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+   "confirming_urls": [],
+   "event_date": "2026-11-09",
+   "checked_claims": [
+    {
+     "claim": "9 ноября Anthropic выпустила Claude Fable 5.2 и Claude Mythos 5.2 — одна и та же модель в двух вариантах",
+     "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+     "quote_hint": "same underlying model; dated November 9, 2026"
+    },
+    {
+     "claim": "Fable 5.2 доступна всем, с защитами в кибербезопасности и биологии",
+     "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+     "quote_hint": "strong cybersecurity and biology safeguards"
+    },
+    {
+     "claim": "Mythos 5.2 — только проверенным организациям через Cyber Verification Program и Life Sciences Verification Program; клиенты Enterprise — через Claude Security",
+     "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+     "quote_hint": "Cyber Verification Program, Life Sciences Verification Program"
+    },
+    {
+     "claim": "генерация до 30% быстрее, чем у версий 5.1 (по данным компании); fast mode ускоряет до 2,5 раза",
+     "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+     "quote_hint": "up to 30% faster than Fable 5.1"
+    },
+    {
+     "claim": "49,1% на FrontierCode 2.0 при Xhigh effort (по данным компании); у Fable 5.1 — 32,4%",
+     "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+     "quote_hint": "FrontierCode 2.0 49.1% at Xhigh"
+    },
+    {
+     "claim": "цена $8/$40 за млн входных/выходных токенов, fast mode — $16/$80",
+     "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+     "quote_hint": "$8 input, $40 output; fast mode $16/$80"
+    },
+    {
+     "claim": "в API — claude-fable-5-2; доступна на всех платформах, включая AWS, Google Cloud и Microsoft Azure",
+     "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+     "quote_hint": "claude-fable-5-2; available on all platforms"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Официальная страница Anthropic, 9 ноября; 11 ноября правка одной фразы и сноска. В history нет."
+  },
+  {
+   "id": "a8d5fa7d24b3647f4501b383397b571abdcb6905",
+   "status": "verified",
+   "primary_source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+   "confirming_urls": [
+    "https://aistudio.google.com/docs/changelog"
+   ],
+   "event_date": "2026-11-12",
+   "checked_claims": [
+    {
+     "claim": "Gemini 4 Hydrogen — быстрая модель линейки Gemini 4 для повседневного кодинга и агентных задач (Carbon и Argon — для глубоких рассуждений)",
+     "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+     "quote_hint": "our daily driver for agentic workflows"
+    },
+    {
+     "claim": "12 ноября gemini-4-hydrogen вышла в общий доступ (GA) в Gemini API",
+     "source": "https://aistudio.google.com/docs/changelog",
+     "quote_hint": "November 12, 2026: Gemini 4 Hydrogen GA"
+    },
+    {
+     "claim": "есть в бесплатном тарифе; в платном $1,50/$7,50 за млн входных/выходных токенов",
+     "source": "https://aistudio.google.com/docs/changelog",
+     "quote_hint": "free tier; $1.50 input / $7.50 output"
+    },
+    {
+     "claim": "добавлен четвёртый уровень мышления xhigh (к low, medium, high)",
+     "source": "https://aistudio.google.com/docs/changelog",
+     "quote_hint": "introduces a fourth xhigh thinking level"
+    },
+    {
+     "claim": "модель раскатывается в Google Search для всех, доступна в Google Antigravity (AI Pro и Ultra), в приложении Gemini",
+     "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+     "quote_hint": "Google Search rolling out to all users; Antigravity"
+    },
+    {
+     "claim": "по данным Google, 51 балл в Artificial Analysis Intelligence Index (high) против 50 у Argon, 54 на xhigh",
+     "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+     "quote_hint": "Hydrogen surpasses Argon on the Artificial Analysis Intelligence Index"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "deepmind.google редиректит на blog.google — первоисточник blog.google; цены и GA — из changelog AI Studio."
+  },
+  {
+   "id": "21ab7432dba474e0d8d88802f7cc87b526c71b24",
+   "status": "partially",
+   "primary_source_url": "https://claude.com/resources/articles/claude-meetings",
+   "confirming_urls": [
+    "https://claude.com/resources/articles/sheets-whiteboards-data"
+   ],
+   "event_date": "2026-11-12",
+   "checked_claims": [
+    {
+     "claim": "12 ноября Anthropic запустила бету Claude Meetings: Claude подключается к звонку как видимый участник",
+     "source": "https://claude.com/resources/articles/claude-meetings",
+     "quote_hint": "Claude Meetings is now in beta"
+    },
+    {
+     "claim": "пока поддерживается только Google Meet, другие платформы — позже",
+     "source": "https://claude.com/resources/articles/claude-meetings",
+     "quote_hint": "other platforms coming soon"
+    },
+    {
+     "claim": "вопросы можно задавать голосом или в чате звонка; по умолчанию Claude отвечает письменно",
+     "source": "https://claude.com/resources/articles/claude-meetings",
+     "quote_hint": "By default, Claude answers in writing"
+    },
+    {
+     "claim": "ведёт заметки и список задач, может отправить итог до конца звонка; с разрешения использует подключённые инструменты",
+     "source": "https://claude.com/resources/articles/claude-meetings",
+     "quote_hint": "use your connected tools with your permission"
+    },
+    {
+     "claim": "бета раскатывается на планах Team и Enterprise; недоступна для организаций с ZDR, HIPAA, CMEK",
+     "source": "https://claude.com/resources/articles/claude-meetings",
+     "quote_hint": "rolling out in beta on Team and Enterprise"
+    },
+    {
+     "claim": "10 ноября Anthropic представила Claude Whiteboards и Claude Sheets (бета) и Claude Data — переименованные Claude Dashboards (GA)",
+     "source": "https://claude.com/resources/articles/sheets-whiteboards-data",
+     "quote_hint": "Introducing Claude Whiteboards, Claude Sheets, and Claude Data"
+    },
+    {
+     "claim": "Whiteboards, Sheets и Data доступны на всех платных планах; для Data нужен коннектор к данным",
+     "source": "https://claude.com/resources/articles/sheets-whiteboards-data",
+     "quote_hint": "available on all paid plans; data connector"
+    }
+   ],
+   "removed_claims": [
+    "Claude отвечает голосом — на странице сказано, что по умолчанию отвечает письменно; голосовые ответы не описаны",
+    "контекст переходит между Sheets, Whiteboards и Data — прямо не сказано",
+    "«подсиживает Microsoft перед IPO» — оценочная формулировка из Telegram, не факт"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Заголовок шортлиста — из Telegram (data_secrets) и смешивает два анонса: Meetings (12.11) и артефакты (10.11). Оба подтверждены отдельными официальными страницами. ZDNet WebFetch не открывает."
+  },
+  {
+   "id": "db8bf548d798c621b3e3b0b5f36458abaa359f76",
+   "status": "verified",
+   "primary_source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+   "confirming_urls": [],
+   "event_date": "2026-11-12",
+   "checked_claims": [
+    {
+     "claim": "12 ноября запущен self-hosted вариант Claude Managed Agents: весь сервис, а не только sandbox, разворачивается на своей инфраструктуре",
+     "source": "https://platform.claude.com/docs/en/release-notes/overview",
+     "quote_hint": "We've launched self-hosted Claude Managed Agents"
+    },
+    {
+     "claim": "агенты, сессии и история сессий хранятся у клиента",
+     "source": "https://platform.claude.com/docs/en/release-notes/overview",
+     "quote_hint": "store agents, sessions, and session history there"
+    },
+    {
+     "claim": "запросы к модели уходят выбранному провайдеру, по умолчанию — Anthropic",
+     "source": "https://platform.claude.com/docs/en/release-notes/overview",
+     "quote_hint": "which is Anthropic by default"
+    },
+    {
+     "claim": "доступ — через аккаунт-команду Anthropic",
+     "source": "https://platform.claude.com/docs/en/release-notes/overview",
+     "quote_hint": "contact your Anthropic account team"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Официальные release notes, запись от 12 ноября."
+  },
+  {
+   "id": "cce714811b519a82922e4ba72c95cc2532e1ab7f",
+   "status": "verified",
+   "primary_source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+   "confirming_urls": [
+    "https://aistudio.google.com/docs/changelog"
+   ],
+   "event_date": "2026-11-11",
+   "checked_claims": [
+    {
+     "claim": "11 ноября Google представила Decisions API и модель gemini-decision-1 для закрытых решений",
+     "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+     "quote_hint": "fast, closed-set decisions; Nov 11, 2026"
+    },
+    {
+     "claim": "сценарии: выбор инструмента, проверки политик, маршрутизация моделей, оценка контекста",
+     "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+     "quote_hint": "tool selection, policy checks, model routing, context grading"
+    },
+    {
+     "claim": "оценивает варианты за один проход и возвращает вероятности/уверенность вместо текста",
+     "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+     "quote_hint": "returns probabilities and confidence scores"
+    },
+    {
+     "claim": "мультимодальный вход до 256K токенов, до 1000 вопросов за запрос",
+     "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+     "quote_hint": "Up to 256K tokens; up to 1,000 questions"
+    },
+    {
+     "claim": "задержка 150–250 мс end-to-end (по данным компании)",
+     "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+     "quote_hint": "150-250 ms end-to-end"
+    },
+    {
+     "claim": "$0,10 за млн входных токенов, выходные не тарифицируются; есть бесплатный уровень в AI Studio",
+     "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+     "quote_hint": "$0.10 per 1M input tokens; no output-token charges"
+    },
+    {
+     "claim": "доступен через Gemini API в Google AI Studio; Google Cloud — скоро",
+     "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+     "quote_hint": "Gemini in Google Cloud coming soon"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "В history есть Decisions API от OpenAI (октябрь) — другой продукт, не повтор."
+  },
+  {
+   "id": "7da1b2b4758f6148853c122ae7c8e20bc40537d5",
+   "status": "verified",
+   "primary_source_url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+   "confirming_urls": [],
+   "event_date": "2026-11-10",
+   "checked_claims": [
+    {
+     "claim": "Google DeepMind представила Gemini Robotics 2.5 — «самую способную VLA-модель на сегодня»",
+     "source": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+     "quote_hint": "our most capable vision-language-action (VLA) model to date"
+    },
+    {
+     "claim": "по данным компании, на 200+ задачах успех на 30–100% выше прежних базовых моделей, выполнение на 20–30% быстрее",
+     "source": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+     "quote_hint": "more than 200 tasks; 30% to 100% higher success"
+    },
+    {
+     "claim": "в пилоте с Apptronik и Mercedes-Benz робот Apollo 2 — 96% успеха на комплектовании автодеталей (по данным компании)",
+     "source": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+     "quote_hint": "Apptronik and Mercedes-Benz; 96% success"
+    },
+    {
+     "claim": "модель раскатывается робототехническим партнёрам",
+     "source": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+     "quote_hint": "rolling out to our robotics partners"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Официальный блог DeepMind, 10 ноября (в шортлисте 9 ноября 19:51Z — по UTC окно соблюдено в любом случае)."
+  },
+  {
+   "id": "c1a85d8bd61904acdaa91e29633c3d4d6681effc",
+   "status": "verified",
+   "primary_source_url": "https://api-docs.deepseek.com/news/news261113",
+   "confirming_urls": [],
+   "event_date": "2026-11-13",
+   "checked_claims": [
+    {
+     "claim": "13 ноября DeepSeek открыла через API возможности своего приложения для V4.1-Flash (deepseek-flash)",
+     "source": "https://api-docs.deepseek.com/news/news261113",
+     "quote_hint": "DeepSeek Full-Suite App API Release 2026/11/13"
+    },
+    {
+     "claim": "встроенные: веб-поиск с цитатами, поиск при глубоком рассуждении, разбор файлов, чтение URL, проверки безопасности",
+     "source": "https://api-docs.deepseek.com/news/news261113",
+     "quote_hint": "Web search; Deep thinking search; File input; URL reading; Safety checks"
+    },
+    {
+     "claim": "проверки безопасности обязательны для публичных приложений",
+     "source": "https://api-docs.deepseek.com/news/news261113",
+     "quote_hint": "Public-facing apps must enable safety checks"
+    },
+    {
+     "claim": "отдельные API Search, Fetch, OCR, ASR и TTS",
+     "source": "https://api-docs.deepseek.com/news/news261113",
+     "quote_hint": "Standalone APIs: Search, Fetch, OCR, ASR, TTS"
+    },
+    {
+     "claim": "инструменты оплачиваются сверх стоимости токенов",
+     "source": "https://api-docs.deepseek.com/news/news261113",
+     "quote_hint": "tool usage fees in addition to standard token charges"
+    }
+   ],
+   "removed_claims": [
+    "конкретные тарифы инструментов — на странице картинкой, не проверены"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Официальная новость в документации DeepSeek."
+  },
+  {
+   "id": "739ba2ccaf721cb702b4d0bbc988a5c83b335301",
+   "status": "verified",
+   "primary_source_url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+   "confirming_urls": [],
+   "event_date": "2026-11-11",
+   "checked_claims": [
+    {
+     "claim": "превью Qwen4-Max-Preview — с 10:00 11 ноября по 24:00 25 ноября 2026 (UTC+8), затем модель выводится из эксплуатации",
+     "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+     "quote_hint": "preview period runs from 10:00 on November 11, 2026"
+    },
+    {
+     "claim": "доступна только через Token Plan, оплата по факту не поддерживается",
+     "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+     "quote_hint": "available through Token Plan only"
+    },
+    {
+     "claim": "контекст 1M токенов, максимум вывода 393 216 токенов (общий для рассуждения и ответа)",
+     "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+     "quote_hint": "393,216 tokens shared by thinking and the final answer"
+    },
+    {
+     "claim": "акцент: программирование, офисные задачи, фронтенд-дизайн, сложные агентные сценарии",
+     "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+     "quote_hint": "coding, office productivity, frontend design"
+    }
+   ],
+   "removed_claims": [
+    "цены — на странице не указаны"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Документация Alibaba Cloud Model Studio (обновлена 16 ноября); старт превью 11.11 02:00Z — в окне."
+  },
+  {
+   "id": "79d48ebc633b549431e9340291fdc2d9ae13dca0",
+   "status": "verified",
+   "primary_source_url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+   "confirming_urls": [],
+   "event_date": "2026-11-12",
+   "checked_claims": [
+    {
+     "claim": "12 ноября Perplexity выпустила открытые модели Decider v1.3 и Decider Flash v1.3 под лицензией Apache",
+     "source": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+     "quote_hint": "Decider v1.3 and Decider Flash v1.3; Apache"
+    },
+    {
+     "claim": "доступны на Hugging Face, в OpenRouter и через Perplexity Decisions API",
+     "source": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+     "quote_hint": "Hugging Face, OpenRouter, Perplexity Decisions API"
+    },
+    {
+     "claim": "Decider v1.3 построена на Qwen3.8-27B; Flash дистиллирована в Qwen3.5-4B",
+     "source": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+     "quote_hint": "based on Qwen3.8-27B; distilled into Qwen3.5-4B"
+    },
+    {
+     "claim": "по данным компании, 91,6% средней точности на 63 задачах классификации (+6,54 п.п. к продовым классификаторам)",
+     "source": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+     "quote_hint": "91.6% mean accuracy across 63 classification tasks"
+    },
+    {
+     "claim": "новая функция locate — извлечение сущностей, персональных данных, extractive QA с позициями",
+     "source": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+     "quote_hint": "highlight the selected content for named entity recognition"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Сайт отдаёт скрипту 403 (антибот), WebFetch открывает — норма. Разметка эталонов в бенчмарке сделана frontier-LLM — важно для атрибуции."
+  },
+  {
+   "id": "f4c0ded2581cb010abf9e2469a3d67267e99c6a2",
+   "status": "verified",
+   "primary_source_url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+   "confirming_urls": [],
+   "event_date": "2026-11-12",
+   "checked_claims": [
+    {
+     "claim": "12 ноября Дженсен Хуанг ушёл с постов президента, CEO и члена совета директоров NVIDIA с немедленным вступлением в силу",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+     "quote_hint": "has resigned as President, Chief Executive Officer, and a member of the Board"
+    },
+    {
+     "claim": "причина в документе не названа",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+     "quote_hint": "no reason given in release"
+    },
+    {
+     "claim": "временный CEO — Колетт Кресс, сохраняет посты EVP и CFO до назначения постоянного преемника",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+     "quote_hint": "will continue to serve as Executive Vice President and CFO"
+    },
+    {
+     "claim": "Харви Джонс (экс-CEO Synopsys) — первый в истории председатель совета директоров",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+     "quote_hint": "first-ever Chair of the Board"
+    },
+    {
+     "claim": "результаты Q3 FY2027 — во вторник 17 ноября (заранее запланировано)",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+     "quote_hint": "Tuesday, November 17"
+    }
+   ],
+   "removed_claims": [
+    "причины ухода (сообщения СМИ о личных отношениях) — в первоисточнике нет, в текст не включать без отдельной проверки"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Пресс-релиз в составе 8-K на SEC — официальный первоисточник. Финансово-корпоративная тема (лимит 1)."
+  },
+  {
+   "id": "f4ba9db136d7ed28f998723f0c6fd913817d0167",
+   "status": "verified",
+   "primary_source_url": "https://runway.com/news/company-news/praxis-1-is-now-available",
+   "confirming_urls": [],
+   "event_date": "2026-11-11",
+   "checked_claims": [
+    {
+     "claim": "11 ноября Runway открыла веса Praxis-1 — world action model для робототехники",
+     "source": "https://runway.com/news/company-news/praxis-1-is-now-available",
+     "quote_hint": "our state-of-the-art world action model"
+    },
+    {
+     "claim": "MoE-диффузионный трансформер на 27 млрд параметров, предсказывает видео и действия вместе",
+     "source": "https://runway.com/news/company-news/praxis-1-is-now-available",
+     "quote_hint": "27B-parameter mixture-of-experts diffusion transformer"
+    },
+    {
+     "claim": "лицензия Apache 2.0, коммерческое использование разрешено, включая код инференса и дообучения",
+     "source": "https://runway.com/news/company-news/praxis-1-is-now-available",
+     "quote_hint": "open weights under the Apache 2.0 license"
+    },
+    {
+     "claim": "доступна на GitHub, Hugging Face (LeRobot), в vLLM-Omni, хостинг — Reactor",
+     "source": "https://runway.com/news/company-news/praxis-1-is-now-available",
+     "quote_hint": "available today on GitHub; native LeRobot support"
+    },
+    {
+     "claim": "по данным компании, 46,2% успеха на RoboLab-120",
+     "source": "https://runway.com/news/company-news/praxis-1-is-now-available",
+     "quote_hint": "46.2% success on RoboLab-120"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Официальная новость Runway."
+  },
+  {
+   "id": "a5c3d321385253fd84d5033265feba3085961fcd",
+   "status": "partially",
+   "primary_source_url": "https://elevenlabs.io/blog/nyc-summit",
+   "confirming_urls": [],
+   "event_date": "2026-11-11",
+   "checked_claims": [
+    {
+     "claim": "11 ноября на саммите в Нью-Йорке ElevenLabs показала отраслевые модели распознавания речи — Scribe v3 Medical; модель для финансов в разработке",
+     "source": "https://elevenlabs.io/blog/nyc-summit",
+     "quote_hint": "Scribe v3 Medical; financial services model in development"
+    },
+    {
+     "claim": "Interaction Engine в превью",
+     "source": "https://elevenlabs.io/blog/nyc-summit",
+     "quote_hint": "Interaction Engine (preview)"
+    },
+    {
+     "claim": "память и Routines для ElevenAgents",
+     "source": "https://elevenlabs.io/blog/nyc-summit",
+     "quote_hint": "Memory for ElevenAgents; Routines"
+    },
+    {
+     "claim": "приложение ElevenAI: заметки встреч с согласия участников, диктовка; бесплатный ранний доступ",
+     "source": "https://elevenlabs.io/blog/nyc-summit",
+     "quote_hint": "Free early access opened that day"
+    },
+    {
+     "claim": "партнёрская сеть — более 550 партнёров в 44 странах; Marketplace (покупка — со следующего года)",
+     "source": "https://elevenlabs.io/blog/nyc-summit",
+     "quote_hint": "more than 550 partners in 44 countries"
+    },
+    {
+     "claim": "альянс с McKinsey/QuantumBlack; с NVIDIA — Nemotron 3.5 Super VL и 15 МВт мощностей Vera Rubin",
+     "source": "https://elevenlabs.io/blog/nyc-summit",
+     "quote_hint": "15 MW of new Vera Rubin compute capacity"
+    }
+   ],
+   "removed_claims": [
+    "«первая» отраслевая модель — слово «первая» на странице не используется (можно: «первой показана медицинская, финансовая в разработке»)",
+    "«запустила партнёрскую программу» — на странице описана партнёрская сеть/программа, новизна запуска не подтверждена; безопаснее «рассказала о партнёрской программе»"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Официальный блог ElevenLabs."
+  },
+  {
+   "id": "26a46cce7cf42b66cdf489da0b3c54ce0a36f862",
+   "status": "verified",
+   "primary_source_url": "https://cursor.com/blog/security-incident-update",
+   "confirming_urls": [],
+   "event_date": "2026-11-13",
+   "checked_claims": [
+    {
+     "claim": "13 ноября Cursor раскрыла детали инцидента: злоумышленник получил ключ доступа, выданный Cursor вендору Fireworks и утёкший у Fireworks",
+     "source": "https://cursor.com/blog/security-incident-update",
+     "quote_hint": "obtained an access key we had issued to Fireworks"
+    },
+    {
+     "claim": "скопированы ограниченные трейсы агентов, в основном за 2025 год, из сессий без Privacy Mode",
+     "source": "https://cursor.com/blog/security-incident-update",
+     "quote_hint": "mostly from 2025, from sessions not in Privacy Mode"
+    },
+    {
+     "claim": "в части трейсов были незамаскированные учётные данные; через них атакующий попал в SaaS-инструменты Cursor",
+     "source": "https://cursor.com/blog/security-incident-update",
+     "quote_hint": "credentials that had not been redacted"
+    },
+    {
+     "claim": "29 октября в кэш маркетплейса Cursor подложены вредоносные копии расширения Claude Code версий 2.1.312 и 2.1.313 (около 11 часов)",
+     "source": "https://cursor.com/blog/security-incident-update",
+     "quote_hint": "versions 2.1.312 and 2.1.313; October 29"
+    },
+    {
+     "claim": "получить вредоносную сборку могли не более 5000 пользователей",
+     "source": "https://cursor.com/blog/security-incident-update",
+     "quote_hint": "At most 5,000 users"
+    },
+    {
+     "claim": "Cursor перенесла инференс с Fireworks, сменила раскрытые и все внутренние ключи, считает инцидент локализованным",
+     "source": "https://cursor.com/blog/security-incident-update",
+     "quote_hint": "believes the incident is contained"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "В history (2026-11-02) была новость о самом вредоносном расширении; это новое — официальный разбор первопричины (Fireworks), не повтор. Подавать как продолжение."
+  },
+  {
+   "id": "848359b1bdad807e37eef1c56c859e174386bc33",
+   "status": "partially",
+   "primary_source_url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+   "confirming_urls": [
+    "https://airlinegeeks.com/2026/11/11/united-bans-ai-agents-from-booking-flights-for-customers/",
+    "https://skift.com/2026/11/11/united-airlines-moves-to-block-personal-ai-agents-from-booking-flights/"
+   ],
+   "event_date": "2026-11-11",
+   "checked_claims": [
+    {
+     "claim": "11 ноября United запретила использование неавторизованных сторонних персональных ИИ-агентов и ассистентов для бронирования",
+     "source": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+     "quote_hint": "use by unauthorized, third-party personal AI agents or assistants"
+    },
+    {
+     "claim": "ограничения — на цифровых платформах United и косвенно через турагентства и агрегаторы",
+     "source": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+     "quote_hint": "directly within our digital platforms and indirectly via travel agencies"
+    },
+    {
+     "claim": "United ссылается на безопасность учётных данных, риск непреднамеренных покупок/изменений аккаунта/списаний миль MileagePlus и требования FAA/DOT",
+     "source": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+     "quote_hint": "sharing account credentials ... can expose sensitive information"
+    },
+    {
+     "claim": "United называет это первым таким шагом среди авиакомпаний США",
+     "source": "https://airlinegeeks.com/2026/11/11/united-bans-ai-agents-from-booking-flights-for-customers/",
+     "quote_hint": "first such move by a U.S. airline"
+    }
+   ],
+   "removed_claims": [
+    "изменён именно договор перевозки (contract of carriage) — сам документ не открылся (503), СМИ, которые я открыл, этого не пишут",
+    "брони ИИ-агентов можно аннулировать без уведомления — не подтверждено",
+    "запрет действует даже если клиент сам подтверждает действия — не подтверждено",
+    "искать рейсы и цены агентам по-прежнему можно — не подтверждено",
+    "критики сомневаются в технической реализуемости — не подтверждено (в открытых статьях критики нет)"
+   ],
+   "attribution": "по данным CBS News и AirlineGeeks",
+   "notes": "Первоисточник (заявление United/договор перевозки) не открылся; факт подтверждён CBS News и AirlineGeeks, Skift — платный, подтверждает только заголовком/лидом."
+  },
+  {
+   "id": "f980cc1f1e212524854cbd0112509240cb4f0280",
+   "status": "verified",
+   "primary_source_url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+   "confirming_urls": [
+    "https://huggingface.co/Edge0/Edge0-145B-NVFP4"
+   ],
+   "event_date": "2026-11-12",
+   "checked_claims": [
+    {
+     "claim": "12 ноября Edge0 выложила веса Edge0-145B и Edge0-120B и фреймворк инференса",
+     "source": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+     "quote_hint": "open-sourcing Edge0-145B and Edge0-120B"
+    },
+    {
+     "claim": "MoE на 145B, на каждом шаге активны ~10B параметров",
+     "source": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+     "quote_hint": "only approximately 10B participate in computation"
+    },
+    {
+     "claim": "по данным компании, пиковое потребление ~29 ГБ, работает на ноутбуке с 48 ГБ",
+     "source": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+     "quote_hint": "29GB peak memory; 48GB laptop"
+    },
+    {
+     "claim": "по данным компании, декодирование 80+ токенов/с",
+     "source": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+     "quote_hint": "80+ tokens/s"
+    },
+    {
+     "claim": "поддержка macOS, Windows и Linux с первого дня",
+     "source": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+     "quote_hint": "day-one support covers macOS, Windows, and Linux"
+    },
+    {
+     "claim": "бенчмарки — внутренние замеры Edge0",
+     "source": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+     "quote_hint": "internal evaluations"
+    },
+    {
+     "claim": "базовая модель по карточке HF — Qwen3.8-Flash-Next; лицензия Edge0 Community Model License 1.0 (плюс Qwen Community License)",
+     "source": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+     "quote_hint": "edge0-community-model-1.0; base model Qwen/Qwen3.8-Flash-Next"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Блог датирован 12 ноября, репо HF создано 11.11. В блоге пиковая память указана то 29, то 28 ГБ — писать «около 29 ГБ». Компания называет релиз open-source, но лицензия собственная — формулировка шортлиста корректна."
+  },
+  {
+   "id": "96626834403c644428b69eec5239cfb408b098ad",
+   "status": "partially",
+   "primary_source_url": "https://techcrunch.com/?p=3186487",
+   "confirming_urls": [
+    "https://thenextweb.com/news/reddit-turns-user-threads-into-ai-reviews-for-10000-products",
+    "https://www.digitaltrends.com/social-media/reddits-ai-reviews-use-real-user-conversations-to-help-you-make-smarter-buying-decisions/"
+   ],
+   "event_date": "2026-11-10",
+   "checked_claims": [
+    {
+     "claim": "10 ноября Reddit запустила Reddit Reviews — ИИ-сводки обсуждений товаров из сабреддитов",
+     "source": "https://techcrunch.com/?p=3186487",
+     "quote_hint": "turning user conversations into AI-powered product reviews"
+    },
+    {
+     "claim": "раскатывается на всех пользователей в США (iOS, Android, веб), в ближайшие недели",
+     "source": "https://techcrunch.com/?p=3186487",
+     "quote_hint": "rolling out to all U.S. users on iOS, Android, and web"
+    },
+    {
+     "claim": "на старте около 10 тыс. продуктов: электроника, здоровье и красота, дом и сад, одежда",
+     "source": "https://techcrunch.com/?p=3186487",
+     "quote_hint": "around 10,000 products"
+    },
+    {
+     "claim": "Reddit планирует новые категории и выход за пределы США",
+     "source": "https://techcrunch.com/?p=3186487",
+     "quote_hint": "expand beyond the U.S."
+    },
+    {
+     "claim": "компании не могут платить за попадание продуктов в Reviews, Reddit не берёт комиссию",
+     "source": "https://www.digitaltrends.com/social-media/reddits-ai-reviews-use-real-user-conversations-to-help-you-make-smarter-buying-decisions/",
+     "quote_hint": "businesses cannot pay to have their products appear"
+    }
+   ],
+   "removed_claims": [
+    "расширение на другие страны именно в 2027 году — только Digital Trends, TechCrunch срок не называет",
+    "часть пользователей критикует идею — не подтверждено (есть только опасения TechCrunch об астротурфинге)"
+   ],
+   "attribution": "по данным TechCrunch",
+   "notes": "Пресс-релиз redditinc.com WebFetch не открывает; подтверждено TechCrunch + Digital Trends + TNW. В primary_source_url — TechCrunch (shortlink, открылся). Скрипт отдал по redditinc 200 — ссылку на пресс-релиз можно давать, но содержимое я не читал."
+  },
+  {
+   "id": "40e78db6601d46e62d9253d05213567fc448d804",
+   "status": "verified",
+   "primary_source_url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+   "confirming_urls": [],
+   "event_date": "2026-11-13",
+   "checked_claims": [
+    {
+     "claim": "13 ноября llama.cpp и ggml получили версию 1.0.0 и перешли на семантическое версионирование",
+     "source": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+     "quote_hint": "Published November 13, 2026; v1.0.0"
+    },
+    {
+     "claim": "несовместимые изменения публичного C API и ABI будут отражаться сменой мажорной версии",
+     "source": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+     "quote_hint": "API and ABI incompatibilities with major-version bumps"
+    },
+    {
+     "claim": "сборки: Docker, Debian, Homebrew, conda-forge, MacPorts, Winget, XCFramework",
+     "source": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+     "quote_hint": "Homebrew; conda-forge; MacPorts; Winget; XCFramework"
+    },
+    {
+     "claim": "по словам команды, 150+ вариантов архитектур и все основные методы спекулятивного декодирования",
+     "source": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+     "quote_hint": "more than 150 architecture variants"
+    },
+    {
+     "claim": "бэкенды ggml собираются как динамические библиотеки и подгружаются в рантайме",
+     "source": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+     "quote_hint": "optionally loaded at runtime"
+    },
+    {
+     "claim": "CI масштабирован через HF Buckets и Jobs, раннеры при поддержке NVIDIA, AMD, Qualcomm, Arm, IBM и Intel",
+     "source": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+     "quote_hint": "NVIDIA, AMD, Qualcomm, Arm, IBM and Intel"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Официальный пост ggml-org в блоге Hugging Face."
+  },
+  {
+   "id": "93958f67012a0f40bab9434122bd5b7aa0bede04",
+   "status": "partially",
+   "primary_source_url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+   "confirming_urls": [
+    "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/"
+   ],
+   "event_date": "2026-11-10",
+   "checked_claims": [
+    {
+     "claim": "Meituan открыла веса LongCat-2.5 — нативно мультимодальной MoE-модели для долгих агентных задач и кодинга",
+     "source": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+     "quote_hint": "native multimodal MoE model for long-horizon agentic tasks"
+    },
+    {
+     "claim": "1,6 трлн параметров всего, ~48 млрд активных на токен",
+     "source": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+     "quote_hint": "1.6 trillion total; approximately 48 billion activated"
+    },
+    {
+     "claim": "веса под лицензией MIT",
+     "source": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+     "quote_hint": "model weights are released under the MIT License"
+    },
+    {
+     "claim": "эксперты квантованы в W4A4 (4 бита); по данным The Decoder, есть отдельный W4A4-репозиторий",
+     "source": "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+     "quote_hint": "A separate W4A4 repository"
+    },
+    {
+     "claim": "по данным The Decoder, обучена целиком на китайском железе; гайд по запуску на кластере Huawei Ascend",
+     "source": "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+     "quote_hint": "trained entirely on Chinese hardware; Huawei Ascend"
+    },
+    {
+     "claim": "веса вышли примерно через неделю после официального анонса; бенчмарки — собственные замеры Meituan",
+     "source": "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+     "quote_hint": "one week after the model's official unveiling"
+    }
+   ],
+   "removed_claims": [
+    "точная дата выкладки весов «около 9 ноября» — не подтверждена (HF: репо создано 04.11, последнее изменение 10.11; The Decoder даты не даёт)",
+    "«без GPU Nvidia» как утверждение о всём обучении — в карточке нет, только у The Decoder (атрибутировать)",
+    "дата анонса 2 ноября — не проверена"
+   ],
+   "attribution": "по данным компании и The Decoder",
+   "notes": "Факт открытых весов подтверждён карточкой HF. Анонс модели был вне окна (начало ноября), в history его нет; подавать как выкладку весов. event_date — по lastModified репо, приблизительно."
+  },
+  {
+   "id": "f8c1a7370c130fe58cc9d833fbc0c3d7d581f8a4",
+   "status": "partially",
+   "primary_source_url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "confirming_urls": [],
+   "event_date": "2026-11-10",
+   "checked_claims": [
+    {
+     "claim": "10 ноября Google DeepMind представила AlphaProof Code — агентный фреймворк для глубокой формальной верификации ПО: люди выбирают, что доказывать, ИИ-агенты пишут доказательства",
+     "source": "https://deepmind.google/blog/introducing-alphaproof-code/",
+     "quote_hint": "novel agentic framework for formal verification"
+    },
+    {
+     "claim": "агенты сгенерировали более шести миллионов строк доказательств на Lean (по данным компании)",
+     "source": "https://deepmind.google/blog/introducing-alphaproof-code/",
+     "quote_hint": "over six million lines of Lean"
+    },
+    {
+     "claim": "доказаны свойства реального кода, лежащего в основе протокола Signal (основной криптографический код)",
+     "source": "https://deepmind.google/blog/introducing-alphaproof-code/",
+     "quote_hint": "the actual code underlying the Signal protocol"
+    },
+    {
+     "claim": "DeepMind открывает артефакты формальной верификации",
+     "source": "https://deepmind.google/blog/introducing-alphaproof-code/",
+     "quote_hint": "open-sourcing our formal verification artifacts"
+    }
+   ],
+   "removed_claims": [
+    "«около трёх миллионов строк» — НЕВЕРНО, в первоисточнике «более шести миллионов строк Lean»",
+    "«DeepMind планирует открыть исходный код AlphaProof Code» — неверно: открываются только артефакты верификации"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Суть подтверждена, но в summary_raw две ошибки — исправлены в checked_claims."
+  },
+  {
+   "id": "1f1dbabb56c455a1ee31471d3aec569976d12000",
+   "status": "partially",
+   "primary_source_url": "https://www.minimax.io/blog/minimax-h3-image",
+   "confirming_urls": [
+    "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image"
+   ],
+   "event_date": "2026-11-11",
+   "checked_claims": [
+    {
+     "claim": "MiniMax выложила веса MiniMax-H3-Image — единой модели для генерации изображений по тексту, по референсам и редактирования",
+     "source": "https://www.minimax.io/blog/minimax-h3-image",
+     "quote_hint": "we're releasing H3-Image's model weights"
+    },
+    {
+     "claim": "по карточке: dense диффузионный трансформер на 33,1 млрд параметров, 50 слоёв",
+     "source": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+     "quote_hint": "33.1B parameters, a dense single-stream transformer"
+    },
+    {
+     "claim": "текстовый энкодер — Qwen3-VL из MiniMax-H3 без изменений",
+     "source": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+     "quote_hint": "full Qwen3-VL text encoder of MiniMax-H3, unchanged"
+    },
+    {
+     "claim": "дистиллирована до 6 шагов без classifier-free guidance",
+     "source": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+     "quote_hint": "distilled to 6 sampling steps (6 NFEs)"
+    },
+    {
+     "claim": "около 16 Мп при любом соотношении сторон без апскейлера; до 16 референсных изображений",
+     "source": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+     "quote_hint": "about 16 megapixels; up to 16 reference images"
+    },
+    {
+     "claim": "MiniMax заявляет лучшее следование инструкциям среди открытых моделей (без опубликованных бенчмарков)",
+     "source": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+     "quote_hint": "strongest instruction following among open-source models"
+    },
+    {
+     "claim": "лицензия — MiniMax-H3-Image Community License Agreement; для ряда случаев нужна отдельная письменная авторизация (раздел IV)",
+     "source": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+     "quote_hint": "separate written authorization described in Section IV"
+    }
+   ],
+   "removed_claims": [
+    "«для части коммерческих сценариев» — что покрывает раздел IV, не проверено; писать «для некоторых случаев требуется отдельное разрешение»",
+    "сборка Comfy-Org — «одна из самых популярных моделей недели на HF» — не проверено"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Блог MiniMax датирован 11 ноября (в окне); репо HF создано 03.11 (вероятно, приватно), обновлено 12.11. В блоге также «4K за <10 с» и противоречивые множители скорости — не использовать."
+  }
+ ]
+}

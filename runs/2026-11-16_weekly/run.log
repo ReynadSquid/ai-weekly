@@ -4,3 +4,8 @@
 2026-11-16T02:06:23Z | collect    | fetch_feeds[media]: 112 кандидатов, ошибок источников: 0
 2026-11-16T02:06:47Z | collect    | fetch_feeds[companies]: 170 кандидатов, ошибок источников: 0
 2026-11-16T02:12:24Z | collect    | шаг выполнен. 4 сборщика → companies 17(+170 фиды), discovery 21, research 23, telegram 13
+2026-11-16T02:12:32Z | merge      | вход 491 → выход 406 (дубли url 61, дубли заголовков 23, история 1, вне окна 0); ошибок источников 22
+2026-11-16T02:12:32Z | merge      | шаг выполнен. candidates_* → candidates.json
+2026-11-16T02:15:10Z | rank       | шаг выполнен. candidates 406 → shortlist 20 + reserve 10
+2026-11-16T02:20:54Z | gate       | решение=pass годных=20 слухов=0 отклонено=0 (0%) 
+2026-11-16T02:20:59Z | factcheck  | шаг выполнен. 20 проверено: 13 verified, 7 partially
