@@ -9,3 +9,8 @@
 2026-11-16T02:15:10Z | rank       | шаг выполнен. candidates 406 → shortlist 20 + reserve 10
 2026-11-16T02:20:54Z | gate       | решение=pass годных=20 слухов=0 отклонено=0 (0%) 
 2026-11-16T02:20:59Z | factcheck  | шаг выполнен. 20 проверено: 13 verified, 7 partially
+2026-11-16T02:21:01Z | gate       | шаг выполнен. pass, 20 годных
+2026-11-16T02:21:01Z | write      | editor_input: 20 новостей
+2026-11-16T02:24:14Z | write      | шаг выполнен. editor_input 20 → posts.json, draft.md
+2026-11-16T02:25:36Z | qa         | шаг выполнен. pass, 0 blockers, 4 minor
+2026-11-16T02:26:04Z | publish    | шаг выполнен. 5 сообщений + обложка, https://t.me/neurooruen/1811

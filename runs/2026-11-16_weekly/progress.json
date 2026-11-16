@@ -4,7 +4,11 @@
     "collect",
     "merge",
     "rank",
-    "factcheck"
+    "factcheck",
+    "gate",
+    "write",
+    "qa",
+    "publish"
   ],
   "attempts": 1,
   "errors": []
