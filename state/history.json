@@ -649,6 +649,239 @@
       "company": "Anthropic",
       "issue_id": "2026-11-09_weekly",
       "published_at": "2026-11-09T02:15:51Z"
+    },
+    {
+      "id": "ffe8a09e969fa29a7c7881cf94d2af2b6afa6488",
+      "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "urls": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "https://t.me/seeallochnaya/4032",
+        "https://t.me/ai_newz/4834"
+      ],
+      "company": "Anthropic",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "a8d5fa7d24b3647f4501b383397b571abdcb6905",
+      "title": "Introducing Gemini 4 Hydrogen",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "urls": [
+        "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
+      ],
+      "company": "Google",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "21ab7432dba474e0d8d88802f7cc87b526c71b24",
+      "title": "Anthropic подсиживает Microsoft перед IPO: в чате Claude теперь можно работать с таблицами, дашбордами и досками Это три новых вида артефактов: Claude Sheets, Claude Whiteboards и Claude Data. Контекс",
+      "url": "https://claude.com/resources/articles/claude-meetings",
+      "urls": [
+        "https://claude.com/resources/articles/claude-meetings",
+        "https://t.me/data_secrets/10333"
+      ],
+      "company": "Anthropic",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "db8bf548d798c621b3e3b0b5f36458abaa359f76",
+      "title": "Claude Platform release notes: self-hosted Claude Managed Agents",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "urls": [
+        "https://platform.claude.com/docs/en/release-notes/overview"
+      ],
+      "company": "Anthropic",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "cce714811b519a82922e4ba72c95cc2532e1ab7f",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "urls": [
+        "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "https://news.ycombinator.com/item?id=50456791",
+        "https://t.me/ai_newz/4839"
+      ],
+      "company": "Google",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "7da1b2b4758f6148853c122ae7c8e20bc40537d5",
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "urls": [
+        "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
+      ],
+      "company": "Google",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "c1a85d8bd61904acdaa91e29633c3d4d6681effc",
+      "title": "DeepSeek Full-Suite App API Release: the full DeepSeek App experience, now via API",
+      "url": "https://api-docs.deepseek.com/news/news261113",
+      "urls": [
+        "https://api-docs.deepseek.com/news/news261113"
+      ],
+      "company": "DeepSeek",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "739ba2ccaf721cb702b4d0bbc988a5c83b335301",
+      "title": "Qwen4-Max-Preview",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview"
+      ],
+      "company": "Alibaba",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "79d48ebc633b549431e9340291fdc2d9ae13dca0",
+      "title": "Perplexity Decider",
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+      "urls": [
+        "https://www.perplexity.ai/hub/blog/perplexity-decider"
+      ],
+      "company": "Perplexity",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "f4c0ded2581cb010abf9e2469a3d67267e99c6a2",
+      "title": "NVIDIA Announces CEO Transition (Form 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+      "urls": [
+        "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"
+      ],
+      "company": "NVIDIA",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "f4ba9db136d7ed28f998723f0c6fd913817d0167",
+      "title": "Praxis-1 is now available",
+      "url": "https://runway.com/news/company-news/praxis-1-is-now-available",
+      "urls": [
+        "https://runway.com/news/company-news/praxis-1-is-now-available"
+      ],
+      "company": "Runway",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "a5c3d321385253fd84d5033265feba3085961fcd",
+      "title": "Building the interaction layer for AI: Everything announced at ElevenLabs Summit NYC",
+      "url": "https://elevenlabs.io/blog/nyc-summit",
+      "urls": [
+        "https://elevenlabs.io/blog/nyc-summit"
+      ],
+      "company": "ElevenLabs",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "26a46cce7cf42b66cdf489da0b3c54ce0a36f862",
+      "title": "An update on our recent security incident",
+      "url": "https://cursor.com/blog/security-incident-update",
+      "urls": [
+        "https://cursor.com/blog/security-incident-update"
+      ],
+      "company": "Cursor",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "848359b1bdad807e37eef1c56c859e174386bc33",
+      "title": "United Airlines запретила ИИ-агентам бронировать билеты",
+      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+      "urls": [
+        "https://skift.com/2026/11/11/united-airlines-moves-to-block-personal-ai-agents-from-booking-flights/",
+        "https://airlinegeeks.com/2026/11/11/united-bans-ai-agents-from-booking-flights-for-customers/",
+        "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/"
+      ],
+      "company": "United Airlines",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "f980cc1f1e212524854cbd0112509240cb4f0280",
+      "title": "Edge0-145B: модель на 145B параметров для запуска на ноутбуке",
+      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "urls": [
+        "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+        "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+        "https://news.ycombinator.com/item?id=50475713"
+      ],
+      "company": "Edge0",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "96626834403c644428b69eec5239cfb408b098ad",
+      "title": "Reddit запустила Reddit Reviews — ИИ-сводки обсуждений товаров",
+      "url": "https://techcrunch.com/?p=3186487",
+      "urls": [
+        "https://redditinc.com/news/introducing-reddit-reviews",
+        "https://www.zdnet.com/innovation/reddit-reviews-feature/",
+        "https://thenextweb.com/news/reddit-turns-user-threads-into-ai-reviews-for-10000-products"
+      ],
+      "company": "Reddit",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "40e78db6601d46e62d9253d05213567fc448d804",
+      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "urls": [
+        "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+      ],
+      "company": "Hugging Face",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "93958f67012a0f40bab9434122bd5b7aa0bede04",
+      "title": "Meituan открыла веса LongCat-2.5 — 1,6 трлн параметров под MIT",
+      "url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+      "urls": [
+        "https://huggingface.co/meituan-longcat/LongCat-2.5",
+        "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+        "https://aiweekly.co/alerts/meituan-open-sources-longcat-25-16t-moe-under-mit-license"
+      ],
+      "company": "Meituan",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "f8c1a7370c130fe58cc9d833fbc0c3d7d581f8a4",
+      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "urls": [
+        "https://deepmind.google/blog/introducing-alphaproof-code/"
+      ],
+      "company": "Google",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
+    },
+    {
+      "id": "1f1dbabb56c455a1ee31471d3aec569976d12000",
+      "title": "MiniMax-H3-Image: открытые веса модели генерации и редактирования изображений",
+      "url": "https://www.minimax.io/blog/minimax-h3-image",
+      "urls": [
+        "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image"
+      ],
+      "company": "MiniMax",
+      "issue_id": "2026-11-16_weekly",
+      "published_at": "2026-11-16T02:26:06Z"
     }
   ]
 }

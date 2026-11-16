@@ -1,0 +1,17 @@
+✅ Выпуск опубликован — AI Weekly #4 (2026-11-16_weekly, режим live)
+Окно: 9–15 ноября 2026
+Собрано: 491 → после дедупа 406
+Фактчек: проверено 20, годных 20, слухов 0, отклонено 0 (0%)
+В выпуске: 20 новостей + 0 слухов
+QA: pass, замечаний 4
+Telegram: published, сообщений 5, ссылка https://t.me/neurooruen/1811
+Обложка: отправлена
+Важное, что не вошло (6):
+  • [10] NVIDIA Announces CEO Transition — не отобрана куратором
+  • [8] Mirendil привлекла $1 млрд в раунде Series A — не отобрана куратором
+  • [8] LangChain привлекла $300 млн при оценке $3 млрд — не отобрана куратором
+  • [8] Mercor привлекла $750 млн при оценке $20 млрд — не отобрана куратором
+  • [8] Gemini 4 Hydrogen — не отобрана куратором
+  • [8] Google открыли доступ к Gemini 4 Carbon — не отобрана куратором
+Недоступные источники (22): openai.com/news; help.openai.com ChatGPT release notes; developers.openai.com/api/docs/changelog; x.ai/news; amd.com/en/newsroom; apple.com/newsroom; updates.midjourney.com; news.microsoft.com/source/topics/ai; openai.com ChatGPT Wallet; Meta Muse Ember; Первоисточники не найдены/не открыты для Kora, Cowbell, Hatz AI, Nebuly, Qvyon, ; LongCat-2.5: точная дата открытия весов не подтверждена официально (репозиторий 
+Попыток запуска: 1. Лог: runs/2026-11-16_weekly/run.log
