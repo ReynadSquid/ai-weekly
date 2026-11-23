@@ -11,3 +11,4 @@
 2026-11-23T02:17:38Z | factcheck  | шаг выполнен. shortlist 20 → verified 18, partially 2
 2026-11-23T02:17:38Z | gate       | шаг выполнен. pass: 20 годных
 2026-11-23T02:17:39Z | write      | editor_input: 20 новостей
+2026-11-23T02:20:43Z | write      | шаг выполнен. editor_input 20 → posts.json, draft.md (разделы A–F)

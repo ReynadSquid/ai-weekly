@@ -5,7 +5,8 @@
     "merge",
     "rank",
     "factcheck",
-    "gate"
+    "gate",
+    "write"
   ],
   "attempts": 1,
   "errors": []
