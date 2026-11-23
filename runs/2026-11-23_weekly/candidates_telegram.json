@@ -1,0 +1,133 @@
+{
+  "items": [
+    {
+      "title": "OpenAI представила GPT-6.2 Astra и GPT-6.2 Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "source": "openai.com",
+      "source_type": "official",
+      "published_at": "2026-11-17",
+      "company": "OpenAI",
+      "product": "GPT",
+      "section": "A",
+      "summary_raw": "OpenAI выпустила две модели: Astra (флагман для сложной профессиональной работы) и Sol (эффективная модель для повседневных задач); доступны в ChatGPT Work, Codex и API. По данным OpenAI, Astra лидирует на Agents' Last Exam, Terminal-Bench-Science 0.1 и Vals Science Index; компания называет её лучшей моделью для учёных. В API цены Astra на вход/выход на 20% ниже GPT-6 Astra, кэшированный вход дешевле на 60% ($8 вход, $0.40 кэш, $40 выход за 1M токенов); цены Sol не изменились. Опубликована system card на deploymentsafety.openai.com/gpt-6-2-astra-sol.",
+      "importance": 9,
+      "discovered_via": "https://t.me/seeallochnaya/4046",
+      "also_discovered_via": [
+        "https://t.me/denissexy/11807",
+        "https://t.me/ai_newz/4844"
+      ]
+    },
+    {
+      "title": "Anthropic провела IPO на Nasdaq под тикером ANT",
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "source": "anthropic.com",
+      "source_type": "official",
+      "published_at": "2026-11-18",
+      "company": "Anthropic",
+      "product": null,
+      "section": "A",
+      "summary_raw": "Anthropic оценила IPO в $83 за акцию класса A (на роудшоу 10 ноября ориентир был $70–78); торги на Nasdaq Global Select Market под тикером ANT начались 19 ноября. 20 ноября компания объявила о закрытии сделки: 1,127 млрд акций с учётом полного опциона андеррайтеров, плюс параллельное частное размещение акций класса N на ~$26 млрд для AMD, Broadcom, Google, Micron, Microsoft, NVIDIA и TSMC; совокупная валовая выручка ~$119,5 млрд (https://www.anthropic.com/news/ipo-close). Цифры о капитализации и цене первых сделок из каналов в первоисточнике не подтверждены.",
+      "importance": 9,
+      "discovered_via": "https://t.me/data_secrets/10384",
+      "also_discovered_via": [
+        "https://t.me/ai_newz/4850",
+        "https://t.me/ai_newz/4851"
+      ]
+    },
+    {
+      "title": "Левент Алпёге опубликовал доказательство гипотезы Римана, полученное вместе с Claude и формализованное в Lean",
+      "url": "https://alpo.ge/remark.pdf",
+      "source": "alpo.ge",
+      "source_type": "author",
+      "published_at": "2026-11-20",
+      "company": "Anthropic",
+      "product": "Claude",
+      "section": "F",
+      "summary_raw": "Математик Левент Алпёге выложил заметку, где пишет, что вместе с Claude нашёл доказательство гипотезы Римана (по его словам, метод распространяется и на обобщённую гипотезу) и полностью формализовал его в Lean. 21 ноября сообщества Lean и Mathlib (при поддержке Lean FRO и Mathlib Initiative) в совместном заявлении подтвердили корректность формулировки и доказательства: библиотека около 17 млн строк, проверена несколькими независимыми чекерами (https://leanprover-community.github.io/blog/posts/riemann-hypothesis/). Аффилиация автора с Anthropic в первоисточнике не указана.",
+      "importance": 10,
+      "discovered_via": "https://t.me/data_secrets/10390",
+      "also_discovered_via": [
+        "https://t.me/data_secrets/10399"
+      ]
+    },
+    {
+      "title": "Thinking Machines выпустила открытую модель Inkling 2 Mini с зацикленными слоями",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "source": "thinkingmachines.ai",
+      "source_type": "official",
+      "published_at": "2026-11-20",
+      "company": "Thinking Machines Lab",
+      "product": "Inkling 2 Mini",
+      "section": "F",
+      "summary_raw": "Thinking Machines Lab выложила open-weights модель Inkling 2 Mini (Apache-2.0, Hugging Face): MoE на 26,4B параметров, 3,4B активных; средние слои прогоняются трижды на каждый токен (looped transformer). Компания заявляет лидерство среди открытых моделей до 100B параметров на DeepSWE v1.1 (48,2%) и Vals Index v2.2 (46,5%) и публикует исследование влияния зацикливания на мониторируемость chain-of-thought вместе с вариантом с переменным числом проходов. Связь архитектуры с GPT-6 Astra — предположение канала, в первоисточнике не подтверждено.",
+      "importance": 7,
+      "discovered_via": "https://t.me/data_secrets/10393"
+    },
+    {
+      "title": "Tesla начала раскатку FSD v15",
+      "url": "https://x.com/Tesla/status/2124222447855743019",
+      "source": "x.com/Tesla",
+      "source_type": "official",
+      "published_at": "2026-11-21T19:24:32Z",
+      "company": "Tesla",
+      "product": "FSD",
+      "section": "E",
+      "summary_raw": "Tesla в официальном аккаунте объявила о начале раскатки FSD v15 с обновлением всей end-to-end сети вождения. Компания заявляет в 25 раз лучшую обработку критичных для безопасности ситуаций, новую функцию Tesla Reality View (живая визуализация того, что планирует FSD), обучение навигации на начальном и конечном участках поездки по предпочтениям флота, улучшенное распознавание знаков, животных, мусора, ям и луж, замедление у камер скорости и Bike Rack Mode.",
+      "importance": 6,
+      "discovered_via": "https://t.me/denissexy/11816"
+    },
+    {
+      "title": "alphaXiv: 936 автономных агентов из 35 лабораторий три месяца вели исследования как научное сообщество",
+      "url": "https://www.alphaxiv.org/abs/2611.society-ai-scientists",
+      "source": "alphaxiv.org",
+      "source_type": "paper",
+      "published_at": "2026-11-21",
+      "company": "alphaXiv",
+      "product": null,
+      "section": "F",
+      "summary_raw": "Препринт «A Society of AI Scientists» (alphaXiv, MIT, Stanford и др.) описывает 12-недельный эксперимент: 936 автономных агентов из 35 лабораторий, которыми управляли люди, работали в общем препринт-сервере и мессенджере. Агенты выпустили 936 исследований с кодом и данными, обменялись ~9 500 сообщениями в 229 созданных ими чатах; у них сложились нормы вроде публичного отзыва ошибочных утверждений, а одна лаборатория агентов основала собственный рецензируемый журнал Journal of Agent Research.",
+      "importance": 6,
+      "discovered_via": "https://t.me/data_secrets/10387"
+    },
+    {
+      "title": "FutureSim: квартальное обновление бенчмарка прогнозирования, Opus 5.5 обошёл модели GPT",
+      "url": "https://openforecaster.github.io/futuresim/",
+      "source": "openforecaster.github.io",
+      "source_type": "benchmark",
+      "published_at": "2026-11-15",
+      "company": null,
+      "product": "FutureSim",
+      "section": "F",
+      "summary_raw": "Авторы FutureSim (агенты прогнозируют реальные события в воспроизведённой хронологии) выложили результаты за III квартал 2026 (события июля–сентября). По их данным, адаптация моделей во время теста улучшилась у большинства на 5–15%, а Claude Opus 5.5 вышел вперёд, в том числе по Brier score, опередив модели GPT. Также сменён поисковый инструмент на Exa Snapshot и опубликована выборка вопросов. Обновление датировано 15 ноября — на границе окна сбора.",
+      "importance": 4,
+      "discovered_via": "https://t.me/seeallochnaya/4044"
+    },
+    {
+      "title": "JetBrains спросила 12 моделей 1 200 раз о самом спорном мнении про языки программирования",
+      "url": "https://blog.jetbrains.com/ai/2026/11/ai-models-hate-python-and-love-php-we-asked-12-of-them-1-200-times/",
+      "source": "blog.jetbrains.com",
+      "source_type": "official",
+      "published_at": "2026-11-15T17:22:27Z",
+      "company": "JetBrains",
+      "product": null,
+      "section": "F",
+      "summary_raw": "В блоге JetBrains опубликован эксперимент: 12 свежих моделей десяти лабораторий (OpenAI, Anthropic, Google, xAI, Meta, DeepSeek, Alibaba, Moonshot, Z.ai, Mistral) по 50 раз в чистой сессии просили выбрать «случайный» язык и высказать о нём самое спорное мнение. По итогам модели чаще всего ругали Python и чаще хвалили PHP, ответы сводились к ограниченному набору из 14 языков, а про C# мнений не нашлось.",
+      "importance": 3,
+      "discovered_via": "https://t.me/denissexy/11804"
+    },
+    {
+      "title": "Yandex B2B Tech и Arenadata заключили стратегическое партнёрство по СУБД",
+      "url": "https://yandex.ru/company/news/19-11-2026-01",
+      "source": "yandex.ru",
+      "source_type": "official",
+      "published_at": "2026-11-19",
+      "company": "Yandex",
+      "product": "YDB",
+      "section": "C",
+      "summary_raw": "Yandex B2B Tech и Группа Arenadata подписали соглашение о стратегическом партнёрстве: крупному бизнесу предложат совместные решения на базе YDB и Arenadata DB. YDB можно будет развернуть on-premises с внедрением силами Arenadata, а Arenadata DB станет управляемым сервисом в Yandex Cloud. Компании рассчитывают занять 30–50% рынка СУБД в финансовом секторе.",
+      "importance": 3,
+      "discovered_via": "https://t.me/data_secrets/10385"
+    }
+  ],
+  "errors": []
+}
