@@ -66,7 +66,7 @@
     "url": "https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max",
     "status": 200,
     "final_url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max?_p_lc=1",
-    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+    "error": null,
     "verdict": "ok"
   },
   "https://www.perplexity.ai/hub/blog/introducing-orchestrator": {
