@@ -1,0 +1,16 @@
+✅ Выпуск опубликован — AI Weekly #5 (2026-11-23_weekly, режим live)
+Окно: 16–22 ноября 2026
+Собрано: 484 → после дедупа 432
+Фактчек: проверено 20, годных 20, слухов 0, отклонено 0 (0%)
+В выпуске: 20 новостей + 0 слухов
+QA: pass, замечаний 2
+Telegram: published, сообщений 4, ссылка https://t.me/neurooruen/1818
+Обложка: отправлена
+Важное, что не вошло (5):
+  • [9] GPT-6.2 Astra and GPT-6.2 Sol in the API — не отобрана куратором
+  • [9] Anthropic prices initial public offering — не отобрана куратором
+  • [9] thinkingmachines/Inkling-2-Mini (Hugging Face trending) — не отобрана куратором
+  • [9] Isomorphic Labs привлекла $5 млрд в раунде Series C — не отобрана куратором
+  • [8] ChatGPT release notes: GPT-6.2 Astra and Sol in Work and Codex — не отобрана куратором
+Недоступные источники (10): x.ai/news; updates.midjourney.com; qwenlm.github.io/blog; thenewstack.io/microsoft-mai-code-2; theverge.com: WebFetch недоступен — новости о налоге Трампа на зарубежные дата-ц; Simplexity Robotics ($100M от Ant Group): первоисточник не найден, не включено; Energy-Based Reasoners (arXiv 2611.08977): подан 6.11.2026 — вне окна, не включе; tencent.com Hy4 flash: страница вернула пустой контент, не включено; isomorphiclabs.com: страница пресс-релиза Series C не найдена (404/старая страни; ?
+Попыток запуска: 1. Лог: runs/2026-11-23_weekly/run.log

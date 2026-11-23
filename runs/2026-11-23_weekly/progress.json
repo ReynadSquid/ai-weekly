@@ -8,7 +8,9 @@
     "gate",
     "write",
     "qa",
-    "publish"
+    "publish",
+    "finalize",
+    "report"
   ],
   "attempts": 1,
   "errors": []
