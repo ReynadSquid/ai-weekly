@@ -1,0 +1,142 @@
+{
+  "https://openai.com/index/introducing-gpt-6-2-astra-sol/": {
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+    "status": 200,
+    "final_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/": {
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/": {
+    "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+    "status": 200,
+    "final_url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://openai.com/index/managing-frontier-ai-risk/": {
+    "url": "https://openai.com/index/managing-frontier-ai-risk/",
+    "status": 200,
+    "final_url": "https://openai.com/index/managing-frontier-ai-risk/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.anthropic.com/news/ipo-close": {
+    "url": "https://www.anthropic.com/news/ipo-close",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/news/ipo-close",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://openai.com/index/perplexity-and-intelligence/": {
+    "url": "https://openai.com/index/perplexity-and-intelligence/",
+    "status": 200,
+    "final_url": "https://openai.com/index/perplexity-and-intelligence/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://openai.com/index/advancing-chip-design-with-our-models/": {
+    "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+    "status": 200,
+    "final_url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://microsoft.ai/news/introducing-mai-realtime-1/": {
+    "url": "https://microsoft.ai/news/introducing-mai-realtime-1/",
+    "status": 200,
+    "final_url": "https://microsoft.ai/news/introducing-mai-realtime-1/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/": {
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max": {
+    "url": "https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max",
+    "status": 200,
+    "final_url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max?_p_lc=1",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+    "verdict": "ok"
+  },
+  "https://www.perplexity.ai/hub/blog/introducing-orchestrator": {
+    "url": "https://www.perplexity.ai/hub/blog/introducing-orchestrator",
+    "status": 403,
+    "final_url": "https://www.perplexity.ai/hub/blog/introducing-orchestrator",
+    "error": null,
+    "verdict": "unverifiable"
+  },
+  "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/": {
+    "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+    "status": 200,
+    "final_url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://suno.com/blog/introducing-visuals": {
+    "url": "https://suno.com/blog/introducing-visuals",
+    "status": 200,
+    "final_url": "https://suno.com/blog/introducing-visuals",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://signal.org/blog/protecting-your-privacy/": {
+    "url": "https://signal.org/blog/protecting-your-privacy/",
+    "status": 200,
+    "final_url": "https://signal.org/blog/protecting-your-privacy/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/": {
+    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+    "status": 200,
+    "final_url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://blog.superhuman.com/superhuman-expands-go-unveils-personal-ai-assistant/": {
+    "url": "https://blog.superhuman.com/superhuman-expands-go-unveils-personal-ai-assistant/",
+    "status": 200,
+    "final_url": "https://blog.superhuman.com/superhuman-expands-go-unveils-personal-ai-assistant/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://alpo.ge/remark.pdf": {
+    "url": "https://alpo.ge/remark.pdf",
+    "status": 200,
+    "final_url": "https://alpo.ge/remark.pdf",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://thinkingmachines.ai/news/inkling-2-mini/": {
+    "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+    "status": 200,
+    "final_url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://arxiv.org/abs/2611.21003": {
+    "url": "https://arxiv.org/abs/2611.21003",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2611.21003",
+    "error": null,
+    "verdict": "ok"
+  },
+  "https://metr.org/blog/2026-11-20-q4-2026-capability-update/": {
+    "url": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/",
+    "status": 200,
+    "final_url": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/",
+    "error": null,
+    "verdict": "ok"
+  }
+}
