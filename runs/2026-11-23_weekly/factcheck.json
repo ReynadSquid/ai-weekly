@@ -1,0 +1,768 @@
+{
+ "items": [
+  {
+   "id": "549a77347d5e1e5f25e081258d641a2b8758c868",
+   "status": "verified",
+   "primary_source_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+   "confirming_urls": [
+    "https://developers.openai.com/api/docs/changelog"
+   ],
+   "event_date": "2026-11-17",
+   "checked_claims": [
+    {
+     "claim": "OpenAI выпустила GPT-6.2 Astra (флагман для сложных проектов) и GPT-6.2 Sol (эффективная модель для повседневной работы)",
+     "source": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+     "quote_hint": "our new frontier model for your hardest projects"
+    },
+    {
+     "claim": "Доступны в ChatGPT Work и Codex для Plus, Pro, Enterprise и Edu, а также в API как gpt-6.2-astra и gpt-6.2-sol",
+     "source": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+     "quote_hint": "Plus, Pro, Enterprise, and Edu users in ChatGPT Work and Codex"
+    },
+    {
+     "claim": "Релиз в API 17 ноября",
+     "source": "https://developers.openai.com/api/docs/changelog",
+     "quote_hint": "Nov 17 entry: Use GPT-6.2 Astra for demanding reasoning"
+    },
+    {
+     "claim": "Цены Astra в API: $8 вход, $0.40 кэш. вход, $40 выход за 1M токенов; на 20% ниже GPT-6 Astra по входу/выходу, кэш дешевле на 60%",
+     "source": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+     "quote_hint": "pricing table; 20% lower input and output"
+    },
+    {
+     "claim": "Sol: $2 / $0.10 / $10 за 1M токенов, цены как у GPT-6.1 Sol",
+     "source": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+     "quote_hint": "Sol keeps GPT-6.1 Sol's rates"
+    },
+    {
+     "claim": "По данным OpenAI, на Agents' Last Exam Astra на 5,2 п. выше GPT-6 Astra и на 5,5 п. выше Claude Fable 5.2; на Terminal-Bench-Science 0.1 +9 п.п. к GPT-6 Astra; на Vals Science Index — новый рекорд",
+     "source": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+     "quote_hint": "Agents' Last Exam ... 5.2 points higher"
+    },
+    {
+     "claim": "Опубликована system card",
+     "source": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+     "quote_hint": "deploymentsafety.openai.com/gpt-6-2-astra-sol"
+    }
+   ],
+   "removed_claims": [
+    "абсолютные значения бенчмарков на странице не приведены — писать только приросты с атрибуцией",
+    "«лучшая модель для учёных» — формулировку не проверял дословно, использовать только с атрибуцией или не использовать"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Первоисточник OpenAI + API changelog. Дата на странице не указана, дата 17.11 подтверждена changelog."
+  },
+  {
+   "id": "bbe099f2944c559d2da8bc280acbad043261b64e",
+   "status": "partially",
+   "primary_source_url": "https://alpo.ge/remark.pdf",
+   "confirming_urls": [
+    "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+    "https://siliconangle.com/2026/11/20/anthropic-researcher-claims-to-have-proven-riemann-hypothesis-using-claude/",
+    "https://gizmodo.com/anthropic-researcher-claims-ai-has-solved-maths-greatest-mystery-2000843320",
+    "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/"
+   ],
+   "event_date": "2026-11-20",
+   "checked_claims": [
+    {
+     "claim": "Левент Алпёге опубликовал заметку: считает, что вместе с Claude нашёл доказательство гипотезы Римана",
+     "source": "https://alpo.ge/remark.pdf",
+     "quote_hint": "I believe I have, working with Claude, discovered a proof"
+    },
+    {
+     "claim": "По его словам, метод распространяется на обобщённую гипотезу Римана; доказательство формализовано в Lean, опубликован только Lean-код",
+     "source": "https://alpo.ge/remark.pdf",
+     "quote_hint": "resolving the so-called Generalized Riemann Hypothesis; I decided to only present Lean"
+    },
+    {
+     "claim": "21 ноября сообщества Lean и Mathlib (при поддержке Lean FRO и Mathlib Initiative) подтвердили корректность формулировки и доказательства",
+     "source": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+     "quote_hint": "certify that both the statement and the proof ... are correct"
+    },
+    {
+     "claim": "Библиотека около 17 млн строк, зависит только от Mathlib; проверена ядром Lean и несколькими независимыми чекерами",
+     "source": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+     "quote_hint": "About 17 million lines; con-leche, con-ron"
+    },
+    {
+     "claim": "Сам автор признаёт, что математические идеи ещё предстоит изложить; полноценной статьи нет",
+     "source": "https://alpo.ge/remark.pdf",
+     "quote_hint": "I intend to ... write it properly"
+    },
+    {
+     "claim": "Алпёге — исследователь Anthropic (по данным SiliconANGLE и Gizmodo); официального заявления Anthropic нет",
+     "source": "https://siliconangle.com/2026/11/20/anthropic-researcher-claims-to-have-proven-riemann-hypothesis-using-claude/",
+     "quote_hint": "Anthropic PBC researcher; no official announcement"
+    }
+   ],
+   "removed_claims": [
+    "аффилиация с Anthropic в первоисточнике прямо не указана (лишь упоминание переписки с Dario) — только с атрибуцией «по данным SiliconANGLE и Gizmodo»; The Decoder называет его математиком Стэнфорда",
+    "официальное подтверждение Anthropic/Clay Institute — нет",
+    "«более 250 000 страниц» (SiliconANGLE) — не подтверждено первоисточником",
+    "конкурирующий черновик Стэнфорда — не проверялся"
+   ],
+   "attribution": "по словам автора; корректность — по заявлению сообществ Lean и Mathlib; аффилиация — по данным SiliconANGLE и Gizmodo",
+   "notes": "Факт публикации и верификации Lean подтверждены первоисточниками. Статус partially из-за аффилиации. The Verge не открылся, CNN отдал 451."
+  },
+  {
+   "id": "b898a1b2127c5756e1c018cc6a81581a6294cda6",
+   "status": "verified",
+   "primary_source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+   "confirming_urls": [
+    "https://aistudio.google.com/docs/changelog",
+    "https://siliconangle.com/2026/11/18/googles-latest-midtier-model-gemini-4-neon-is-three-times-faster-than-carbon-and-wins-on-some-metrics/"
+   ],
+   "event_date": "2026-11-18",
+   "checked_claims": [
+    {
+     "claim": "Gemini 4 Neon — модель между Gemini 4 Carbon и Gemini 4 Hydrogen",
+     "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+     "quote_hint": "between Carbon ... and Hydrogen"
+    },
+    {
+     "claim": "В Gemini API модель gemini-4-neon общедоступна (GA), контекст 1M токенов, четыре уровня размышлений: low, medium, high (по умолчанию), xhigh",
+     "source": "https://aistudio.google.com/docs/changelog",
+     "quote_hint": "Nov 18: generally available (GA)"
+    },
+    {
+     "claim": "Также в приложении Gemini для подписчиков Google AI Pro/Ultra и в Google Antigravity",
+     "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+     "quote_hint": "Pro and Ultra subscribers"
+    },
+    {
+     "claim": "Цена: $3 вход, $0.15 кэш, $15 выход за 1M токенов",
+     "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+     "quote_hint": "$3 per million input tokens"
+    },
+    {
+     "claim": "По данным Google, на уровне high задача стоит на 32% дешевле, чем у Carbon",
+     "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+     "quote_hint": "32% less per task than Carbon"
+    },
+    {
+     "claim": "По заявлению Google (через SiliconANGLE), Neon выполняет большинство задач примерно втрое быстрее Carbon",
+     "source": "https://siliconangle.com/2026/11/18/googles-latest-midtier-model-gemini-4-neon-is-three-times-faster-than-carbon-and-wins-on-some-metrics/",
+     "quote_hint": "about three times as quickly as Carbon"
+    },
+    {
+     "claim": "По данным Google, Vals Index #2 (70,9%), Terminal-Bench 4.1 65,2%",
+     "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+     "quote_hint": "Vals Index #2 (70.9%)"
+    }
+   ],
+   "removed_claims": [
+    "«примерно на 60% дешевле Carbon» (SiliconANGLE) — расходится с блогом Google (32% за задачу), не использовать"
+   ],
+   "attribution": "по данным компании",
+   "notes": "deepmind.google редиректит на blog.google. GA подтверждено changelog AI Studio. Скорость x3 — заявление Google в пересказе SiliconANGLE, в блоге цифры нет."
+  },
+  {
+   "id": "e92031041b7d3eb01366bf184dcbc5bd88f1c250",
+   "status": "verified",
+   "primary_source_url": "https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max",
+   "confirming_urls": [],
+   "event_date": "2026-11-16",
+   "checked_claims": [
+    {
+     "claim": "Alibaba выпустила Qwen4-Max — разреженная MoE на 2,4 трлн параметров, ~71 млрд активных на токен",
+     "source": "https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max",
+     "quote_hint": "2.4 trillion total; about 71 billion active"
+    },
+    {
+     "claim": "Нативное зрение, контекст 1M токенов",
+     "source": "https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max",
+     "quote_hint": "native vision capabilities"
+    },
+    {
+     "claim": "Доступна в QwenCloud (Token Plan и API), а также QwenWork и QwenStudio",
+     "source": "https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max",
+     "quote_hint": "available now on QwenCloud"
+    },
+    {
+     "claim": "По данным компании, средняя стоимость задачи на Work360 ниже примерно на 60% относительно Qwen3.8-Max",
+     "source": "https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max",
+     "quote_hint": "cost per task on Work360 down about 60%"
+    },
+    {
+     "claim": "Меньшие открытые модели Qwen4 выйдут позже, дата не названа",
+     "source": "https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max",
+     "quote_hint": "will soon be released to developers worldwide"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Финальный релиз после Qwen4-Max-Preview из выпуска 2026-11-16 — не повтор, но в тексте стоит указать, что это релиз после превью."
+  },
+  {
+   "id": "23791fed6fa0ce2cf147df5fff91647eae30b11e",
+   "status": "verified",
+   "primary_source_url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+   "confirming_urls": [],
+   "event_date": "2026-11-17",
+   "checked_claims": [
+    {
+     "claim": "На Ignite Microsoft AI представила MAI Code 2 и MAI Code 2 Flash, обе доступны в GitHub Copilot",
+     "source": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+     "quote_hint": "available in GitHub Copilot"
+    },
+    {
+     "claim": "Code 2 Flash — в ограниченном превью Microsoft Foundry",
+     "source": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+     "quote_hint": "limited-access preview in Microsoft Foundry"
+    },
+    {
+     "claim": "По данным Microsoft, MAI Code 2 даёт ~96% качества Claude Opus 5.5 при ~5% стоимости (среднее по четырём бенчмаркам)",
+     "source": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+     "quote_hint": "96% of Opus 5.5's performance at roughly 5%"
+    },
+    {
+     "claim": "Сравнения стоимости сделаны по промо-цене со скидкой 50%",
+     "source": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+     "quote_hint": "50% promotional price"
+    },
+    {
+     "claim": "Модели пока не настроены на фундаментальные исследования и очень длинные агентные задачи",
+     "source": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+     "quote_hint": "not yet tuned for ... very long-horizon agentic work"
+    }
+   ],
+   "removed_claims": [
+    "цифры для Flash (65%/20% стоимости) — на странице искажены, не использовать",
+    "сроки выхода на OpenRouter/Vercel и др. — не указаны"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Первоисточник Microsoft AI."
+  },
+  {
+   "id": "8b6ac2940fdc0d0ef0bb9edfc5f301a34fa0795a",
+   "status": "partially",
+   "primary_source_url": "https://openai.com/index/managing-frontier-ai-risk/",
+   "confirming_urls": [
+    "https://openai.com/index/securing-our-frontier-model-training-environment/"
+   ],
+   "event_date": "2026-11-18",
+   "checked_claims": [
+    {
+     "claim": "OpenAI описала многоуровневую защиту (defense in depth): выравнивание, песочницы, блокирующие классификаторы, мониторинг — для исследований, внутреннего и внешнего развёртывания",
+     "source": "https://openai.com/index/managing-frontier-ai-risk/",
+     "quote_hint": "defense in depth with four layers"
+    },
+    {
+     "claim": "При внутреннем развёртывании каждый фронтирный инференс мониторится на несогласованное поведение",
+     "source": "https://openai.com/index/managing-frontier-ai-risk/",
+     "quote_hint": "Every frontier inference is monitored"
+    },
+    {
+     "claim": "Система Control Room останавливает вывод модели в течение 35 секунд после команды",
+     "source": "https://openai.com/index/managing-frontier-ai-risk/",
+     "quote_hint": "stops further model output within 35 seconds"
+    }
+   ],
+   "removed_claims": [
+    "пауза обучения 20 сентября – 1 октября из-за выхода модели в интернет через ошибку DNS — НЕ новость: раскрыта в посте OpenAI от 23.10 «Securing our frontier model training environment», который уже был в выпуске 2026-10-25; упоминать только как контекст «ранее сообщалось»"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Новое в посте — описание фреймворка и Control Room. Инцидент с DNS — повтор из history.json (id 48e2274f…)."
+  },
+  {
+   "id": "a0ebc9ee452b9f3e92b0eb66c701bb0a417ea009",
+   "status": "verified",
+   "primary_source_url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+   "confirming_urls": [
+    "https://huggingface.co/thinkingmachines/Inkling-2-Mini"
+   ],
+   "event_date": "2026-11-20",
+   "checked_claims": [
+    {
+     "claim": "Thinking Machines Lab выпустила open-weights модель Inkling 2 Mini, лицензия Apache-2.0, на Hugging Face",
+     "source": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+     "quote_hint": "License: apache-2.0"
+    },
+    {
+     "claim": "MoE на 26,4B параметров, 3,4B активных",
+     "source": "https://thinkingmachines.ai/news/inkling-2-mini/",
+     "quote_hint": "26.4B total parameters, 3.4B active"
+    },
+    {
+     "claim": "24 слоя в четырёх блоках; два средних блока прогоняются трижды — 48 применений слоёв",
+     "source": "https://thinkingmachines.ai/news/inkling-2-mini/",
+     "quote_hint": "The two middle blocks run three times"
+    },
+    {
+     "claim": "По данным компании, лидер среди открытых моделей до 100B на DeepSWE v1.1 (48,2%) и Vals Index v2.2 (46,5%); на части тестов уступает Qwen3.8-27B",
+     "source": "https://thinkingmachines.ai/news/inkling-2-mini/",
+     "quote_hint": "48.2% on DeepSWE v1.1"
+    },
+    {
+     "claim": "Опубликовано исследование мониторируемости CoT и вариант TML-d24-varloop-research с переменным числом проходов (1–5); значимого снижения мониторируемости авторы не видят",
+     "source": "https://thinkingmachines.ai/news/inkling-2-mini/",
+     "quote_hint": "we do not see a meaningful reduction in the monitorability"
+    }
+   ],
+   "removed_claims": [
+    "связь архитектуры с GPT-6 Astra — домысел канала, не подтверждено"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Inkling 2 Small был в выпуске 2026-11-09 — это другая модель (Mini), не повтор. Лицензия подтверждена карточкой HF, на странице блога не указана."
+  },
+  {
+   "id": "e7354365dbd852464c173a32f955ddfe153ad67a",
+   "status": "verified",
+   "primary_source_url": "https://www.anthropic.com/news/ipo-close",
+   "confirming_urls": [],
+   "event_date": "2026-11-20",
+   "checked_claims": [
+    {
+     "claim": "Anthropic закрыла IPO; андеррайтеры полностью исполнили опцион на 147 млн дополнительных акций класса A",
+     "source": "https://www.anthropic.com/news/ipo-close",
+     "quote_hint": "an additional 147,000,000 shares"
+    },
+    {
+     "claim": "Цена размещения $83 за акцию, Nasdaq Global Select, тикер ANT; торги начались 19 ноября",
+     "source": "https://www.anthropic.com/news/ipo-close",
+     "quote_hint": "public offering price of $83.00 per share"
+    },
+    {
+     "claim": "Валовые поступления ~$93,5 млрд (вкл. акции продающих акционеров), из них компания получила ~$91,6 млрд",
+     "source": "https://www.anthropic.com/news/ipo-close",
+     "quote_hint": "approximately $91.6 billion was received by Anthropic"
+    },
+    {
+     "claim": "Параллельное частное размещение акций класса N на ~$26 млрд среди семи компаний: AMD, Broadcom, Google, Micron, Microsoft, NVIDIA, TSMC Partners",
+     "source": "https://www.anthropic.com/news/ipo-close",
+     "quote_hint": "AMD, Broadcom, Google, Micron, Microsoft, NVIDIA"
+    },
+    {
+     "claim": "Всего с учётом частного размещения ~$119,5 млрд до комиссий",
+     "source": "https://www.anthropic.com/news/ipo-close",
+     "quote_hint": "aggregate gross proceeds ... approximately $119.5 billion"
+    }
+   ],
+   "removed_claims": [
+    "динамика акций (рост 34% в первый день, падение 9%) — не проверялась, не использовать без отдельной проверки"
+   ],
+   "attribution": "по данным компании",
+   "notes": "В history.json была подача S-1 (2026-11-02) — закрытие IPO новое событие."
+  },
+  {
+   "id": "de5cd1a6d51dc917ab910942b7b9fe70d73cd78c",
+   "status": "verified",
+   "primary_source_url": "https://openai.com/index/perplexity-and-intelligence/",
+   "confirming_urls": [],
+   "event_date": "2026-11-22",
+   "checked_claims": [
+    {
+     "claim": "Главный научный сотрудник OpenAI Якуб Пахоцки предлагает перплексию (кросс-энтропийный лосс) как общую метрику для сравнения разработчиков и стандартов безопасности",
+     "source": "https://openai.com/index/perplexity-and-intelligence/",
+     "quote_hint": "Perplexity and Intelligence, Jakub Pachocki, Chief Scientist"
+    },
+    {
+     "claim": "Предлагает согласованные пороги, которые разработчики не пересекают до достижения конкретных вех мониторинга (например, преемника CoT-мониторов)",
+     "source": "https://openai.com/index/perplexity-and-intelligence/",
+     "quote_hint": "thresholds ... won't cross until ... monitoring milestones"
+    },
+    {
+     "claim": "OpenAI публикует внутренние замеры: ~0,99 у GPT-3.5, ~0,91 у GPT-4; следующие трансформационные возможности ожидаются в окне ~0,68–0,7",
+     "source": "https://openai.com/index/perplexity-and-intelligence/",
+     "quote_hint": "~0.68–0.7 window"
+    },
+    {
+     "claim": "Волна прорывов возможна «уже в 2027 году»",
+     "source": "https://openai.com/index/perplexity-and-intelligence/",
+     "quote_hint": "as soon as 2027"
+    },
+    {
+     "claim": "Ограничения: разные датасеты у лабораторий, перплексия не учитывает выгоды от CoT, неизвестен нижний предел энтропии",
+     "source": "https://openai.com/index/perplexity-and-intelligence/",
+     "quote_hint": "Stated limitations"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по словам автора / OpenAI",
+   "notes": "Дата 22.11 — в окне (until 2026-11-22T17:00Z); точное время публикации не указано, дата попадает в окно."
+  },
+  {
+   "id": "c7d3ecb006439a135768f56529a5adc2ad0eb57f",
+   "status": "verified",
+   "primary_source_url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+   "confirming_urls": [],
+   "event_date": "2026-11-18",
+   "checked_claims": [
+    {
+     "claim": "Модель OpenAI переписала SystemVerilog RTL флагманского GPU-IP AMD и дала до 14% улучшения PPA",
+     "source": "https://openai.com/index/advancing-chip-design-with-our-models/",
+     "quote_hint": "up to 14% PPA improvement"
+    },
+    {
+     "claim": "AMD уже включила часть изменений в недавний дизайн, отправленный в производство",
+     "source": "https://openai.com/index/advancing-chip-design-with-our-models/",
+     "quote_hint": "included some of these changes in a recent design"
+    },
+    {
+     "claim": "Модели помогли улучшить вычислительные блоки инференс-чипа OpenAI Jalapeño (−13% площади в векторном блоке, −10% в матричном)",
+     "source": "https://openai.com/index/advancing-chip-design-with-our-models/",
+     "quote_hint": "13% in the vector unit"
+    },
+    {
+     "claim": "С Synopsys OpenAI обучает модель GPT-Synopsys для работы с EDA-инструментами",
+     "source": "https://openai.com/index/advancing-chip-design-with-our-models/",
+     "quote_hint": "the way expert chip designers do"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Первоисточник OpenAI."
+  },
+  {
+   "id": "e793852d376eff5d739b8deea81514f763096d85",
+   "status": "verified",
+   "primary_source_url": "https://microsoft.ai/news/introducing-mai-realtime-1/",
+   "confirming_urls": [],
+   "event_date": "2026-11-17",
+   "checked_claims": [
+    {
+     "claim": "MAI Realtime 1 — первая speech-to-speech модель Microsoft",
+     "source": "https://microsoft.ai/news/introducing-mai-realtime-1/",
+     "quote_hint": "our first speech-to-speech model"
+    },
+    {
+     "claim": "Цена от $0,01 за минуту аудио; рассуждения оплачиваются отдельно ($1/$5 за 1M токенов)",
+     "source": "https://microsoft.ai/news/introducing-mai-realtime-1/",
+     "quote_hint": "$0.01 per audio minute; Reasoning is billed separately"
+    },
+    {
+     "claim": "Совместима с OpenAI Realtime API",
+     "source": "https://microsoft.ai/news/introducing-mai-realtime-1/",
+     "quote_hint": "compatible with the OpenAI Realtime API"
+    },
+    {
+     "claim": "Доступна в MAI Labs и в ограниченном превью Microsoft Foundry",
+     "source": "https://microsoft.ai/news/introducing-mai-realtime-1/",
+     "quote_hint": "limited-access preview ... Microsoft Foundry"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Первоисточник Microsoft AI, анонс на Ignite."
+  },
+  {
+   "id": "cb1d8f8bc84f7e6afbd259b401364decf6841b22",
+   "status": "verified",
+   "primary_source_url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+   "confirming_urls": [],
+   "event_date": "2026-11-17",
+   "checked_claims": [
+    {
+     "claim": "Режим Tasks в приложении Gemini выполняет многошаговые задачи за пользователя",
+     "source": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+     "quote_hint": "make the calls, pay the bills, and finish your tasks"
+    },
+    {
+     "claim": "Tasks бесплатен в шести странах: США, Япония, Южная Корея, Канада, Австралия, Индия",
+     "source": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+     "quote_hint": "U.S., Japan, South Korea, Canada, Australia, and India"
+    },
+    {
+     "claim": "В США: звонки в компании для записи, оплата через Google Pay с лимитом, доступ к порталам коммунальных услуг, переписка через SMS и gemini@google.com",
+     "source": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+     "quote_hint": "Checkout through Google Pay"
+    },
+    {
+     "claim": "Более глубокая интеграция с Google Workspace (Gmail, Calendar); работает на Gemini 4 Hydrogen",
+     "source": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+     "quote_hint": "deeper Google Workspace integration"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Gemini 4 Hydrogen был в выпуске 11-16; здесь новость — бесплатный Tasks и функции."
+  },
+  {
+   "id": "d76202019f42166927bc355c9a3ba68a5a48249e",
+   "status": "verified",
+   "primary_source_url": "https://www.perplexity.ai/hub/blog/introducing-orchestrator",
+   "confirming_urls": [],
+   "event_date": "2026-11-17",
+   "checked_claims": [
+    {
+     "claim": "Perplexity запустила Orchestrator API — единый доступ к моделям OpenAI, Anthropic, Google, xAI и открытым (GLM, Kimi, DeepSeek)",
+     "source": "https://www.perplexity.ai/hub/blog/introducing-orchestrator",
+     "quote_hint": "OpenAI, Anthropic, Google, and xAI"
+    },
+    {
+     "claim": "Один поставщик и один счёт; автоматический ретрай на другом развёртывании модели при сбое",
+     "source": "https://www.perplexity.ai/hub/blog/introducing-orchestrator",
+     "quote_hint": "one vendor and one bill"
+    },
+    {
+     "claim": "Совместимость с OpenAI Chat Completions, OpenAI Responses и Anthropic Messages",
+     "source": "https://www.perplexity.ai/hub/blog/introducing-orchestrator",
+     "quote_hint": "Anthropic Messages"
+    },
+    {
+     "claim": "Нет дополнительной платформенной комиссии сверх кредитов",
+     "source": "https://www.perplexity.ai/hub/blog/introducing-orchestrator",
+     "quote_hint": "no additional platform fee on top of credits"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Первоисточник Perplexity."
+  },
+  {
+   "id": "0f2a855bc6a8fcf25d6065605b52cc9d13fe5cc6",
+   "status": "verified",
+   "primary_source_url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+   "confirming_urls": [],
+   "event_date": "2026-11-16",
+   "checked_claims": [
+    {
+     "claim": "Дебют Vera Rubin в MLPerf; по данным NVIDIA, она выиграла все тесты MLPerf Training v6.1 и была единственной платформой с результатами во всех",
+     "source": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+     "quote_hint": "swept every MLPerf Training v6.1 benchmark"
+    },
+    {
+     "claim": "Первое участие NVIDIA в MLPerf Endpoints; по данным компании, более 10x поколенческий прирост пропускной способности на ватт для агентного ИИ",
+     "source": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+     "quote_hint": "more than 10x generational gains in throughput per watt"
+    }
+   ],
+   "removed_claims": [
+    "с каким поколением сравнение 10x — в общем утверждении не указано (конкретный пример: Vera Rubin NVL72 vs GB300 NVL72 на Kimi K3, результат предварительный, ожидает верификации MLCommons)"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Результаты MLPerf публикует MLCommons; независимую таблицу не открывал — только с атрибуцией NVIDIA. GA Vera Rubin в Google Cloud было в выпуске 10-25, MLPerf — новое."
+  },
+  {
+   "id": "753f1faf81d05f3159f565ecb2be3c120c75cc86",
+   "status": "verified",
+   "primary_source_url": "https://arxiv.org/abs/2611.21003",
+   "confirming_urls": [],
+   "event_date": "2026-11-16",
+   "checked_claims": [
+    {
+     "claim": "K2 Team выпустила K2-Horizon — шесть открытых моделей от 0,9B dense до 375B-A23B MoE",
+     "source": "https://arxiv.org/abs/2611.21003",
+     "quote_hint": "from a 0.9B dense model to a 375B-A23B MoE"
+    },
+    {
+     "claim": "Публикуются веса, промежуточные чекпойнты, данные предобучения, логи и весь код обучения, оценки и инфраструктуры, включая xLLM и RL360",
+     "source": "https://arxiv.org/abs/2611.21003",
+     "quote_hint": "all training, evaluation, and infrastructure code"
+    },
+    {
+     "claim": "Mixture-of-Value Attention (MoE в value-проекциях) и softplus-гейтинг внимания",
+     "source": "https://arxiv.org/abs/2611.21003",
+     "quote_hint": "Mixture-of-Value Attention"
+    },
+    {
+     "claim": "По словам авторов, 36B-A4B почти догоняет плотную 32B на тех же данных при 1/7 активных параметров",
+     "source": "https://arxiv.org/abs/2611.21003",
+     "quote_hint": "nearly matches a 32B dense model"
+    },
+    {
+     "claim": "Диффузионные адаптеры Uno ускоряют декодирование до 2,2 раза; около 10 трлн синтетических токенов предобучения",
+     "source": "https://arxiv.org/abs/2611.21003",
+     "quote_hint": "up to 2.2x"
+    }
+   ],
+   "removed_claims": [
+    "«около 90 апвоутов на HF Papers» — не проверялось"
+   ],
+   "attribution": "по данным авторов",
+   "notes": "На arXiv v1 датирована 16.11 (в shortlist 15.11 19:00Z) — в окне в любом случае."
+  },
+  {
+   "id": "c4ca83ba5741a42c01bfa6a41a4d6418a4be5d49",
+   "status": "verified",
+   "primary_source_url": "https://signal.org/blog/protecting-your-privacy/",
+   "confirming_urls": [],
+   "event_date": "2026-11-20",
+   "checked_claims": [
+    {
+     "claim": "На iOS 27 Signal запрещает скриншоты в приложении, чтобы Siri AI не захватывал экран; можно отключить в настройках",
+     "source": "https://signal.org/blog/protecting-your-privacy/",
+     "quote_hint": "preventing screenshots within the app"
+    },
+    {
+     "claim": "На Android Signal при попытке ИИ-ассистента прочитать экран автоматически включает «Защиту экрана»",
+     "source": "https://signal.org/blog/protecting-your-privacy/",
+     "quote_hint": "automatically enables the Screen security setting"
+    },
+    {
+     "claim": "Названы Siri AI (Onscreen Awareness) и Gemini (Gemini Intelligence)",
+     "source": "https://signal.org/blog/protecting-your-privacy/",
+     "quote_hint": "Onscreen Awareness; Gemini Intelligence"
+    },
+    {
+     "claim": "На macOS заблокировать нельзя — советуют добавить Signal в исключения Siri в настройках",
+     "source": "https://signal.org/blog/protecting-your-privacy/",
+     "quote_hint": "Excluded Apps section under System Settings > Siri"
+    },
+    {
+     "claim": "Причина: агенты сканируют экран, и данные оказываются в местах вне контроля Signal",
+     "source": "https://signal.org/blog/protecting-your-privacy/",
+     "quote_hint": "stored in places outside Signal's control"
+    },
+    {
+     "claim": "Signal признаёт неполноту мер и просит Apple, Google и Microsoft дать разработчикам документированный opt-out",
+     "source": "https://signal.org/blog/protecting-your-privacy/",
+     "quote_hint": "documented ways for developers to opt their apps out"
+    }
+   ],
+   "removed_claims": [
+    "«выносят переписку на свои серверы» — в посте формулировка мягче: данные хранятся вне контроля Signal"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Пост Мередит Уиттакер, 20.11."
+  },
+  {
+   "id": "381628060ea95e20f1d6c346326c5cf01845a1bf",
+   "status": "verified",
+   "primary_source_url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+   "confirming_urls": [],
+   "event_date": "2026-11-22",
+   "checked_claims": [
+    {
+     "claim": "Исследователи безопасности (OpenRouter ссылается на отчёт Dragos) обнаружили у ряда инференс-провайдеров компрометацию данных или несоблюдение заявленных политик",
+     "source": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+     "quote_hint": "data compromised or otherwise shown evidence"
+    },
+    {
+     "claim": "Взлома или неавторизованного доступа к самой OpenRouter не выявлено",
+     "source": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+     "quote_hint": "did not show any breach or unauthorized access of OpenRouter"
+    },
+    {
+     "claim": "OpenRouter отключила трёх провайдеров и сняла статус Zero Data Retention со 125 эндпоинтов (часть — превентивно)",
+     "source": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+     "quote_hint": "125 endpoints were removed"
+    },
+    {
+     "claim": "Компания уведомила всех потенциально затронутых клиентов",
+     "source": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+     "quote_hint": "notified all potentially affected customers"
+    },
+    {
+     "claim": "Публичные заявления выпустили Atlas Cloud, Novita, Phala и Together; кто именно отмечен исследователями, OpenRouter не называет",
+     "source": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+     "quote_hint": "Atlas Cloud, Novita, Phala, and Together"
+    }
+   ],
+   "removed_claims": [
+    "нельзя писать, что Atlas Cloud/Novita/Phala/Together — те самые отключённые провайдеры"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Пост 22.11 02:14Z — в окне. Отчёт Dragos сам не открывал."
+  },
+  {
+   "id": "0b39de03309f1175c05f36982dbed48fc3ad6184",
+   "status": "verified",
+   "primary_source_url": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/",
+   "confirming_urls": [],
+   "event_date": "2026-11-20",
+   "checked_claims": [
+    {
+     "claim": "Модели обычно не хуже квалифицированных людей на задачах с чёткими и дёшево проверяемыми целями",
+     "source": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/",
+     "quote_hint": "clear, cheaply checkable goals"
+    },
+    {
+     "claim": "Там, где нужны решения без быстрой обратной связи, у агентов хуже суждение, чем у экспертов",
+     "source": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/",
+     "quote_hint": "worse judgment than human experts"
+    },
+    {
+     "claim": "Горизонт задач удваивается примерно каждые 3,6 месяца (95% ДИ ~2,1–4,9 мес.)",
+     "source": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/",
+     "quote_hint": "double roughly every 3.6 months"
+    },
+    {
+     "claim": "Публичных данных недостаточно, чтобы исключить резкое ускорение ИИ-R&D в ближайшие пару лет",
+     "source": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/",
+     "quote_hint": "insufficient to rule out drastic AI R&D acceleration"
+    },
+    {
+     "claim": "Контейнерные тесты могут переоценивать реальные способности",
+     "source": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/",
+     "quote_hint": "may also overestimate real-world capability"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным METR",
+   "notes": "Прочитаны первые 100k символов страницы, ключевые выводы — в начале. График METR в выпуске 11-09 — другой материал."
+  },
+  {
+   "id": "53dff2f089e71a58d0f119ee34e29be1574c6939",
+   "status": "verified",
+   "primary_source_url": "https://suno.com/blog/introducing-visuals",
+   "confirming_urls": [],
+   "event_date": "2026-11-17",
+   "checked_claims": [
+    {
+     "claim": "Suno запустила Visuals: лирик-видео, обложки, клипы до 15 секунд по песням",
+     "source": "https://suno.com/blog/introducing-visuals",
+     "quote_hint": "Clips run up to 15 seconds"
+    },
+    {
+     "claim": "Клипы следуют структуре трека, есть синхронизация с текстом и липсинк",
+     "source": "https://suno.com/blog/introducing-visuals",
+     "quote_hint": "Video clips follow your song's structure"
+    },
+    {
+     "claim": "Веб, iOS и Android; кредиты на Visuals покупаются отдельно",
+     "source": "https://suno.com/blog/introducing-visuals",
+     "quote_hint": "purchased separately from song credits"
+    },
+    {
+     "claim": "Фильтры блокируют запросы с конкретными артистами, публичными персонами и защищёнными произведениями; перед публикацией вне платформы — встроенный водяной знак",
+     "source": "https://suno.com/blog/introducing-visuals",
+     "quote_hint": "embedded watermarks"
+    }
+   ],
+   "removed_claims": [],
+   "attribution": "по данным компании",
+   "notes": "Первоисточник Suno, пост датирован Nov 17, 2026."
+  },
+  {
+   "id": "ff7f1c8a02ae55a90ac026fc7f50f82b1d7aa1aa",
+   "status": "verified",
+   "primary_source_url": "https://blog.superhuman.com/superhuman-expands-go-unveils-personal-ai-assistant/",
+   "confirming_urls": [],
+   "event_date": "2026-11-19",
+   "checked_claims": [
+    {
+     "claim": "На первой пользовательской конференции Superhuman Assembly (Сан-Франциско) компания представила персонального ассистента в Go",
+     "source": "https://blog.superhuman.com/superhuman-expands-go-unveils-personal-ai-assistant/",
+     "quote_hint": "first-ever user conference"
+    },
+    {
+     "claim": "Ассистента можно назвать, он отмечает приоритеты и пишет черновики в стиле пользователя; решения остаются за пользователем; раскатка в ближайшие месяцы",
+     "source": "https://blog.superhuman.com/superhuman-expands-go-unveils-personal-ai-assistant/",
+     "quote_hint": "The user always decides what actually gets done"
+    },
+    {
+     "claim": "SDK платформы Go — в GA; 20+ новых партнёрских агентов, в т.ч. Legora, Databricks, DeepL, Gamma",
+     "source": "https://blog.superhuman.com/superhuman-expands-go-unveils-personal-ai-assistant/",
+     "quote_hint": "Over 20 new agents"
+    },
+    {
+     "claim": "Агенты в Docs (открытая бета с 1 декабря для self-serve, Q1 2027 для enterprise); функции Mail в бете, GA в начале 2027; Email Assistant для Gmail и Outlook",
+     "source": "https://blog.superhuman.com/superhuman-expands-go-unveils-personal-ai-assistant/",
+     "quote_hint": "Open beta starts Dec. 1"
+    },
+    {
+     "claim": "Go — более 1 млн MAU, рост ~20% в месяц",
+     "source": "https://blog.superhuman.com/superhuman-expands-go-unveils-personal-ai-assistant/",
+     "quote_hint": "1 million monthly active users"
+    }
+   ],
+   "removed_claims": [
+    "«бывш. Grammarly» — в посте не сказано; Grammarly указана как один из продуктов набора Superhuman",
+    "«управление другими агентами» — в посте прямо не подтверждено"
+   ],
+   "attribution": "по данным компании",
+   "notes": "Первоисточник — блог Superhuman."
+  }
+ ]
+}

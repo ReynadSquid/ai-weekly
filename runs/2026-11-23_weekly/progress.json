@@ -3,7 +3,9 @@
     "init",
     "collect",
     "merge",
-    "rank"
+    "rank",
+    "factcheck",
+    "gate"
   ],
   "attempts": 1,
   "errors": []
