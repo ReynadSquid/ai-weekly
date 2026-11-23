@@ -1,6 +1,7 @@
 {
   "done": [
-    "init"
+    "init",
+    "collect"
   ],
   "attempts": 1,
   "errors": []
