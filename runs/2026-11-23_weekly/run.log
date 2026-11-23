@@ -12,3 +12,5 @@
 2026-11-23T02:17:38Z | gate       | шаг выполнен. pass: 20 годных
 2026-11-23T02:17:39Z | write      | editor_input: 20 новостей
 2026-11-23T02:20:43Z | write      | шаг выполнен. editor_input 20 → posts.json, draft.md (разделы A–F)
+2026-11-23T02:24:36Z | qa         | шаг выполнен. fail(1 blocker) → правка → pass (minor 2)
+2026-11-23T02:25:02Z | publish    | шаг выполнен. 4 сообщения + обложка → https://t.me/neurooruen/1818

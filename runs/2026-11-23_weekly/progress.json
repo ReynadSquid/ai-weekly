@@ -6,7 +6,9 @@
     "rank",
     "factcheck",
     "gate",
-    "write"
+    "write",
+    "qa",
+    "publish"
   ],
   "attempts": 1,
   "errors": []

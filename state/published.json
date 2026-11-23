@@ -257,6 +257,46 @@
       "link": "https://t.me/neurooruen/1811",
       "variant": "cover",
       "finished_at": "2026-11-16T02:25:58Z"
+    },
+    "2026-11-23_weekly:live": {
+      "issue_id": "2026-11-23_weekly",
+      "mode": "live",
+      "issue_number": 5,
+      "status": "published",
+      "started_at": "2026-11-23T02:24:40Z",
+      "messages": [
+        {
+          "index": 0,
+          "message_id": 1819,
+          "hash": "b4e0f5a781414175",
+          "sent_at": "2026-11-23T02:24:46Z"
+        },
+        {
+          "index": 1,
+          "message_id": 1820,
+          "hash": "35d560669fce524a",
+          "sent_at": "2026-11-23T02:24:50Z"
+        },
+        {
+          "index": 2,
+          "message_id": 1821,
+          "hash": "a61c5053b5049f8b",
+          "sent_at": "2026-11-23T02:24:54Z"
+        },
+        {
+          "index": 3,
+          "message_id": 1822,
+          "hash": "4965596d097ad57f",
+          "sent_at": "2026-11-23T02:24:58Z"
+        }
+      ],
+      "cover": {
+        "message_id": 1818,
+        "sent_at": "2026-11-23T02:24:42Z"
+      },
+      "link": "https://t.me/neurooruen/1818",
+      "variant": "cover",
+      "finished_at": "2026-11-23T02:24:58Z"
     }
   },
   "superseded": [
