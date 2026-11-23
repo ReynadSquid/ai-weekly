@@ -4,3 +4,5 @@
 2026-11-23T02:06:31Z | collect    | fetch_feeds[research]: 68 кандидатов, ошибок источников: 0
 2026-11-23T02:06:58Z | collect    | fetch_feeds[companies]: 186 кандидатов, ошибок источников: 0
 2026-11-23T02:10:45Z | collect    | шаг выполнен. 4 сборщика → companies 24, discovery 17, research 23, telegram 9
+2026-11-23T02:10:53Z | merge      | вход 484 → выход 432 (дубли url 47, дубли заголовков 3, история 1, вне окна 1); ошибок источников 10
+2026-11-23T02:10:54Z | merge      | шаг выполнен. candidates_* → candidates.json
